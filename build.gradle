@@ -19,6 +19,7 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'com.microsoft.playwright:playwright:1.54.0'
 
 	runtimeOnly 'com.h2database:h2'
 
@@ -28,4 +29,22 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+// playwright - install Browsers
+tasks.register("installBrowsers", JavaExec) {
+	group = "playwright"
+	description = "Installs Playwright browsers"
+	classpath = sourceSets.main.runtimeClasspath
+	mainClass.set("com.microsoft.playwright.CLI")
+	args("install")
+}
+
+// playwright - codegen
+tasks.register("codegen", JavaExec) {
+	group = "playwright"
+	description = "Launches playwright codegen"
+	classpath = sourceSets.main.runtimeClasspath
+	mainClass.set("com.microsoft.playwright.CLI")
+	args("codegen", "https://the-internet.herokuapp.com/login")
 }
