@@ -1,0 +1,27 @@
+services:
+  mongo:
+    image: mongo:7
+    container_name: mongo-benchmark
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: benchmark
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand({ ping: 1 }).ok"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    volumes:
+      - mongo-benchmark-data:/data/db
+      - ./scripts:/scripts:ro
+
+  spring-benchmark:
+    build:
+      context: ./spring-benchmark
+      dockerfile: Dockerfile
+    depends_on:
+      mongo:
+        condition: service_healthy
+
+volumes:
+  mongo-benchmark-data:

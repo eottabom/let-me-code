@@ -1,0 +1,7 @@
+plugins {
+	alias(libs.plugins.spring.dependency.management)
+}
+
+dependencies {
+	implementation libs.spring.boot.starter.data.mongodb
+}

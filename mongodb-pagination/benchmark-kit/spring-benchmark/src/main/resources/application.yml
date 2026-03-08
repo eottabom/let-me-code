@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-benchmark
+  data:
+    mongodb:
+      uri: mongodb://mongo:27017/benchmark
+
+benchmark:
+  collection: ${COLL_NAME:posts}
+  page-size: ${PAGE_SIZE:500}
+  pages: ${PAGES:0,1,10,100,300}

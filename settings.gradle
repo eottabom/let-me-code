@@ -1,1 +1,5 @@
 rootProject.name = 'let-me-code'
+
+include 'jpa-entity'
+include 'playwright'
+include 'mongodb-pagination'

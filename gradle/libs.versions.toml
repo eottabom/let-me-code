@@ -1,0 +1,18 @@
+[versions]
+spring-boot = "3.4.5"
+spring-dependency-management = "1.1.7"
+playwright = "1.54.0"
+junit-jupiter = "5.11.4"
+
+[libraries]
+spring-boot-starter-data-jpa = { module = "org.springframework.boot:spring-boot-starter-data-jpa" }
+spring-boot-starter-data-mongodb = { module = "org.springframework.boot:spring-boot-starter-data-mongodb" }
+spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
+h2 = { module = "com.h2database:h2" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+playwright = { module = "com.microsoft.playwright:playwright", version.ref = "playwright" }
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "spring-dependency-management" }

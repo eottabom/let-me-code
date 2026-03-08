@@ -1,0 +1,24 @@
+dependencies {
+	implementation libs.playwright
+
+	testImplementation libs.junit.jupiter
+	testRuntimeOnly libs.junit.platform.launcher
+}
+
+// playwright - install Browsers
+tasks.register("installBrowsers", JavaExec) {
+	group = "playwright"
+	description = "Installs Playwright browsers"
+	classpath = sourceSets.main.runtimeClasspath
+	mainClass.set("com.microsoft.playwright.CLI")
+	args("install")
+}
+
+// playwright - codegen
+tasks.register("codegen", JavaExec) {
+	group = "playwright"
+	description = "Launches playwright codegen"
+	classpath = sourceSets.main.runtimeClasspath
+	mainClass.set("com.microsoft.playwright.CLI")
+	args("codegen", "https://the-internet.herokuapp.com/login")
+}
