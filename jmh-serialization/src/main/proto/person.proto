@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_package = "com.eottabom.letmecode.example.benchmark";
+option java_outer_classname = "PersonProto";
+
+message Person {
+  string name = 1;
+  int32 age = 2;
+  string phoneNumber = 3;
+  Address address = 4;
+}
+
+message Address {
+  string city = 1;
+  string zipCode = 2;
+}

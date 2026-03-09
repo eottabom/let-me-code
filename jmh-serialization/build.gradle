@@ -1,0 +1,29 @@
+plugins {
+	alias(libs.plugins.spring.boot)
+	alias(libs.plugins.spring.dependency.management)
+	alias(libs.plugins.google.protobuf)
+}
+
+dependencies {
+	implementation libs.spring.boot.starter.web
+	implementation libs.jmh.core
+	implementation libs.protobuf.java
+	implementation libs.okhttp
+	implementation libs.jackson.databind
+	annotationProcessor libs.jmh.generator.annprocess
+}
+
+protobuf {
+	protoc {
+		artifact = "com.google.protobuf:protoc:${libs.versions.protoc.get()}"
+	}
+	generatedFilesBaseDir = "$projectDir/src/generated"
+}
+
+sourceSets {
+	main {
+		java {
+			srcDirs += "$projectDir/src/generated/main/java"
+		}
+	}
+}

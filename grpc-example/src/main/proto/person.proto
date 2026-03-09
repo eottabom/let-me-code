@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option java_package = "com.eottabom.letmecode.example";
+option java_outer_classname = "PersonProto";
+
+service PersonService {
+  rpc GetPerson(PersonRequest) returns (PersonResponse);
+}
+
+message PersonRequest {
+  string name = 1;
+}
+
+message PersonResponse {
+  Person person = 1;
+}
+
+message Person {
+  string name = 1;
+  int32 age = 2;
+  string phoneNumber = 3;
+  Address address = 4;
+}
+
+message Address {
+  string city = 1;
+  string zipCode = 2;
+}
