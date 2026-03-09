@@ -1,0 +1,29 @@
+plugins {
+	alias(libs.plugins.google.protobuf)
+}
+
+dependencies {
+	implementation libs.grpc.netty.shaded
+	implementation libs.grpc.protobuf
+	implementation libs.grpc.stub
+	implementation libs.protobuf.java
+	implementation libs.javax.annotation.api
+	implementation libs.slf4j.api
+	runtimeOnly libs.logback.classic
+}
+
+protobuf {
+	protoc {
+		artifact = "com.google.protobuf:protoc:${libs.versions.protoc.get()}"
+	}
+	plugins {
+		grpc {
+			artifact = "io.grpc:protoc-gen-grpc-java:${libs.versions.grpc.get()}"
+		}
+	}
+	generateProtoTasks {
+		all()*.plugins {
+			grpc {}
+		}
+	}
+}

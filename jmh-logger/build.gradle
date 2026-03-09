@@ -1,0 +1,6 @@
+dependencies {
+	implementation libs.jmh.core
+	implementation libs.logback.classic
+	implementation libs.logback.core
+	annotationProcessor libs.jmh.generator.annprocess
+}
