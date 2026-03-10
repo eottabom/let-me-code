@@ -1,6 +1,6 @@
 [versions]
 # spring
-spring-boot = "3.4.5"
+spring-boot = "4.0.3"
 spring-dependency-management = "1.1.7"
 
 # test
@@ -18,7 +18,7 @@ slf4j = "2.0.9"
 protobuf = "4.28.2"
 protoc = "3.25.0"
 grpc = "1.56.0"
-google-protobuf-plugin = "0.8.19"
+google-protobuf-plugin = "0.9.6"
 
 # serialization
 jackson = "2.15.0"

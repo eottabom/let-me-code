@@ -5,6 +5,7 @@ dependencies {
 	testRuntimeOnly libs.junit.platform.launcher
 }
 
+
 // playwright - install Browsers
 tasks.register("installBrowsers", JavaExec) {
 	group = "playwright"

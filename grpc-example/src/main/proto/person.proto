@@ -7,6 +7,7 @@ service PersonService {
   rpc GetPerson(PersonRequest) returns (PersonResponse);
 }
 
+
 message PersonRequest {
   string name = 1;
 }

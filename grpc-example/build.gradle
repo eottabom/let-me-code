@@ -2,6 +2,7 @@ plugins {
 	alias(libs.plugins.google.protobuf)
 }
 
+
 dependencies {
 	implementation libs.grpc.netty.shaded
 	implementation libs.grpc.protobuf
