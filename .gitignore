@@ -3,6 +3,7 @@
 .codex/
 AGENTS.md
 CLAUDE.md
+docs
 
 # Gradle
 .gradle/
@@ -29,3 +30,22 @@ Thumbs.db
 
 # Env
 .env
+
+# >>> agent-sync managed (do not edit this block)
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+docs/agents/
+docs/agents/styles/
+docs/agents/directory-structure.md
+docs/agents/architecture.md
+docs/agents/blog-post-writing.md
+.claude/
+.claude/docs/
+.claude/docs/styles/
+.claude/docs/directory-structure.md
+.claude/docs/architecture.md
+.claude/docs/blog-post-writing.md
+.codex/
+.gemini/
+# <<< agent-sync managed
