@@ -9,6 +9,7 @@
 | --- | --- | --- |
 | `jpa-entity` | Spring Boot, Spring Data JPA, H2 | `Persistable` 기반 엔티티 저장 흐름과 `isNew()` 판단 방식을 테스트로 확인하는 예제 |
 | `jpa-y2k38` | Spring Boot, Spring Data JPA, H2 | MySQL `TIMESTAMP` 2038 문제와 `DATETIME` 저장 동작을 검증하는 날짜/시간 예제 |
+| `redis-dns-cache` | Spring Boot, Spring Data Redis, Lettuce | Redis 연결의 `UnknownHostException` 과 JVM DNS cache 설정을 확인하는 예제 |
 | `mongodb-pagination` | Spring Data MongoDB | `skip/limit` 방식과 커서 기반 페이지네이션 저장소 구현을 비교하는 예제 |
 | `grpc-example` | Protobuf, gRPC Java | `person.proto`를 기반으로 gRPC 서버/클라이언트와 메시지 생성을 다루는 예제 |
 | `playwright` | Playwright for Java, JUnit | 브라우저 설치용 `installBrowsers`, 코드 생성용 `codegen`, 테스트 샘플을 포함한 예제 |
