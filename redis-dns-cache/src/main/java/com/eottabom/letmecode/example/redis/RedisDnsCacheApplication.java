@@ -27,6 +27,13 @@ public class RedisDnsCacheApplication {
             return;
         }
 
+        if ("connect-jvm".equals(command)) {
+            int port = parsePort(args);
+            RedisConnectionProbe probe = new RedisConnectionProbe();
+            probe.connectWithJvmResolver(host, port);
+            return;
+        }
+
         printUsage();
     }
 
@@ -41,6 +48,7 @@ public class RedisDnsCacheApplication {
     private static void printUsage() {
         System.out.println("Usage:");
         System.out.println("  inspect <host>");
-        System.out.println("  connect <host> [port]");
+        System.out.println("  connect <host> [port]        -- Lettuce default (Netty resolver)");
+        System.out.println("  connect-jvm <host> [port]    -- JVM InetAddress resolver");
     }
 }

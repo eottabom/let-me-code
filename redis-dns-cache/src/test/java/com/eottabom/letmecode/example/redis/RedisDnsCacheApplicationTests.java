@@ -19,4 +19,20 @@ class RedisDnsCacheApplicationTests {
         assertThatCode(() -> RedisDnsCacheApplication.main(new String[0]))
                 .doesNotThrowAnyException();
     }
+
+    @Test
+    void connectWithNettyResolverDoesNotThrow() {
+        RedisConnectionProbe probe = new RedisConnectionProbe();
+
+        assertThatCode(() -> probe.connect("redis-host.invalid", 6379))
+                .doesNotThrowAnyException();
+    }
+
+    @Test
+    void connectWithJvmResolverDoesNotThrow() {
+        RedisConnectionProbe probe = new RedisConnectionProbe();
+
+        assertThatCode(() -> probe.connectWithJvmResolver("redis-host.invalid", 6379))
+                .doesNotThrowAnyException();
+    }
 }

@@ -4,14 +4,30 @@ import io.lettuce.core.RedisClient;
 import io.lettuce.core.RedisURI;
 import io.lettuce.core.api.StatefulRedisConnection;
 import io.lettuce.core.resource.ClientResources;
+import io.netty.resolver.DefaultAddressResolverGroup;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.net.UnknownHostException;
 import java.time.Duration;
 
 public class RedisConnectionProbe {
 
+    private static final Logger log = LoggerFactory.getLogger(RedisConnectionProbe.class);
+
     public void connect(String host, int port) {
         ClientResources clientResources = ClientResources.create();
+        doConnect(host, port, clientResources, "netty");
+    }
+
+    public void connectWithJvmResolver(String host, int port) {
+        ClientResources clientResources = ClientResources.builder()
+                .addressResolverGroup(DefaultAddressResolverGroup.INSTANCE)
+                .build();
+        doConnect(host, port, clientResources, "jvm");
+    }
+
+    private void doConnect(String host, int port, ClientResources clientResources, String resolver) {
         RedisURI redisUri = RedisURI.builder()
                 .withHost(host)
                 .withPort(port)
@@ -20,28 +36,29 @@ public class RedisConnectionProbe {
 
         RedisClient redisClient = RedisClient.create(clientResources, redisUri);
 
+        log.info("resolver={} host={} port={}", resolver, host, port);
+
         try (StatefulRedisConnection<String, String> connection = redisClient.connect()) {
             String pong = connection.sync().ping();
-            System.out.printf("connected host=%s port=%d ping=%s%n", host, port, pong);
+            log.info("result=connected ping={}", pong);
         } catch (RuntimeException exception) {
-            printFailure(host, port, exception);
+            printFailure(exception);
         } finally {
             redisClient.shutdown();
             clientResources.shutdown();
         }
     }
 
-    private void printFailure(String host, int port, RuntimeException exception) {
-        System.out.printf("failed host=%s port=%d exception=%s%n", host, port, exception.getClass().getName());
+    private void printFailure(RuntimeException exception) {
+        log.warn("result=failed exception={}", exception.getClass().getName());
 
         Throwable current = exception;
         while (current != null) {
-            System.out.printf("cause=%s message=%s%n", current.getClass().getName(), current.getMessage());
-
             if (current instanceof UnknownHostException) {
-                System.out.println("unknown-host=true");
+                log.warn("  cause={} message={} unknown-host=true", current.getClass().getName(), current.getMessage());
+            } else {
+                log.warn("  cause={} message={}", current.getClass().getName(), current.getMessage());
             }
-
             current = current.getCause();
         }
     }

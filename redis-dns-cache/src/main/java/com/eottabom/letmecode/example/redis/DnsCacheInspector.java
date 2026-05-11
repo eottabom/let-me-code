@@ -1,11 +1,16 @@
 package com.eottabom.letmecode.example.redis;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.security.Security;
 import java.util.Arrays;
 
 public class DnsCacheInspector {
+
+    private static final Logger log = LoggerFactory.getLogger(DnsCacheInspector.class);
 
     public void inspect(String host) {
         printSecurityProperty("networkaddress.cache.ttl");
@@ -15,7 +20,7 @@ public class DnsCacheInspector {
 
     private void printSecurityProperty(String name) {
         String value = Security.getProperty(name);
-        System.out.printf("%s=%s%n", name, value == null ? "<not set>" : value);
+        log.info("{}={}", name, value == null ? "<not set>" : value);
     }
 
     private void resolve(String host) {
@@ -26,9 +31,9 @@ public class DnsCacheInspector {
                     .toList()
                     .toString();
 
-            System.out.printf("resolved host=%s addresses=%s%n", host, resolvedAddresses);
+            log.info("resolved host={} addresses={}", host, resolvedAddresses);
         } catch (UnknownHostException exception) {
-            System.out.printf("failed host=%s exception=%s%n", host, exception);
+            log.warn("failed host={} exception={}", host, exception.getMessage());
         }
     }
 }
