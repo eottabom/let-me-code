@@ -1,7 +1,7 @@
 ## thread-dump
 
 Java Thread Dump를 직접 수집하고 읽어보기 위한 예제 모듈입니다.
-데드락, `BLOCKED` 상태, CPU 스핀 상태를 각각 재현합니다.
+데드락, `BLOCKED` 상태, CPU 스핀 상태를 각각 재현하고, Spring Boot Actuator로 Thread Dump를 수집하는 방법도 확인합니다.
 
 ### 예제 목록
 
@@ -10,6 +10,7 @@ Java Thread Dump를 직접 수집하고 읽어보기 위한 예제 모듈입니�
 | `DeadlockExample` | `runDeadlockExample` | `Found one Java-level deadlock:` 블록 |
 | `BlockedThreadExample` | `runBlockedThreadExample` | 같은 모니터 락을 기다리는 `BLOCKED` 스레드 |
 | `CpuSpinExample` | `runCpuSpinExample` | `top -H`의 TID와 `jstack`의 `nid` 매핑 |
+| `ThreadDumpApplication` | `bootRun` | `/actuator/threaddump` JSON/text 응답 |
 
 ### 실행 방법
 
@@ -38,3 +39,25 @@ jstack <pid> | grep -A 20 "nid=0x<hex>"
 - `DeadlockExample`은 의도적으로 종료되지 않습니다. 확인 후 실행 프로세스를 종료해야 합니다.
 - `BlockedThreadExample`은 락 보유 스레드가 60초 동안 모니터를 점유합니다.
 - `CpuSpinExample`은 30초 동안 CPU를 점유하므로 로컬 환경에서만 실행합니다.
+
+### Spring Actuator로 수집하기
+
+Spring Boot 애플리케이션을 실행한 뒤 재현 엔드포인트를 호출하고, `/actuator/threaddump`에서 덤프를 수집합니다.
+
+```bash
+./gradlew :thread-dump:bootRun
+```
+
+```bash
+curl -X POST http://localhost:8080/load/blocked
+curl -H 'Accept: application/json' http://localhost:8080/actuator/threaddump > threaddump.json
+curl -H 'Accept: text/plain' http://localhost:8080/actuator/threaddump > threaddump.txt
+```
+
+재현 엔드포인트는 아래와 같습니다.
+
+| 엔드포인트 | 설명 |
+| --- | --- |
+| `POST /load/deadlock` | Actuator Thread Dump에서 데드락 스레드를 확인합니다. |
+| `POST /load/blocked` | 같은 모니터 락을 기다리는 `BLOCKED` 스레드를 만듭니다. |
+| `POST /load/cpu-spin` | 30초 동안 CPU를 점유하는 스레드를 만듭니다. |
