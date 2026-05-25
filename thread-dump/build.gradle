@@ -1,0 +1,20 @@
+tasks.register('runDeadlockExample', JavaExec) {
+	group = 'application'
+	description = 'Run the deadlock thread dump example.'
+	classpath = sourceSets.main.runtimeClasspath
+	mainClass = 'com.eottabom.letmecode.example.threaddump.DeadlockExample'
+}
+
+tasks.register('runBlockedThreadExample', JavaExec) {
+	group = 'application'
+	description = 'Run the BLOCKED thread dump example.'
+	classpath = sourceSets.main.runtimeClasspath
+	mainClass = 'com.eottabom.letmecode.example.threaddump.BlockedThreadExample'
+}
+
+tasks.register('runCpuSpinExample', JavaExec) {
+	group = 'application'
+	description = 'Run the CPU spin thread dump example.'
+	classpath = sourceSets.main.runtimeClasspath
+	mainClass = 'com.eottabom.letmecode.example.threaddump.CpuSpinExample'
+}

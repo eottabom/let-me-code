@@ -16,6 +16,7 @@
 | `jmh-final-keyword` | JMH | `final` 메서드 여부에 따른 호출 성능 차이를 측정하는 예제 |
 | `jmh-logger` | JMH, Logback, SLF4J | 로깅 방식과 설정 차이를 측정하는 예제 |
 | `jmh-serialization` | Spring Boot, JMH, Protobuf, Jackson, OkHttp | 직렬화 방식에 따른 성능 차이를 비교하는 예제 |
+| `thread-dump` | Java, JVM | 데드락, `BLOCKED` 상태, CPU 스핀을 재현하고 Thread Dump로 분석하는 예제 |
 
 ### 공통 설정
 
@@ -30,6 +31,7 @@
 ./gradlew test
 ./gradlew :playwright:installBrowsers
 ./gradlew :playwright:codegen
+./gradlew :thread-dump:runDeadlockExample
 ```
 
 ### 참고
