@@ -1,0 +1,20 @@
+plugins {
+	alias(libs.plugins.spring.boot)
+	alias(libs.plugins.spring.dependency.management)
+}
+
+dependencyManagement {
+	imports {
+		mavenBom libs.spring.grpc.dependencies.get().toString()
+	}
+}
+
+dependencies {
+	implementation libs.spring.boot.starter
+	implementation libs.spring.grpc.spring.boot.starter
+	implementation libs.envoy.controlplane.api
+	implementation libs.proto.google.common.protos
+
+	testImplementation libs.spring.boot.starter.test
+	testRuntimeOnly libs.junit.platform.launcher
+}

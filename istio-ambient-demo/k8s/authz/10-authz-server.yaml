@@ -1,0 +1,36 @@
+# istio-ambient-demo/authz-server 모듈의 이미지를 사용.
+# run/run-authz-demo.sh 가 빌드 + `kind load docker-image` 로 이 이름의 이미지를 클러스터에 로드한다.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: authz-server
+  namespace: istio-demo-authz
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: authz-server
+  template:
+    metadata:
+      labels:
+        app: authz-server
+    spec:
+      containers:
+        - name: authz-server
+          image: istio-ambient-demo-authz-server:0.0.1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 9001
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: authz-server
+  namespace: istio-demo-authz
+spec:
+  selector:
+    app: authz-server
+  ports:
+    - name: grpc
+      port: 9001
+      targetPort: 9001

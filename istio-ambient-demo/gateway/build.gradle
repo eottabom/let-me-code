@@ -1,0 +1,18 @@
+plugins {
+	alias(libs.plugins.spring.boot)
+	alias(libs.plugins.spring.dependency.management)
+}
+
+dependencyManagement {
+	imports {
+		mavenBom libs.spring.cloud.dependencies.get().toString()
+	}
+}
+
+dependencies {
+	implementation libs.spring.boot.starter.webflux
+	implementation libs.spring.cloud.starter.gateway.server.webflux
+
+	testImplementation libs.spring.boot.starter.test
+	testRuntimeOnly libs.junit.platform.launcher
+}

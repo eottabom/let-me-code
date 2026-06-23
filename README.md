@@ -17,6 +17,8 @@
 | `jmh-logger` | JMH, Logback, SLF4J | 로깅 방식과 설정 차이를 측정하는 예제 |
 | `jmh-serialization` | Spring Boot, JMH, Protobuf, Jackson, OkHttp | 직렬화 방식에 따른 성능 차이를 비교하는 예제 |
 | `thread-dump` | Java, JVM | 데드락, `BLOCKED` 상태, CPU 스핀을 재현하고 Thread Dump로 분석하는 예제 |
+| `istio-ambient-demo:gateway` | Spring Cloud Gateway (WebFlux) | 기존 역방향 프록시(AS-IS)를 대체하는 Gateway. `simple`/`authz` 프로필로 단순 프록시와 session 검증+헤더 주입 흐름을 재현 |
+| `istio-ambient-demo:authz-server` | Spring Boot, Spring gRPC, Envoy ext_authz | Istio Ambient mode의 AuthorizationPolicy(CUSTOM)가 호출하는 ext_authz gRPC 인가 서버 (TO-BE) |
 
 ### 공통 설정
 

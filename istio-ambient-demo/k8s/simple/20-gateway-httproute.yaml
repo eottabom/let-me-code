@@ -1,0 +1,33 @@
+apiVersion: gateway.networking.k8s.io/v1 # k8s 표준 Gateway API (Istio 전용 API 아님)
+kind: Gateway
+metadata:
+  name: demo-gw # istiod 가 감지 → "demo-gw-istio" Deployment+Service 자동 생성
+  namespace: istio-demo
+spec:
+  gatewayClassName: istio
+  listeners:
+    - name: http
+      port: 80
+      protocol: HTTP
+      allowedRoutes:
+        namespaces:
+          from: Same
+---
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: route-api
+  namespace: istio-demo
+spec:
+  parentRefs:
+    - name: demo-gw
+  hostnames:
+    - "external-a.local" # nginx 가 주입하는 Host 헤더와 매칭되어야 함
+  rules:
+    - matches:
+        - path:
+            type: PathPrefix
+            value: /api
+      backendRefs:
+        - name: external-a
+          port: 9000

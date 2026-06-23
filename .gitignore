@@ -31,6 +31,10 @@ Thumbs.db
 # Env
 .env
 
+# istio-ambient-demo runtime artifacts
+istio-ambient-demo/external/alb-conf/default.conf
+istio-ambient-demo/run/port-forward.*.pid
+
 # >>> agent-sync managed (do not edit this block)
 AGENTS.md
 CLAUDE.md

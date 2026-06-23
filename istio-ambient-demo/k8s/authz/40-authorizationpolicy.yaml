@@ -1,0 +1,18 @@
+# Istio Gateway(Envoy) 에 ext_authz 필터를 적용해서, 요청마다 authz-server(gRPC) 를 호출해 허용/차단을 결정한다.
+# provider.name 은 run/run-authz-demo.sh 가 istiod ConfigMap(extensionProviders) 에 등록하는 이름과 일치해야 한다.
+apiVersion: security.istio.io/v1
+kind: AuthorizationPolicy
+metadata:
+  name: ext-authz
+  namespace: istio-demo-authz
+spec:
+  selector:
+    matchLabels:
+      gateway.networking.k8s.io/gateway-name: demo-gw # istiod 가 Gateway 생성 시 자동으로 붙이는 label
+  action: CUSTOM
+  provider:
+    name: demo-authz-grpc
+  rules:
+    - to:
+        - operation:
+            paths: ["/api"]

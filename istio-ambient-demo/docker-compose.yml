@@ -1,0 +1,58 @@
+services:
+  alb:
+    image: nginx:1.25-alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./external/alb-conf:/etc/nginx/conf.d
+    extra_hosts:
+      - "host.docker.internal:host-gateway" # TO-BE 전환 시 port-forward(:18080) 경유용
+    profiles: ["simple", "authz"]
+
+  gateway-simple:
+    build:
+      context: ../
+      dockerfile: istio-ambient-demo/gateway/Dockerfile
+    environment:
+      SPRING_PROFILES_ACTIVE: simple
+      DEMO_GATEWAY_A_SERVER_URI: http://a:8080
+    ports:
+      - "8090:8090"
+    profiles: ["simple"]
+
+  gateway-authz:
+    build:
+      context: ../
+      dockerfile: istio-ambient-demo/gateway/Dockerfile
+    environment:
+      SPRING_PROFILES_ACTIVE: authz
+      DEMO_GATEWAY_B_SERVER_URI: http://b:8080
+      DEMO_GATEWAY_SESSION_SVC_URI: http://session-svc:8080
+    ports:
+      - "8090:8090"
+    profiles: ["authz"]
+
+  a: # 백엔드 서비스 (simple 데모) - 요청이 오면 무조건 "A (external server)" 반환
+    image: hashicorp/http-echo:1.0
+    command: ["-listen=:8080", "-text=A (external server)"]
+    ports:
+      - "9000:8080"
+    profiles: ["simple"]
+
+  session-svc: # AS-IS 전용 인증/검증 서비스 (authz 데모)
+    image: node:20-alpine
+    working_dir: /app
+    command: ["node", "/app/session-svc.js"]
+    volumes:
+      - ./external/session-svc.js:/app/session-svc.js:ro
+    profiles: ["authz"]
+
+  b: # 백엔드 서비스 (authz 데모) - 수신한 인가 헤더를 그대로 출력
+    image: node:20-alpine
+    working_dir: /app
+    command: ["node", "/app/b-server.js"]
+    volumes:
+      - ./external/b-server.js:/app/b-server.js:ro
+    ports:
+      - "9000:8080"
+    profiles: ["authz"]

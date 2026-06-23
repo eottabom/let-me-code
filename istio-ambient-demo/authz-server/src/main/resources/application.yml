@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: istio-ext-authz-server
+  grpc:
+    server:
+      port: 9001 # Istio AuthorizationPolicy 의 envoyExtAuthzGrpc.port 와 일치해야 함

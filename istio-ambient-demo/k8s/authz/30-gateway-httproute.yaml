@@ -1,0 +1,33 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: Gateway
+metadata:
+  name: demo-gw
+  namespace: istio-demo-authz
+spec:
+  gatewayClassName: istio
+  listeners:
+    - name: http
+      port: 80
+      protocol: HTTP
+      allowedRoutes:
+        namespaces:
+          from: Same
+---
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: route-api
+  namespace: istio-demo-authz
+spec:
+  parentRefs:
+    - name: demo-gw
+  hostnames:
+    - "external-b.local"
+  rules:
+    - matches:
+        - path:
+            type: Exact
+            value: /api
+      backendRefs:
+        - name: external-b
+          port: 9000

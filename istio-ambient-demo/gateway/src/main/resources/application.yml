@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: spring-cloud-gateway-demo
+  cloud:
+    gateway:
+      server:
+        webflux:
+          httpclient:
+            connect-timeout: 2000
+            response-timeout: 2s
+
+server:
+  port: 8090
+
+demo:
+  gateway:
+    a-server-uri: http://localhost:9000
+    b-server-uri: http://localhost:9000
+    session-svc-uri: http://localhost:9001
+
+logging:
+  level:
+    org.springframework.cloud.gateway: INFO
