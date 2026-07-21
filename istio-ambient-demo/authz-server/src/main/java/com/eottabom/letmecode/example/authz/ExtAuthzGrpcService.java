@@ -21,19 +21,19 @@ import java.util.Locale;
 public class ExtAuthzGrpcService extends AuthorizationGrpc.AuthorizationImplBase {
 
 	private static final String DEMO_USER_HEADER = "x-demo-user";
+
 	private static final String AUTHZ_USER_HEADER = "x-authz-user";
+
 	private static final String AUTHZ_RESULT_HEADER = "x-authz-result";
 
 	@Override
 	public void check(CheckRequest request, StreamObserver<CheckResponse> responseObserver) {
-		String demoUser = request.getAttributes()
-			.getRequest()
-			.getHttp()
-			.getHeadersOrDefault(DEMO_USER_HEADER, "");
+		String demoUser = request.getAttributes().getRequest().getHttp().getHeadersOrDefault(DEMO_USER_HEADER, "");
 
 		if (isAllowed(demoUser)) {
 			responseObserver.onNext(allow(demoUser));
-		} else {
+		}
+		else {
 			responseObserver.onNext(deny());
 		}
 		responseObserver.onCompleted();
@@ -70,4 +70,5 @@ public class ExtAuthzGrpcService extends AuthorizationGrpc.AuthorizationImplBase
 			.setHeader(HeaderValue.newBuilder().setKey(key).setValue(value).build())
 			.build();
 	}
+
 }

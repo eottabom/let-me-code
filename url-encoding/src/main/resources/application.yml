@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: url-encoding
+
+---
+spring:
+  config:
+    activate:
+      on-profile: tomcat-relaxed
+  application:
+    name: url-encoding (tomcat-relaxed)

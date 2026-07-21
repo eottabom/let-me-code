@@ -2,6 +2,13 @@ plugins {
 	alias(libs.plugins.google.protobuf)
 }
 
+// proto 자동 생성 소스는 Spring Format 검사 대상에서 제외
+afterEvaluate {
+	tasks.named('checkFormatMain') {
+		exclude '**/PersonProto.java', '**/PersonServiceGrpc.java'
+	}
+}
+
 
 dependencies {
 	implementation libs.grpc.netty.shaded

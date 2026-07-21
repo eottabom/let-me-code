@@ -13,53 +13,53 @@ import java.time.Duration;
 
 public class RedisConnectionProbe {
 
-    private static final Logger log = LoggerFactory.getLogger(RedisConnectionProbe.class);
+	private static final Logger log = LoggerFactory.getLogger(RedisConnectionProbe.class);
 
-    public void connect(String host, int port) {
-        ClientResources clientResources = ClientResources.create();
-        doConnect(host, port, clientResources, "netty");
-    }
+	public void connect(String host, int port) {
+		ClientResources clientResources = ClientResources.create();
+		doConnect(host, port, clientResources, "netty");
+	}
 
-    public void connectWithJvmResolver(String host, int port) {
-        ClientResources clientResources = ClientResources.builder()
-                .addressResolverGroup(DefaultAddressResolverGroup.INSTANCE)
-                .build();
-        doConnect(host, port, clientResources, "jvm");
-    }
+	public void connectWithJvmResolver(String host, int port) {
+		ClientResources clientResources = ClientResources.builder()
+			.addressResolverGroup(DefaultAddressResolverGroup.INSTANCE)
+			.build();
+		doConnect(host, port, clientResources, "jvm");
+	}
 
-    private void doConnect(String host, int port, ClientResources clientResources, String resolver) {
-        RedisURI redisUri = RedisURI.builder()
-                .withHost(host)
-                .withPort(port)
-                .withTimeout(Duration.ofSeconds(3))
-                .build();
+	private void doConnect(String host, int port, ClientResources clientResources, String resolver) {
+		RedisURI redisUri = RedisURI.builder().withHost(host).withPort(port).withTimeout(Duration.ofSeconds(3)).build();
 
-        RedisClient redisClient = RedisClient.create(clientResources, redisUri);
+		RedisClient redisClient = RedisClient.create(clientResources, redisUri);
 
-        log.info("resolver={} host={} port={}", resolver, host, port);
+		log.info("resolver={} host={} port={}", resolver, host, port);
 
-        try (StatefulRedisConnection<String, String> connection = redisClient.connect()) {
-            String pong = connection.sync().ping();
-            log.info("result=connected ping={}", pong);
-        } catch (RuntimeException exception) {
-            printFailure(exception);
-        } finally {
-            redisClient.shutdown();
-            clientResources.shutdown();
-        }
-    }
+		try (StatefulRedisConnection<String, String> connection = redisClient.connect()) {
+			String pong = connection.sync().ping();
+			log.info("result=connected ping={}", pong);
+		}
+		catch (RuntimeException exception) {
+			printFailure(exception);
+		}
+		finally {
+			redisClient.shutdown();
+			clientResources.shutdown();
+		}
+	}
 
-    private void printFailure(RuntimeException exception) {
-        log.warn("result=failed exception={}", exception.getClass().getName());
+	private void printFailure(RuntimeException exception) {
+		log.warn("result=failed exception={}", exception.getClass().getName());
 
-        Throwable current = exception;
-        while (current != null) {
-            if (current instanceof UnknownHostException) {
-                log.warn("  cause={} message={} unknown-host=true", current.getClass().getName(), current.getMessage());
-            } else {
-                log.warn("  cause={} message={}", current.getClass().getName(), current.getMessage());
-            }
-            current = current.getCause();
-        }
-    }
+		Throwable current = exception;
+		while (current != null) {
+			if (current instanceof UnknownHostException) {
+				log.warn("  cause={} message={} unknown-host=true", current.getClass().getName(), current.getMessage());
+			}
+			else {
+				log.warn("  cause={} message={}", current.getClass().getName(), current.getMessage());
+			}
+			current = current.getCause();
+		}
+	}
+
 }

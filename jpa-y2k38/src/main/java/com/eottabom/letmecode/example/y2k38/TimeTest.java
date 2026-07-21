@@ -14,34 +14,34 @@ import java.time.LocalDateTime;
 @Table(name = "time_test")
 public class TimeTest {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 
-    @Column(name = "dt_col")
-    private LocalDateTime datetime;
+	@Column(name = "dt_col")
+	private LocalDateTime datetime;
 
-    @Column(name = "ts_col")
-    private Instant timestamp;
+	@Column(name = "ts_col")
+	private Instant timestamp;
 
-    protected TimeTest() {
-    }
+	protected TimeTest() {
+	}
 
-    public TimeTest(LocalDateTime datetime, Instant timestamp) {
-        this.datetime = datetime;
-        this.timestamp = timestamp;
-    }
+	public TimeTest(LocalDateTime datetime, Instant timestamp) {
+		this.datetime = datetime;
+		this.timestamp = timestamp;
+	}
 
-    public Long getId() {
-        return id;
-    }
+	public Long getId() {
+		return id;
+	}
 
-    public LocalDateTime getDatetime() {
-        return datetime;
-    }
+	public LocalDateTime getDatetime() {
+		return datetime;
+	}
 
-    public Instant getTimestamp() {
-        return timestamp;
-    }
+	public Instant getTimestamp() {
+		return timestamp;
+	}
 
 }

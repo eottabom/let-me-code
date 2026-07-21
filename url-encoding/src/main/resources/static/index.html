@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>URL Encoding 예제</title>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+    .section { border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0; }
+    .section h2 { margin-top: 0; }
+    input { width: 300px; padding: 6px; }
+    button { padding: 6px 16px; cursor: pointer; }
+    pre { background: #f5f5f5; padding: 12px; border-radius: 4px; overflow-x: auto; }
+    .ok { color: #16a34a; font-weight: bold; }
+    .err { color: #dc2626; font-weight: bold; }
+  </style>
+</head>
+<body>
+<h1>URL Encoding 예제</h1>
+<p>파이프(<code>|</code>) 문자를 포함한 복합 필터를 서버에 전송하는 네 가지 케이스를 직접 확인해보세요.</p>
+
+<!-- 케이스 1: FE 미인코딩 + 기본 Tomcat → 400 -->
+<div class="section">
+  <h2>케이스 1: FE 미인코딩 + 기본 Tomcat 프로필 → 400</h2>
+  <p>
+    <code>fetch</code>에 <code>|</code>를 그대로 전달합니다. (<code>encodeURIComponent</code> 미사용)<br>
+    기본 Tomcat 은 RFC 7230 §3.2.6 위반으로 <b>400 Bad Request</b>를 반환합니다.
+  </p>
+  <input id="filter1" type="text" value="category:전자기기|brand:삼성" />
+  <button onclick="sendUnencoded('/products')">전송 (미인코딩)</button>
+  <pre id="result1">결과가 여기 표시됩니다.</pre>
+</div>
+
+<!-- 케이스 2: FE 인코딩 + 기본 Tomcat → 200 -->
+<div class="section">
+  <h2>케이스 2: FE 인코딩(encodeURIComponent) + 기본 Tomcat 프로필 → 200</h2>
+  <p>
+    <code>encodeURIComponent</code>로 <code>|</code>를 <code>%7C</code>로 변환 후 전송합니다.<br>
+    Tomcat 이 정상적으로 디코딩하여 <b>200 OK</b>를 반환합니다.
+  </p>
+  <input id="filter2" type="text" value="category:전자기기|brand:삼성" />
+  <button onclick="sendEncoded('/products')">전송 (인코딩)</button>
+  <pre id="result2">결과가 여기 표시됩니다.</pre>
+</div>
+
+<!-- 케이스 3: FE 미인코딩 + relaxed Tomcat → 200 -->
+<div class="section">
+  <h2>케이스 3: FE 미인코딩 + tomcat-relaxed 프로필 → 200</h2>
+  <p>
+    <code>|</code>를 그대로 전달하지만, 서버가 <code>relaxedQueryChars="|"</code>로 설정되어 있으면<br>
+    <b>200 OK</b>를 반환합니다. (서버를 <code>--spring.profiles.active=tomcat-relaxed</code>로 실행 필요)
+  </p>
+  <input id="filter3" type="text" value="category:전자기기|brand:삼성" />
+  <button onclick="sendUnencoded('/products')">전송 (미인코딩)</button>
+  <pre id="result3">결과가 여기 표시됩니다.</pre>
+</div>
+
+<!-- 케이스 4: FE 인코딩 + relaxed Tomcat → 200 -->
+<div class="section">
+  <h2>케이스 4: FE 인코딩 + tomcat-relaxed 프로필 → 200</h2>
+  <p>
+    인코딩 + relaxed 설정 모두 적용 시에도 정상 동작합니다.
+  </p>
+  <input id="filter4" type="text" value="category:전자기기|brand:삼성" />
+  <button onclick="sendEncoded('/products')">전송 (인코딩)</button>
+  <pre id="result4">결과가 여기 표시됩니다.</pre>
+</div>
+
+<script>
+  async function sendUnencoded(path) {
+    const caseNum = getCaseNum();
+    const filterValue = document.getElementById('filter' + caseNum).value;
+    const url = path + '?filter=' + filterValue;  // encodeURIComponent 미사용
+    const resultEl = document.getElementById('result' + caseNum);
+    resultEl.textContent = 'GET ' + url + '\n\n요청 중...';
+    try {
+      const res = await fetch(url);
+      const body = await res.text();
+      const status = res.status;
+      const label = status === 200 ? '[200 OK]' : '[' + status + ' 오류]';
+      resultEl.textContent = 'GET ' + url + '\n\n' + label + '\n' + body;
+      resultEl.className = status === 200 ? 'ok' : 'err';
+    } catch (e) {
+      resultEl.textContent = '네트워크 오류: ' + e.message;
+      resultEl.className = 'err';
+    }
+  }
+
+  async function sendEncoded(path) {
+    const caseNum = getCaseNum();
+    const filterValue = document.getElementById('filter' + caseNum).value;
+    const encoded = encodeURIComponent(filterValue);  // | → %7C
+    const url = path + '?filter=' + encoded;
+    const resultEl = document.getElementById('result' + caseNum);
+    resultEl.textContent = 'GET ' + url + '\n\n요청 중...';
+    try {
+      const res = await fetch(url);
+      const body = await res.text();
+      const status = res.status;
+      const label = status === 200 ? '[200 OK]' : '[' + status + ' 오류]';
+      resultEl.textContent = 'GET ' + url + '\n\n' + label + '\n' + body;
+      resultEl.className = status === 200 ? 'ok' : 'err';
+    } catch (e) {
+      resultEl.textContent = '네트워크 오류: ' + e.message;
+      resultEl.className = 'err';
+    }
+  }
+
+  // 버튼이 속한 section 의 번호를 찾는 헬퍼
+  function getCaseNum() {
+    const btn = window.event.target;
+    const section = btn.closest('.section');
+    const sections = document.querySelectorAll('.section');
+    return [...sections].indexOf(section) + 1;
+  }
+</script>
+</body>
+</html>

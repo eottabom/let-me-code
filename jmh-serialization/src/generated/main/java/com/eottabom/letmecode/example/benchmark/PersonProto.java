@@ -5,1739 +5,1791 @@
 package com.eottabom.letmecode.example.benchmark;
 
 public final class PersonProto {
-  private PersonProto() {}
-  public static void registerAllExtensions(
-      com.google.protobuf.ExtensionRegistryLite registry) {
-  }
-
-  public static void registerAllExtensions(
-      com.google.protobuf.ExtensionRegistry registry) {
-    registerAllExtensions(
-        (com.google.protobuf.ExtensionRegistryLite) registry);
-  }
-  public interface PersonOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:Person)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>string name = 1;</code>
-     * @return The name.
-     */
-    java.lang.String getName();
-    /**
-     * <code>string name = 1;</code>
-     * @return The bytes for name.
-     */
-    com.google.protobuf.ByteString
-        getNameBytes();
-
-    /**
-     * <code>int32 age = 2;</code>
-     * @return The age.
-     */
-    int getAge();
-
-    /**
-     * <code>string phoneNumber = 3;</code>
-     * @return The phoneNumber.
-     */
-    java.lang.String getPhoneNumber();
-    /**
-     * <code>string phoneNumber = 3;</code>
-     * @return The bytes for phoneNumber.
-     */
-    com.google.protobuf.ByteString
-        getPhoneNumberBytes();
-
-    /**
-     * <code>.Address address = 4;</code>
-     * @return Whether the address field is set.
-     */
-    boolean hasAddress();
-    /**
-     * <code>.Address address = 4;</code>
-     * @return The address.
-     */
-    com.eottabom.letmecode.example.benchmark.PersonProto.Address getAddress();
-    /**
-     * <code>.Address address = 4;</code>
-     */
-    com.eottabom.letmecode.example.benchmark.PersonProto.AddressOrBuilder getAddressOrBuilder();
-  }
-  /**
-   * Protobuf type {@code Person}
-   */
-  public static final class Person extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:Person)
-      PersonOrBuilder {
-  private static final long serialVersionUID = 0L;
-    // Use Person.newBuilder() to construct.
-    private Person(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-    private Person() {
-      name_ = "";
-      phoneNumber_ = "";
-    }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new Person();
-    }
-
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.eottabom.letmecode.example.benchmark.PersonProto.internal_static_Person_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.eottabom.letmecode.example.benchmark.PersonProto.internal_static_Person_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.eottabom.letmecode.example.benchmark.PersonProto.Person.class, com.eottabom.letmecode.example.benchmark.PersonProto.Person.Builder.class);
-    }
-
-    private int bitField0_;
-    public static final int NAME_FIELD_NUMBER = 1;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object name_ = "";
-    /**
-     * <code>string name = 1;</code>
-     * @return The name.
-     */
-    @java.lang.Override
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        name_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string name = 1;</code>
-     * @return The bytes for name.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getNameBytes() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        name_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int AGE_FIELD_NUMBER = 2;
-    private int age_ = 0;
-    /**
-     * <code>int32 age = 2;</code>
-     * @return The age.
-     */
-    @java.lang.Override
-    public int getAge() {
-      return age_;
-    }
-
-    public static final int PHONENUMBER_FIELD_NUMBER = 3;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object phoneNumber_ = "";
-    /**
-     * <code>string phoneNumber = 3;</code>
-     * @return The phoneNumber.
-     */
-    @java.lang.Override
-    public java.lang.String getPhoneNumber() {
-      java.lang.Object ref = phoneNumber_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        phoneNumber_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string phoneNumber = 3;</code>
-     * @return The bytes for phoneNumber.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getPhoneNumberBytes() {
-      java.lang.Object ref = phoneNumber_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        phoneNumber_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int ADDRESS_FIELD_NUMBER = 4;
-    private com.eottabom.letmecode.example.benchmark.PersonProto.Address address_;
-    /**
-     * <code>.Address address = 4;</code>
-     * @return Whether the address field is set.
-     */
-    @java.lang.Override
-    public boolean hasAddress() {
-      return ((bitField0_ & 0x00000001) != 0);
-    }
-    /**
-     * <code>.Address address = 4;</code>
-     * @return The address.
-     */
-    @java.lang.Override
-    public com.eottabom.letmecode.example.benchmark.PersonProto.Address getAddress() {
-      return address_ == null ? com.eottabom.letmecode.example.benchmark.PersonProto.Address.getDefaultInstance() : address_;
-    }
-    /**
-     * <code>.Address address = 4;</code>
-     */
-    @java.lang.Override
-    public com.eottabom.letmecode.example.benchmark.PersonProto.AddressOrBuilder getAddressOrBuilder() {
-      return address_ == null ? com.eottabom.letmecode.example.benchmark.PersonProto.Address.getDefaultInstance() : address_;
-    }
-
-    private byte memoizedIsInitialized = -1;
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
-      }
-      if (age_ != 0) {
-        output.writeInt32(2, age_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(phoneNumber_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, phoneNumber_);
-      }
-      if (((bitField0_ & 0x00000001) != 0)) {
-        output.writeMessage(4, getAddress());
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
-      }
-      if (age_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, age_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(phoneNumber_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, phoneNumber_);
-      }
-      if (((bitField0_ & 0x00000001) != 0)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getAddress());
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof com.eottabom.letmecode.example.benchmark.PersonProto.Person)) {
-        return super.equals(obj);
-      }
-      com.eottabom.letmecode.example.benchmark.PersonProto.Person other = (com.eottabom.letmecode.example.benchmark.PersonProto.Person) obj;
-
-      if (!getName()
-          .equals(other.getName())) return false;
-      if (getAge()
-          != other.getAge()) return false;
-      if (!getPhoneNumber()
-          .equals(other.getPhoneNumber())) return false;
-      if (hasAddress() != other.hasAddress()) return false;
-      if (hasAddress()) {
-        if (!getAddress()
-            .equals(other.getAddress())) return false;
-      }
-      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getName().hashCode();
-      hash = (37 * hash) + AGE_FIELD_NUMBER;
-      hash = (53 * hash) + getAge();
-      hash = (37 * hash) + PHONENUMBER_FIELD_NUMBER;
-      hash = (53 * hash) + getPhoneNumber().hashCode();
-      if (hasAddress()) {
-        hash = (37 * hash) + ADDRESS_FIELD_NUMBER;
-        hash = (53 * hash) + getAddress().hashCode();
-      }
-      hash = (29 * hash) + getUnknownFields().hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    @java.lang.Override
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(com.eottabom.letmecode.example.benchmark.PersonProto.Person prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    @java.lang.Override
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code Person}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:Person)
-        com.eottabom.letmecode.example.benchmark.PersonProto.PersonOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.eottabom.letmecode.example.benchmark.PersonProto.internal_static_Person_descriptor;
-      }
-
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return com.eottabom.letmecode.example.benchmark.PersonProto.internal_static_Person_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                com.eottabom.letmecode.example.benchmark.PersonProto.Person.class, com.eottabom.letmecode.example.benchmark.PersonProto.Person.Builder.class);
-      }
-
-      // Construct using com.eottabom.letmecode.example.benchmark.PersonProto.Person.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getAddressFieldBuilder();
-        }
-      }
-      @java.lang.Override
-      public Builder clear() {
-        super.clear();
-        bitField0_ = 0;
-        name_ = "";
-        age_ = 0;
-        phoneNumber_ = "";
-        address_ = null;
-        if (addressBuilder_ != null) {
-          addressBuilder_.dispose();
-          addressBuilder_ = null;
-        }
-        return this;
-      }
-
-      @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return com.eottabom.letmecode.example.benchmark.PersonProto.internal_static_Person_descriptor;
-      }
-
-      @java.lang.Override
-      public com.eottabom.letmecode.example.benchmark.PersonProto.Person getDefaultInstanceForType() {
-        return com.eottabom.letmecode.example.benchmark.PersonProto.Person.getDefaultInstance();
-      }
-
-      @java.lang.Override
-      public com.eottabom.letmecode.example.benchmark.PersonProto.Person build() {
-        com.eottabom.letmecode.example.benchmark.PersonProto.Person result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      @java.lang.Override
-      public com.eottabom.letmecode.example.benchmark.PersonProto.Person buildPartial() {
-        com.eottabom.letmecode.example.benchmark.PersonProto.Person result = new com.eottabom.letmecode.example.benchmark.PersonProto.Person(this);
-        if (bitField0_ != 0) { buildPartial0(result); }
-        onBuilt();
-        return result;
-      }
-
-      private void buildPartial0(com.eottabom.letmecode.example.benchmark.PersonProto.Person result) {
-        int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.name_ = name_;
-        }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.age_ = age_;
-        }
-        if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.phoneNumber_ = phoneNumber_;
-        }
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000008) != 0)) {
-          result.address_ = addressBuilder_ == null
-              ? address_
-              : addressBuilder_.build();
-          to_bitField0_ |= 0x00000001;
-        }
-        result.bitField0_ |= to_bitField0_;
-      }
-
-      @java.lang.Override
-      public Builder clone() {
-        return super.clone();
-      }
-      @java.lang.Override
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return super.setField(field, value);
-      }
-      @java.lang.Override
-      public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return super.clearField(field);
-      }
-      @java.lang.Override
-      public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return super.clearOneof(oneof);
-      }
-      @java.lang.Override
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
-        return super.setRepeatedField(field, index, value);
-      }
-      @java.lang.Override
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return super.addRepeatedField(field, value);
-      }
-      @java.lang.Override
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.eottabom.letmecode.example.benchmark.PersonProto.Person) {
-          return mergeFrom((com.eottabom.letmecode.example.benchmark.PersonProto.Person)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(com.eottabom.letmecode.example.benchmark.PersonProto.Person other) {
-        if (other == com.eottabom.letmecode.example.benchmark.PersonProto.Person.getDefaultInstance()) return this;
-        if (!other.getName().isEmpty()) {
-          name_ = other.name_;
-          bitField0_ |= 0x00000001;
-          onChanged();
-        }
-        if (other.getAge() != 0) {
-          setAge(other.getAge());
-        }
-        if (!other.getPhoneNumber().isEmpty()) {
-          phoneNumber_ = other.phoneNumber_;
-          bitField0_ |= 0x00000004;
-          onChanged();
-        }
-        if (other.hasAddress()) {
-          mergeAddress(other.getAddress());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        onChanged();
-        return this;
-      }
-
-      @java.lang.Override
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      @java.lang.Override
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 10: {
-                name_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000001;
-                break;
-              } // case 10
-              case 16: {
-                age_ = input.readInt32();
-                bitField0_ |= 0x00000002;
-                break;
-              } // case 16
-              case 26: {
-                phoneNumber_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000004;
-                break;
-              } // case 26
-              case 34: {
-                input.readMessage(
-                    getAddressFieldBuilder().getBuilder(),
-                    extensionRegistry);
-                bitField0_ |= 0x00000008;
-                break;
-              } // case 34
-              default: {
-                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
-                  done = true; // was an endgroup tag
-                }
-                break;
-              } // default:
-            } // switch (tag)
-          } // while (!done)
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.unwrapIOException();
-        } finally {
-          onChanged();
-        } // finally
-        return this;
-      }
-      private int bitField0_;
-
-      private java.lang.Object name_ = "";
-      /**
-       * <code>string name = 1;</code>
-       * @return The name.
-       */
-      public java.lang.String getName() {
-        java.lang.Object ref = name_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          name_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string name = 1;</code>
-       * @return The bytes for name.
-       */
-      public com.google.protobuf.ByteString
-          getNameBytes() {
-        java.lang.Object ref = name_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          name_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string name = 1;</code>
-       * @param value The name to set.
-       * @return This builder for chaining.
-       */
-      public Builder setName(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        name_ = value;
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string name = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearName() {
-        name_ = getDefaultInstance().getName();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string name = 1;</code>
-       * @param value The bytes for name to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
-        name_ = value;
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-
-      private int age_ ;
-      /**
-       * <code>int32 age = 2;</code>
-       * @return The age.
-       */
-      @java.lang.Override
-      public int getAge() {
-        return age_;
-      }
-      /**
-       * <code>int32 age = 2;</code>
-       * @param value The age to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAge(int value) {
-
-        age_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 age = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAge() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        age_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object phoneNumber_ = "";
-      /**
-       * <code>string phoneNumber = 3;</code>
-       * @return The phoneNumber.
-       */
-      public java.lang.String getPhoneNumber() {
-        java.lang.Object ref = phoneNumber_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          phoneNumber_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string phoneNumber = 3;</code>
-       * @return The bytes for phoneNumber.
-       */
-      public com.google.protobuf.ByteString
-          getPhoneNumberBytes() {
-        java.lang.Object ref = phoneNumber_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          phoneNumber_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string phoneNumber = 3;</code>
-       * @param value The phoneNumber to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPhoneNumber(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        phoneNumber_ = value;
-        bitField0_ |= 0x00000004;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string phoneNumber = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPhoneNumber() {
-        phoneNumber_ = getDefaultInstance().getPhoneNumber();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string phoneNumber = 3;</code>
-       * @param value The bytes for phoneNumber to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPhoneNumberBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
-        phoneNumber_ = value;
-        bitField0_ |= 0x00000004;
-        onChanged();
-        return this;
-      }
-
-      private com.eottabom.letmecode.example.benchmark.PersonProto.Address address_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.eottabom.letmecode.example.benchmark.PersonProto.Address, com.eottabom.letmecode.example.benchmark.PersonProto.Address.Builder, com.eottabom.letmecode.example.benchmark.PersonProto.AddressOrBuilder> addressBuilder_;
-      /**
-       * <code>.Address address = 4;</code>
-       * @return Whether the address field is set.
-       */
-      public boolean hasAddress() {
-        return ((bitField0_ & 0x00000008) != 0);
-      }
-      /**
-       * <code>.Address address = 4;</code>
-       * @return The address.
-       */
-      public com.eottabom.letmecode.example.benchmark.PersonProto.Address getAddress() {
-        if (addressBuilder_ == null) {
-          return address_ == null ? com.eottabom.letmecode.example.benchmark.PersonProto.Address.getDefaultInstance() : address_;
-        } else {
-          return addressBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Address address = 4;</code>
-       */
-      public Builder setAddress(com.eottabom.letmecode.example.benchmark.PersonProto.Address value) {
-        if (addressBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          address_ = value;
-        } else {
-          addressBuilder_.setMessage(value);
-        }
-        bitField0_ |= 0x00000008;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.Address address = 4;</code>
-       */
-      public Builder setAddress(
-          com.eottabom.letmecode.example.benchmark.PersonProto.Address.Builder builderForValue) {
-        if (addressBuilder_ == null) {
-          address_ = builderForValue.build();
-        } else {
-          addressBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000008;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.Address address = 4;</code>
-       */
-      public Builder mergeAddress(com.eottabom.letmecode.example.benchmark.PersonProto.Address value) {
-        if (addressBuilder_ == null) {
-          if (((bitField0_ & 0x00000008) != 0) &&
-            address_ != null &&
-            address_ != com.eottabom.letmecode.example.benchmark.PersonProto.Address.getDefaultInstance()) {
-            getAddressBuilder().mergeFrom(value);
-          } else {
-            address_ = value;
-          }
-        } else {
-          addressBuilder_.mergeFrom(value);
-        }
-        if (address_ != null) {
-          bitField0_ |= 0x00000008;
-          onChanged();
-        }
-        return this;
-      }
-      /**
-       * <code>.Address address = 4;</code>
-       */
-      public Builder clearAddress() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        address_ = null;
-        if (addressBuilder_ != null) {
-          addressBuilder_.dispose();
-          addressBuilder_ = null;
-        }
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.Address address = 4;</code>
-       */
-      public com.eottabom.letmecode.example.benchmark.PersonProto.Address.Builder getAddressBuilder() {
-        bitField0_ |= 0x00000008;
-        onChanged();
-        return getAddressFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Address address = 4;</code>
-       */
-      public com.eottabom.letmecode.example.benchmark.PersonProto.AddressOrBuilder getAddressOrBuilder() {
-        if (addressBuilder_ != null) {
-          return addressBuilder_.getMessageOrBuilder();
-        } else {
-          return address_ == null ?
-              com.eottabom.letmecode.example.benchmark.PersonProto.Address.getDefaultInstance() : address_;
-        }
-      }
-      /**
-       * <code>.Address address = 4;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.eottabom.letmecode.example.benchmark.PersonProto.Address, com.eottabom.letmecode.example.benchmark.PersonProto.Address.Builder, com.eottabom.letmecode.example.benchmark.PersonProto.AddressOrBuilder> 
-          getAddressFieldBuilder() {
-        if (addressBuilder_ == null) {
-          addressBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.eottabom.letmecode.example.benchmark.PersonProto.Address, com.eottabom.letmecode.example.benchmark.PersonProto.Address.Builder, com.eottabom.letmecode.example.benchmark.PersonProto.AddressOrBuilder>(
-                  getAddress(),
-                  getParentForChildren(),
-                  isClean());
-          address_ = null;
-        }
-        return addressBuilder_;
-      }
-      @java.lang.Override
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFields(unknownFields);
-      }
-
-      @java.lang.Override
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
-
-
-      // @@protoc_insertion_point(builder_scope:Person)
-    }
-
-    // @@protoc_insertion_point(class_scope:Person)
-    private static final com.eottabom.letmecode.example.benchmark.PersonProto.Person DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new com.eottabom.letmecode.example.benchmark.PersonProto.Person();
-    }
-
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Person getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<Person>
-        PARSER = new com.google.protobuf.AbstractParser<Person>() {
-      @java.lang.Override
-      public Person parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        Builder builder = newBuilder();
-        try {
-          builder.mergeFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(builder.buildPartial());
-        } catch (com.google.protobuf.UninitializedMessageException e) {
-          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(e)
-              .setUnfinishedMessage(builder.buildPartial());
-        }
-        return builder.buildPartial();
-      }
-    };
-
-    public static com.google.protobuf.Parser<Person> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<Person> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.eottabom.letmecode.example.benchmark.PersonProto.Person getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
-  public interface AddressOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:Address)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>string city = 1;</code>
-     * @return The city.
-     */
-    java.lang.String getCity();
-    /**
-     * <code>string city = 1;</code>
-     * @return The bytes for city.
-     */
-    com.google.protobuf.ByteString
-        getCityBytes();
-
-    /**
-     * <code>string zipCode = 2;</code>
-     * @return The zipCode.
-     */
-    java.lang.String getZipCode();
-    /**
-     * <code>string zipCode = 2;</code>
-     * @return The bytes for zipCode.
-     */
-    com.google.protobuf.ByteString
-        getZipCodeBytes();
-  }
-  /**
-   * Protobuf type {@code Address}
-   */
-  public static final class Address extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:Address)
-      AddressOrBuilder {
-  private static final long serialVersionUID = 0L;
-    // Use Address.newBuilder() to construct.
-    private Address(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-    private Address() {
-      city_ = "";
-      zipCode_ = "";
-    }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new Address();
-    }
-
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.eottabom.letmecode.example.benchmark.PersonProto.internal_static_Address_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.eottabom.letmecode.example.benchmark.PersonProto.internal_static_Address_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.eottabom.letmecode.example.benchmark.PersonProto.Address.class, com.eottabom.letmecode.example.benchmark.PersonProto.Address.Builder.class);
-    }
-
-    public static final int CITY_FIELD_NUMBER = 1;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object city_ = "";
-    /**
-     * <code>string city = 1;</code>
-     * @return The city.
-     */
-    @java.lang.Override
-    public java.lang.String getCity() {
-      java.lang.Object ref = city_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        city_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string city = 1;</code>
-     * @return The bytes for city.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getCityBytes() {
-      java.lang.Object ref = city_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        city_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int ZIPCODE_FIELD_NUMBER = 2;
-    @SuppressWarnings("serial")
-    private volatile java.lang.Object zipCode_ = "";
-    /**
-     * <code>string zipCode = 2;</code>
-     * @return The zipCode.
-     */
-    @java.lang.Override
-    public java.lang.String getZipCode() {
-      java.lang.Object ref = zipCode_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        zipCode_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string zipCode = 2;</code>
-     * @return The bytes for zipCode.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getZipCodeBytes() {
-      java.lang.Object ref = zipCode_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        zipCode_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    private byte memoizedIsInitialized = -1;
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(city_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, city_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(zipCode_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, zipCode_);
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(city_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, city_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(zipCode_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, zipCode_);
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof com.eottabom.letmecode.example.benchmark.PersonProto.Address)) {
-        return super.equals(obj);
-      }
-      com.eottabom.letmecode.example.benchmark.PersonProto.Address other = (com.eottabom.letmecode.example.benchmark.PersonProto.Address) obj;
-
-      if (!getCity()
-          .equals(other.getCity())) return false;
-      if (!getZipCode()
-          .equals(other.getZipCode())) return false;
-      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CITY_FIELD_NUMBER;
-      hash = (53 * hash) + getCity().hashCode();
-      hash = (37 * hash) + ZIPCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getZipCode().hashCode();
-      hash = (29 * hash) + getUnknownFields().hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    @java.lang.Override
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(com.eottabom.letmecode.example.benchmark.PersonProto.Address prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    @java.lang.Override
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code Address}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:Address)
-        com.eottabom.letmecode.example.benchmark.PersonProto.AddressOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.eottabom.letmecode.example.benchmark.PersonProto.internal_static_Address_descriptor;
-      }
-
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return com.eottabom.letmecode.example.benchmark.PersonProto.internal_static_Address_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                com.eottabom.letmecode.example.benchmark.PersonProto.Address.class, com.eottabom.letmecode.example.benchmark.PersonProto.Address.Builder.class);
-      }
-
-      // Construct using com.eottabom.letmecode.example.benchmark.PersonProto.Address.newBuilder()
-      private Builder() {
-
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-
-      }
-      @java.lang.Override
-      public Builder clear() {
-        super.clear();
-        bitField0_ = 0;
-        city_ = "";
-        zipCode_ = "";
-        return this;
-      }
-
-      @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return com.eottabom.letmecode.example.benchmark.PersonProto.internal_static_Address_descriptor;
-      }
-
-      @java.lang.Override
-      public com.eottabom.letmecode.example.benchmark.PersonProto.Address getDefaultInstanceForType() {
-        return com.eottabom.letmecode.example.benchmark.PersonProto.Address.getDefaultInstance();
-      }
-
-      @java.lang.Override
-      public com.eottabom.letmecode.example.benchmark.PersonProto.Address build() {
-        com.eottabom.letmecode.example.benchmark.PersonProto.Address result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      @java.lang.Override
-      public com.eottabom.letmecode.example.benchmark.PersonProto.Address buildPartial() {
-        com.eottabom.letmecode.example.benchmark.PersonProto.Address result = new com.eottabom.letmecode.example.benchmark.PersonProto.Address(this);
-        if (bitField0_ != 0) { buildPartial0(result); }
-        onBuilt();
-        return result;
-      }
-
-      private void buildPartial0(com.eottabom.letmecode.example.benchmark.PersonProto.Address result) {
-        int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.city_ = city_;
-        }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.zipCode_ = zipCode_;
-        }
-      }
-
-      @java.lang.Override
-      public Builder clone() {
-        return super.clone();
-      }
-      @java.lang.Override
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return super.setField(field, value);
-      }
-      @java.lang.Override
-      public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return super.clearField(field);
-      }
-      @java.lang.Override
-      public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return super.clearOneof(oneof);
-      }
-      @java.lang.Override
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
-        return super.setRepeatedField(field, index, value);
-      }
-      @java.lang.Override
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return super.addRepeatedField(field, value);
-      }
-      @java.lang.Override
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.eottabom.letmecode.example.benchmark.PersonProto.Address) {
-          return mergeFrom((com.eottabom.letmecode.example.benchmark.PersonProto.Address)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(com.eottabom.letmecode.example.benchmark.PersonProto.Address other) {
-        if (other == com.eottabom.letmecode.example.benchmark.PersonProto.Address.getDefaultInstance()) return this;
-        if (!other.getCity().isEmpty()) {
-          city_ = other.city_;
-          bitField0_ |= 0x00000001;
-          onChanged();
-        }
-        if (!other.getZipCode().isEmpty()) {
-          zipCode_ = other.zipCode_;
-          bitField0_ |= 0x00000002;
-          onChanged();
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        onChanged();
-        return this;
-      }
-
-      @java.lang.Override
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      @java.lang.Override
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 10: {
-                city_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000001;
-                break;
-              } // case 10
-              case 18: {
-                zipCode_ = input.readStringRequireUtf8();
-                bitField0_ |= 0x00000002;
-                break;
-              } // case 18
-              default: {
-                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
-                  done = true; // was an endgroup tag
-                }
-                break;
-              } // default:
-            } // switch (tag)
-          } // while (!done)
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.unwrapIOException();
-        } finally {
-          onChanged();
-        } // finally
-        return this;
-      }
-      private int bitField0_;
-
-      private java.lang.Object city_ = "";
-      /**
-       * <code>string city = 1;</code>
-       * @return The city.
-       */
-      public java.lang.String getCity() {
-        java.lang.Object ref = city_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          city_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string city = 1;</code>
-       * @return The bytes for city.
-       */
-      public com.google.protobuf.ByteString
-          getCityBytes() {
-        java.lang.Object ref = city_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          city_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string city = 1;</code>
-       * @param value The city to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCity(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        city_ = value;
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string city = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCity() {
-        city_ = getDefaultInstance().getCity();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string city = 1;</code>
-       * @param value The bytes for city to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCityBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
-        city_ = value;
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object zipCode_ = "";
-      /**
-       * <code>string zipCode = 2;</code>
-       * @return The zipCode.
-       */
-      public java.lang.String getZipCode() {
-        java.lang.Object ref = zipCode_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          zipCode_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string zipCode = 2;</code>
-       * @return The bytes for zipCode.
-       */
-      public com.google.protobuf.ByteString
-          getZipCodeBytes() {
-        java.lang.Object ref = zipCode_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          zipCode_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string zipCode = 2;</code>
-       * @param value The zipCode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setZipCode(
-          java.lang.String value) {
-        if (value == null) { throw new NullPointerException(); }
-        zipCode_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string zipCode = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearZipCode() {
-        zipCode_ = getDefaultInstance().getZipCode();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string zipCode = 2;</code>
-       * @param value The bytes for zipCode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setZipCodeBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) { throw new NullPointerException(); }
-        checkByteStringIsUtf8(value);
-        zipCode_ = value;
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      @java.lang.Override
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFields(unknownFields);
-      }
-
-      @java.lang.Override
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
-
-
-      // @@protoc_insertion_point(builder_scope:Address)
-    }
-
-    // @@protoc_insertion_point(class_scope:Address)
-    private static final com.eottabom.letmecode.example.benchmark.PersonProto.Address DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new com.eottabom.letmecode.example.benchmark.PersonProto.Address();
-    }
-
-    public static com.eottabom.letmecode.example.benchmark.PersonProto.Address getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<Address>
-        PARSER = new com.google.protobuf.AbstractParser<Address>() {
-      @java.lang.Override
-      public Address parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        Builder builder = newBuilder();
-        try {
-          builder.mergeFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(builder.buildPartial());
-        } catch (com.google.protobuf.UninitializedMessageException e) {
-          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(e)
-              .setUnfinishedMessage(builder.buildPartial());
-        }
-        return builder.buildPartial();
-      }
-    };
-
-    public static com.google.protobuf.Parser<Address> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<Address> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.eottabom.letmecode.example.benchmark.PersonProto.Address getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Person_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_Person_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Address_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_Address_fieldAccessorTable;
-
-  public static com.google.protobuf.Descriptors.FileDescriptor
-      getDescriptor() {
-    return descriptor;
-  }
-  private static  com.google.protobuf.Descriptors.FileDescriptor
-      descriptor;
-  static {
-    java.lang.String[] descriptorData = {
-      "\n\014person.proto\"S\n\006Person\022\014\n\004name\030\001 \001(\t\022\013" +
-      "\n\003age\030\002 \001(\005\022\023\n\013phoneNumber\030\003 \001(\t\022\031\n\007addr" +
-      "ess\030\004 \001(\0132\010.Address\"(\n\007Address\022\014\n\004city\030\001" +
-      " \001(\t\022\017\n\007zipCode\030\002 \001(\tB7\n(com.eottabom.le" +
-      "tmecode.example.benchmarkB\013PersonProtob\006" +
-      "proto3"
-    };
-    descriptor = com.google.protobuf.Descriptors.FileDescriptor
-      .internalBuildGeneratedFileFrom(descriptorData,
-        new com.google.protobuf.Descriptors.FileDescriptor[] {
-        });
-    internal_static_Person_descriptor =
-      getDescriptor().getMessageTypes().get(0);
-    internal_static_Person_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_Person_descriptor,
-        new java.lang.String[] { "Name", "Age", "PhoneNumber", "Address", });
-    internal_static_Address_descriptor =
-      getDescriptor().getMessageTypes().get(1);
-    internal_static_Address_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_Address_descriptor,
-        new java.lang.String[] { "City", "ZipCode", });
-  }
-
-  // @@protoc_insertion_point(outer_class_scope)
+
+	private PersonProto() {
+	}
+
+	public static void registerAllExtensions(com.google.protobuf.ExtensionRegistryLite registry) {
+	}
+
+	public static void registerAllExtensions(com.google.protobuf.ExtensionRegistry registry) {
+		registerAllExtensions((com.google.protobuf.ExtensionRegistryLite) registry);
+	}
+
+	public interface PersonOrBuilder extends
+			// @@protoc_insertion_point(interface_extends:Person)
+			com.google.protobuf.MessageOrBuilder {
+
+		/**
+		 * <code>string name = 1;</code>
+		 * @return The name.
+		 */
+		java.lang.String getName();
+
+		/**
+		 * <code>string name = 1;</code>
+		 * @return The bytes for name.
+		 */
+		com.google.protobuf.ByteString getNameBytes();
+
+		/**
+		 * <code>int32 age = 2;</code>
+		 * @return The age.
+		 */
+		int getAge();
+
+		/**
+		 * <code>string phoneNumber = 3;</code>
+		 * @return The phoneNumber.
+		 */
+		java.lang.String getPhoneNumber();
+
+		/**
+		 * <code>string phoneNumber = 3;</code>
+		 * @return The bytes for phoneNumber.
+		 */
+		com.google.protobuf.ByteString getPhoneNumberBytes();
+
+		/**
+		 * <code>.Address address = 4;</code>
+		 * @return Whether the address field is set.
+		 */
+		boolean hasAddress();
+
+		/**
+		 * <code>.Address address = 4;</code>
+		 * @return The address.
+		 */
+		com.eottabom.letmecode.example.benchmark.PersonProto.Address getAddress();
+
+		/**
+		 * <code>.Address address = 4;</code>
+		 */
+		com.eottabom.letmecode.example.benchmark.PersonProto.AddressOrBuilder getAddressOrBuilder();
+
+	}
+
+	/**
+	 * Protobuf type {@code Person}
+	 */
+	public static final class Person extends com.google.protobuf.GeneratedMessageV3 implements
+			// @@protoc_insertion_point(message_implements:Person)
+			PersonOrBuilder {
+
+		private static final long serialVersionUID = 0L;
+
+		// Use Person.newBuilder() to construct.
+		private Person(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+			super(builder);
+		}
+
+		private Person() {
+			name_ = "";
+			phoneNumber_ = "";
+		}
+
+		@java.lang.Override
+		@SuppressWarnings({ "unused" })
+		protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+			return new Person();
+		}
+
+		public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
+			return com.eottabom.letmecode.example.benchmark.PersonProto.internal_static_Person_descriptor;
+		}
+
+		@java.lang.Override
+		protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable() {
+			return com.eottabom.letmecode.example.benchmark.PersonProto.internal_static_Person_fieldAccessorTable
+				.ensureFieldAccessorsInitialized(com.eottabom.letmecode.example.benchmark.PersonProto.Person.class,
+						com.eottabom.letmecode.example.benchmark.PersonProto.Person.Builder.class);
+		}
+
+		private int bitField0_;
+
+		public static final int NAME_FIELD_NUMBER = 1;
+
+		@SuppressWarnings("serial")
+		private volatile java.lang.Object name_ = "";
+
+		/**
+		 * <code>string name = 1;</code>
+		 * @return The name.
+		 */
+		@java.lang.Override
+		public java.lang.String getName() {
+			java.lang.Object ref = name_;
+			if (ref instanceof java.lang.String) {
+				return (java.lang.String) ref;
+			}
+			else {
+				com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+				java.lang.String s = bs.toStringUtf8();
+				name_ = s;
+				return s;
+			}
+		}
+
+		/**
+		 * <code>string name = 1;</code>
+		 * @return The bytes for name.
+		 */
+		@java.lang.Override
+		public com.google.protobuf.ByteString getNameBytes() {
+			java.lang.Object ref = name_;
+			if (ref instanceof java.lang.String) {
+				com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+				name_ = b;
+				return b;
+			}
+			else {
+				return (com.google.protobuf.ByteString) ref;
+			}
+		}
+
+		public static final int AGE_FIELD_NUMBER = 2;
+
+		private int age_ = 0;
+
+		/**
+		 * <code>int32 age = 2;</code>
+		 * @return The age.
+		 */
+		@java.lang.Override
+		public int getAge() {
+			return age_;
+		}
+
+		public static final int PHONENUMBER_FIELD_NUMBER = 3;
+
+		@SuppressWarnings("serial")
+		private volatile java.lang.Object phoneNumber_ = "";
+
+		/**
+		 * <code>string phoneNumber = 3;</code>
+		 * @return The phoneNumber.
+		 */
+		@java.lang.Override
+		public java.lang.String getPhoneNumber() {
+			java.lang.Object ref = phoneNumber_;
+			if (ref instanceof java.lang.String) {
+				return (java.lang.String) ref;
+			}
+			else {
+				com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+				java.lang.String s = bs.toStringUtf8();
+				phoneNumber_ = s;
+				return s;
+			}
+		}
+
+		/**
+		 * <code>string phoneNumber = 3;</code>
+		 * @return The bytes for phoneNumber.
+		 */
+		@java.lang.Override
+		public com.google.protobuf.ByteString getPhoneNumberBytes() {
+			java.lang.Object ref = phoneNumber_;
+			if (ref instanceof java.lang.String) {
+				com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+				phoneNumber_ = b;
+				return b;
+			}
+			else {
+				return (com.google.protobuf.ByteString) ref;
+			}
+		}
+
+		public static final int ADDRESS_FIELD_NUMBER = 4;
+
+		private com.eottabom.letmecode.example.benchmark.PersonProto.Address address_;
+
+		/**
+		 * <code>.Address address = 4;</code>
+		 * @return Whether the address field is set.
+		 */
+		@java.lang.Override
+		public boolean hasAddress() {
+			return ((bitField0_ & 0x00000001) != 0);
+		}
+
+		/**
+		 * <code>.Address address = 4;</code>
+		 * @return The address.
+		 */
+		@java.lang.Override
+		public com.eottabom.letmecode.example.benchmark.PersonProto.Address getAddress() {
+			return address_ == null ? com.eottabom.letmecode.example.benchmark.PersonProto.Address.getDefaultInstance()
+					: address_;
+		}
+
+		/**
+		 * <code>.Address address = 4;</code>
+		 */
+		@java.lang.Override
+		public com.eottabom.letmecode.example.benchmark.PersonProto.AddressOrBuilder getAddressOrBuilder() {
+			return address_ == null ? com.eottabom.letmecode.example.benchmark.PersonProto.Address.getDefaultInstance()
+					: address_;
+		}
+
+		private byte memoizedIsInitialized = -1;
+
+		@java.lang.Override
+		public final boolean isInitialized() {
+			byte isInitialized = memoizedIsInitialized;
+			if (isInitialized == 1)
+				return true;
+			if (isInitialized == 0)
+				return false;
+
+			memoizedIsInitialized = 1;
+			return true;
+		}
+
+		@java.lang.Override
+		public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+			if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
+				com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
+			}
+			if (age_ != 0) {
+				output.writeInt32(2, age_);
+			}
+			if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(phoneNumber_)) {
+				com.google.protobuf.GeneratedMessageV3.writeString(output, 3, phoneNumber_);
+			}
+			if (((bitField0_ & 0x00000001) != 0)) {
+				output.writeMessage(4, getAddress());
+			}
+			getUnknownFields().writeTo(output);
+		}
+
+		@java.lang.Override
+		public int getSerializedSize() {
+			int size = memoizedSize;
+			if (size != -1)
+				return size;
+
+			size = 0;
+			if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
+				size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+			}
+			if (age_ != 0) {
+				size += com.google.protobuf.CodedOutputStream.computeInt32Size(2, age_);
+			}
+			if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(phoneNumber_)) {
+				size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, phoneNumber_);
+			}
+			if (((bitField0_ & 0x00000001) != 0)) {
+				size += com.google.protobuf.CodedOutputStream.computeMessageSize(4, getAddress());
+			}
+			size += getUnknownFields().getSerializedSize();
+			memoizedSize = size;
+			return size;
+		}
+
+		@java.lang.Override
+		public boolean equals(final java.lang.Object obj) {
+			if (obj == this) {
+				return true;
+			}
+			if (!(obj instanceof com.eottabom.letmecode.example.benchmark.PersonProto.Person)) {
+				return super.equals(obj);
+			}
+			com.eottabom.letmecode.example.benchmark.PersonProto.Person other = (com.eottabom.letmecode.example.benchmark.PersonProto.Person) obj;
+
+			if (!getName().equals(other.getName()))
+				return false;
+			if (getAge() != other.getAge())
+				return false;
+			if (!getPhoneNumber().equals(other.getPhoneNumber()))
+				return false;
+			if (hasAddress() != other.hasAddress())
+				return false;
+			if (hasAddress()) {
+				if (!getAddress().equals(other.getAddress()))
+					return false;
+			}
+			if (!getUnknownFields().equals(other.getUnknownFields()))
+				return false;
+			return true;
+		}
+
+		@java.lang.Override
+		public int hashCode() {
+			if (memoizedHashCode != 0) {
+				return memoizedHashCode;
+			}
+			int hash = 41;
+			hash = (19 * hash) + getDescriptor().hashCode();
+			hash = (37 * hash) + NAME_FIELD_NUMBER;
+			hash = (53 * hash) + getName().hashCode();
+			hash = (37 * hash) + AGE_FIELD_NUMBER;
+			hash = (53 * hash) + getAge();
+			hash = (37 * hash) + PHONENUMBER_FIELD_NUMBER;
+			hash = (53 * hash) + getPhoneNumber().hashCode();
+			if (hasAddress()) {
+				hash = (37 * hash) + ADDRESS_FIELD_NUMBER;
+				hash = (53 * hash) + getAddress().hashCode();
+			}
+			hash = (29 * hash) + getUnknownFields().hashCode();
+			memoizedHashCode = hash;
+			return hash;
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseFrom(java.nio.ByteBuffer data)
+				throws com.google.protobuf.InvalidProtocolBufferException {
+			return PARSER.parseFrom(data);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseFrom(java.nio.ByteBuffer data,
+				com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+				throws com.google.protobuf.InvalidProtocolBufferException {
+			return PARSER.parseFrom(data, extensionRegistry);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseFrom(
+				com.google.protobuf.ByteString data) throws com.google.protobuf.InvalidProtocolBufferException {
+			return PARSER.parseFrom(data);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseFrom(
+				com.google.protobuf.ByteString data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+				throws com.google.protobuf.InvalidProtocolBufferException {
+			return PARSER.parseFrom(data, extensionRegistry);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseFrom(byte[] data)
+				throws com.google.protobuf.InvalidProtocolBufferException {
+			return PARSER.parseFrom(data);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseFrom(byte[] data,
+				com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+				throws com.google.protobuf.InvalidProtocolBufferException {
+			return PARSER.parseFrom(data, extensionRegistry);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseFrom(java.io.InputStream input)
+				throws java.io.IOException {
+			return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseFrom(java.io.InputStream input,
+				com.google.protobuf.ExtensionRegistryLite extensionRegistry) throws java.io.IOException {
+			return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input, extensionRegistry);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseDelimitedFrom(
+				java.io.InputStream input) throws java.io.IOException {
+			return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseDelimitedFrom(
+				java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+				throws java.io.IOException {
+			return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input,
+					extensionRegistry);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseFrom(
+				com.google.protobuf.CodedInputStream input) throws java.io.IOException {
+			return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Person parseFrom(
+				com.google.protobuf.CodedInputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+				throws java.io.IOException {
+			return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input, extensionRegistry);
+		}
+
+		@java.lang.Override
+		public Builder newBuilderForType() {
+			return newBuilder();
+		}
+
+		public static Builder newBuilder() {
+			return DEFAULT_INSTANCE.toBuilder();
+		}
+
+		public static Builder newBuilder(com.eottabom.letmecode.example.benchmark.PersonProto.Person prototype) {
+			return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+		}
+
+		@java.lang.Override
+		public Builder toBuilder() {
+			return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
+		}
+
+		@java.lang.Override
+		protected Builder newBuilderForType(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+			Builder builder = new Builder(parent);
+			return builder;
+		}
+
+		/**
+		 * Protobuf type {@code Person}
+		 */
+		public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+				// @@protoc_insertion_point(builder_implements:Person)
+				com.eottabom.letmecode.example.benchmark.PersonProto.PersonOrBuilder {
+
+			public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
+				return com.eottabom.letmecode.example.benchmark.PersonProto.internal_static_Person_descriptor;
+			}
+
+			@java.lang.Override
+			protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable() {
+				return com.eottabom.letmecode.example.benchmark.PersonProto.internal_static_Person_fieldAccessorTable
+					.ensureFieldAccessorsInitialized(com.eottabom.letmecode.example.benchmark.PersonProto.Person.class,
+							com.eottabom.letmecode.example.benchmark.PersonProto.Person.Builder.class);
+			}
+
+			// Construct using
+			// com.eottabom.letmecode.example.benchmark.PersonProto.Person.newBuilder()
+			private Builder() {
+				maybeForceBuilderInitialization();
+			}
+
+			private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+				super(parent);
+				maybeForceBuilderInitialization();
+			}
+
+			private void maybeForceBuilderInitialization() {
+				if (com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders) {
+					getAddressFieldBuilder();
+				}
+			}
+
+			@java.lang.Override
+			public Builder clear() {
+				super.clear();
+				bitField0_ = 0;
+				name_ = "";
+				age_ = 0;
+				phoneNumber_ = "";
+				address_ = null;
+				if (addressBuilder_ != null) {
+					addressBuilder_.dispose();
+					addressBuilder_ = null;
+				}
+				return this;
+			}
+
+			@java.lang.Override
+			public com.google.protobuf.Descriptors.Descriptor getDescriptorForType() {
+				return com.eottabom.letmecode.example.benchmark.PersonProto.internal_static_Person_descriptor;
+			}
+
+			@java.lang.Override
+			public com.eottabom.letmecode.example.benchmark.PersonProto.Person getDefaultInstanceForType() {
+				return com.eottabom.letmecode.example.benchmark.PersonProto.Person.getDefaultInstance();
+			}
+
+			@java.lang.Override
+			public com.eottabom.letmecode.example.benchmark.PersonProto.Person build() {
+				com.eottabom.letmecode.example.benchmark.PersonProto.Person result = buildPartial();
+				if (!result.isInitialized()) {
+					throw newUninitializedMessageException(result);
+				}
+				return result;
+			}
+
+			@java.lang.Override
+			public com.eottabom.letmecode.example.benchmark.PersonProto.Person buildPartial() {
+				com.eottabom.letmecode.example.benchmark.PersonProto.Person result = new com.eottabom.letmecode.example.benchmark.PersonProto.Person(
+						this);
+				if (bitField0_ != 0) {
+					buildPartial0(result);
+				}
+				onBuilt();
+				return result;
+			}
+
+			private void buildPartial0(com.eottabom.letmecode.example.benchmark.PersonProto.Person result) {
+				int from_bitField0_ = bitField0_;
+				if (((from_bitField0_ & 0x00000001) != 0)) {
+					result.name_ = name_;
+				}
+				if (((from_bitField0_ & 0x00000002) != 0)) {
+					result.age_ = age_;
+				}
+				if (((from_bitField0_ & 0x00000004) != 0)) {
+					result.phoneNumber_ = phoneNumber_;
+				}
+				int to_bitField0_ = 0;
+				if (((from_bitField0_ & 0x00000008) != 0)) {
+					result.address_ = addressBuilder_ == null ? address_ : addressBuilder_.build();
+					to_bitField0_ |= 0x00000001;
+				}
+				result.bitField0_ |= to_bitField0_;
+			}
+
+			@java.lang.Override
+			public Builder clone() {
+				return super.clone();
+			}
+
+			@java.lang.Override
+			public Builder setField(com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
+				return super.setField(field, value);
+			}
+
+			@java.lang.Override
+			public Builder clearField(com.google.protobuf.Descriptors.FieldDescriptor field) {
+				return super.clearField(field);
+			}
+
+			@java.lang.Override
+			public Builder clearOneof(com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+				return super.clearOneof(oneof);
+			}
+
+			@java.lang.Override
+			public Builder setRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor field, int index,
+					java.lang.Object value) {
+				return super.setRepeatedField(field, index, value);
+			}
+
+			@java.lang.Override
+			public Builder addRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor field,
+					java.lang.Object value) {
+				return super.addRepeatedField(field, value);
+			}
+
+			@java.lang.Override
+			public Builder mergeFrom(com.google.protobuf.Message other) {
+				if (other instanceof com.eottabom.letmecode.example.benchmark.PersonProto.Person) {
+					return mergeFrom((com.eottabom.letmecode.example.benchmark.PersonProto.Person) other);
+				}
+				else {
+					super.mergeFrom(other);
+					return this;
+				}
+			}
+
+			public Builder mergeFrom(com.eottabom.letmecode.example.benchmark.PersonProto.Person other) {
+				if (other == com.eottabom.letmecode.example.benchmark.PersonProto.Person.getDefaultInstance())
+					return this;
+				if (!other.getName().isEmpty()) {
+					name_ = other.name_;
+					bitField0_ |= 0x00000001;
+					onChanged();
+				}
+				if (other.getAge() != 0) {
+					setAge(other.getAge());
+				}
+				if (!other.getPhoneNumber().isEmpty()) {
+					phoneNumber_ = other.phoneNumber_;
+					bitField0_ |= 0x00000004;
+					onChanged();
+				}
+				if (other.hasAddress()) {
+					mergeAddress(other.getAddress());
+				}
+				this.mergeUnknownFields(other.getUnknownFields());
+				onChanged();
+				return this;
+			}
+
+			@java.lang.Override
+			public final boolean isInitialized() {
+				return true;
+			}
+
+			@java.lang.Override
+			public Builder mergeFrom(com.google.protobuf.CodedInputStream input,
+					com.google.protobuf.ExtensionRegistryLite extensionRegistry) throws java.io.IOException {
+				if (extensionRegistry == null) {
+					throw new java.lang.NullPointerException();
+				}
+				try {
+					boolean done = false;
+					while (!done) {
+						int tag = input.readTag();
+						switch (tag) {
+							case 0:
+								done = true;
+								break;
+							case 10: {
+								name_ = input.readStringRequireUtf8();
+								bitField0_ |= 0x00000001;
+								break;
+							} // case 10
+							case 16: {
+								age_ = input.readInt32();
+								bitField0_ |= 0x00000002;
+								break;
+							} // case 16
+							case 26: {
+								phoneNumber_ = input.readStringRequireUtf8();
+								bitField0_ |= 0x00000004;
+								break;
+							} // case 26
+							case 34: {
+								input.readMessage(getAddressFieldBuilder().getBuilder(), extensionRegistry);
+								bitField0_ |= 0x00000008;
+								break;
+							} // case 34
+							default: {
+								if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+									done = true; // was an endgroup tag
+								}
+								break;
+							} // default:
+						} // switch (tag)
+					} // while (!done)
+				}
+				catch (com.google.protobuf.InvalidProtocolBufferException e) {
+					throw e.unwrapIOException();
+				}
+				finally {
+					onChanged();
+				} // finally
+				return this;
+			}
+
+			private int bitField0_;
+
+			private java.lang.Object name_ = "";
+
+			/**
+			 * <code>string name = 1;</code>
+			 * @return The name.
+			 */
+			public java.lang.String getName() {
+				java.lang.Object ref = name_;
+				if (!(ref instanceof java.lang.String)) {
+					com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+					java.lang.String s = bs.toStringUtf8();
+					name_ = s;
+					return s;
+				}
+				else {
+					return (java.lang.String) ref;
+				}
+			}
+
+			/**
+			 * <code>string name = 1;</code>
+			 * @return The bytes for name.
+			 */
+			public com.google.protobuf.ByteString getNameBytes() {
+				java.lang.Object ref = name_;
+				if (ref instanceof String) {
+					com.google.protobuf.ByteString b = com.google.protobuf.ByteString
+						.copyFromUtf8((java.lang.String) ref);
+					name_ = b;
+					return b;
+				}
+				else {
+					return (com.google.protobuf.ByteString) ref;
+				}
+			}
+
+			/**
+			 * <code>string name = 1;</code>
+			 * @param value The name to set.
+			 * @return This builder for chaining.
+			 */
+			public Builder setName(java.lang.String value) {
+				if (value == null) {
+					throw new NullPointerException();
+				}
+				name_ = value;
+				bitField0_ |= 0x00000001;
+				onChanged();
+				return this;
+			}
+
+			/**
+			 * <code>string name = 1;</code>
+			 * @return This builder for chaining.
+			 */
+			public Builder clearName() {
+				name_ = getDefaultInstance().getName();
+				bitField0_ = (bitField0_ & ~0x00000001);
+				onChanged();
+				return this;
+			}
+
+			/**
+			 * <code>string name = 1;</code>
+			 * @param value The bytes for name to set.
+			 * @return This builder for chaining.
+			 */
+			public Builder setNameBytes(com.google.protobuf.ByteString value) {
+				if (value == null) {
+					throw new NullPointerException();
+				}
+				checkByteStringIsUtf8(value);
+				name_ = value;
+				bitField0_ |= 0x00000001;
+				onChanged();
+				return this;
+			}
+
+			private int age_;
+
+			/**
+			 * <code>int32 age = 2;</code>
+			 * @return The age.
+			 */
+			@java.lang.Override
+			public int getAge() {
+				return age_;
+			}
+
+			/**
+			 * <code>int32 age = 2;</code>
+			 * @param value The age to set.
+			 * @return This builder for chaining.
+			 */
+			public Builder setAge(int value) {
+
+				age_ = value;
+				bitField0_ |= 0x00000002;
+				onChanged();
+				return this;
+			}
+
+			/**
+			 * <code>int32 age = 2;</code>
+			 * @return This builder for chaining.
+			 */
+			public Builder clearAge() {
+				bitField0_ = (bitField0_ & ~0x00000002);
+				age_ = 0;
+				onChanged();
+				return this;
+			}
+
+			private java.lang.Object phoneNumber_ = "";
+
+			/**
+			 * <code>string phoneNumber = 3;</code>
+			 * @return The phoneNumber.
+			 */
+			public java.lang.String getPhoneNumber() {
+				java.lang.Object ref = phoneNumber_;
+				if (!(ref instanceof java.lang.String)) {
+					com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+					java.lang.String s = bs.toStringUtf8();
+					phoneNumber_ = s;
+					return s;
+				}
+				else {
+					return (java.lang.String) ref;
+				}
+			}
+
+			/**
+			 * <code>string phoneNumber = 3;</code>
+			 * @return The bytes for phoneNumber.
+			 */
+			public com.google.protobuf.ByteString getPhoneNumberBytes() {
+				java.lang.Object ref = phoneNumber_;
+				if (ref instanceof String) {
+					com.google.protobuf.ByteString b = com.google.protobuf.ByteString
+						.copyFromUtf8((java.lang.String) ref);
+					phoneNumber_ = b;
+					return b;
+				}
+				else {
+					return (com.google.protobuf.ByteString) ref;
+				}
+			}
+
+			/**
+			 * <code>string phoneNumber = 3;</code>
+			 * @param value The phoneNumber to set.
+			 * @return This builder for chaining.
+			 */
+			public Builder setPhoneNumber(java.lang.String value) {
+				if (value == null) {
+					throw new NullPointerException();
+				}
+				phoneNumber_ = value;
+				bitField0_ |= 0x00000004;
+				onChanged();
+				return this;
+			}
+
+			/**
+			 * <code>string phoneNumber = 3;</code>
+			 * @return This builder for chaining.
+			 */
+			public Builder clearPhoneNumber() {
+				phoneNumber_ = getDefaultInstance().getPhoneNumber();
+				bitField0_ = (bitField0_ & ~0x00000004);
+				onChanged();
+				return this;
+			}
+
+			/**
+			 * <code>string phoneNumber = 3;</code>
+			 * @param value The bytes for phoneNumber to set.
+			 * @return This builder for chaining.
+			 */
+			public Builder setPhoneNumberBytes(com.google.protobuf.ByteString value) {
+				if (value == null) {
+					throw new NullPointerException();
+				}
+				checkByteStringIsUtf8(value);
+				phoneNumber_ = value;
+				bitField0_ |= 0x00000004;
+				onChanged();
+				return this;
+			}
+
+			private com.eottabom.letmecode.example.benchmark.PersonProto.Address address_;
+
+			private com.google.protobuf.SingleFieldBuilderV3<com.eottabom.letmecode.example.benchmark.PersonProto.Address, com.eottabom.letmecode.example.benchmark.PersonProto.Address.Builder, com.eottabom.letmecode.example.benchmark.PersonProto.AddressOrBuilder> addressBuilder_;
+
+			/**
+			 * <code>.Address address = 4;</code>
+			 * @return Whether the address field is set.
+			 */
+			public boolean hasAddress() {
+				return ((bitField0_ & 0x00000008) != 0);
+			}
+
+			/**
+			 * <code>.Address address = 4;</code>
+			 * @return The address.
+			 */
+			public com.eottabom.letmecode.example.benchmark.PersonProto.Address getAddress() {
+				if (addressBuilder_ == null) {
+					return address_ == null
+							? com.eottabom.letmecode.example.benchmark.PersonProto.Address.getDefaultInstance()
+							: address_;
+				}
+				else {
+					return addressBuilder_.getMessage();
+				}
+			}
+
+			/**
+			 * <code>.Address address = 4;</code>
+			 */
+			public Builder setAddress(com.eottabom.letmecode.example.benchmark.PersonProto.Address value) {
+				if (addressBuilder_ == null) {
+					if (value == null) {
+						throw new NullPointerException();
+					}
+					address_ = value;
+				}
+				else {
+					addressBuilder_.setMessage(value);
+				}
+				bitField0_ |= 0x00000008;
+				onChanged();
+				return this;
+			}
+
+			/**
+			 * <code>.Address address = 4;</code>
+			 */
+			public Builder setAddress(
+					com.eottabom.letmecode.example.benchmark.PersonProto.Address.Builder builderForValue) {
+				if (addressBuilder_ == null) {
+					address_ = builderForValue.build();
+				}
+				else {
+					addressBuilder_.setMessage(builderForValue.build());
+				}
+				bitField0_ |= 0x00000008;
+				onChanged();
+				return this;
+			}
+
+			/**
+			 * <code>.Address address = 4;</code>
+			 */
+			public Builder mergeAddress(com.eottabom.letmecode.example.benchmark.PersonProto.Address value) {
+				if (addressBuilder_ == null) {
+					if (((bitField0_ & 0x00000008) != 0) && address_ != null
+							&& address_ != com.eottabom.letmecode.example.benchmark.PersonProto.Address
+								.getDefaultInstance()) {
+						getAddressBuilder().mergeFrom(value);
+					}
+					else {
+						address_ = value;
+					}
+				}
+				else {
+					addressBuilder_.mergeFrom(value);
+				}
+				if (address_ != null) {
+					bitField0_ |= 0x00000008;
+					onChanged();
+				}
+				return this;
+			}
+
+			/**
+			 * <code>.Address address = 4;</code>
+			 */
+			public Builder clearAddress() {
+				bitField0_ = (bitField0_ & ~0x00000008);
+				address_ = null;
+				if (addressBuilder_ != null) {
+					addressBuilder_.dispose();
+					addressBuilder_ = null;
+				}
+				onChanged();
+				return this;
+			}
+
+			/**
+			 * <code>.Address address = 4;</code>
+			 */
+			public com.eottabom.letmecode.example.benchmark.PersonProto.Address.Builder getAddressBuilder() {
+				bitField0_ |= 0x00000008;
+				onChanged();
+				return getAddressFieldBuilder().getBuilder();
+			}
+
+			/**
+			 * <code>.Address address = 4;</code>
+			 */
+			public com.eottabom.letmecode.example.benchmark.PersonProto.AddressOrBuilder getAddressOrBuilder() {
+				if (addressBuilder_ != null) {
+					return addressBuilder_.getMessageOrBuilder();
+				}
+				else {
+					return address_ == null
+							? com.eottabom.letmecode.example.benchmark.PersonProto.Address.getDefaultInstance()
+							: address_;
+				}
+			}
+
+			/**
+			 * <code>.Address address = 4;</code>
+			 */
+			private com.google.protobuf.SingleFieldBuilderV3<com.eottabom.letmecode.example.benchmark.PersonProto.Address, com.eottabom.letmecode.example.benchmark.PersonProto.Address.Builder, com.eottabom.letmecode.example.benchmark.PersonProto.AddressOrBuilder> getAddressFieldBuilder() {
+				if (addressBuilder_ == null) {
+					addressBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<com.eottabom.letmecode.example.benchmark.PersonProto.Address, com.eottabom.letmecode.example.benchmark.PersonProto.Address.Builder, com.eottabom.letmecode.example.benchmark.PersonProto.AddressOrBuilder>(
+							getAddress(), getParentForChildren(), isClean());
+					address_ = null;
+				}
+				return addressBuilder_;
+			}
+
+			@java.lang.Override
+			public final Builder setUnknownFields(final com.google.protobuf.UnknownFieldSet unknownFields) {
+				return super.setUnknownFields(unknownFields);
+			}
+
+			@java.lang.Override
+			public final Builder mergeUnknownFields(final com.google.protobuf.UnknownFieldSet unknownFields) {
+				return super.mergeUnknownFields(unknownFields);
+			}
+
+			// @@protoc_insertion_point(builder_scope:Person)
+
+		}
+
+		// @@protoc_insertion_point(class_scope:Person)
+		private static final com.eottabom.letmecode.example.benchmark.PersonProto.Person DEFAULT_INSTANCE;
+		static {
+			DEFAULT_INSTANCE = new com.eottabom.letmecode.example.benchmark.PersonProto.Person();
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Person getDefaultInstance() {
+			return DEFAULT_INSTANCE;
+		}
+
+		private static final com.google.protobuf.Parser<Person> PARSER = new com.google.protobuf.AbstractParser<Person>() {
+			@java.lang.Override
+			public Person parsePartialFrom(com.google.protobuf.CodedInputStream input,
+					com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+					throws com.google.protobuf.InvalidProtocolBufferException {
+				Builder builder = newBuilder();
+				try {
+					builder.mergeFrom(input, extensionRegistry);
+				}
+				catch (com.google.protobuf.InvalidProtocolBufferException e) {
+					throw e.setUnfinishedMessage(builder.buildPartial());
+				}
+				catch (com.google.protobuf.UninitializedMessageException e) {
+					throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+				}
+				catch (java.io.IOException e) {
+					throw new com.google.protobuf.InvalidProtocolBufferException(e)
+						.setUnfinishedMessage(builder.buildPartial());
+				}
+				return builder.buildPartial();
+			}
+		};
+
+		public static com.google.protobuf.Parser<Person> parser() {
+			return PARSER;
+		}
+
+		@java.lang.Override
+		public com.google.protobuf.Parser<Person> getParserForType() {
+			return PARSER;
+		}
+
+		@java.lang.Override
+		public com.eottabom.letmecode.example.benchmark.PersonProto.Person getDefaultInstanceForType() {
+			return DEFAULT_INSTANCE;
+		}
+
+	}
+
+	public interface AddressOrBuilder extends
+			// @@protoc_insertion_point(interface_extends:Address)
+			com.google.protobuf.MessageOrBuilder {
+
+		/**
+		 * <code>string city = 1;</code>
+		 * @return The city.
+		 */
+		java.lang.String getCity();
+
+		/**
+		 * <code>string city = 1;</code>
+		 * @return The bytes for city.
+		 */
+		com.google.protobuf.ByteString getCityBytes();
+
+		/**
+		 * <code>string zipCode = 2;</code>
+		 * @return The zipCode.
+		 */
+		java.lang.String getZipCode();
+
+		/**
+		 * <code>string zipCode = 2;</code>
+		 * @return The bytes for zipCode.
+		 */
+		com.google.protobuf.ByteString getZipCodeBytes();
+
+	}
+
+	/**
+	 * Protobuf type {@code Address}
+	 */
+	public static final class Address extends com.google.protobuf.GeneratedMessageV3 implements
+			// @@protoc_insertion_point(message_implements:Address)
+			AddressOrBuilder {
+
+		private static final long serialVersionUID = 0L;
+
+		// Use Address.newBuilder() to construct.
+		private Address(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+			super(builder);
+		}
+
+		private Address() {
+			city_ = "";
+			zipCode_ = "";
+		}
+
+		@java.lang.Override
+		@SuppressWarnings({ "unused" })
+		protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+			return new Address();
+		}
+
+		public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
+			return com.eottabom.letmecode.example.benchmark.PersonProto.internal_static_Address_descriptor;
+		}
+
+		@java.lang.Override
+		protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable() {
+			return com.eottabom.letmecode.example.benchmark.PersonProto.internal_static_Address_fieldAccessorTable
+				.ensureFieldAccessorsInitialized(com.eottabom.letmecode.example.benchmark.PersonProto.Address.class,
+						com.eottabom.letmecode.example.benchmark.PersonProto.Address.Builder.class);
+		}
+
+		public static final int CITY_FIELD_NUMBER = 1;
+
+		@SuppressWarnings("serial")
+		private volatile java.lang.Object city_ = "";
+
+		/**
+		 * <code>string city = 1;</code>
+		 * @return The city.
+		 */
+		@java.lang.Override
+		public java.lang.String getCity() {
+			java.lang.Object ref = city_;
+			if (ref instanceof java.lang.String) {
+				return (java.lang.String) ref;
+			}
+			else {
+				com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+				java.lang.String s = bs.toStringUtf8();
+				city_ = s;
+				return s;
+			}
+		}
+
+		/**
+		 * <code>string city = 1;</code>
+		 * @return The bytes for city.
+		 */
+		@java.lang.Override
+		public com.google.protobuf.ByteString getCityBytes() {
+			java.lang.Object ref = city_;
+			if (ref instanceof java.lang.String) {
+				com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+				city_ = b;
+				return b;
+			}
+			else {
+				return (com.google.protobuf.ByteString) ref;
+			}
+		}
+
+		public static final int ZIPCODE_FIELD_NUMBER = 2;
+
+		@SuppressWarnings("serial")
+		private volatile java.lang.Object zipCode_ = "";
+
+		/**
+		 * <code>string zipCode = 2;</code>
+		 * @return The zipCode.
+		 */
+		@java.lang.Override
+		public java.lang.String getZipCode() {
+			java.lang.Object ref = zipCode_;
+			if (ref instanceof java.lang.String) {
+				return (java.lang.String) ref;
+			}
+			else {
+				com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+				java.lang.String s = bs.toStringUtf8();
+				zipCode_ = s;
+				return s;
+			}
+		}
+
+		/**
+		 * <code>string zipCode = 2;</code>
+		 * @return The bytes for zipCode.
+		 */
+		@java.lang.Override
+		public com.google.protobuf.ByteString getZipCodeBytes() {
+			java.lang.Object ref = zipCode_;
+			if (ref instanceof java.lang.String) {
+				com.google.protobuf.ByteString b = com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+				zipCode_ = b;
+				return b;
+			}
+			else {
+				return (com.google.protobuf.ByteString) ref;
+			}
+		}
+
+		private byte memoizedIsInitialized = -1;
+
+		@java.lang.Override
+		public final boolean isInitialized() {
+			byte isInitialized = memoizedIsInitialized;
+			if (isInitialized == 1)
+				return true;
+			if (isInitialized == 0)
+				return false;
+
+			memoizedIsInitialized = 1;
+			return true;
+		}
+
+		@java.lang.Override
+		public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+			if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(city_)) {
+				com.google.protobuf.GeneratedMessageV3.writeString(output, 1, city_);
+			}
+			if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(zipCode_)) {
+				com.google.protobuf.GeneratedMessageV3.writeString(output, 2, zipCode_);
+			}
+			getUnknownFields().writeTo(output);
+		}
+
+		@java.lang.Override
+		public int getSerializedSize() {
+			int size = memoizedSize;
+			if (size != -1)
+				return size;
+
+			size = 0;
+			if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(city_)) {
+				size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, city_);
+			}
+			if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(zipCode_)) {
+				size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, zipCode_);
+			}
+			size += getUnknownFields().getSerializedSize();
+			memoizedSize = size;
+			return size;
+		}
+
+		@java.lang.Override
+		public boolean equals(final java.lang.Object obj) {
+			if (obj == this) {
+				return true;
+			}
+			if (!(obj instanceof com.eottabom.letmecode.example.benchmark.PersonProto.Address)) {
+				return super.equals(obj);
+			}
+			com.eottabom.letmecode.example.benchmark.PersonProto.Address other = (com.eottabom.letmecode.example.benchmark.PersonProto.Address) obj;
+
+			if (!getCity().equals(other.getCity()))
+				return false;
+			if (!getZipCode().equals(other.getZipCode()))
+				return false;
+			if (!getUnknownFields().equals(other.getUnknownFields()))
+				return false;
+			return true;
+		}
+
+		@java.lang.Override
+		public int hashCode() {
+			if (memoizedHashCode != 0) {
+				return memoizedHashCode;
+			}
+			int hash = 41;
+			hash = (19 * hash) + getDescriptor().hashCode();
+			hash = (37 * hash) + CITY_FIELD_NUMBER;
+			hash = (53 * hash) + getCity().hashCode();
+			hash = (37 * hash) + ZIPCODE_FIELD_NUMBER;
+			hash = (53 * hash) + getZipCode().hashCode();
+			hash = (29 * hash) + getUnknownFields().hashCode();
+			memoizedHashCode = hash;
+			return hash;
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseFrom(java.nio.ByteBuffer data)
+				throws com.google.protobuf.InvalidProtocolBufferException {
+			return PARSER.parseFrom(data);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseFrom(java.nio.ByteBuffer data,
+				com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+				throws com.google.protobuf.InvalidProtocolBufferException {
+			return PARSER.parseFrom(data, extensionRegistry);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseFrom(
+				com.google.protobuf.ByteString data) throws com.google.protobuf.InvalidProtocolBufferException {
+			return PARSER.parseFrom(data);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseFrom(
+				com.google.protobuf.ByteString data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+				throws com.google.protobuf.InvalidProtocolBufferException {
+			return PARSER.parseFrom(data, extensionRegistry);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseFrom(byte[] data)
+				throws com.google.protobuf.InvalidProtocolBufferException {
+			return PARSER.parseFrom(data);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseFrom(byte[] data,
+				com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+				throws com.google.protobuf.InvalidProtocolBufferException {
+			return PARSER.parseFrom(data, extensionRegistry);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseFrom(java.io.InputStream input)
+				throws java.io.IOException {
+			return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseFrom(java.io.InputStream input,
+				com.google.protobuf.ExtensionRegistryLite extensionRegistry) throws java.io.IOException {
+			return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input, extensionRegistry);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseDelimitedFrom(
+				java.io.InputStream input) throws java.io.IOException {
+			return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseDelimitedFrom(
+				java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+				throws java.io.IOException {
+			return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input,
+					extensionRegistry);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseFrom(
+				com.google.protobuf.CodedInputStream input) throws java.io.IOException {
+			return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Address parseFrom(
+				com.google.protobuf.CodedInputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+				throws java.io.IOException {
+			return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input, extensionRegistry);
+		}
+
+		@java.lang.Override
+		public Builder newBuilderForType() {
+			return newBuilder();
+		}
+
+		public static Builder newBuilder() {
+			return DEFAULT_INSTANCE.toBuilder();
+		}
+
+		public static Builder newBuilder(com.eottabom.letmecode.example.benchmark.PersonProto.Address prototype) {
+			return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+		}
+
+		@java.lang.Override
+		public Builder toBuilder() {
+			return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
+		}
+
+		@java.lang.Override
+		protected Builder newBuilderForType(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+			Builder builder = new Builder(parent);
+			return builder;
+		}
+
+		/**
+		 * Protobuf type {@code Address}
+		 */
+		public static final class Builder extends com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+				// @@protoc_insertion_point(builder_implements:Address)
+				com.eottabom.letmecode.example.benchmark.PersonProto.AddressOrBuilder {
+
+			public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
+				return com.eottabom.letmecode.example.benchmark.PersonProto.internal_static_Address_descriptor;
+			}
+
+			@java.lang.Override
+			protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internalGetFieldAccessorTable() {
+				return com.eottabom.letmecode.example.benchmark.PersonProto.internal_static_Address_fieldAccessorTable
+					.ensureFieldAccessorsInitialized(com.eottabom.letmecode.example.benchmark.PersonProto.Address.class,
+							com.eottabom.letmecode.example.benchmark.PersonProto.Address.Builder.class);
+			}
+
+			// Construct using
+			// com.eottabom.letmecode.example.benchmark.PersonProto.Address.newBuilder()
+			private Builder() {
+
+			}
+
+			private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+				super(parent);
+
+			}
+
+			@java.lang.Override
+			public Builder clear() {
+				super.clear();
+				bitField0_ = 0;
+				city_ = "";
+				zipCode_ = "";
+				return this;
+			}
+
+			@java.lang.Override
+			public com.google.protobuf.Descriptors.Descriptor getDescriptorForType() {
+				return com.eottabom.letmecode.example.benchmark.PersonProto.internal_static_Address_descriptor;
+			}
+
+			@java.lang.Override
+			public com.eottabom.letmecode.example.benchmark.PersonProto.Address getDefaultInstanceForType() {
+				return com.eottabom.letmecode.example.benchmark.PersonProto.Address.getDefaultInstance();
+			}
+
+			@java.lang.Override
+			public com.eottabom.letmecode.example.benchmark.PersonProto.Address build() {
+				com.eottabom.letmecode.example.benchmark.PersonProto.Address result = buildPartial();
+				if (!result.isInitialized()) {
+					throw newUninitializedMessageException(result);
+				}
+				return result;
+			}
+
+			@java.lang.Override
+			public com.eottabom.letmecode.example.benchmark.PersonProto.Address buildPartial() {
+				com.eottabom.letmecode.example.benchmark.PersonProto.Address result = new com.eottabom.letmecode.example.benchmark.PersonProto.Address(
+						this);
+				if (bitField0_ != 0) {
+					buildPartial0(result);
+				}
+				onBuilt();
+				return result;
+			}
+
+			private void buildPartial0(com.eottabom.letmecode.example.benchmark.PersonProto.Address result) {
+				int from_bitField0_ = bitField0_;
+				if (((from_bitField0_ & 0x00000001) != 0)) {
+					result.city_ = city_;
+				}
+				if (((from_bitField0_ & 0x00000002) != 0)) {
+					result.zipCode_ = zipCode_;
+				}
+			}
+
+			@java.lang.Override
+			public Builder clone() {
+				return super.clone();
+			}
+
+			@java.lang.Override
+			public Builder setField(com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
+				return super.setField(field, value);
+			}
+
+			@java.lang.Override
+			public Builder clearField(com.google.protobuf.Descriptors.FieldDescriptor field) {
+				return super.clearField(field);
+			}
+
+			@java.lang.Override
+			public Builder clearOneof(com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+				return super.clearOneof(oneof);
+			}
+
+			@java.lang.Override
+			public Builder setRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor field, int index,
+					java.lang.Object value) {
+				return super.setRepeatedField(field, index, value);
+			}
+
+			@java.lang.Override
+			public Builder addRepeatedField(com.google.protobuf.Descriptors.FieldDescriptor field,
+					java.lang.Object value) {
+				return super.addRepeatedField(field, value);
+			}
+
+			@java.lang.Override
+			public Builder mergeFrom(com.google.protobuf.Message other) {
+				if (other instanceof com.eottabom.letmecode.example.benchmark.PersonProto.Address) {
+					return mergeFrom((com.eottabom.letmecode.example.benchmark.PersonProto.Address) other);
+				}
+				else {
+					super.mergeFrom(other);
+					return this;
+				}
+			}
+
+			public Builder mergeFrom(com.eottabom.letmecode.example.benchmark.PersonProto.Address other) {
+				if (other == com.eottabom.letmecode.example.benchmark.PersonProto.Address.getDefaultInstance())
+					return this;
+				if (!other.getCity().isEmpty()) {
+					city_ = other.city_;
+					bitField0_ |= 0x00000001;
+					onChanged();
+				}
+				if (!other.getZipCode().isEmpty()) {
+					zipCode_ = other.zipCode_;
+					bitField0_ |= 0x00000002;
+					onChanged();
+				}
+				this.mergeUnknownFields(other.getUnknownFields());
+				onChanged();
+				return this;
+			}
+
+			@java.lang.Override
+			public final boolean isInitialized() {
+				return true;
+			}
+
+			@java.lang.Override
+			public Builder mergeFrom(com.google.protobuf.CodedInputStream input,
+					com.google.protobuf.ExtensionRegistryLite extensionRegistry) throws java.io.IOException {
+				if (extensionRegistry == null) {
+					throw new java.lang.NullPointerException();
+				}
+				try {
+					boolean done = false;
+					while (!done) {
+						int tag = input.readTag();
+						switch (tag) {
+							case 0:
+								done = true;
+								break;
+							case 10: {
+								city_ = input.readStringRequireUtf8();
+								bitField0_ |= 0x00000001;
+								break;
+							} // case 10
+							case 18: {
+								zipCode_ = input.readStringRequireUtf8();
+								bitField0_ |= 0x00000002;
+								break;
+							} // case 18
+							default: {
+								if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+									done = true; // was an endgroup tag
+								}
+								break;
+							} // default:
+						} // switch (tag)
+					} // while (!done)
+				}
+				catch (com.google.protobuf.InvalidProtocolBufferException e) {
+					throw e.unwrapIOException();
+				}
+				finally {
+					onChanged();
+				} // finally
+				return this;
+			}
+
+			private int bitField0_;
+
+			private java.lang.Object city_ = "";
+
+			/**
+			 * <code>string city = 1;</code>
+			 * @return The city.
+			 */
+			public java.lang.String getCity() {
+				java.lang.Object ref = city_;
+				if (!(ref instanceof java.lang.String)) {
+					com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+					java.lang.String s = bs.toStringUtf8();
+					city_ = s;
+					return s;
+				}
+				else {
+					return (java.lang.String) ref;
+				}
+			}
+
+			/**
+			 * <code>string city = 1;</code>
+			 * @return The bytes for city.
+			 */
+			public com.google.protobuf.ByteString getCityBytes() {
+				java.lang.Object ref = city_;
+				if (ref instanceof String) {
+					com.google.protobuf.ByteString b = com.google.protobuf.ByteString
+						.copyFromUtf8((java.lang.String) ref);
+					city_ = b;
+					return b;
+				}
+				else {
+					return (com.google.protobuf.ByteString) ref;
+				}
+			}
+
+			/**
+			 * <code>string city = 1;</code>
+			 * @param value The city to set.
+			 * @return This builder for chaining.
+			 */
+			public Builder setCity(java.lang.String value) {
+				if (value == null) {
+					throw new NullPointerException();
+				}
+				city_ = value;
+				bitField0_ |= 0x00000001;
+				onChanged();
+				return this;
+			}
+
+			/**
+			 * <code>string city = 1;</code>
+			 * @return This builder for chaining.
+			 */
+			public Builder clearCity() {
+				city_ = getDefaultInstance().getCity();
+				bitField0_ = (bitField0_ & ~0x00000001);
+				onChanged();
+				return this;
+			}
+
+			/**
+			 * <code>string city = 1;</code>
+			 * @param value The bytes for city to set.
+			 * @return This builder for chaining.
+			 */
+			public Builder setCityBytes(com.google.protobuf.ByteString value) {
+				if (value == null) {
+					throw new NullPointerException();
+				}
+				checkByteStringIsUtf8(value);
+				city_ = value;
+				bitField0_ |= 0x00000001;
+				onChanged();
+				return this;
+			}
+
+			private java.lang.Object zipCode_ = "";
+
+			/**
+			 * <code>string zipCode = 2;</code>
+			 * @return The zipCode.
+			 */
+			public java.lang.String getZipCode() {
+				java.lang.Object ref = zipCode_;
+				if (!(ref instanceof java.lang.String)) {
+					com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+					java.lang.String s = bs.toStringUtf8();
+					zipCode_ = s;
+					return s;
+				}
+				else {
+					return (java.lang.String) ref;
+				}
+			}
+
+			/**
+			 * <code>string zipCode = 2;</code>
+			 * @return The bytes for zipCode.
+			 */
+			public com.google.protobuf.ByteString getZipCodeBytes() {
+				java.lang.Object ref = zipCode_;
+				if (ref instanceof String) {
+					com.google.protobuf.ByteString b = com.google.protobuf.ByteString
+						.copyFromUtf8((java.lang.String) ref);
+					zipCode_ = b;
+					return b;
+				}
+				else {
+					return (com.google.protobuf.ByteString) ref;
+				}
+			}
+
+			/**
+			 * <code>string zipCode = 2;</code>
+			 * @param value The zipCode to set.
+			 * @return This builder for chaining.
+			 */
+			public Builder setZipCode(java.lang.String value) {
+				if (value == null) {
+					throw new NullPointerException();
+				}
+				zipCode_ = value;
+				bitField0_ |= 0x00000002;
+				onChanged();
+				return this;
+			}
+
+			/**
+			 * <code>string zipCode = 2;</code>
+			 * @return This builder for chaining.
+			 */
+			public Builder clearZipCode() {
+				zipCode_ = getDefaultInstance().getZipCode();
+				bitField0_ = (bitField0_ & ~0x00000002);
+				onChanged();
+				return this;
+			}
+
+			/**
+			 * <code>string zipCode = 2;</code>
+			 * @param value The bytes for zipCode to set.
+			 * @return This builder for chaining.
+			 */
+			public Builder setZipCodeBytes(com.google.protobuf.ByteString value) {
+				if (value == null) {
+					throw new NullPointerException();
+				}
+				checkByteStringIsUtf8(value);
+				zipCode_ = value;
+				bitField0_ |= 0x00000002;
+				onChanged();
+				return this;
+			}
+
+			@java.lang.Override
+			public final Builder setUnknownFields(final com.google.protobuf.UnknownFieldSet unknownFields) {
+				return super.setUnknownFields(unknownFields);
+			}
+
+			@java.lang.Override
+			public final Builder mergeUnknownFields(final com.google.protobuf.UnknownFieldSet unknownFields) {
+				return super.mergeUnknownFields(unknownFields);
+			}
+
+			// @@protoc_insertion_point(builder_scope:Address)
+
+		}
+
+		// @@protoc_insertion_point(class_scope:Address)
+		private static final com.eottabom.letmecode.example.benchmark.PersonProto.Address DEFAULT_INSTANCE;
+		static {
+			DEFAULT_INSTANCE = new com.eottabom.letmecode.example.benchmark.PersonProto.Address();
+		}
+
+		public static com.eottabom.letmecode.example.benchmark.PersonProto.Address getDefaultInstance() {
+			return DEFAULT_INSTANCE;
+		}
+
+		private static final com.google.protobuf.Parser<Address> PARSER = new com.google.protobuf.AbstractParser<Address>() {
+			@java.lang.Override
+			public Address parsePartialFrom(com.google.protobuf.CodedInputStream input,
+					com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+					throws com.google.protobuf.InvalidProtocolBufferException {
+				Builder builder = newBuilder();
+				try {
+					builder.mergeFrom(input, extensionRegistry);
+				}
+				catch (com.google.protobuf.InvalidProtocolBufferException e) {
+					throw e.setUnfinishedMessage(builder.buildPartial());
+				}
+				catch (com.google.protobuf.UninitializedMessageException e) {
+					throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+				}
+				catch (java.io.IOException e) {
+					throw new com.google.protobuf.InvalidProtocolBufferException(e)
+						.setUnfinishedMessage(builder.buildPartial());
+				}
+				return builder.buildPartial();
+			}
+		};
+
+		public static com.google.protobuf.Parser<Address> parser() {
+			return PARSER;
+		}
+
+		@java.lang.Override
+		public com.google.protobuf.Parser<Address> getParserForType() {
+			return PARSER;
+		}
+
+		@java.lang.Override
+		public com.eottabom.letmecode.example.benchmark.PersonProto.Address getDefaultInstanceForType() {
+			return DEFAULT_INSTANCE;
+		}
+
+	}
+
+	private static final com.google.protobuf.Descriptors.Descriptor internal_static_Person_descriptor;
+
+	private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internal_static_Person_fieldAccessorTable;
+
+	private static final com.google.protobuf.Descriptors.Descriptor internal_static_Address_descriptor;
+
+	private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable internal_static_Address_fieldAccessorTable;
+
+	public static com.google.protobuf.Descriptors.FileDescriptor getDescriptor() {
+		return descriptor;
+	}
+
+	private static com.google.protobuf.Descriptors.FileDescriptor descriptor;
+	static {
+		java.lang.String[] descriptorData = {
+				"\n\014person.proto\"S\n\006Person\022\014\n\004name\030\001 \001(\t\022\013"
+						+ "\n\003age\030\002 \001(\005\022\023\n\013phoneNumber\030\003 \001(\t\022\031\n\007addr"
+						+ "ess\030\004 \001(\0132\010.Address\"(\n\007Address\022\014\n\004city\030\001"
+						+ " \001(\t\022\017\n\007zipCode\030\002 \001(\tB7\n(com.eottabom.le"
+						+ "tmecode.example.benchmarkB\013PersonProtob\006" + "proto3" };
+		descriptor = com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(descriptorData,
+				new com.google.protobuf.Descriptors.FileDescriptor[] {});
+		internal_static_Person_descriptor = getDescriptor().getMessageTypes().get(0);
+		internal_static_Person_fieldAccessorTable = new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+				internal_static_Person_descriptor, new java.lang.String[] { "Name", "Age", "PhoneNumber", "Address", });
+		internal_static_Address_descriptor = getDescriptor().getMessageTypes().get(1);
+		internal_static_Address_fieldAccessorTable = new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+				internal_static_Address_descriptor, new java.lang.String[] { "City", "ZipCode", });
+	}
+
+	// @@protoc_insertion_point(outer_class_scope)
+
 }

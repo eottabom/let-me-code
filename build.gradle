@@ -1,10 +1,13 @@
 plugins {
 	alias(libs.plugins.spring.boot) apply false
 	alias(libs.plugins.spring.dependency.management) apply false
+	alias(libs.plugins.spring.javaformat) apply false
 }
 
 subprojects {
 	apply plugin: 'java'
+	apply plugin: 'checkstyle'
+	apply plugin: 'io.spring.javaformat'
 
 	group = 'com.eottabom'
 	version = '0.0.1-SNAPSHOT'
@@ -17,6 +20,15 @@ subprojects {
 
 	repositories {
 		mavenCentral()
+	}
+
+	checkstyle {
+		toolVersion = libs.versions.checkstyle.get()
+		configFile = rootProject.file('config/checkstyle/checkstyle.xml')
+	}
+
+	dependencies {
+		checkstyle libs.spring.javaformat.checkstyle
 	}
 
 	tasks.named('test') {

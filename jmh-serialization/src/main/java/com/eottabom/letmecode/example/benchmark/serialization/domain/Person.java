@@ -3,8 +3,11 @@ package com.eottabom.letmecode.example.benchmark.serialization.domain;
 public class Person {
 
 	private String name;
+
 	private int age;
+
 	private String phoneNumber;
+
 	private Address address;
 
 	public String getName() {
@@ -38,4 +41,5 @@ public class Person {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
+
 }

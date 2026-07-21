@@ -13,34 +13,34 @@ import java.time.LocalDateTime;
 @Table(name = "coupon")
 public class Coupon {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 
-    @Column(nullable = false, unique = true, length = 100)
-    private String code;
+	@Column(nullable = false, unique = true, length = 100)
+	private String code;
 
-    @Column(name = "expires_at", nullable = false)
-    private LocalDateTime expiresAt;
+	@Column(name = "expires_at", nullable = false)
+	private LocalDateTime expiresAt;
 
-    protected Coupon() {
-    }
+	protected Coupon() {
+	}
 
-    public Coupon(String code, LocalDateTime expiresAt) {
-        this.code = code;
-        this.expiresAt = expiresAt;
-    }
+	public Coupon(String code, LocalDateTime expiresAt) {
+		this.code = code;
+		this.expiresAt = expiresAt;
+	}
 
-    public Long getId() {
-        return id;
-    }
+	public Long getId() {
+		return id;
+	}
 
-    public String getCode() {
-        return code;
-    }
+	public String getCode() {
+		return code;
+	}
 
-    public LocalDateTime getExpiresAt() {
-        return expiresAt;
-    }
+	public LocalDateTime getExpiresAt() {
+		return expiresAt;
+	}
 
 }

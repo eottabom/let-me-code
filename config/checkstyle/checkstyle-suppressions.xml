@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE suppressions PUBLIC
+		"-//Checkstyle//DTD SuppressionFilter Configuration 1.0//EN"
+		"https://checkstyle.org/dtds/suppressions_1_0.dtd">
+<suppressions>
+	<!-- package-info.java 체크 비활성화 -->
+	<suppress files=".*" checks="JavadocPackageCheck"/>
+	<!-- proto 자동 생성 파일 제외 -->
+	<suppress files="[\\/]generated[\\/]" checks=".*"/>
+	<!-- Javadoc @return 강제 체크 제외 (예제 코드) -->
+	<suppress files=".*" checks="JavadocMethod"/>
+</suppressions>

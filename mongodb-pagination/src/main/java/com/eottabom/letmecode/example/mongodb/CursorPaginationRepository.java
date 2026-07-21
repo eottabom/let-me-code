@@ -10,47 +10,46 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 
 /**
- * TO-BE: _id 기반 cursor(range query) pagination.
- * offset 과 무관하게 항상 일정한 성능을 유지한다.
+ * TO-BE: _id 기반 cursor(range query) pagination. offset 과 무관하게 항상 일정한 성능을 유지한다.
  */
 public class CursorPaginationRepository {
 
-    private final MongoTemplate mongoTemplate;
-    private final String collectionName;
+	private final MongoTemplate mongoTemplate;
 
-    public CursorPaginationRepository(MongoTemplate mongoTemplate, String collectionName) {
-        this.mongoTemplate = mongoTemplate;
-        this.collectionName = collectionName;
-    }
+	private final String collectionName;
 
-    public List<Document> findByLastId(String lastId, int size) {
-        Query query = new Query()
-                .with(Sort.by(Sort.Direction.DESC, "_id"))
-                .limit(size);
+	public CursorPaginationRepository(MongoTemplate mongoTemplate, String collectionName) {
+		this.mongoTemplate = mongoTemplate;
+		this.collectionName = collectionName;
+	}
 
-        if (lastId != null) {
-            query.addCriteria(Criteria.where("_id").lt(new ObjectId(lastId)));
-        }
+	public List<Document> findByLastId(String lastId, int size) {
+		Query query = new Query().with(Sort.by(Sort.Direction.DESC, "_id")).limit(size);
 
-        return mongoTemplate.find(query, Document.class, collectionName);
-    }
+		if (lastId != null) {
+			query.addCriteria(Criteria.where("_id").lt(new ObjectId(lastId)));
+		}
 
-    /**
-     * 전체 문서를 cursor 방식으로 순회한다. (엑셀 다운로드 등)
-     */
-    public List<Document> findAll(int batchSize) {
-        List<Document> all = new ArrayList<>();
-        String lastId = null;
+		return mongoTemplate.find(query, Document.class, collectionName);
+	}
 
-        while (true) {
-            List<Document> batch = findByLastId(lastId, batchSize);
-            if (batch.isEmpty()) {
-                break;
-            }
-            all.addAll(batch);
-            lastId = batch.getLast().getObjectId("_id").toHexString();
-        }
+	/**
+	 * 전체 문서를 cursor 방식으로 순회한다. (엑셀 다운로드 등)
+	 */
+	public List<Document> findAll(int batchSize) {
+		List<Document> all = new ArrayList<>();
+		String lastId = null;
 
-        return all;
-    }
+		while (true) {
+			List<Document> batch = findByLastId(lastId, batchSize);
+			if (batch.isEmpty()) {
+				break;
+			}
+			all.addAll(batch);
+			lastId = batch.getLast().getObjectId("_id").toHexString();
+		}
+
+		return all;
+	}
+
 }

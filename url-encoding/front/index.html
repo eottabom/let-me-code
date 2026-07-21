@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>URL Encoding 예제</title>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+    .card { border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0; }
+    .card h2 { margin-top: 0; font-size: 1rem; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; }
+    .badge-ok { background: #dcfce7; color: #16a34a; }
+    .badge-err { background: #fee2e2; color: #dc2626; }
+    input { width: 320px; padding: 6px 8px; border: 1px solid #ccc; border-radius: 4px; }
+    button { padding: 6px 16px; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background: #f9f9f9; }
+    button:hover { background: #f0f0f0; }
+    pre { background: #f5f5f5; padding: 12px; border-radius: 4px; font-size: 0.85rem; overflow-x: auto; white-space: pre-wrap; min-height: 2em; }
+  </style>
+</head>
+<body>
+
+<h1>URL 인코딩 예제</h1>
+<p>
+  파이프(<code>|</code>) 문자를 포함한 복합 필터를 백엔드로 전송합니다.<br>
+  <strong>케이스 1·2</strong>는 기본 Tomcat 프로필, <strong>케이스 3·4</strong>는 <code>tomcat-relaxed</code> 프로필로 서버를 실행하세요.
+</p>
+
+<!-- 케이스 1 -->
+<div class="card">
+  <h2>케이스 1 — FE 미인코딩 + 기본 Tomcat → <span class="badge badge-err">400</span></h2>
+  <p>
+    <code>fetch</code>에 <code>|</code>를 그대로 전달합니다 (<code>encodeURIComponent</code> 미사용).<br>
+    Tomcat 이 RFC 7230 §3.2.6 위반으로 <strong>400 Bad Request</strong>를 반환합니다.
+  </p>
+  <input id="f1" type="text" value="category:전자기기|brand:삼성">
+  <button id="case1-btn" onclick="sendRequest(1, false)">전송 (미인코딩)</button>
+  <pre id="r1"></pre>
+</div>
+
+<!-- 케이스 2 -->
+<div class="card">
+  <h2>케이스 2 — FE 인코딩 + 기본 Tomcat → <span class="badge badge-ok">200</span></h2>
+  <p>
+    <code>encodeURIComponent</code>로 <code>|</code>를 <code>%7C</code>로 변환 후 전송합니다.<br>
+    Tomcat 이 정상 디코딩하여 <strong>200 OK</strong>를 반환합니다.
+  </p>
+  <input id="f2" type="text" value="category:전자기기|brand:삼성">
+  <button id="case2-btn" onclick="sendRequest(2, true)">전송 (인코딩)</button>
+  <pre id="r2"></pre>
+</div>
+
+<!-- 케이스 3 -->
+<div class="card">
+  <h2>케이스 3 — FE 미인코딩 + relaxed Tomcat → <span class="badge badge-ok">200</span></h2>
+  <p>
+    <code>|</code>를 그대로 전달하더라도, 서버가 <code>relaxedQueryChars="|"</code>로 설정되어 있으면<br>
+    <strong>200 OK</strong>를 반환합니다. 서버를 <code>tomcat-relaxed</code> 프로필로 실행하세요.
+  </p>
+  <input id="f3" type="text" value="category:전자기기|brand:삼성">
+  <button id="case3-btn" onclick="sendRequest(3, false)">전송 (미인코딩)</button>
+  <pre id="r3"></pre>
+</div>
+
+<!-- 케이스 4 -->
+<div class="card">
+  <h2>케이스 4 — FE 인코딩 + relaxed Tomcat → <span class="badge badge-ok">200</span></h2>
+  <p>인코딩 + relaxed 설정 모두 적용 시에도 정상 동작합니다.</p>
+  <input id="f4" type="text" value="category:전자기기|brand:삼성">
+  <button id="case4-btn" onclick="sendRequest(4, true)">전송 (인코딩)</button>
+  <pre id="r4"></pre>
+</div>
+
+<script>
+  // 테스트 실행 시 window.BE 를 동적으로 교체한다 (기본값: localhost:8080)
+  window.BE = window.BE || 'http://localhost:8080';
+
+  async function sendRequest(caseNum, encode) {
+    const filterValue = document.getElementById('f' + caseNum).value;
+    const queryValue = encode ? encodeURIComponent(filterValue) : filterValue;
+    const url = window.BE + '/products?filter=' + queryValue;
+    const resultEl = document.getElementById('r' + caseNum);
+
+    resultEl.textContent = 'GET ' + url + '\n\n요청 중...';
+
+    try {
+      const res = await fetch(url);
+      const body = await res.text();
+      resultEl.textContent = 'GET ' + url + '\n\nHTTP ' + res.status + '\n' + body;
+    } catch (e) {
+      resultEl.textContent = 'GET ' + url + '\n\n오류: ' + e.message;
+    }
+  }
+</script>
+
+</body>
+</html>

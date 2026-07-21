@@ -1,3 +1,10 @@
+pluginManagement {
+	repositories {
+		gradlePluginPortal()
+		mavenCentral()
+	}
+}
+
 rootProject.name = 'let-me-code'
 
 include 'jpa-entity'
@@ -12,3 +19,4 @@ include 'redis-dns-cache'
 include 'thread-dump'
 include 'istio-ambient-demo:gateway'
 include 'istio-ambient-demo:authz-server'
+include 'url-encoding'

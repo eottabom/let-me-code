@@ -17,8 +17,10 @@ class OriginPlaywrightTests {
 		page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Username")).fill("tomsmith");
 		page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Username")).press("Tab");
 		page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Password")).fill("SuperSecretPassword!");
-//		page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Password")).press("Enter");
+		// page.getByRole(AriaRole.TEXTBOX, new
+		// Page.GetByRoleOptions().setName("Password")).press("Enter");
 		page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(" Login")).click();
 		assertThat(page.getByText("You logged into a secure area")).isVisible();
 	}
+
 }

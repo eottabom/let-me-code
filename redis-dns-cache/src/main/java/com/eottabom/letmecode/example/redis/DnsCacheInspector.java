@@ -10,30 +10,29 @@ import java.util.Arrays;
 
 public class DnsCacheInspector {
 
-    private static final Logger log = LoggerFactory.getLogger(DnsCacheInspector.class);
+	private static final Logger log = LoggerFactory.getLogger(DnsCacheInspector.class);
 
-    public void inspect(String host) {
-        printSecurityProperty("networkaddress.cache.ttl");
-        printSecurityProperty("networkaddress.cache.negative.ttl");
-        resolve(host);
-    }
+	public void inspect(String host) {
+		printSecurityProperty("networkaddress.cache.ttl");
+		printSecurityProperty("networkaddress.cache.negative.ttl");
+		resolve(host);
+	}
 
-    private void printSecurityProperty(String name) {
-        String value = Security.getProperty(name);
-        log.info("{}={}", name, value == null ? "<not set>" : value);
-    }
+	private void printSecurityProperty(String name) {
+		String value = Security.getProperty(name);
+		log.info("{}={}", name, value == null ? "<not set>" : value);
+	}
 
-    private void resolve(String host) {
-        try {
-            InetAddress[] addresses = InetAddress.getAllByName(host);
-            String resolvedAddresses = Arrays.stream(addresses)
-                    .map(InetAddress::getHostAddress)
-                    .toList()
-                    .toString();
+	private void resolve(String host) {
+		try {
+			InetAddress[] addresses = InetAddress.getAllByName(host);
+			String resolvedAddresses = Arrays.stream(addresses).map(InetAddress::getHostAddress).toList().toString();
 
-            log.info("resolved host={} addresses={}", host, resolvedAddresses);
-        } catch (UnknownHostException exception) {
-            log.warn("failed host={} exception={}", host, exception.getMessage());
-        }
-    }
+			log.info("resolved host={} addresses={}", host, resolvedAddresses);
+		}
+		catch (UnknownHostException exception) {
+			log.warn("failed host={} exception={}", host, exception.getMessage());
+		}
+	}
+
 }

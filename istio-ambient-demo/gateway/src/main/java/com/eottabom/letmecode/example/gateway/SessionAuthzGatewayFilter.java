@@ -13,21 +13,24 @@ import java.nio.charset.StandardCharsets;
 import java.util.UUID;
 
 /**
- * 기존 역방향 프록시가 session-svc 를 호출해서 검증하고, 통과하면 인가 헤더를 주입해
- * 백엔드(B 서버)를 호출하던 흐름을 동일하게 재현한다.
+ * 기존 역방향 프록시가 session-svc 를 호출해서 검증하고, 통과하면 인가 헤더를 주입해 백엔드(B 서버)를 호출하던 흐름을 동일하게 재현한다.
  *
  * Istio Ambient + ext_authz 전환 후에는 이 검증/헤더 주입 역할을 Envoy ext_authz filter
- * (istio-ext-authz-server 모듈) 가 대체하므로, 클라이언트와 백엔드 입장에서는 동일한 헤더 계약을 유지한 채
- * 인가 로직만 인프라 레이어로 옮겨가는 것을 보여주는 비교 대상이다.
+ * (istio-ext-authz-server 모듈) 가 대체하므로, 클라이언트와 백엔드 입장에서는 동일한 헤더 계약을 유지한 채 인가 로직만 인프라 레이어로
+ * 옮겨가는 것을 보여주는 비교 대상이다.
  */
 public class SessionAuthzGatewayFilter implements GatewayFilter {
 
 	private static final String DEMO_USER_HEADER = "X-Demo-User";
+
 	private static final String REQUEST_ID_HEADER = "X-Request-Id";
+
 	private static final String AUTHZ_USER_HEADER = "X-Authz-User";
+
 	private static final String AUTHZ_RESULT_HEADER = "X-Authz-Result";
 
 	private final WebClient webClient;
+
 	private final String sessionSvcUri;
 
 	public SessionAuthzGatewayFilter(WebClient webClient, String sessionSvcUri) {
@@ -39,11 +42,9 @@ public class SessionAuthzGatewayFilter implements GatewayFilter {
 	public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
 		ServerHttpRequest request = exchange.getRequest();
 		String demoUser = request.getHeaders().getFirst(DEMO_USER_HEADER) != null
-			? request.getHeaders().getFirst(DEMO_USER_HEADER)
-			: "";
+				? request.getHeaders().getFirst(DEMO_USER_HEADER) : "";
 		String requestId = request.getHeaders().getFirst(REQUEST_ID_HEADER) != null
-			? request.getHeaders().getFirst(REQUEST_ID_HEADER)
-			: "req-" + UUID.randomUUID();
+				? request.getHeaders().getFirst(REQUEST_ID_HEADER) : "req-" + UUID.randomUUID();
 
 		return webClient.get()
 			.uri(sessionSvcUri + "/check")
@@ -55,8 +56,7 @@ public class SessionAuthzGatewayFilter implements GatewayFilter {
 				}
 
 				ServerWebExchange mutatedExchange = exchange.mutate()
-					.request(builder -> builder
-						.header(DEMO_USER_HEADER, demoUser)
+					.request(builder -> builder.header(DEMO_USER_HEADER, demoUser)
 						.header(AUTHZ_USER_HEADER, demoUser)
 						.header(AUTHZ_RESULT_HEADER, "allow")
 						.header(REQUEST_ID_HEADER, requestId))
@@ -71,9 +71,10 @@ public class SessionAuthzGatewayFilter implements GatewayFilter {
 		exchange.getResponse().setStatusCode(HttpStatus.FORBIDDEN);
 		exchange.getResponse().getHeaders().add(AUTHZ_RESULT_HEADER, "denied");
 		exchange.getResponse().getHeaders().setContentType(MediaType.TEXT_PLAIN);
-		String body = "DENY by session-svc: missing or invalid " + DEMO_USER_HEADER
-			+ " (requestId=" + requestId + ")\n";
-		return exchange.getResponse().writeWith(Mono.just(
-			exchange.getResponse().bufferFactory().wrap(body.getBytes(StandardCharsets.UTF_8))));
+		String body = "DENY by session-svc: missing or invalid " + DEMO_USER_HEADER + " (requestId=" + requestId
+				+ ")\n";
+		return exchange.getResponse()
+			.writeWith(Mono.just(exchange.getResponse().bufferFactory().wrap(body.getBytes(StandardCharsets.UTF_8))));
 	}
+
 }

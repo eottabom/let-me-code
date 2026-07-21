@@ -11,8 +11,7 @@ import org.openjdk.jmh.annotations.OutputTimeUnit;
 public class BenchmarkRunner {
 
 	public static void main(String[] args) throws IOException {
-		String[] jmhArgs = {
-				"-f", "1", // forks
+		String[] jmhArgs = { "-f", "1", // forks
 				"-wi", "5", // warmup iterations
 				"-i", "5", // Measurements iterations
 				"-t", "1", // Threads
