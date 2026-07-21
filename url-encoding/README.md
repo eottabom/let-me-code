@@ -107,25 +107,3 @@ node url-encoding/front/server.js
 | `SearchE2eRelaxedTests` | Playwright: raw `\|` → 200, `%7C` → 200 (케이스 3·4) |
 | `FrontE2eTests` | Playwright: front/index.html 버튼 클릭 → BE 응답 검증 |
 
----
-
-## 모듈 구조
-
-```
-url-encoding/
-├── front/
-│   ├── index.html   # 케이스 1~4 직접 실행 UI
-│   └── server.js    # Node.js 프론트 서버 (port 3000)
-└── src/
-    ├── main/java/.../
-    │   ├── UrlEncodingApplication.java
-    │   ├── SearchController.java      # GET /products?filter=...
-    │   ├── TomcatCustomConfig.java    # relaxedQueryChars 설정 (tomcat-relaxed 프로필)
-    │   └── WebConfig.java             # CORS 허용 (localhost:3000)
-    └── test/java/.../
-        ├── SearchControllerDefaultTests.java
-        ├── SearchControllerRelaxedTests.java
-        ├── SearchE2eTests.java
-        ├── SearchE2eRelaxedTests.java
-        └── FrontE2eTests.java
-```
