@@ -40,7 +40,7 @@ class SearchControllerRelaxedTests {
 				"/products?filter=category:%EC%A0%84%EC%9E%90%EA%B8%B0%EA%B8%B0%7Cbrand:%EC%82%BC%EC%84%B1",
 				String.class);
 		assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-		assertThat(response.getBody()).contains("category:전자기기");
+		assertThat(response.getBody()).contains("category:electronics");
 	}
 
 	@Test
@@ -50,7 +50,7 @@ class SearchControllerRelaxedTests {
 				"/products?filter=category:%EC%A0%84%EC%9E%90%EA%B8%B0%EA%B8%B0%7Cbrand:%EC%82%BC%EC%84%B1",
 				String.class);
 		assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-		assertThat(response.getBody()).contains("brand:삼성");
+		assertThat(response.getBody()).contains("brand:samsung");
 	}
 
 }

@@ -54,7 +54,7 @@ class SearchE2eTests {
 		try (BrowserContext context = browser.newContext()) {
 			Page page = context.newPage();
 			APIResponse response = page.request()
-				.get("http://localhost:" + this.port + "/products?filter=category:전자기기|brand:삼성");
+				.get("http://localhost:" + this.port + "/products?filter=category:electronics|brand:samsung");
 			assertThat(response.status()).isEqualTo(400);
 		}
 	}
@@ -68,7 +68,7 @@ class SearchE2eTests {
 				.get("http://localhost:" + this.port
 						+ "/products?filter=category:%EC%A0%84%EC%9E%90%EA%B8%B0%EA%B8%B0%7Cbrand:%EC%82%BC%EC%84%B1");
 			assertThat(response.status()).isEqualTo(200);
-			assertThat(response.text()).contains("category:전자기기");
+			assertThat(response.text()).contains("category:electronics");
 		}
 	}
 
@@ -77,8 +77,8 @@ class SearchE2eTests {
 	void browserNavigateAutoEncodesPipe() {
 		try (BrowserContext context = browser.newContext()) {
 			Page page = context.newPage();
-			page.navigate("http://localhost:" + this.port + "/products?filter=category:전자기기|brand:삼성");
-			assertThat(page.content()).contains("category:전자기기");
+			page.navigate("http://localhost:" + this.port + "/products?filter=category:electronics|brand:samsung");
+			assertThat(page.content()).contains("category:electronics");
 		}
 	}
 

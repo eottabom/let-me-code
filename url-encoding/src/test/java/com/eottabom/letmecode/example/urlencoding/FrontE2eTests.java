@@ -87,7 +87,7 @@ class FrontE2eTests {
 		this.page.waitForFunction("document.getElementById('r2').textContent.includes('HTTP')");
 		String result = this.page.locator("#r2").textContent();
 		assertThat(result).contains("200");
-		assertThat(result).contains("전자기기");
+		assertThat(result).contains("electronics");
 	}
 
 }

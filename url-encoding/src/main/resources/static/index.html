@@ -25,7 +25,7 @@
     <code>fetch</code>에 <code>|</code>를 그대로 전달합니다. (<code>encodeURIComponent</code> 미사용)<br>
     기본 Tomcat 은 RFC 7230 §3.2.6 위반으로 <b>400 Bad Request</b>를 반환합니다.
   </p>
-  <input id="filter1" type="text" value="category:전자기기|brand:삼성" />
+  <input id="filter1" type="text" value="category:electronics|brand:samsung" />
   <button onclick="sendUnencoded('/products')">전송 (미인코딩)</button>
   <pre id="result1">결과가 여기 표시됩니다.</pre>
 </div>
@@ -37,7 +37,7 @@
     <code>encodeURIComponent</code>로 <code>|</code>를 <code>%7C</code>로 변환 후 전송합니다.<br>
     Tomcat 이 정상적으로 디코딩하여 <b>200 OK</b>를 반환합니다.
   </p>
-  <input id="filter2" type="text" value="category:전자기기|brand:삼성" />
+  <input id="filter2" type="text" value="category:electronics|brand:samsung" />
   <button onclick="sendEncoded('/products')">전송 (인코딩)</button>
   <pre id="result2">결과가 여기 표시됩니다.</pre>
 </div>
@@ -49,7 +49,7 @@
     <code>|</code>를 그대로 전달하지만, 서버가 <code>relaxedQueryChars="|"</code>로 설정되어 있으면<br>
     <b>200 OK</b>를 반환합니다. (서버를 <code>--spring.profiles.active=tomcat-relaxed</code>로 실행 필요)
   </p>
-  <input id="filter3" type="text" value="category:전자기기|brand:삼성" />
+  <input id="filter3" type="text" value="category:electronics|brand:samsung" />
   <button onclick="sendUnencoded('/products')">전송 (미인코딩)</button>
   <pre id="result3">결과가 여기 표시됩니다.</pre>
 </div>
@@ -60,7 +60,7 @@
   <p>
     인코딩 + relaxed 설정 모두 적용 시에도 정상 동작합니다.
   </p>
-  <input id="filter4" type="text" value="category:전자기기|brand:삼성" />
+  <input id="filter4" type="text" value="category:electronics|brand:samsung" />
   <button onclick="sendEncoded('/products')">전송 (인코딩)</button>
   <pre id="result4">결과가 여기 표시됩니다.</pre>
 </div>

@@ -33,22 +33,22 @@ class SearchControllerDefaultTests {
 	@Test
 	@DisplayName("일반 단일 필터 — 정상 응답")
 	void singleFilter() {
-		ResponseEntity<String> response = this.restTemplate.getForEntity("/products?filter=category:전자기기",
+		ResponseEntity<String> response = this.restTemplate.getForEntity("/products?filter=category:electronics",
 				String.class);
 		assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-		assertThat(response.getBody()).contains("category:전자기기");
+		assertThat(response.getBody()).contains("category:electronics");
 	}
 
 	@Test
 	@DisplayName("케이스 2: FE 가 '|' 를 %7C 로 인코딩 + 기본 Tomcat → 200")
 	void encodedPipeFilter() {
-		// FE 에서 encodeURIComponent('category:전자기기|brand:삼성') 한 결과
+		// FE 에서 encodeURIComponent('category:electronics|brand:samsung') 한 결과
 		ResponseEntity<String> response = this.restTemplate.getForEntity(
 				"/products?filter=category:%EC%A0%84%EC%9E%90%EA%B8%B0%EA%B8%B0%7Cbrand:%EC%82%BC%EC%84%B1",
 				String.class);
 		assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-		assertThat(response.getBody()).contains("category:전자기기");
-		assertThat(response.getBody()).contains("brand:삼성");
+		assertThat(response.getBody()).contains("category:electronics");
+		assertThat(response.getBody()).contains("brand:samsung");
 	}
 
 }

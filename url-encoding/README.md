@@ -15,7 +15,7 @@ Tomcat 은 파싱 단계에서 요청을 거절하며 아래 메시지를 로그
 
 ```
 java.lang.IllegalArgumentException:
-  Invalid character found in the request target [/products?filter=category:전자기기|brand:삼성 ].
+  Invalid character found in the request target [/products?filter=category:electronics|brand:samsung ].
   The valid characters are defined in RFC 7230 and RFC 3986
 ```
 
@@ -37,9 +37,9 @@ java.lang.IllegalArgumentException:
 ### 방법 A — FE 에서 인코딩 (권장)
 
 ```js
-const encoded = encodeURIComponent('category:전자기기|brand:삼성');
+const encoded = encodeURIComponent('category:electronics|brand:samsung');
 fetch('/products?filter=' + encoded);
-// → /products?filter=category%3A%EC%A0%84%EC%9E%90%EA%B8%B0%EA%B8%B0%7Cbrand%3A%EC%82%BC%EC%84%B1
+// → /products?filter=category%3Aelectronics%7Cbrand%3Asamsung
 ```
 
 ### 방법 B — Tomcat `relaxedQueryChars` 설정

@@ -31,7 +31,7 @@
     <code>fetch</code>에 <code>|</code>를 그대로 전달합니다 (<code>encodeURIComponent</code> 미사용).<br>
     Tomcat 이 RFC 7230 §3.2.6 위반으로 <strong>400 Bad Request</strong>를 반환합니다.
   </p>
-  <input id="f1" type="text" value="category:전자기기|brand:삼성">
+  <input id="f1" type="text" value="category:electronics|brand:samsung">
   <button id="case1-btn" onclick="sendRequest(1, false)">전송 (미인코딩)</button>
   <pre id="r1"></pre>
 </div>
@@ -43,7 +43,7 @@
     <code>encodeURIComponent</code>로 <code>|</code>를 <code>%7C</code>로 변환 후 전송합니다.<br>
     Tomcat 이 정상 디코딩하여 <strong>200 OK</strong>를 반환합니다.
   </p>
-  <input id="f2" type="text" value="category:전자기기|brand:삼성">
+  <input id="f2" type="text" value="category:electronics|brand:samsung">
   <button id="case2-btn" onclick="sendRequest(2, true)">전송 (인코딩)</button>
   <pre id="r2"></pre>
 </div>
@@ -55,7 +55,7 @@
     <code>|</code>를 그대로 전달하더라도, 서버가 <code>relaxedQueryChars="|"</code>로 설정되어 있으면<br>
     <strong>200 OK</strong>를 반환합니다. 서버를 <code>tomcat-relaxed</code> 프로필로 실행하세요.
   </p>
-  <input id="f3" type="text" value="category:전자기기|brand:삼성">
+  <input id="f3" type="text" value="category:electronics|brand:samsung">
   <button id="case3-btn" onclick="sendRequest(3, false)">전송 (미인코딩)</button>
   <pre id="r3"></pre>
 </div>
@@ -64,7 +64,7 @@
 <div class="card">
   <h2>케이스 4 — FE 인코딩 + relaxed Tomcat → <span class="badge badge-ok">200</span></h2>
   <p>인코딩 + relaxed 설정 모두 적용 시에도 정상 동작합니다.</p>
-  <input id="f4" type="text" value="category:전자기기|brand:삼성">
+  <input id="f4" type="text" value="category:electronics|brand:samsung">
   <button id="case4-btn" onclick="sendRequest(4, true)">전송 (인코딩)</button>
   <pre id="r4"></pre>
 </div>
