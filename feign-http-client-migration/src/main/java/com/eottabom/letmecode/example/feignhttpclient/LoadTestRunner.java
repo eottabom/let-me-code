@@ -11,7 +11,8 @@ import java.util.stream.IntStream;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-// concurrency 개 스레드로 동시 호출해 총 소요 시간을 잰다. 풀이 없으면 직렬화되어 concurrency*delayMs 에 수렴한다.
+// concurrency 개 스레드로 동시 호출해 총 소요 시간을 잰다. 풀이 없으면 대기열 없이 새 소켓을 열기 쉬우므로,
+// 차이는 elapsedMs 보다 커넥션 재사용 여부와 소켓 수에서 더 잘 드러난다.
 final class LoadTestRunner {
 
 	private static final Logger log = LoggerFactory.getLogger(LoadTestRunner.class);

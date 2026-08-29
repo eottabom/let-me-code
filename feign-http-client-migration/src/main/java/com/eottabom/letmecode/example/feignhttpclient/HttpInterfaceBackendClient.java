@@ -7,6 +7,6 @@ import org.springframework.web.service.annotation.GetExchange;
 public interface HttpInterfaceBackendClient {
 
 	@GetExchange("/api/hello")
-	String hello(@RequestParam long delayMs);
+	String hello(@RequestParam("delayMs") long delayMs);
 
 }

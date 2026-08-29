@@ -4,10 +4,10 @@ OpenFeign 만 추가하고 별도 HTTP 클라이언트를 지정하지 않으면
 
 이 모듈은 같은 백엔드(`/api/hello`)를 네 가지 클라이언트로 호출해서 그 차이를 눈으로 확인한다.
 
-- `default` — `feign.Client.Default` (HttpURLConnection, 풀 없음)
-- `hc5` — `feign-hc5` + `PoolingHttpClientConnectionManager`
-- `okhttp` — `feign-okhttp` + `okhttp3.ConnectionPool`
-- `http-interface` — Feign 대신 Spring 6 `RestClient` + `HttpServiceProxyFactory` (hc5와 동일한 풀 설정), 마이그레이션 목표 지점
+- `default` - `feign.Client.Default` (HttpURLConnection, 풀 없음)
+- `hc5` - `feign-hc5` + `PoolingHttpClientConnectionManager`
+- `okhttp` - `feign-okhttp` + `okhttp3.ConnectionPool`
+- `http-interface` - Feign 대신 Spring `RestClient` + `HttpServiceProxyFactory` (hc5와 동일한 풀 설정), 마이그레이션 목표 지점
 
 ## 실행
 
@@ -21,6 +21,7 @@ OpenFeign 만 추가하고 별도 HTTP 클라이언트를 지정하지 않으면
 ```
 
 같은 프로세스 안에서 백엔드(`BackendController`, 8090 포트)와 클라이언트가 함께 뜬다. `concurrency` 개 스레드가 동시에 `/api/hello?delayMs=<delayMs>` 를 호출하고, 전체 소요 시간과 클라이언트별 풀 통계를 로그로 남긴다.
+테스트는 랜덤 포트로 실행되므로, 8090 포트에서 데모 앱이나 다른 프로세스가 떠 있어도 충돌하지 않는다.
 
 ## 볼 것
 
@@ -58,14 +59,18 @@ OpenFeign 만 추가하고 별도 HTTP 클라이언트를 지정하지 않으면
 ```bash
 ./gradlew :feign-http-client-migration:bootRun --args="default 20 50 burst2"
 ./gradlew :feign-http-client-migration:bootRun --args="hc5 20 50 burst2"
+./gradlew :feign-http-client-migration:bootRun --args="okhttp 20 50 burst2"
+./gradlew :feign-http-client-migration:bootRun --args="http-interface 20 50 burst2"
 ```
 
 | 클라이언트 | round1 고유 port | round2 고유 port | round1∩round2(재사용된 개수) |
 | --- | --- | --- | --- |
 | `default` | 20 | 20 | **5** (`http.maxConnections` 기본값과 일치) |
 | `hc5` | 20 | 20 | **20** (`maxTotal=50` 풀 안에서 전부 재사용) |
+| `okhttp` | 20 | 20 | **20** (`maxIdleConnections=50` 풀 안에서 전부 재사용) |
+| `http-interface` | 20 | 20 | **20** (`maxTotal=50` 풀 안에서 전부 재사용) |
 
-`default` 는 idle 캐시가 5개뿐이라 round1 에서 쓴 20개 커넥션 중 5개만 살아남고, round2 의 나머지 15개는 새 TCP 커넥션을 다시 맺는다. `hc5` 는 풀이 `maxTotal=50` 이라 20개 전부 재사용한다. `DefaultClientConnectionReuseTests` 가 이 동작을 `/api/debug/ports` 엔드포인트로 자동 검증한다.
+`default` 는 idle 캐시가 5개뿐이라 round1 에서 쓴 20개 커넥션 중 5개만 살아남고, round2 의 나머지 15개는 새 TCP 커넥션을 다시 맺는다. `hc5`, `okhttp`, `http-interface` 는 설정한 풀 범위 안에서 20개를 전부 재사용한다. `DefaultClientConnectionReuseTests` 가 default 와 hc5 의 대표 동작을 `/api/debug/ports` 엔드포인트로 자동 검증한다.
 
 ### 3. 외부에서 TCP 커넥션 수를 직접 세는 방법
 
@@ -106,7 +111,7 @@ jstack <pid> | grep -A5 "pool-2-thread"
 
 로컬호스트에서는 handshake 비용이 미미해서 `elapsedMs` 자체는 네 모드 모두 비슷하다. 이 데모에서 실제로 다른 것은 소요 시간이 아니라 **풀 통계 조회 가능 여부**(default 는 없음)와 **`connection impl` 로그로 보이는 구현체**(HttpURLConnection vs ApacheHttp5Client vs OkHttpClient)다.
 
-`./gradlew :feign-http-client-migration:test` 로 실행되는 `FeignClientFactoryTests` 는 네 클라이언트가 모두 정상 응답하는지, hc5/okhttp/http-interface 가 풀 통계를 조회할 수 있는지, `FeignClientFactory` 가 `HTTP_INTERFACE` 모드를 거부하는지를 검증한다. 5개 테스트 전부 통과 확인.
+`./gradlew :feign-http-client-migration:test` 로 실행되는 테스트는 네 클라이언트가 모두 정상 응답하는지, hc5/okhttp/http-interface 가 풀 통계를 조회할 수 있는지, `FeignClientFactory` 가 `HTTP_INTERFACE` 모드를 거부하는지, default 와 hc5 의 커넥션 재사용 차이가 관측되는지를 검증한다. 현재 7개 테스트 전부 통과 확인.
 
 ## 마이그레이션 방향
 
