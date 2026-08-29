@@ -1,0 +1,10 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: feign-http-client-migration
+  main:
+    web-application-type: servlet
+logging:
+  level:
+    com.eottabom.letmecode.example.feignhttpclient: INFO

@@ -31,6 +31,7 @@ jackson = "2.15.0"
 
 # http
 okhttp = "4.9.3"
+feign = "13.6"
 
 # formatter / checkstyle
 spring-javaformat = "0.0.47"
@@ -85,6 +86,10 @@ jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", ver
 
 # http
 okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+feign-core = { module = "io.github.openfeign:feign-core", version.ref = "feign" }
+feign-hc5 = { module = "io.github.openfeign:feign-hc5", version.ref = "feign" }
+feign-okhttp = { module = "io.github.openfeign:feign-okhttp", version.ref = "feign" }
+feign-jackson = { module = "io.github.openfeign:feign-jackson", version.ref = "feign" }
 
 # etc
 javax-annotation-api = { module = "javax.annotation:javax.annotation-api", version.ref = "javax-annotation" }
