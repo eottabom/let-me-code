@@ -1,0 +1,26 @@
+plugins {
+	alias(libs.plugins.spring.boot)
+	alias(libs.plugins.spring.dependency.management)
+	alias(libs.plugins.spring.javaformat)
+}
+
+dependencyManagement {
+	imports {
+		mavenBom libs.testcontainers.bom.get().toString()
+	}
+}
+
+dependencies {
+	implementation libs.spring.boot.starter.web
+	implementation libs.spring.boot.starter.webflux
+	implementation libs.spring.boot.starter.jdbc
+	implementation libs.httpclient5
+	implementation libs.testcontainers
+	implementation libs.testcontainers.mysql
+
+	runtimeOnly libs.mysql.connector.j
+
+	testImplementation libs.spring.boot.starter.test
+	testImplementation libs.testcontainers.junit.jupiter
+	testRuntimeOnly libs.junit.platform.launcher
+}

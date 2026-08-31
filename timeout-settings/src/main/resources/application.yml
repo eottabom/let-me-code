@@ -1,0 +1,6 @@
+server:
+  port: 8091
+  tomcat:
+    connection-timeout: 20000
+    keep-alive-timeout: 60000
+    max-keep-alive-requests: 100
