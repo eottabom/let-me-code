@@ -19,11 +19,15 @@ connection timeout, socket/read timeout, write timeout, keep-alive, max-lifetime
 
 | 테스트 | 확인하는 것 |
 |---|---|
-| `ConnectTimeoutTests` | connect timeout 값만큼만 기다리고 `ResourceAccessException` 이 나는지 |
+| `ConnectTimeoutTests` | 외부 blackhole IP 에 의존하지 않고, Apache HttpClient5 `ConnectionConfig` 에 connect/read/TTL 값이 설정되는지 |
 | `ReadTimeoutTests` | TCP 는 맺혔는데 응답이 늦을 때, read timeout 값 근처에서 실패하는지 (백엔드 지연까지 기다리지 않는지) |
 | `ConnectionReuseTests` | 순차 호출이 같은 물리 커넥션(remote port)을 재사용하는지, connection time-to-live 를 넘기면 새 커넥션을 여는지 |
 | `TomcatKeepAliveTimeoutTests` | Tomcat 의 `keep-alive-timeout` 이 지난 커넥션을 서버가 실제로 닫는지 (raw socket 으로 직접 확인) |
+| `NettyServerIdleTimeoutTests` | WebFlux(Reactor Netty) 서버의 `server.netty.idle-timeout` 이 지난 커넥션을 닫는지 (raw socket 으로 직접 확인) |
 | `WebClientTimeoutTests` | WebClient(Reactor Netty)는 connect timeout(채널 옵션)과 read timeout(핸들러)이 서로 다른 API 이며, 둘 다 별도로 설정해야 한다는 것 |
+| `PoolMaintenanceTests` | Apache HttpClient5 풀의 `closeIdle()` 이 유휴 커넥션을 한 번 정리하는지 |
+| `IdleConnectionEvictorTests` | `IdleConnectionEvictor` 가 `closeIdle()` 호출을 백그라운드에서 주기적으로 대신 수행하는지 |
+| `ValidateAfterInactivityTests` | 오래 유휴 상태였던 커넥션을 재사용 전에 검증하면 죽은 커넥션을 새 커넥션으로 교체하는지 |
 | `DeadConnectionAfterWaitTimeoutTests` | MySQL 의 `wait_timeout` 을 넘긴 커넥션을 재사용하면 실제 `CommunicationsException` 이 나는지 (Docker 필요) |
 
 `DeadConnectionAfterWaitTimeoutTests` 는 Docker 환경을 찾지 못하면 skip 됩니다. Testcontainers 가 Docker 에 접근할 수 있는 환경에서만 MySQL wait_timeout 시나리오를 검증합니다.
@@ -46,6 +50,7 @@ HikariCP 는 `max-lifetime` 을 30000ms 미만으로 주면 30000ms 로 올리�
 - `BackendController` - 요청을 처리한 remote port 를 기록해서 커넥션 재사용 여부를 눈으로 확인
 - `HikariLifetimeDemo` / `DeadConnectionAfterWaitTimeoutTests` - HikariCP max-lifetime 과 MySQL wait_timeout 의 관계
 - `TomcatKeepAliveTimeoutTests` - Tomcat Poller 의 주기적 sweep 때문에 keep-alive-timeout 이 "정확히 그 시간 뒤"가 아니라 "다음 sweep 때" 적용된다는 점
+- `PoolMaintenanceTests` / `IdleConnectionEvictorTests` / `ValidateAfterInactivityTests` - Apache HttpClient5 풀의 유휴 커넥션 정리와 재사용 전 검증 동작
 
 ## 참고 문서
 
