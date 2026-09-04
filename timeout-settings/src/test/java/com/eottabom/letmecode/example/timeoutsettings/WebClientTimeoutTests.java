@@ -12,8 +12,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 // RestTemplate/RestClient(HttpComponentsClientHttpRequestFactory)와 달리, WebClient(Reactor Netty)는
-// connect timeout(채널 옵션)과 read timeout(핸들러)을 서로 다른 API로 설정한다. 둘 다 제대로 걸려 있는지
-// 각각 따로 확인한다.
+// connect timeout(채널 옵션)과 응답 대기 timeout 을 서로 다른 API로 설정한다.
+// 응답 대기는 responseTimeout(HTTP 레벨)과 ReadTimeoutHandler(소켓 read 레벨) 두 가지 방식이 있는데,
+// 둘 다 백엔드 지연을 제때 끊는지 각각 확인한다.
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 class WebClientTimeoutTests {
 
@@ -38,7 +39,7 @@ class WebClientTimeoutTests {
 	}
 
 	@Test
-	void failsAfterReadTimeoutElapses_notAfterBackendDelay() {
+	void responseTimeout_failsBeforeBackendDelayElapses() {
 		long readTimeoutMs = 500;
 		long backendDelayMs = 3000;
 		WebClient client = TimeoutWebClientFactory.create(baseUrl(),
@@ -52,7 +53,26 @@ class WebClientTimeoutTests {
 			.block()).isInstanceOf(WebClientRequestException.class);
 		long elapsedMs = (System.nanoTime() - start) / 1_000_000;
 
-		// ReadTimeoutHandler 를 안 넣었다면 이 요청은 백엔드 지연(3000ms)이 끝날 때까지 안 끊긴다.
+		// responseTimeout 을 안 걸었다면 이 요청은 백엔드 지연(3000ms)이 끝날 때까지 안 끊긴다.
+		assertThat(elapsedMs).isBetween(readTimeoutMs, backendDelayMs);
+	}
+
+	@Test
+	void readTimeoutHandler_failsBeforeBackendDelayElapses() {
+		long readTimeoutMs = 500;
+		long backendDelayMs = 3000;
+		// responseTimeout 대신 저수준 ReadTimeoutHandler 로도 같은 지연을 끊을 수 있다.
+		WebClient client = TimeoutWebClientFactory.createWithReadTimeoutHandler(baseUrl(),
+				new TimeoutHttpClientFactory.TimeoutConfig(3000, readTimeoutMs, 300_000));
+
+		long start = System.nanoTime();
+		assertThatThrownBy(() -> client.get()
+			.uri("/api/hello?delayMs=" + backendDelayMs)
+			.retrieve()
+			.bodyToMono(String.class)
+			.block()).isInstanceOf(WebClientRequestException.class);
+		long elapsedMs = (System.nanoTime() - start) / 1_000_000;
+
 		assertThat(elapsedMs).isBetween(readTimeoutMs, backendDelayMs);
 	}
 
