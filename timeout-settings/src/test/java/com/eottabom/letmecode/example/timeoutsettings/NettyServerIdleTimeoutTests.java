@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.Socket;
+import java.net.SocketException;
 import java.nio.charset.StandardCharsets;
 
 import org.junit.jupiter.api.AfterEach;
@@ -52,9 +53,18 @@ class NettyServerIdleTimeoutTests {
 			Thread.sleep(1000);
 
 			sendKeepAliveRequest(socket);
-			int firstByte = socket.getInputStream().read();
 
-			assertThat(firstByte).as("idle-timeout 이후 재사용된 소켓은 서버가 이미 닫아서 EOF(-1)여야 한다").isEqualTo(-1);
+			// 서버가 닫았다는 사실은 두 형태로 관측된다. FIN 으로 정상 종료면 read() 가 EOF(-1) 을 돌려주고,
+			// RST 로 끊겼으면 SocketException 이 난다. 어느 쪽이든 결론은 같으므로 둘 다 통과로 본다.
+			boolean serverClosed;
+			try {
+				serverClosed = socket.getInputStream().read() == -1;
+			}
+			catch (SocketException ex) {
+				serverClosed = true;
+			}
+
+			assertThat(serverClosed).as("idle-timeout 이 지난 커넥션은 서버가 이미 닫았어야 한다").isTrue();
 		}
 	}
 

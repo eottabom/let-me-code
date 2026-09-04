@@ -9,6 +9,7 @@ import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
 import org.apache.hc.client5.http.impl.classic.HttpClients;
 import org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager;
 import org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManagerBuilder;
+import org.apache.hc.core5.util.TimeValue;
 import org.apache.hc.core5.util.Timeout;
 
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
@@ -44,6 +45,31 @@ final class TimeoutHttpClientFactory {
 			// HttpClient5 는 GET 처럼 멱등한 요청에서 죽은 커넥션 예외(NoHttpResponseException 등)를 만나면
 			// 기본적으로 조용히 재시도한다. 이 모듈은 그 재시도 뒤에 숨는 실패를 그대로 보여주는 게 목적이라 끈다.
 			.disableAutomaticRetries()
+			.build();
+
+		RestClient client = RestClient.builder()
+			.baseUrl(baseUrl)
+			.requestFactory(new HttpComponentsClientHttpRequestFactory(httpClient))
+			.build();
+
+		return new BuiltClient(client, connectionManager, httpClient);
+	}
+
+	// HttpClientBuilder.evictIdleConnections(...) 는 내부적으로 IdleConnectionEvictor 백그라운드 스레드를
+	// 띄워서 closeIdle()/closeExpired() 를 주기적으로 대신 호출해준다.
+	// evictor 를 직접 만들어 start()/shutdown() 을 관리하는 것보다 이 빌더 메서드 한 줄이 간편하다.
+	static BuiltClient createWithIdleEviction(String baseUrl, TimeoutConfig config, long maxIdleMs) {
+		PoolingHttpClientConnectionManager connectionManager = PoolingHttpClientConnectionManagerBuilder.create()
+			.setMaxConnTotal(20)
+			.setMaxConnPerRoute(20)
+			.setDefaultConnectionConfig(connectionConfig(config, 10 * 60 * 1000))
+			.build();
+
+		CloseableHttpClient httpClient = HttpClients.custom()
+			.setConnectionManager(connectionManager)
+			.disableAutomaticRetries()
+			.evictIdleConnections(TimeValue.ofMilliseconds(maxIdleMs))
+			.evictExpiredConnections()
 			.build();
 
 		RestClient client = RestClient.builder()

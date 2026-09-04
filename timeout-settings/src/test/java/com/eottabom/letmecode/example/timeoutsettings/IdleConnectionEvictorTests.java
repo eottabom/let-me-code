@@ -54,6 +54,25 @@ class IdleConnectionEvictorTests {
 		}
 	}
 
+	// 실무에서는 evictor 를 직접 만들 필요 없이 HttpClientBuilder 의 evictIdleConnections()/
+	// evictExpiredConnections() 를 붙이면 된다. 내부적으로 위와 같은 IdleConnectionEvictor 가 떠서 돈다.
+	@Test
+	void builderLevelEvictIdleConnectionsWorksTheSameWay() throws Exception {
+		try (TimeoutHttpClientFactory.BuiltClient built = TimeoutHttpClientFactory.createWithIdleEviction(baseUrl(),
+				TimeoutHttpClientFactory.defaultConfig(), 100)) {
+
+			built.client().get().uri("/api/hello").retrieve().body(String.class);
+			assertThat(built.connectionManager().getTotalStats().getAvailable()).isEqualTo(1);
+
+			// evictIdleConnections(100ms) 로 띄운 백그라운드 스레드가 알아서 정리할 때까지 기다린다.
+			Thread.sleep(2000);
+
+			assertThat(built.connectionManager().getTotalStats().getAvailable())
+				.as("빌더에 evictIdleConnections() 만 붙여도 유휴 커넥션이 자동으로 정리된다")
+				.isZero();
+		}
+	}
+
 	private String baseUrl() {
 		return "http://localhost:" + this.port;
 	}
