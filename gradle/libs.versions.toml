@@ -28,7 +28,7 @@ slf4j = "2.0.9"
 protobuf = "4.28.2"
 protoc = "3.25.0"
 grpc = "1.56.0"
-google-protobuf-plugin = "0.9.6"
+google-protobuf-plugin = "0.10.0"
 
 # serialization
 jackson = "2.15.0"
