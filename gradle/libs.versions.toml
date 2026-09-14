@@ -11,7 +11,7 @@ proto-google-common-protos = "2.72.0"
 
 # test
 playwright = "1.54.0"
-junit-jupiter = "5.11.4"
+junit-jupiter = "6.1.3"
 testcontainers = "1.21.3"
 
 # db driver
