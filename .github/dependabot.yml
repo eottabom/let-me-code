@@ -1,55 +1,85 @@
 version: 2
+
+# 업데이트 정책
+# - 보안 취약점: 저장소 설정의 Dependabot security updates 가 즉시 별도 PR 을 올린다.
+# - 정기 버전 업데이트: 매월 1일에 생태계당 최대 2개의 PR 로만 올라온다.
+#     1) minor-and-patch : minor/patch 를 전부 묶은 PR
+#     2) major           : major 를 전부 묶은 PR
+#   open-pull-requests-limit 도 2 로 맞춰서, 앞선 PR 을 처리하기 전에는
+#   새 PR 이 생기지 않는다. (PR 이 쌓이지 않게 하는 장치)
+
 updates:
-  # 루트 멀티 프로젝트 빌드.
-  # 버전이 gradle/libs.versions.toml (버전 카탈로그) 에 모여 있어서 루트만 보면 된다.
+  # 루트 멀티 프로젝트. 버전이 gradle/libs.versions.toml 버전 카탈로그에 모여 있다.
   - package-ecosystem: "gradle"
     directory: "/"
     schedule:
-      interval: "weekly"
-      day: "monday"
+      interval: "monthly"
       time: "09:00"
       timezone: "Asia/Seoul"
-    open-pull-requests-limit: 5
+    open-pull-requests-limit: 2
     commit-message:
       prefix: "build(deps)"
-    # 모듈이 많아 PR 이 쏟아지지 않도록 minor/patch 는 하나로 묶는다.
+    labels:
+      - "dependencies"
     groups:
       minor-and-patch:
+        patterns:
+          - "*"
         update-types:
           - "minor"
           - "patch"
-
-  # 워크플로가 추가되면 actions 버전도 같이 관리되도록 미리 등록해둔다.
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      day: "monday"
-      time: "09:00"
-      timezone: "Asia/Seoul"
-    open-pull-requests-limit: 3
-    commit-message:
-      prefix: "ci"
-    groups:
-      actions:
+      major:
+        patterns:
+          - "*"
         update-types:
-          - "minor"
-          - "patch"
+          - "major"
 
   # 루트 settings.gradle 에 포함되지 않은 독립 빌드.
-  # 버전 카탈로그를 쓰지 않고 build.gradle.kts 에 버전을 직접 적는다.
   - package-ecosystem: "gradle"
     directory: "/mongodb-pagination/benchmark-kit/spring-benchmark"
     schedule:
-      interval: "weekly"
-      day: "monday"
+      interval: "monthly"
       time: "09:00"
       timezone: "Asia/Seoul"
-    open-pull-requests-limit: 3
+    open-pull-requests-limit: 2
     commit-message:
       prefix: "build(deps)"
+    labels:
+      - "dependencies"
     groups:
       minor-and-patch:
+        patterns:
+          - "*"
         update-types:
           - "minor"
           - "patch"
+      major:
+        patterns:
+          - "*"
+        update-types:
+          - "major"
+
+  # 워크플로가 추가되면 actions 버전도 같이 관리된다.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+      time: "09:00"
+      timezone: "Asia/Seoul"
+    open-pull-requests-limit: 2
+    commit-message:
+      prefix: "ci"
+    labels:
+      - "dependencies"
+    groups:
+      minor-and-patch:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+      major:
+        patterns:
+          - "*"
+        update-types:
+          - "major"
