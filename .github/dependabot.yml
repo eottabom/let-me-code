@@ -19,6 +19,23 @@ updates:
           - "minor"
           - "patch"
 
+  # 워크플로가 추가되면 actions 버전도 같이 관리되도록 미리 등록해둔다.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Seoul"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "ci"
+    groups:
+      actions:
+        update-types:
+          - "minor"
+          - "patch"
+
   # 루트 settings.gradle 에 포함되지 않은 독립 빌드.
   # 버전 카탈로그를 쓰지 않고 build.gradle.kts 에 버전을 직접 적는다.
   - package-ecosystem: "gradle"
