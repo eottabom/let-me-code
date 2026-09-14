@@ -34,7 +34,7 @@ google-protobuf-plugin = "0.9.6"
 jackson = "2.15.0"
 
 # http
-okhttp = "4.9.3"
+okhttp = "5.5.0"
 feign = "13.6"
 httpclient5 = "5.4.1"
 
