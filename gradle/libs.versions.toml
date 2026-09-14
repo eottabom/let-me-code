@@ -12,7 +12,7 @@ proto-google-common-protos = "2.72.0"
 # test
 playwright = "1.54.0"
 junit-jupiter = "5.11.4"
-testcontainers = "1.21.3"
+testcontainers = "2.0.5"
 
 # db driver
 mysql-connector-j = "9.1.0"
