@@ -1,0 +1,2 @@
+[2026-10-10T05:45:20.665+0000][0.005s][info][gc     ] Using Serial
+[2026-10-10T05:45:20.665+0000][0.005s][info][gc,init] Heap Max Capacity: 256M

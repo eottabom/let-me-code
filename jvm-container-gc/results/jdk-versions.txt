@@ -1,0 +1,180 @@
+## JDK 8 limits cpu 1, mem 1Gi
+OpenJDK Runtime Environment (Temurin)(build 1.8.0_504-b01)
+     bool AlwaysActAsServerClassMachine             = false                               {product}
+    uintx ConcGCThreads                             = 0                                   {product}
+    uintx MaxHeapSize                              := 268435456                           {product}
+    uintx ParallelGCThreads                         = 0                                   {product}
+     bool UseG1GC                                   = false                               {product}
+     bool UseParallelGC                             = false                               {product}
+     bool UseSerialGC                               = false                               {product}
+## JDK 8 limits cpu 1, mem 4Gi
+OpenJDK Runtime Environment (Temurin)(build 1.8.0_504-b01)
+     bool AlwaysActAsServerClassMachine             = false                               {product}
+    uintx ConcGCThreads                             = 0                                   {product}
+    uintx MaxHeapSize                              := 1073741824                          {product}
+    uintx ParallelGCThreads                         = 0                                   {product}
+     bool UseG1GC                                   = false                               {product}
+     bool UseParallelGC                             = false                               {product}
+     bool UseSerialGC                               = false                               {product}
+## JDK 8 limits cpu 2, mem 1Gi
+OpenJDK Runtime Environment (Temurin)(build 1.8.0_504-b01)
+     bool AlwaysActAsServerClassMachine             = false                               {product}
+    uintx ConcGCThreads                             = 0                                   {product}
+    uintx MaxHeapSize                              := 268435456                           {product}
+    uintx ParallelGCThreads                         = 0                                   {product}
+     bool UseG1GC                                   = false                               {product}
+     bool UseParallelGC                             = false                               {product}
+     bool UseSerialGC                               = false                               {product}
+## JDK 8 limits cpu 2, mem 1792Mi
+OpenJDK Runtime Environment (Temurin)(build 1.8.0_504-b01)
+     bool AlwaysActAsServerClassMachine             = false                               {product}
+    uintx ConcGCThreads                             = 0                                   {product}
+    uintx MaxHeapSize                              := 469762048                           {product}
+    uintx ParallelGCThreads                         = 2                                   {product}
+     bool UseG1GC                                   = false                               {product}
+     bool UseParallelGC                            := true                                {product}
+     bool UseSerialGC                               = false                               {product}
+## JDK 8 limits cpu 2, mem 4Gi
+OpenJDK Runtime Environment (Temurin)(build 1.8.0_504-b01)
+     bool AlwaysActAsServerClassMachine             = false                               {product}
+    uintx ConcGCThreads                             = 0                                   {product}
+    uintx MaxHeapSize                              := 1073741824                          {product}
+    uintx ParallelGCThreads                         = 2                                   {product}
+     bool UseG1GC                                   = false                               {product}
+     bool UseParallelGC                            := true                                {product}
+     bool UseSerialGC                               = false                               {product}
+## JDK 11 limits cpu 1, mem 1Gi
+OpenJDK Runtime Environment Temurin-11.0.32.1+1 (build 11.0.32.1+1)
+     bool AlwaysActAsServerClassMachine            = false                                     {product} {default}
+     uint ConcGCThreads                            = 0                                         {product} {default}
+   size_t MaxHeapSize                              = 268435456                                 {product} {ergonomic}
+     uint ParallelGCThreads                        = 0                                         {product} {default}
+     bool UseG1GC                                  = false                                     {product} {default}
+     bool UseParallelGC                            = false                                     {product} {default}
+     bool UseSerialGC                              = true                                      {product} {ergonomic}
+## JDK 11 limits cpu 1, mem 4Gi
+OpenJDK Runtime Environment Temurin-11.0.32.1+1 (build 11.0.32.1+1)
+     bool AlwaysActAsServerClassMachine            = false                                     {product} {default}
+     uint ConcGCThreads                            = 0                                         {product} {default}
+   size_t MaxHeapSize                              = 1073741824                                {product} {ergonomic}
+     uint ParallelGCThreads                        = 0                                         {product} {default}
+     bool UseG1GC                                  = false                                     {product} {default}
+     bool UseParallelGC                            = false                                     {product} {default}
+     bool UseSerialGC                              = true                                      {product} {ergonomic}
+## JDK 11 limits cpu 2, mem 1Gi
+OpenJDK Runtime Environment Temurin-11.0.32.1+1 (build 11.0.32.1+1)
+     bool AlwaysActAsServerClassMachine            = false                                     {product} {default}
+     uint ConcGCThreads                            = 0                                         {product} {default}
+   size_t MaxHeapSize                              = 268435456                                 {product} {ergonomic}
+     uint ParallelGCThreads                        = 0                                         {product} {default}
+     bool UseG1GC                                  = false                                     {product} {default}
+     bool UseParallelGC                            = false                                     {product} {default}
+     bool UseSerialGC                              = true                                      {product} {ergonomic}
+## JDK 11 limits cpu 2, mem 1792Mi
+OpenJDK Runtime Environment Temurin-11.0.32.1+1 (build 11.0.32.1+1)
+     bool AlwaysActAsServerClassMachine            = false                                     {product} {default}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+   size_t MaxHeapSize                              = 469762048                                 {product} {ergonomic}
+     uint ParallelGCThreads                        = 2                                         {product} {default}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseParallelGC                            = false                                     {product} {default}
+     bool UseSerialGC                              = false                                     {product} {default}
+## JDK 11 limits cpu 2, mem 4Gi
+OpenJDK Runtime Environment Temurin-11.0.32.1+1 (build 11.0.32.1+1)
+     bool AlwaysActAsServerClassMachine            = false                                     {product} {default}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+   size_t MaxHeapSize                              = 1073741824                                {product} {ergonomic}
+     uint ParallelGCThreads                        = 2                                         {product} {default}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseParallelGC                            = false                                     {product} {default}
+     bool UseSerialGC                              = false                                     {product} {default}
+## JDK 17 limits cpu 1, mem 1Gi
+OpenJDK Runtime Environment Temurin-17.0.20.1+1 (build 17.0.20.1+1)
+     bool AlwaysActAsServerClassMachine            = false                                     {product} {default}
+     uint ConcGCThreads                            = 0                                         {product} {default}
+   size_t MaxHeapSize                              = 268435456                                 {product} {ergonomic}
+     uint ParallelGCThreads                        = 0                                         {product} {default}
+     bool UseG1GC                                  = false                                     {product} {default}
+     bool UseParallelGC                            = false                                     {product} {default}
+     bool UseSerialGC                              = true                                      {product} {ergonomic}
+## JDK 17 limits cpu 1, mem 4Gi
+OpenJDK Runtime Environment Temurin-17.0.20.1+1 (build 17.0.20.1+1)
+     bool AlwaysActAsServerClassMachine            = false                                     {product} {default}
+     uint ConcGCThreads                            = 0                                         {product} {default}
+   size_t MaxHeapSize                              = 1073741824                                {product} {ergonomic}
+     uint ParallelGCThreads                        = 0                                         {product} {default}
+     bool UseG1GC                                  = false                                     {product} {default}
+     bool UseParallelGC                            = false                                     {product} {default}
+     bool UseSerialGC                              = true                                      {product} {ergonomic}
+## JDK 17 limits cpu 2, mem 1Gi
+OpenJDK Runtime Environment Temurin-17.0.20.1+1 (build 17.0.20.1+1)
+     bool AlwaysActAsServerClassMachine            = false                                     {product} {default}
+     uint ConcGCThreads                            = 0                                         {product} {default}
+   size_t MaxHeapSize                              = 268435456                                 {product} {ergonomic}
+     uint ParallelGCThreads                        = 0                                         {product} {default}
+     bool UseG1GC                                  = false                                     {product} {default}
+     bool UseParallelGC                            = false                                     {product} {default}
+     bool UseSerialGC                              = true                                      {product} {ergonomic}
+## JDK 17 limits cpu 2, mem 1792Mi
+OpenJDK Runtime Environment Temurin-17.0.20.1+1 (build 17.0.20.1+1)
+     bool AlwaysActAsServerClassMachine            = false                                     {product} {default}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+   size_t MaxHeapSize                              = 469762048                                 {product} {ergonomic}
+     uint ParallelGCThreads                        = 2                                         {product} {default}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseParallelGC                            = false                                     {product} {default}
+     bool UseSerialGC                              = false                                     {product} {default}
+## JDK 17 limits cpu 2, mem 4Gi
+OpenJDK Runtime Environment Temurin-17.0.20.1+1 (build 17.0.20.1+1)
+     bool AlwaysActAsServerClassMachine            = false                                     {product} {default}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+   size_t MaxHeapSize                              = 1073741824                                {product} {ergonomic}
+     uint ParallelGCThreads                        = 2                                         {product} {default}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseParallelGC                            = false                                     {product} {default}
+     bool UseSerialGC                              = false                                     {product} {default}
+## JDK 21 limits cpu 1, mem 1Gi
+OpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)
+     bool AlwaysActAsServerClassMachine            = false                                     {product} {default}
+     uint ConcGCThreads                            = 0                                         {product} {default}
+   size_t MaxHeapSize                              = 268435456                                 {product} {ergonomic}
+     uint ParallelGCThreads                        = 0                                         {product} {default}
+     bool UseG1GC                                  = false                                     {product} {default}
+     bool UseParallelGC                            = false                                     {product} {default}
+     bool UseSerialGC                              = true                                      {product} {ergonomic}
+## JDK 21 limits cpu 1, mem 4Gi
+OpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)
+     bool AlwaysActAsServerClassMachine            = false                                     {product} {default}
+     uint ConcGCThreads                            = 0                                         {product} {default}
+   size_t MaxHeapSize                              = 1073741824                                {product} {ergonomic}
+     uint ParallelGCThreads                        = 0                                         {product} {default}
+     bool UseG1GC                                  = false                                     {product} {default}
+     bool UseParallelGC                            = false                                     {product} {default}
+     bool UseSerialGC                              = true                                      {product} {ergonomic}
+## JDK 21 limits cpu 2, mem 1Gi
+OpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)
+     bool AlwaysActAsServerClassMachine            = false                                     {product} {default}
+     uint ConcGCThreads                            = 0                                         {product} {default}
+   size_t MaxHeapSize                              = 268435456                                 {product} {ergonomic}
+     uint ParallelGCThreads                        = 0                                         {product} {default}
+     bool UseG1GC                                  = false                                     {product} {default}
+     bool UseParallelGC                            = false                                     {product} {default}
+     bool UseSerialGC                              = true                                      {product} {ergonomic}
+## JDK 21 limits cpu 2, mem 1792Mi
+OpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)
+     bool AlwaysActAsServerClassMachine            = false                                     {product} {default}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+   size_t MaxHeapSize                              = 469762048                                 {product} {ergonomic}
+     uint ParallelGCThreads                        = 2                                         {product} {default}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseParallelGC                            = false                                     {product} {default}
+     bool UseSerialGC                              = false                                     {product} {default}
+## JDK 21 limits cpu 2, mem 4Gi
+OpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)
+     bool AlwaysActAsServerClassMachine            = false                                     {product} {default}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+   size_t MaxHeapSize                              = 1073741824                                {product} {ergonomic}
+     uint ParallelGCThreads                        = 2                                         {product} {default}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseParallelGC                            = false                                     {product} {default}
+     bool UseSerialGC                              = false                                     {product} {default}

@@ -1,0 +1,1 @@
+rate=300 warmup=60s measure=180s repeat=3 image=jvm-gc-demo:1

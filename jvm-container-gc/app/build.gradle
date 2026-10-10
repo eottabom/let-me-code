@@ -1,0 +1,16 @@
+plugins {
+	alias(libs.plugins.spring.boot)
+	alias(libs.plugins.spring.dependency.management)
+}
+
+// 실험 대상 런타임(eclipse-temurin:21-jre)에 맞춰 Java 21 바이트코드로 빌드한다.
+tasks.withType(JavaCompile).configureEach {
+	options.release = 21
+}
+
+dependencies {
+	implementation libs.spring.boot.starter.web
+
+	testImplementation libs.spring.boot.starter.test
+	testRuntimeOnly libs.junit.platform.launcher
+}

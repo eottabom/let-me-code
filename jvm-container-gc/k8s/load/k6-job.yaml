@@ -1,0 +1,30 @@
+# run/lib.sh 의 start_load 가 envsubst 로 값을 채운다.
+# JOB_NAME, TARGET, RATE, WARMUP, MEASURE
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: ${JOB_NAME}
+  namespace: jvm-gc
+  labels: { role: load }
+spec:
+  backoffLimit: 0
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: k6
+          image: grafana/k6:0.49.0
+          args: ["run", "--quiet", "/scripts/k6.js"]
+          env:
+            - { name: TARGET, value: "${TARGET}" }
+            - { name: RATE, value: "${RATE}" }
+            - { name: WARMUP, value: "${WARMUP}" }
+            - { name: MEASURE, value: "${MEASURE}" }
+          resources:
+            requests: { cpu: "500m", memory: 256Mi }
+            limits: { cpu: "2", memory: 512Mi }
+          volumeMounts:
+            - { name: script, mountPath: /scripts }
+      volumes:
+        - name: script
+          configMap: { name: k6-script }

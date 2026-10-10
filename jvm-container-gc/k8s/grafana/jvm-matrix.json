@@ -1,0 +1,220 @@
+{
+  "uid": "jvm-matrix",
+  "title": "JVM GC, 조건별 비교",
+  "schemaVersion": 39,
+  "version": 1,
+  "time": {
+    "from": "now-15m",
+    "to": "now"
+  },
+  "tags": [
+    "JVM",
+    "OTel",
+    "GC"
+  ],
+  "timezone": "browser",
+  "templating": {
+    "list": [
+      {
+        "name": "case",
+        "type": "custom",
+        "query": "limits cpu 8 / mem 4Gi → 자동 G1 : default-large,limits cpu 1 / mem 1Gi → 자동 Serial : default-small,limits cpu 1 / mem 4Gi + UseG1GC : g1-cpu-small,limits cpu 1 / mem 1Gi + UseG1GC : g1-small,limits cpu 1 / mem 1Gi + UseG1GC + ActiveProcessorCount=2 : g1-small-apc2",
+        "current": {
+          "text": "limits cpu 8 / mem 4Gi → 자동 G1",
+          "value": "default-large"
+        },
+        "options": []
+      }
+    ]
+  },
+  "panels": [
+    {
+      "id": 1,
+      "type": "timeseries",
+      "title": "GC 종류별 이벤트 수 (초당) [${case:text}]",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "prometheus"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 8
+      },
+      "targets": [
+        {
+          "expr": "sum by(jvm_gc_name) (rate(jvm_gc_duration_seconds_count{service_name=\"$case\"}[1m]))",
+          "legendFormat": "{{jvm_gc_name}}",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "ops",
+          "min": 0,
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "lineWidth": 2,
+            "fillOpacity": 8,
+            "spanNulls": false,
+            "showPoints": "never"
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "type": "timeseries",
+      "title": "GC에 쓴 시간 비율 (concurrent 제외) [${case:text}]",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "prometheus"
+      },
+      "gridPos": {
+        "x": 12,
+        "y": 0,
+        "w": 12,
+        "h": 8
+      },
+      "targets": [
+        {
+          "expr": "100 * sum(rate(jvm_gc_duration_seconds_sum{service_name=\"$case\",jvm_gc_name!=\"G1 Concurrent GC\"}[1m]))",
+          "legendFormat": "GC 시간 비율",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percent",
+          "min": 0,
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "lineWidth": 2,
+            "fillOpacity": 8,
+            "spanNulls": false,
+            "showPoints": "never"
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "type": "timeseries",
+      "title": "Heap 사용량 [${case:text}]",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "prometheus"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 8,
+        "w": 12,
+        "h": 8
+      },
+      "targets": [
+        {
+          "expr": "sum(jvm_memory_used_bytes{service_name=\"$case\",jvm_memory_type=\"heap\"})",
+          "legendFormat": "Heap 사용량",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "bytes",
+          "min": 0,
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "lineWidth": 2,
+            "fillOpacity": 8,
+            "spanNulls": false,
+            "showPoints": "never"
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "type": "timeseries",
+      "title": "CPU 사용량 (코어) [${case:text}]",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "prometheus"
+      },
+      "gridPos": {
+        "x": 12,
+        "y": 8,
+        "w": 12,
+        "h": 8
+      },
+      "targets": [
+        {
+          "expr": "sum(rate(jvm_cpu_time_seconds_total{service_name=\"$case\"}[1m]))",
+          "legendFormat": "CPU 사용량",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short",
+          "min": 0,
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "lineWidth": 2,
+            "fillOpacity": 8,
+            "spanNulls": false,
+            "showPoints": "never"
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      }
+    }
+  ]
+}

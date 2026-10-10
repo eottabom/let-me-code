@@ -1,0 +1,54 @@
+# run/lib.sh 의 deploy_app 이 envsubst 로 값을 채운다.
+# APP_NAME, CPU, MEMORY, JVM_GC_OPTS
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ${APP_NAME}
+  namespace: jvm-gc
+  labels: { app: ${APP_NAME}, role: gc-demo }
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: ${APP_NAME} }
+  template:
+    metadata:
+      labels: { app: ${APP_NAME}, role: gc-demo }
+    spec:
+      containers:
+        - name: app
+          image: jvm-gc-demo:1
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
+          resources:
+            # JVM은 limits만 본다. 단일 노드(kind)에 8 CPU 조건과 k6 가 함께 올라가도록 CPU request 는 낮게 둔다.
+            requests: { cpu: "500m", memory: "${MEMORY}" }
+            limits: { cpu: "${CPU}", memory: "${MEMORY}" }
+          env:
+            - { name: JVM_GC_OPTS, value: "${JVM_GC_OPTS}" }
+            - name: JAVA_OPTS
+              value: >-
+                -javaagent:/otel/agent.jar
+                -Xlog:gc*=info,gc+task=debug:stdout:time,uptime,level,tags
+                $(JVM_GC_OPTS)
+            - { name: OTEL_SERVICE_NAME, value: "${APP_NAME}" }
+            - { name: OTEL_EXPORTER_OTLP_ENDPOINT, value: "http://otel-collector:4318" }
+            - { name: OTEL_EXPORTER_OTLP_PROTOCOL, value: http/protobuf }
+            - { name: OTEL_METRICS_EXPORTER, value: otlp }
+            - { name: OTEL_TRACES_EXPORTER, value: none }
+            - { name: OTEL_LOGS_EXPORTER, value: none }
+            - { name: OTEL_METRIC_EXPORT_INTERVAL, value: "5000" }
+          readinessProbe:
+            httpGet: { path: /runtime, port: 8080 }
+            periodSeconds: 2
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ${APP_NAME}
+  namespace: jvm-gc
+  labels: { role: gc-demo }
+spec:
+  selector: { app: ${APP_NAME} }
+  ports:
+    - { port: 8080 }

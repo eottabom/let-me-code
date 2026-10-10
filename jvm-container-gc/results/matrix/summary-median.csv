@@ -1,0 +1,6 @@
+case,runs,measure_seconds,requests,dropped,failed_rate,http_p50_ms,http_p95_ms,http_p99_ms,http_max_ms,gc_pause_count,gc_full_count,gc_pause_p99_ms,gc_pause_max_ms,gc_pause_total_ms,gc_time_percent,cpu_cores_used,throttled_periods_percent,throttled_seconds
+default-large,3,184.0,54001.0,0.0,0.0,0.48,1.1,2.93,31.43,213.0,0.0,16.96,19.44,1345.8,0.73,0.23,0.0,0.0
+default-small,3,184.0,53977.0,24.0,0.0,0.47,38.06,159.74,270.57,118.0,59.0,223.09,253.46,11004.6,5.98,0.19,0.8,0.55
+g1-cpu-small,3,184.0,54001.0,0.0,0.0,0.42,1.43,28.94,72.57,194.0,0.0,58.23,71.2,5204.9,2.83,0.18,2.1,0.51
+g1-small,3,184.0,54000.0,0.0,0.0,0.42,1.64,22.74,50.36,328.0,0.0,40.66,48.14,6283.4,3.41,0.21,3.5,0.43
+g1-small-apc2,3,184.0,54001.0,0.0,0.0,0.45,1.26,11.41,37.21,314.0,0.0,28.25,34.65,3589.3,1.95,0.22,3.8,0.96

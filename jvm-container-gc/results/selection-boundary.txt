@@ -1,0 +1,36 @@
+
+## limits cpu=1 memory=4Gi options=none
+[0.006s][info][gc     ] Using Serial
+[0.006s][info][gc,init] CPUs: 10 total, 1 available
+[0.006s][info][gc,init] Memory: 4096M
+[0.006s][info][gc,init] Heap Max Capacity: 1G
+
+## limits cpu=2 memory=4Gi options=none
+[0.004s][info][gc     ] Using G1
+[0.005s][info][gc,init] CPUs: 10 total, 2 available
+[0.005s][info][gc,init] Memory: 4096M
+[0.005s][info][gc,init] Heap Max Capacity: 1G
+
+## limits cpu=1 memory=1791Mi options=-XX:ActiveProcessorCount=2
+[0.005s][info][gc     ] Using Serial
+[0.005s][info][gc,init] CPUs: 10 total, 2 available
+[0.005s][info][gc,init] Memory: 1791M
+[0.005s][info][gc,init] Heap Max Capacity: 448M
+
+## limits cpu=1 memory=1792Mi options=-XX:ActiveProcessorCount=2
+[0.004s][info][gc     ] Using G1
+[0.004s][info][gc,init] CPUs: 10 total, 2 available
+[0.004s][info][gc,init] Memory: 1792M
+[0.004s][info][gc,init] Heap Max Capacity: 448M
+
+## limits cpu=8 memory=1Gi options=none
+[0.003s][info][gc     ] Using Serial
+[0.003s][info][gc,init] CPUs: 10 total, 8 available
+[0.003s][info][gc,init] Memory: 1024M
+[0.003s][info][gc,init] Heap Max Capacity: 256M
+
+## limits cpu=1 memory=1Gi options=none
+[0.005s][info][gc     ] Using Serial
+[0.005s][info][gc,init] CPUs: 10 total, 1 available
+[0.005s][info][gc,init] Memory: 1024M
+[0.005s][info][gc,init] Heap Max Capacity: 256M
