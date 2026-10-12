@@ -9,4 +9,6 @@
 	<suppress files="[\\/]generated[\\/]" checks=".*"/>
 	<!-- Javadoc @return 강제 체크 제외 (예제 코드) -->
 	<suppress files=".*" checks="JavadocMethod"/>
+	<!-- Javadoc @author 강제 체크 제외 (예제 코드) -->
+	<suppress files=".*" checks="JavadocType"/>
 </suppressions>
