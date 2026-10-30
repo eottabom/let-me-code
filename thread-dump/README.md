@@ -26,12 +26,18 @@ jstack <pid>
 ```
 
 CPU 스핀 예제는 OS 스레드 ID를 Thread Dump의 `nid`와 매핑합니다.
+JDK 18 부터 `nid` 가 10진수로 찍히기 때문에(JDK-8268425), JDK 버전에 따라 검색 방법이 다릅니다.
 
 ```bash
 ./gradlew :thread-dump:runCpuSpinExample
 top -H -p <pid>
+
+# JDK 18 이상: TID 를 그대로 검색
+jstack <pid> | grep -A 20 "nid=<tid> "
+
+# JDK 17 이하: TID 를 16진수로 바꿔서 검색
 printf "%x\n" <tid>
-jstack <pid> | grep -A 20 "nid=0x<hex>"
+jstack <pid> | grep -A 20 "nid=0x<hex> "
 ```
 
 ### 주의점

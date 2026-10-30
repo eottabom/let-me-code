@@ -7,8 +7,9 @@ package com.eottabom.letmecode.example.threaddump;
  * CPU usage. This is a common pattern seen during CPU spikes.
  *
  * Steps to identify the culprit thread: 1. top -H -p <pid> — find the thread ID (TID)
- * with high CPU 2. printf "%x\n" <tid> — convert TID to hex (this is the nid) 3. jstack
- * <pid> | grep -A 20 "nid=0x<hex>" — locate thread in dump
+ * with high CPU 2. JDK 18+ prints nid in decimal, so search jstack <pid> | grep -A 20
+ * "nid=<tid> " as is. On JDK 17 and earlier nid is hex, so convert with printf "%x\n"
+ * <tid> and search "nid=0x<hex> ".
  */
 public class CpuSpinExample {
 
