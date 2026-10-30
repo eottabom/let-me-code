@@ -88,17 +88,17 @@ lsof -p <pid> -a -i tcp | grep :8090
 netstat -an | grep 8090 | grep ESTABLISHED | wc -l
 ```
 
-`default` 모드는 요청이 몰릴수록 `ESTABLISHED`/`TIME_WAIT` 소켓 수가 요청 수에 비례해서 늘어난다. `hc5`/`okhttp` 는 `maxTotal` 이하로 수렴한다.
+`default` 모드는 요청이 몰릴수록 `ESTABLISHED`/`TIME_WAIT` 소켓 수가 요청 수에 비례해서 늘어난다. `hc5` 는 `maxTotal` 이하로 유지된다. `okhttp` 의 `ConnectionPool(50, ...)` 은 idle 커넥션 개수만 제한하기 때문에, 동시 요청이 50을 넘으면 그만큼 커넥션이 더 열린다(`ConnectionUpperBoundTests`).
 
 ### 4. 스레드 덤프로 대기 여부 확인
 
-풀이 꽉 찼을 때 hc5/okhttp 클라이언트 스레드가 커넥션을 기다리며 블로킹되는지는 스레드 덤프로 확인할 수 있다.
+풀이 꽉 찼을 때 hc5 클라이언트 스레드가 커넥션을 기다리며 블로킹되는지는 스레드 덤프로 확인할 수 있다. okhttp 는 커넥션 상한이 없어서 이런 대기가 생기지 않는다.
 
 ```bash
 jstack <pid> | grep -A5 "pool-2-thread"
 ```
 
-`leaseConnection` 류의 프레임이 보이면 풀이 꽉 차서 대기 중이라는 뜻이다. `default` 모드에는 이런 대기 지점 자체가 없다(대신 소켓을 계속 새로 연다).
+HC5 에서는 `PoolingHttpClientConnectionManager` 의 lease 요청이 `BasicFuture.get` 에서 기다리는 프레임이 보이면 풀이 꽉 차서 대기 중이라는 뜻이다(`leaseConnection` 은 HttpClient 4.x 의 이름). 동시 요청이 `maxTotal`(50) 을 넘을 때만 생기므로 `burst2`(동시 20) 조건에서는 보이지 않는다. `default`, `okhttp` 모드에는 이런 대기 지점 자체가 없다(대신 소켓을 계속 새로 연다).
 
 ## 실행 결과 (concurrency=20, delayMs=200)
 
@@ -111,7 +111,7 @@ jstack <pid> | grep -A5 "pool-2-thread"
 
 로컬호스트에서는 handshake 비용이 미미해서 `elapsedMs` 자체는 네 모드 모두 비슷하다. 이 데모에서 실제로 다른 것은 소요 시간이 아니라 **풀 통계 조회 가능 여부**(default 는 없음)와 **`connection impl` 로그로 보이는 구현체**(HttpURLConnection vs ApacheHttp5Client vs OkHttpClient)다.
 
-`./gradlew :feign-http-client-migration:test` 로 실행되는 테스트는 네 클라이언트가 모두 정상 응답하는지, hc5/okhttp/http-interface 가 풀 통계를 조회할 수 있는지, `FeignClientFactory` 가 `HTTP_INTERFACE` 모드를 거부하는지, default 와 hc5 의 커넥션 재사용 차이가 관측되는지를 검증한다. 현재 7개 테스트 전부 통과 확인.
+`./gradlew :feign-http-client-migration:test` 로 실행되는 테스트는 네 클라이언트가 모두 정상 응답하는지, hc5/okhttp/http-interface 가 풀 통계를 조회할 수 있는지, `FeignClientFactory` 가 `HTTP_INTERFACE` 모드를 거부하는지, default 와 hc5 의 커넥션 재사용 차이가 관측되는지, 풀 크기(50)보다 많은 동시 요청(80)에서 hc5 는 50개까지만 커넥션을 열고 okhttp 는 80개를 모두 여는지(`ConnectionUpperBoundTests`)를 검증한다. 현재 9개 테스트 전부 통과 확인.
 
 ## 마이그레이션 방향
 
