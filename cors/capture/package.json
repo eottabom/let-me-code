@@ -1,0 +1,8 @@
+{
+  "name": "cors-capture",
+  "private": true,
+  "description": "DevTools 화면 캡처용 스크립트",
+  "dependencies": {
+    "playwright": "1.64.1"
+  }
+}

@@ -1,0 +1,31 @@
+<!doctype html><meta charset="utf-8"><title>CORS 캡처</title><link rel="icon" href="data:,">
+<style>body{font-family:-apple-system,sans-serif;max-width:760px;margin:32px auto;padding:0 16px}button{display:block;margin:8px 0;padding:10px 14px;font-size:15px;cursor:pointer;text-align:left;width:100%}pre{background:#f4f4f5;padding:12px;white-space:pre-wrap}</style>
+<h2>CORS 캡처용 페이지 (origin: localhost:5173 → API: localhost:8080)</h2>
+<p>DevTools(⌥⌘I)를 열고 Network 탭은 "Preserve log" 체크, 케이스마다 Console/Network 를 비우고(⌘K) 버튼을 누르세요.</p>
+<div id="b"></div><pre id="out"></pre>
+<script>
+const B='http://localhost:8080', json={method:'POST',headers:{'Content-Type':'application/json'},body:'1'};
+const cases=[
+ ['1. 설정 없음 GET → No ACAO (서버는 200)', '/api/none/items', {}],
+ ['2. 설정 없음 POST json → preflight 실패, 본 요청 안 감', '/api/none/items', json],
+ ['3. 설정 없음 POST text/plain → Simple Request, 서버 실행됨', '/api/none/items', {method:'POST',headers:{'Content-Type':'text/plain'},body:'hello'}],
+ ['4. 정상 preflight + PUT (Network 에 OPTIONS, PUT 두 줄)', '/api/expose/items', {method:'PUT',credentials:'include',headers:{'Content-Type':'application/json','X-Request-Id':'1'},body:'1'}],
+ ['5. Expose 없음: X-Total-Count = null', '/api/basic/items', {}, 'X-Total-Count'],
+ ['6. Expose 있음: X-Total-Count = 2', '/api/expose/items', {}, 'X-Total-Count'],
+ ['7. 와일드카드 + credentials', '/api/wild/items', {credentials:'include'}],
+ ['8. Method PUT is not allowed (고정 헤더 서버)', '/fixed/basic', {method:'PUT'}],
+ ['9. Request header field x-foo is not allowed', '/fixed/basic', {headers:{'X-Foo':'1'}}],
+ ['10. Allow-Credentials 없음', '/fixed/basic', {credentials:'include'}],
+ ['11. Max-Age 0: 3번 연속 → OPTIONS 3번', '/fixed/age0', json, null, 3],
+ ['12. Max-Age 600: 3번 연속 → OPTIONS 1번', '/fixed/age600', json, null, 3],
+ ['13. Authorization + Allow-Headers: * (Firefox 경고)', '/fixed/star', {method:'POST',headers:{Authorization:'Bearer abc'}}],
+];
+const out=document.getElementById('out');
+const only=new URLSearchParams(location.search).get('case');
+if(only!==null){document.querySelector('h2').textContent='localhost:5173 → localhost:8080';document.body.style.margin='14px auto';document.querySelector('h2').style.margin='0';document.querySelector('p').remove();document.getElementById('b').style.display='none';document.getElementById('out').style.display='none';}
+for (const [name,path,opt,hdr,n] of cases){
+  const btn=document.createElement('button'); btn.textContent=name;
+  btn.onclick=async()=>{ for(let i=0;i<(n||1);i++){ try{ const r=await fetch(B+path,opt); out.textContent=name+'\nstatus='+r.status+(hdr?'\n'+hdr+'='+r.headers.get(hdr):''); console.log(hdr ? `${path}  →  headers.get('${hdr}') = ${r.headers.get(hdr)}` : `${opt.method||'GET'} ${path}  →  status ${r.status}`); }catch(e){ out.textContent=name+'\n'+e; } } };
+  if(only===null||only.split(',').includes(String(cases.indexOf(cases.find(c=>c[0]===name))))) document.getElementById('b').appendChild(btn);
+}
+</script>

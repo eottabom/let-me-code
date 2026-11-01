@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: cors
+  security:
+    user:
+      name: user
+      password: pw
+
+cors:
+  # true 면 모든 요청에 인증을 요구하는 SecurityFilterChain 을 쓴다 (SecurityConfig 참고)
+  require-authentication: false
+  # require-authentication 이 true 일 때 http.cors() 를 켤지 여부
+  security-cors-enabled: false
