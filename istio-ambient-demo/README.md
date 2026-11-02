@@ -29,6 +29,7 @@ TO-BE: client -> nginx(ALB) -> port-forward -> Istio Gateway -> AuthorizationPol
 | `external/` | docker-compose 로 띄우는 nginx(ALB), session-svc, b-server 및 nginx conf 템플릿 |
 | `k8s/simple/` | simple 데모용 Namespace, Service+Endpoints, Gateway+HTTPRoute |
 | `k8s/authz/` | authz 데모용 Namespace, authz-server Deployment, Service+Endpoints, Gateway+HTTPRoute, AuthorizationPolicy |
+| `envoy-request-id/` | ext_authz(HTTP) 를 붙인 Envoy 단독 구성. x-request-id 를 누가 만드는지 확인 |
 | `run/` | 실행/전환/정리 스크립트 |
 | `docker-compose.yml` | `simple`/`authz` profile 로 AS-IS 컨테이너 구성을 분리 |
 
@@ -68,6 +69,15 @@ curl -H 'x-demo-user: alice' http://localhost:8080/api          # TO-BE 허용 (
 ./run/switch-authz-to-gateway.sh                                # AS-IS 복원
 ./run/stop-port-forward.sh istio-demo-authz
 ```
+
+## x-request-id 생성 위치 확인
+
+```bash
+./run/run-envoy-request-id.sh   # Envoy + echo 서버(인가 서버, 업스트림)를 띄우고 두 번 요청한 뒤 정리
+```
+
+헤더 없이 요청하면 Envoy 가 만든 UUID 가 인가 서버와 업스트림에 똑같이 전달되고,
+`x-request-id` 를 붙이면 그 값이 그대로 전달됩니다.
 
 ## 정리
 

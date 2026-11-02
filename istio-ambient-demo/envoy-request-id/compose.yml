@@ -1,0 +1,11 @@
+services:
+  authz:
+    image: mendhak/http-https-echo:37
+    environment: { HTTP_PORT: "8080" }
+  upstream:
+    image: mendhak/http-https-echo:37
+    environment: { HTTP_PORT: "8080" }
+  envoy:
+    image: envoyproxy/envoy:v1.35.0
+    volumes: [ "./envoy.yaml:/etc/envoy/envoy.yaml:ro" ]
+    ports: [ "10000:10000" ]
