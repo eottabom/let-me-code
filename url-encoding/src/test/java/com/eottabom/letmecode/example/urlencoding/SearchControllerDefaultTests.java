@@ -43,9 +43,8 @@ class SearchControllerDefaultTests {
 	@DisplayName("케이스 2: FE 가 '|' 를 %7C 로 인코딩 + 기본 Tomcat → 200")
 	void encodedPipeFilter() {
 		// FE 에서 encodeURIComponent('category:electronics|brand:samsung') 한 결과
-		ResponseEntity<String> response = this.restTemplate.getForEntity(
-				"/products?filter=category:%EC%A0%84%EC%9E%90%EA%B8%B0%EA%B8%B0%7Cbrand:%EC%82%BC%EC%84%B1",
-				String.class);
+		ResponseEntity<String> response = this.restTemplate
+			.getForEntity("/products?filter=category:electronics%7Cbrand:samsung", String.class);
 		assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
 		assertThat(response.getBody()).contains("category:electronics");
 		assertThat(response.getBody()).contains("brand:samsung");

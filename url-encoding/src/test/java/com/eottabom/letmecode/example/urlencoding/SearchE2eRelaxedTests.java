@@ -66,8 +66,7 @@ class SearchE2eRelaxedTests {
 		try (BrowserContext context = browser.newContext()) {
 			Page page = context.newPage();
 			APIResponse response = page.request()
-				.get("http://localhost:" + this.port
-						+ "/products?filter=category:%EC%A0%84%EC%9E%90%EA%B8%B0%EA%B8%B0%7Cbrand:%EC%82%BC%EC%84%B1");
+				.get("http://localhost:" + this.port + "/products?filter=category:electronics%7Cbrand:samsung");
 			assertThat(response.status()).isEqualTo(200);
 			assertThat(response.text()).contains("brand:samsung");
 		}

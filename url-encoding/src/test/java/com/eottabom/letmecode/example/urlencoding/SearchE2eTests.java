@@ -5,6 +5,7 @@ import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
+import com.microsoft.playwright.Response;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
@@ -65,20 +66,20 @@ class SearchE2eTests {
 		try (BrowserContext context = browser.newContext()) {
 			Page page = context.newPage();
 			APIResponse response = page.request()
-				.get("http://localhost:" + this.port
-						+ "/products?filter=category:%EC%A0%84%EC%9E%90%EA%B8%B0%EA%B8%B0%7Cbrand:%EC%82%BC%EC%84%B1");
+				.get("http://localhost:" + this.port + "/products?filter=category:electronics%7Cbrand:samsung");
 			assertThat(response.status()).isEqualTo(200);
 			assertThat(response.text()).contains("category:electronics");
 		}
 	}
 
 	@Test
-	@DisplayName("브라우저 navigate — 주소창에 '|' 입력 시 브라우저가 %7C 로 자동 인코딩하여 200")
-	void browserNavigateAutoEncodesPipe() {
+	@DisplayName("브라우저 navigate — 주소창에 '|' 를 넣어도 브라우저는 인코딩하지 않아 기본 Tomcat 이 400")
+	void browserNavigateSendsRawPipe() {
 		try (BrowserContext context = browser.newContext()) {
 			Page page = context.newPage();
-			page.navigate("http://localhost:" + this.port + "/products?filter=category:electronics|brand:samsung");
-			assertThat(page.content()).contains("category:electronics");
+			Response response = page
+				.navigate("http://localhost:" + this.port + "/products?filter=category:electronics|brand:samsung");
+			assertThat(response.status()).isEqualTo(400);
 		}
 	}
 

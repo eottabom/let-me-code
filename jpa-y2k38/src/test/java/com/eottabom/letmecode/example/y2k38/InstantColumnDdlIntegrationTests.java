@@ -16,7 +16,7 @@ import org.springframework.test.context.DynamicPropertySource;
 import static org.assertj.core.api.Assertions.assertThat;
 
 // schema.sql 없이 Hibernate 가 직접 테이블을 만들게 하면 Instant, LocalDateTime 이 어떤 컬럼이 되는지 확인한다.
-// Hibernate 7.2 (Spring Boot 4.0) 기준으로 Instant 도 timestamp 가 아니라 datetime(6) 이 된다.
+// Hibernate 7.2 (Spring Boot 4.0), 7.4 (Spring Boot 4.1) 모두 Instant 도 timestamp 가 아니라 datetime(6) 이 된다.
 // 즉 Y2K38 은 ddl-auto 로 만든 컬럼이 아니라, 직접 TIMESTAMP 로 선언한 기존 스키마에서 생긴다.
 @DataJpaTest(properties = { "spring.sql.init.mode=never", "spring.jpa.hibernate.ddl-auto=create" })
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)

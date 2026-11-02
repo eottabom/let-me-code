@@ -7,6 +7,7 @@ import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
+import com.microsoft.playwright.Route;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -59,10 +60,15 @@ class FrontE2eTests {
 		this.context = browser.newContext();
 		this.page = this.context.newPage();
 
-		Path htmlFile = Paths.get("url-encoding", "front", "index.html").toAbsolutePath();
-		this.page.navigate("file://" + htmlFile);
+		// Gradle 은 모듈 디렉터리에서 테스트를 실행한다.
+		Path htmlFile = Paths.get("front", "index.html").toAbsolutePath();
+		// file:// 로 열면 출처가 null 이라 CORS 에 막히므로, BE 와 같은 출처의 주소로 html 을 돌려준다.
+		String origin = "http://localhost:" + this.port;
+		this.page.route(origin + "/front/index.html", (route) -> route
+			.fulfill(new Route.FulfillOptions().setPath(htmlFile).setContentType("text/html; charset=utf-8")));
+		this.page.navigate(origin + "/front/index.html");
 		// BE 주소를 테스트 서버 포트로 교체
-		this.page.evaluate("window.BE = 'http://localhost:" + this.port + "'");
+		this.page.evaluate("window.BE = '" + origin + "'");
 	}
 
 	@AfterEach

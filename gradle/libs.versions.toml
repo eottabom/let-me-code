@@ -1,6 +1,6 @@
 [versions]
 # spring
-spring-boot = "4.0.7"
+spring-boot = "4.1.2"
 spring-dependency-management = "1.1.7"
 spring-cloud = "2025.1.2"
 spring-grpc = "1.0.3"
@@ -56,6 +56,7 @@ spring-boot-starter-actuator = { module = "org.springframework.boot:spring-boot-
 spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
 spring-boot-starter-data-jpa-test = { module = "org.springframework.boot:spring-boot-starter-data-jpa-test" }
 spring-boot-resttestclient = { module = "org.springframework.boot:spring-boot-resttestclient" }
+spring-boot-restclient = { module = "org.springframework.boot:spring-boot-restclient" }
 spring-boot-starter-webflux = { module = "org.springframework.boot:spring-boot-starter-webflux" }
 spring-boot-starter-jdbc = { module = "org.springframework.boot:spring-boot-starter-jdbc" }
 spring-boot-starter-security = { module = "org.springframework.boot:spring-boot-starter-security" }
