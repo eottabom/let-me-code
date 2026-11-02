@@ -7,7 +7,7 @@
 
 ## 버전
 
-- Spring Boot: `4.0.3`
+- Spring Boot: `4.1.2`
 - Gradle: `9.1.0` (Docker build stage)
 
 ## 1) DB 내부 비교 (AS-IS vs TO-BE)
@@ -35,6 +35,8 @@ SEED=1 TOTAL_DOCS=1000000 PAGE_SIZE=500 PAGES=0,1,10,100,300,1000 ./run-spring-b
 - `SEED=1`이면 데이터 재생성
 - 로컬 Maven/Gradle 설치 불필요 (Docker로 빌드/실행)
 - `PAGES`는 쉼표 구분 (`0,1,10,...`)
+- `WARMUP`(기본 3)만큼 두 방식을 미리 실행한 뒤, 페이지마다 `REPEAT`(기본 5)번 재서 중앙값을 출력
+- 코드를 바꿔도 예전 이미지로 돌지 않도록 실행할 때마다 이미지를 다시 빌드
 
 ## 출력 해석
 

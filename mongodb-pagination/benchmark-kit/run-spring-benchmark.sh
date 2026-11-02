@@ -20,6 +20,8 @@ TOTAL_DOCS="${TOTAL_DOCS:-1000000}"
 BATCH_SIZE="${BATCH_SIZE:-10000}"
 PAGE_SIZE="${PAGE_SIZE:-500}"
 PAGES="${PAGES:-0,1,10,100,300,1000}"
+WARMUP="${WARMUP:-3}"
+REPEAT="${REPEAT:-5}"
 
 echo "[run] starting mongodb container"
 $COMPOSE_CMD up -d mongo
@@ -48,10 +50,13 @@ if [[ "${SEED:-1}" == "1" ]]; then
 fi
 
 echo "[run] building and running spring benchmark in docker"
-$COMPOSE_CMD run --rm \
+# 코드를 바꿔도 예전 이미지로 돌지 않도록 매번 다시 빌드한다.
+$COMPOSE_CMD run --rm --build \
   -e COLL_NAME="$COLL_NAME" \
   -e PAGE_SIZE="$PAGE_SIZE" \
   -e PAGES="$PAGES" \
+  -e WARMUP="$WARMUP" \
+  -e REPEAT="$REPEAT" \
   spring-benchmark \
   --spring.data.mongodb.uri="mongodb://mongo:27017/$DB_NAME" \
   --spring.mongodb.uri="mongodb://mongo:27017/$DB_NAME"

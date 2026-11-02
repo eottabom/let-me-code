@@ -9,3 +9,5 @@ benchmark:
   collection: ${COLL_NAME:posts}
   page-size: ${PAGE_SIZE:500}
   pages: ${PAGES:0,1,10,100,300}
+  warmup: ${WARMUP:3}
+  repeat: ${REPEAT:5}
