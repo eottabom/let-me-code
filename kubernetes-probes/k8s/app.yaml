@@ -1,0 +1,42 @@
+# 기본 실험 배포. 시나리오별 run 스크립트가 probe 설정이나 env 를 덮어써서 쓴다.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: probes-app
+  namespace: probes
+spec:
+  replicas: 2
+  selector:
+    matchLabels: { app: probes-app }
+  template:
+    metadata:
+      labels: { app: probes-app }
+    spec:
+      terminationGracePeriodSeconds: 30
+      containers:
+        - name: app
+          image: probes-app:local
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
+          livenessProbe:
+            httpGet: { path: /actuator/health/liveness, port: 8080 }
+            periodSeconds: 5
+            failureThreshold: 3
+            timeoutSeconds: 1
+          readinessProbe:
+            httpGet: { path: /actuator/health/readiness, port: 8080 }
+            periodSeconds: 5
+            failureThreshold: 3
+            timeoutSeconds: 1
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: probes-app
+  namespace: probes
+spec:
+  selector: { app: probes-app }
+  ports:
+    - port: 80
+      targetPort: 8080

@@ -1,0 +1,60 @@
+
+[21:41:43] 대상 Pod: probes-app-565bc5c75c-n5s57, IP 10.244.0.77
+
+[21:41:43] liveness BROKEN
+{"liveness":"BROKEN"}
++  0s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++  1s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++  2s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++  3s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++  4s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++  5s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++  6s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++  7s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++  9s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 10s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 11s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 12s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 13s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 14s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 15s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 16s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 17s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 18s  n5s57 ready=false restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++ 20s  n5s57 ready=false restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++ 21s  n5s57 ready=false restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++ 22s  n5s57 ready=false restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++ 23s  n5s57 ready=false restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++ 24s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 25s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 26s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 27s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 28s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 29s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 30s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 32s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 33s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 34s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 35s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 36s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 37s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 38s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 39s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 40s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 41s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 42s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 44s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 45s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 46s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 47s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 48s  n5s57 ready=true restarts=1 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
+
+[21:42:32] 이벤트
+2026-11-03T12:28:15Z   Scheduled   Successfully assigned probes/probes-app-565bc5c75c-n5s57 to probes-lab-control-plane
+2026-11-03T12:29:01Z   Unhealthy   Readiness probe failed: HTTP probe failed with statuscode: 503
+2026-11-03T12:41:56Z   Unhealthy   Liveness probe failed: HTTP probe failed with statuscode: 503
+2026-11-03T12:41:56Z   Killing     Container app failed liveness probe, will be restarted
+2026-11-03T12:42:01Z   Pulled      Container image "probes-app:local" already present on machine and can be accessed by the pod
+2026-11-03T12:42:01Z   Created     Container created
+2026-11-03T12:42:01Z   Started     Container started
+2026-11-03T12:42:01Z   Unhealthy   Readiness probe failed: Get "http://10.244.0.77:8080/actuator/health/readiness": dial tcp 10.244.0.77:8080: connect: connection refused

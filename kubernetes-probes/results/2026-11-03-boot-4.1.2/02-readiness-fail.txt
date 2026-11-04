@@ -1,0 +1,52 @@
+
+[21:28:34] 대상 Pod: probes-app-565bc5c75c-n5s57, IP 10.244.0.77
+
+[21:28:34] 변경 전 Service 로 40번 요청
+  18 {"pod":"probes-app-565bc5c75c-n5s57"}
+  22 {"pod":"probes-app-565bc5c75c-r4ffw"}
+
+[21:28:34] readiness REFUSING_TRAFFIC
+{"readiness":"REFUSING_TRAFFIC"}
++  0s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++  2s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++  3s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++  4s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++  5s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++  6s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++  7s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++  8s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++  9s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 10s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 11s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 13s  n5s57 ready=false restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++ 14s  n5s57 ready=false restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++ 15s  n5s57 ready=false restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++ 16s  n5s57 ready=false restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++ 17s  n5s57 ready=false restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++ 18s  n5s57 ready=false restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++ 19s  n5s57 ready=false restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++ 20s  n5s57 ready=false restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++ 21s  n5s57 ready=false restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++ 22s  n5s57 ready=false restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++ 24s  n5s57 ready=false restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++ 25s  n5s57 ready=false restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++ 26s  n5s57 ready=false restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++ 27s  n5s57 ready=false restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
+
+[21:29:02] 변경 후 Service 로 40번 요청
+  40 {"pod":"probes-app-565bc5c75c-r4ffw"}
+
+[21:29:02] 다시 ACCEPTING_TRAFFIC
+{"readiness":"ACCEPTING_TRAFFIC"}
++  0s  n5s57 ready=false restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++  1s  n5s57 ready=false restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++  3s  n5s57 ready=false restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++  4s  n5s57 ready=false restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.78 ]
++  5s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++  6s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++  7s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++  8s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++  9s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 10s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 11s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]
++ 12s  n5s57 ready=true restarts=0 running | r4ffw ready=true restarts=0 running |  endpoints[10.244.0.77 10.244.0.78 ]

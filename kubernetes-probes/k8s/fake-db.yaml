@@ -1,0 +1,30 @@
+# 외부 DB 역할. 앱은 TCP 연결만 확인하므로 아무 서버나 포트만 열려 있으면 된다.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: db
+  namespace: probes
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: db }
+  template:
+    metadata:
+      labels: { app: db }
+    spec:
+      containers:
+        - name: db
+          image: nginx:1.27-alpine
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: db
+  namespace: probes
+spec:
+  selector: { app: db }
+  ports:
+    - port: 5432
+      targetPort: 80

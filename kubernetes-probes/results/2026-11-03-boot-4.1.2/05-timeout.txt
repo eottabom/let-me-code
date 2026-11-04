@@ -1,0 +1,8 @@
+
+[21:45:52] liveness = /slow?millis=1500, timeoutSeconds=1
+probes-app-5cd7768cd4-hv6pk   3
+Killing     Container app failed liveness probe, will be restarted
+Unhealthy   Liveness probe failed: Get "http://10.244.0.82:8080/slow?millis=1500": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+
+[21:46:43] liveness = /slow?millis=1500, timeoutSeconds=3
+probes-app-6858b76d54-zpsj6   0

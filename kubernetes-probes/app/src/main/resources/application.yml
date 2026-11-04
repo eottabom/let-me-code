@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: probes
+  lifecycle:
+    timeout-per-shutdown-phase: 20s
+
+server:
+  shutdown: graceful
+
+management:
+  endpoint:
+    health:
+      # Spring Boot 4 는 management.endpoint.health.probes.enabled 기본값이 true 라 liveness, readiness 그룹을 따로 켜지 않는다.
+      show-details: always
+      group:
+        # 기본: liveness 는 애플리케이션 내부 상태만 본다.
+        liveness:
+          include: ${PROBES_LIVENESS_INCLUDE:livenessState}
+        readiness:
+          include: ${PROBES_READINESS_INCLUDE:readinessState}
+  endpoints:
+    web:
+      exposure:
+        include: health
+
+logging:
+  level:
+    # liveness, readiness 상태가 바뀔 때마다 남기는 로그(ApplicationAvailabilityBean)는 DEBUG 라서 따로 켠다.
+    org.springframework.boot.availability: DEBUG
+
+probes:
+  # 0 보다 크면 애플리케이션 시작을 이 시간만큼 붙잡아둔다 (Tomcat 이 아직 포트를 열지 않은 상태).
+  startup-delay-seconds: ${STARTUP_DELAY_SECONDS:0}
+  # 0 보다 크면 ApplicationRunner 에서 이 시간만큼 붙잡아둔다 (포트는 열렸지만 readiness 는 아직 REFUSING_TRAFFIC).
+  runner-delay-seconds: ${RUNNER_DELAY_SECONDS:0}
+  # 외부 의존성(DB 역할) 헬스 체크 대상. TCP 연결만 확인한다.
+  dependency-host: ${DEPENDENCY_HOST:}
+  dependency-port: ${DEPENDENCY_PORT:5432}

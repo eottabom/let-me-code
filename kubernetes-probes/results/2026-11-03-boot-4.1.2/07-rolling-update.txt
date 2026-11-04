@@ -1,0 +1,18 @@
+
+[21:48:34] A) preStop 없음 #1: 0.1초마다 요청을 보내면서 rollout restart
+성공 483, 실패 3
+
+[21:49:34] A) preStop 없음 #2: 0.1초마다 요청을 보내면서 rollout restart
+성공 485, 실패 3
+
+[21:50:34] A) preStop 없음 #3: 0.1초마다 요청을 보내면서 rollout restart
+성공 468, 실패 5
+
+[21:51:52] B) preStop sleep 5초 #1: 0.1초마다 요청을 보내면서 rollout restart
+성공 528, 실패 1
+
+[21:52:52] B) preStop sleep 5초 #2: 0.1초마다 요청을 보내면서 rollout restart
+성공 546, 실패 0
+
+[21:53:52] B) preStop sleep 5초 #3: 0.1초마다 요청을 보내면서 rollout restart
+성공 545, 실패 0

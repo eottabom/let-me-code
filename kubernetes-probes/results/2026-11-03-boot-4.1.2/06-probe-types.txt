@@ -1,0 +1,28 @@
+
+[21:47:55] 정상 상태
+NAME         READY   STATUS    RESTARTS   AGE
+tcp-probe    1/1     Running   0          20s
+exec-probe   1/1     Running   0          20s
+grpc-probe   1/1     Running   0          20s
+
+[21:47:55] exec: /tmp/alive 삭제
+{"present":false}
+
+[21:47:56] gRPC: agnhost 의 health 상태를 NOT_SERVING 으로 (8080 /make-not-serving)
+20.546409425s
+
+[21:47:56] tcp: 8080 을 듣는 프로세스를 멈춘다 (java 를 SIGSTOP 하면 포트는 열려 있다)
+
+[21:48:26] 30초 뒤
+NAME         READY   STATUS    RESTARTS      AGE
+tcp-probe    1/1     Running   0             51s
+exec-probe   1/1     Running   1 (16s ago)   51s
+grpc-probe   1/1     Running   1 (16s ago)   51s
+--- tcp-probe
+(probe 실패 이벤트 없음)
+--- exec-probe
+Killing     Container app failed liveness probe, will be restarted
+Unhealthy   Liveness probe failed: 
+--- grpc-probe
+Killing     Container agnhost failed liveness probe, will be restarted
+Unhealthy   Liveness probe failed: service unhealthy (responded with "NOT_SERVING")

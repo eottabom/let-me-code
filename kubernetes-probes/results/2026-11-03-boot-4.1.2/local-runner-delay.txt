@@ -1,0 +1,28 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.2)
+
+2026-11-03T21:04:56.755+09:00  INFO 10083 --- [probes] [           main] c.e.l.example.probes.ProbesApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-11-03T21:04:57.376+09:00  INFO 10083 --- [probes] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 18186 (http)
+2026-11-03T21:04:57.385+09:00  INFO 10083 --- [probes] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-03T21:04:57.385+09:00  INFO 10083 --- [probes] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-03T21:04:57.400+09:00  INFO 10083 --- [probes] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 610 ms
+2026-11-03T21:04:57.701+09:00  INFO 10083 --- [probes] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-11-03T21:04:57.744+09:00  INFO 10083 --- [probes] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 18186 (http) with context path '/'
+2026-11-03T21:04:57.749+09:00  INFO 10083 --- [probes] [           main] c.e.l.example.probes.ProbesApplication   : Started ProbesApplication in 1.262 seconds (process running for 1.52)
+2026-11-03T21:04:57.792+09:00 DEBUG 10083 --- [probes] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2026-11-03T21:04:57.793+09:00  INFO 10083 --- [probes] [           main] c.e.letmecode.example.probes.SlowRunner  : Runner 지연 10초
+2026-11-03T21:04:58.334+09:00  INFO 10083 --- [probes] [io-18186-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03T21:04:58.334+09:00  INFO 10083 --- [probes] [io-18186-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-03T21:04:58.335+09:00  INFO 10083 --- [probes] [io-18186-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-11-03T21:05:07.794+09:00  INFO 10083 --- [probes] [           main] c.e.letmecode.example.probes.SlowRunner  : Runner 지연 끝
+2026-11-03T21:05:07.796+09:00 DEBUG 10083 --- [probes] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2026-11-03T21:05:08.368+09:00 DEBUG 10083 --- [probes] [ionShutdownHook] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2026-11-03T21:05:08.370+09:00  INFO 10083 --- [probes] [ionShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-03T21:05:11.892+09:00  INFO 10083 --- [probes] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
