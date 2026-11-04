@@ -79,7 +79,7 @@ curl -s -o /dev/null -w "%{http_code}\n" localhost:8080/actuator/health/readines
 | liveness 13초 판정, 18초 재시작, 24초 ready | `01-liveness-fail.txt` (BROKEN 21:41:43, Unhealthy/Killing 이벤트 12:41:56Z) |
 | readiness 13초 제외, 5초 복귀, Service 요청 40번 | `02-readiness-fail.txt` |
 | liveness 만으로 40초, 83초 재시작, startupProbe 로 43초 ready | `03-slow-startup.txt` |
-| DB 체크 liveness: 13~16초, 28~30초, 43~46초에 차례로 재시작, 59초 CrashLoopBackOff, 복구 후 21초 | `04-dependency-in-probe-liveness.txt` |
+| DB 체크 liveness: 13\~16초, 28\~30초, 43\~46초에 차례로 재시작, 59초 CrashLoopBackOff, 복구 후 21초 | `04-dependency-in-probe-liveness.txt` |
 | DB 체크 readiness: 15초 제외, 복구 후 5초 | `04-dependency-in-probe-readiness.txt` |
 | timeoutSeconds 1 은 재시작 3번, 3 은 0번 | `05-timeout.txt` |
 | TCP 통과, Exec, gRPC 재시작과 이벤트 메시지 | `06-probe-types.txt` |
