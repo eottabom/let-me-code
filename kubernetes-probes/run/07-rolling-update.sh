@@ -10,7 +10,7 @@ k rollout status deploy/probes-app --timeout=180s >/dev/null
 
 run_case() {
 	local name=$1
-	log "$name: 0.1초마다 요청을 보내면서 rollout restart"
+	log "$name: 요청마다 0.1초 쉬면서 1분 동안 요청을 보내고 rollout restart"
 	k exec client -- sh -c 'end=$(( $(date +%s) + 60 )); ok=0; fail=0; while [ $(date +%s) -lt $end ]; do
 		if curl -s -o /dev/null --max-time 2 -w "%{http_code}" http://probes-app/hello | grep -q 200; then ok=$((ok+1)); else fail=$((fail+1)); fi
 		sleep 0.1; done; echo "성공 $ok, 실패 $fail"' &
