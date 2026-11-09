@@ -1,0 +1,280 @@
+JDBC Ready 때 풀 시작 여부 (1 이면 시작됨)	0
+JDBC /users 서버 1번째	194.11
+JDBC /users 서버 2~10번째	1.93
+JDBC /users 서버 11번째 이후	1.76
+JDBC /users 클라이언트 1번째	195.46
+JDBC /users 클라이언트 2~10번째	2.77
+JDBC /users 클라이언트 11번째 이후	2.48
+JDBC Started 로그 (애플리케이션)	2130
+JDBC Started 로그 (JVM 포함)	2436
+JDBC Ready 때 풀 시작 여부 (1 이면 시작됨)	0
+JDBC /users 서버 1번째	219.54
+JDBC /users 서버 2~10번째	1.80
+JDBC /users 서버 11번째 이후	1.83
+JDBC /users 클라이언트 1번째	221.03
+JDBC /users 클라이언트 2~10번째	2.55
+JDBC /users 클라이언트 11번째 이후	2.49
+JDBC Started 로그 (애플리케이션)	1721
+JDBC Started 로그 (JVM 포함)	2032
+JDBC Ready 때 풀 시작 여부 (1 이면 시작됨)	0
+JDBC /users 서버 1번째	191.71
+JDBC /users 서버 2~10번째	3.19
+JDBC /users 서버 11번째 이후	1.87
+JDBC /users 클라이언트 1번째	193.06
+JDBC /users 클라이언트 2~10번째	3.90
+JDBC /users 클라이언트 11번째 이후	2.56
+JDBC Started 로그 (애플리케이션)	1633
+JDBC Started 로그 (JVM 포함)	1939
+JDBC Ready 때 풀 시작 여부 (1 이면 시작됨)	0
+JDBC /users 서버 1번째	200.14
+JDBC /users 서버 2~10번째	1.82
+JDBC /users 서버 11번째 이후	1.61
+JDBC /users 클라이언트 1번째	201.47
+JDBC /users 클라이언트 2~10번째	2.55
+JDBC /users 클라이언트 11번째 이후	2.28
+JDBC Started 로그 (애플리케이션)	1689
+JDBC Started 로그 (JVM 포함)	1991
+JDBC Ready 때 풀 시작 여부 (1 이면 시작됨)	0
+JDBC /users 서버 1번째	217.57
+JDBC /users 서버 2~10번째	1.94
+JDBC /users 서버 11번째 이후	2.01
+JDBC /users 클라이언트 1번째	218.91
+JDBC /users 클라이언트 2~10번째	2.69
+JDBC /users 클라이언트 11번째 이후	2.83
+JDBC Started 로그 (애플리케이션)	1975
+JDBC Started 로그 (JVM 포함)	2286
+JDBC Ready 때 풀 시작 여부 (1 이면 시작됨)	0
+JDBC /users 서버 1번째	209.04
+JDBC /users 서버 2~10번째	1.82
+JDBC /users 서버 11번째 이후	2.06
+JDBC /users 클라이언트 1번째	210.60
+JDBC /users 클라이언트 2~10번째	2.50
+JDBC /users 클라이언트 11번째 이후	2.99
+JDBC Started 로그 (애플리케이션)	1626
+JDBC Started 로그 (JVM 포함)	1926
+JDBC Ready 때 풀 시작 여부 (1 이면 시작됨)	0
+JDBC /users 서버 1번째	218.99
+JDBC /users 서버 2~10번째	1.72
+JDBC /users 서버 11번째 이후	1.72
+JDBC /users 클라이언트 1번째	220.48
+JDBC /users 클라이언트 2~10번째	2.46
+JDBC /users 클라이언트 11번째 이후	2.39
+JDBC Started 로그 (애플리케이션)	1617
+JDBC Started 로그 (JVM 포함)	1926
+JDBC Ready 때 풀 시작 여부 (1 이면 시작됨)	0
+JDBC /users 서버 1번째	202.74
+JDBC /users 서버 2~10번째	1.86
+JDBC /users 서버 11번째 이후	1.69
+JDBC /users 클라이언트 1번째	204.19
+JDBC /users 클라이언트 2~10번째	2.57
+JDBC /users 클라이언트 11번째 이후	2.40
+JDBC Started 로그 (애플리케이션)	1691
+JDBC Started 로그 (JVM 포함)	1991
+JDBC Ready 때 풀 시작 여부 (1 이면 시작됨)	0
+JDBC /users 서버 1번째	231.80
+JDBC /users 서버 2~10번째	1.75
+JDBC /users 서버 11번째 이후	1.48
+JDBC /users 클라이언트 1번째	233.24
+JDBC /users 클라이언트 2~10번째	2.43
+JDBC /users 클라이언트 11번째 이후	2.16
+JDBC Started 로그 (애플리케이션)	1669
+JDBC Started 로그 (JVM 포함)	1971
+JDBC Ready 때 풀 시작 여부 (1 이면 시작됨)	0
+JDBC /users 서버 1번째	194.62
+JDBC /users 서버 2~10번째	2.07
+JDBC /users 서버 11번째 이후	1.62
+JDBC /users 클라이언트 1번째	196.00
+JDBC /users 클라이언트 2~10번째	2.92
+JDBC /users 클라이언트 11번째 이후	2.29
+JDBC Started 로그 (애플리케이션)	1625
+JDBC Started 로그 (JVM 포함)	1925
+JPA Ready 때 풀 시작 여부 (1 이면 시작됨)	1
+JPA /users 서버 1번째	17.11
+JPA /users 서버 2~10번째	1.77
+JPA /users 서버 11번째 이후	1.58
+JPA /users 클라이언트 1번째	18.58
+JPA /users 클라이언트 2~10번째	2.43
+JPA /users 클라이언트 11번째 이후	2.25
+JPA Started 로그 (애플리케이션)	2511
+JPA Started 로그 (JVM 포함)	2837
+JPA 풀 시작이 Started 로그보다 앞선 시간	976
+JPA Ready 때 풀 시작 여부 (1 이면 시작됨)	1
+JPA /users 서버 1번째	22.28
+JPA /users 서버 2~10번째	1.76
+JPA /users 서버 11번째 이후	1.71
+JPA /users 클라이언트 1번째	23.73
+JPA /users 클라이언트 2~10번째	2.53
+JPA /users 클라이언트 11번째 이후	2.45
+JPA Started 로그 (애플리케이션)	2473
+JPA Started 로그 (JVM 포함)	2772
+JPA 풀 시작이 Started 로그보다 앞선 시간	935
+JPA Ready 때 풀 시작 여부 (1 이면 시작됨)	1
+JPA /users 서버 1번째	16.56
+JPA /users 서버 2~10번째	1.81
+JPA /users 서버 11번째 이후	1.76
+JPA /users 클라이언트 1번째	18.01
+JPA /users 클라이언트 2~10번째	2.65
+JPA /users 클라이언트 11번째 이후	2.47
+JPA Started 로그 (애플리케이션)	2866
+JPA Started 로그 (JVM 포함)	3184
+JPA 풀 시작이 Started 로그보다 앞선 시간	976
+JPA Ready 때 풀 시작 여부 (1 이면 시작됨)	1
+JPA /users 서버 1번째	21.05
+JPA /users 서버 2~10번째	1.83
+JPA /users 서버 11번째 이후	1.74
+JPA /users 클라이언트 1번째	22.40
+JPA /users 클라이언트 2~10번째	2.57
+JPA /users 클라이언트 11번째 이후	2.50
+JPA Started 로그 (애플리케이션)	2534
+JPA Started 로그 (JVM 포함)	2839
+JPA 풀 시작이 Started 로그보다 앞선 시간	984
+JPA Ready 때 풀 시작 여부 (1 이면 시작됨)	1
+JPA /users 서버 1번째	15.17
+JPA /users 서버 2~10번째	1.66
+JPA /users 서버 11번째 이후	1.62
+JPA /users 클라이언트 1번째	16.54
+JPA /users 클라이언트 2~10번째	2.45
+JPA /users 클라이언트 11번째 이후	2.26
+JPA Started 로그 (애플리케이션)	2493
+JPA Started 로그 (JVM 포함)	2794
+JPA 풀 시작이 Started 로그보다 앞선 시간	973
+JPA Ready 때 풀 시작 여부 (1 이면 시작됨)	1
+JPA /users 서버 1번째	15.89
+JPA /users 서버 2~10번째	1.87
+JPA /users 서버 11번째 이후	1.93
+JPA /users 클라이언트 1번째	17.24
+JPA /users 클라이언트 2~10번째	2.48
+JPA /users 클라이언트 11번째 이후	2.63
+JPA Started 로그 (애플리케이션)	2467
+JPA Started 로그 (JVM 포함)	2776
+JPA 풀 시작이 Started 로그보다 앞선 시간	935
+JPA Ready 때 풀 시작 여부 (1 이면 시작됨)	1
+JPA /users 서버 1번째	15.48
+JPA /users 서버 2~10번째	2.39
+JPA /users 서버 11번째 이후	1.72
+JPA /users 클라이언트 1번째	16.85
+JPA /users 클라이언트 2~10번째	3.00
+JPA /users 클라이언트 11번째 이후	2.45
+JPA Started 로그 (애플리케이션)	2473
+JPA Started 로그 (JVM 포함)	2781
+JPA 풀 시작이 Started 로그보다 앞선 시간	952
+JPA Ready 때 풀 시작 여부 (1 이면 시작됨)	1
+JPA /users 서버 1번째	20.62
+JPA /users 서버 2~10번째	2.35
+JPA /users 서버 11번째 이후	1.66
+JPA /users 클라이언트 1번째	22.01
+JPA /users 클라이언트 2~10번째	3.14
+JPA /users 클라이언트 11번째 이후	2.37
+JPA Started 로그 (애플리케이션)	2516
+JPA Started 로그 (JVM 포함)	2822
+JPA 풀 시작이 Started 로그보다 앞선 시간	983
+JPA Ready 때 풀 시작 여부 (1 이면 시작됨)	1
+JPA /users 서버 1번째	15.57
+JPA /users 서버 2~10번째	1.69
+JPA /users 서버 11번째 이후	1.67
+JPA /users 클라이언트 1번째	16.89
+JPA /users 클라이언트 2~10번째	2.49
+JPA /users 클라이언트 11번째 이후	2.35
+JPA Started 로그 (애플리케이션)	2531
+JPA Started 로그 (JVM 포함)	2836
+JPA 풀 시작이 Started 로그보다 앞선 시간	989
+JPA Ready 때 풀 시작 여부 (1 이면 시작됨)	1
+JPA /users 서버 1번째	17.73
+JPA /users 서버 2~10번째	1.69
+JPA /users 서버 11번째 이후	1.75
+JPA /users 클라이언트 1번째	19.02
+JPA /users 클라이언트 2~10번째	2.41
+JPA /users 클라이언트 11번째 이후	2.46
+JPA Started 로그 (애플리케이션)	2533
+JPA Started 로그 (JVM 포함)	2840
+JPA 풀 시작이 Started 로그보다 앞선 시간	948
+JPA-ddl-auto-지정-메타데이터-조회-끔 Ready 때 풀 시작 여부 (1 이면 시작됨)	0
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 1번째	190.30
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 2~10번째	2.13
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 11번째 이후	1.72
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 1번째	192.22
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 2~10번째	2.93
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 11번째 이후	2.42
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (애플리케이션)	2263
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (JVM 포함)	2568
+JPA-ddl-auto-지정-메타데이터-조회-끔 Ready 때 풀 시작 여부 (1 이면 시작됨)	0
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 1번째	185.66
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 2~10번째	1.93
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 11번째 이후	1.95
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 1번째	187.19
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 2~10번째	2.75
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 11번째 이후	2.68
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (애플리케이션)	2291
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (JVM 포함)	2590
+JPA-ddl-auto-지정-메타데이터-조회-끔 Ready 때 풀 시작 여부 (1 이면 시작됨)	0
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 1번째	183.63
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 2~10번째	2.12
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 11번째 이후	1.72
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 1번째	185.16
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 2~10번째	2.89
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 11번째 이후	2.42
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (애플리케이션)	2223
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (JVM 포함)	2535
+JPA-ddl-auto-지정-메타데이터-조회-끔 Ready 때 풀 시작 여부 (1 이면 시작됨)	0
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 1번째	212.10
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 2~10번째	2.10
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 11번째 이후	2.55
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 1번째	213.83
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 2~10번째	3.25
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 11번째 이후	3.89
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (애플리케이션)	2338
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (JVM 포함)	2667
+JPA-ddl-auto-지정-메타데이터-조회-끔 Ready 때 풀 시작 여부 (1 이면 시작됨)	0
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 1번째	192.53
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 2~10번째	2.50
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 11번째 이후	1.91
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 1번째	194.08
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 2~10번째	3.38
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 11번째 이후	2.67
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (애플리케이션)	2346
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (JVM 포함)	2644
+JPA-ddl-auto-지정-메타데이터-조회-끔 Ready 때 풀 시작 여부 (1 이면 시작됨)	0
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 1번째	189.81
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 2~10번째	2.19
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 11번째 이후	1.73
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 1번째	191.31
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 2~10번째	3.10
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 11번째 이후	2.36
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (애플리케이션)	2373
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (JVM 포함)	2676
+JPA-ddl-auto-지정-메타데이터-조회-끔 Ready 때 풀 시작 여부 (1 이면 시작됨)	0
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 1번째	183.53
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 2~10번째	2.10
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 11번째 이후	1.74
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 1번째	185.13
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 2~10번째	2.90
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 11번째 이후	2.46
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (애플리케이션)	2700
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (JVM 포함)	3014
+JPA-ddl-auto-지정-메타데이터-조회-끔 Ready 때 풀 시작 여부 (1 이면 시작됨)	0
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 1번째	194.19
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 2~10번째	1.71
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 11번째 이후	1.63
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 1번째	195.68
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 2~10번째	2.45
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 11번째 이후	2.29
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (애플리케이션)	2351
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (JVM 포함)	2649
+JPA-ddl-auto-지정-메타데이터-조회-끔 Ready 때 풀 시작 여부 (1 이면 시작됨)	0
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 1번째	220.90
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 2~10번째	2.04
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 11번째 이후	1.73
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 1번째	222.22
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 2~10번째	2.82
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 11번째 이후	2.47
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (애플리케이션)	2291
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (JVM 포함)	2595
+JPA-ddl-auto-지정-메타데이터-조회-끔 Ready 때 풀 시작 여부 (1 이면 시작됨)	0
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 1번째	186.36
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 2~10번째	1.80
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 11번째 이후	1.83
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 1번째	187.84
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 2~10번째	2.56
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 11번째 이후	2.52
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (애플리케이션)	2347
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (JVM 포함)	2664

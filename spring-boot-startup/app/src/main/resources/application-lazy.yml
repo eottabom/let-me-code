@@ -1,0 +1,4 @@
+spring:
+  main:
+    # 빈 생성을 처음 쓰는 시점까지 미룬다. 시작은 빨라지고 그 비용이 첫 요청으로 옮겨 간다.
+    lazy-initialization: true

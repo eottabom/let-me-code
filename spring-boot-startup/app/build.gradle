@@ -1,0 +1,14 @@
+plugins {
+	alias(libs.plugins.spring.boot)
+	alias(libs.plugins.spring.dependency.management)
+}
+
+dependencies {
+	implementation libs.spring.boot.starter.web
+	implementation libs.spring.boot.starter.actuator
+	implementation libs.spring.boot.starter.jdbc
+	implementation libs.spring.boot.restclient
+	// 기본 실행에서는 자동 설정을 꺼 두고 jpa 프로파일에서만 켠다 (application.yml).
+	implementation libs.spring.boot.starter.data.jpa
+	runtimeOnly libs.mysql.connector.j
+}

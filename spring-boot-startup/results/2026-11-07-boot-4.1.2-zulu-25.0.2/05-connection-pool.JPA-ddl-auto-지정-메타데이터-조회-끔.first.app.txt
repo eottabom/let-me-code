@@ -1,0 +1,129 @@
+[timeline] +   332ms main                     ApplicationStartingEvent
+[timeline] +   558ms main                     ApplicationEnvironmentPreparedEvent
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.2)
+
+[timeline] +   604ms main                     ApplicationContextInitializedEvent
+2026-11-07T10:52:25.829+09:00  INFO 86289 --- [spring-boot-startup] [           main] c.e.l.e.startup.StartupApplication       : Starting StartupApplication v0.0.1-SNAPSHOT using Java 25.0.2 with PID 86289 (~/workspace/let-me-code/spring-boot-startup/app/build/libs/app-0.0.1-SNAPSHOT.jar started by user in ~/workspace/let-me-code/spring-boot-startup)
+2026-11-07T10:52:25.832+09:00  INFO 86289 --- [spring-boot-startup] [           main] c.e.l.e.startup.StartupApplication       : The following 2 profiles are active: "jpa", "jpa-no-boot-connection"
+[timeline] +   639ms main                     ApplicationPreparedEvent
+2026-11-07T10:52:26.279+09:00  INFO 86289 --- [spring-boot-startup] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-07T10:52:26.299+09:00  INFO 86289 --- [spring-boot-startup] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2026-11-07T10:52:26.626+09:00  INFO 86289 --- [spring-boot-startup] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-07T10:52:26.637+09:00  INFO 86289 --- [spring-boot-startup] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-07T10:52:26.637+09:00  INFO 86289 --- [spring-boot-startup] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-07T10:52:26.652+09:00  INFO 86289 --- [spring-boot-startup] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 790 ms
+2026-11-07T10:52:26.745+09:00 DEBUG 86289 --- [spring-boot-startup] [           main] com.zaxxer.hikari.util.UtilityElf        : Class com.mysql.cj.jdbc.Driver found in Thread context class loader org.springframework.boot.loader.launch.LaunchedClassLoader@5ca881b5
+2026-11-07T10:52:26.810+09:00  INFO 86289 --- [spring-boot-startup] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-07T10:52:26.840+09:00  INFO 86289 --- [spring-boot-startup] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.13.Final
+2026-11-07T10:52:27.094+09:00  INFO 86289 --- [spring-boot-startup] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-07T10:52:27.113+09:00  WARN 86289 --- [spring-boot-startup] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-07T10:52:27.120+09:00  INFO 86289 --- [spring-boot-startup] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: MySQLDialect
+	Database version: 8.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: <unknown>
+	JDBC fetch size: undefined/unknown
+	Pool: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-07T10:52:27.324+09:00  INFO 86289 --- [spring-boot-startup] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-07T10:52:27.332+09:00  INFO 86289 --- [spring-boot-startup] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-07T10:52:27.731+09:00  INFO 86289 --- [spring-boot-startup] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-11-07T10:52:27.784+09:00  INFO 86289 --- [spring-boot-startup] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+[timeline] +  2562ms main                     ServletWebServerInitializedEvent
+[timeline] +  2566ms main                     ContextRefreshedEvent
+2026-11-07T10:52:27.791+09:00  INFO 86289 --- [spring-boot-startup] [           main] c.e.l.e.startup.StartupApplication       : Started StartupApplication in 2.263 seconds (process running for 2.568)
+[timeline] +  2569ms main                     ApplicationStartedEvent
+2026-11-07T10:52:27.826+09:00  INFO 86289 --- [spring-boot-startup] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-07T10:52:27.826+09:00  INFO 86289 --- [spring-boot-startup] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-07T10:52:27.827+09:00  INFO 86289 --- [spring-boot-startup] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[timeline] +  2613ms main                     AvailabilityChangeEvent LivenessState=CORRECT
+2026-11-07T10:52:27.836+09:00 DEBUG 86289 --- [spring-boot-startup] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+[timeline] +  2616ms main                     ApplicationReadyEvent
+[timeline] +  2616ms main                     AvailabilityChangeEvent ReadinessState=ACCEPTING_TRAFFIC
+2026-11-07T10:52:27.839+09:00 DEBUG 86289 --- [spring-boot-startup] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+[request] seq=1 uptime=3208ms path=/hello status=200 server=4690us
+2026-11-07T10:52:28.461+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - configuration:
+2026-11-07T10:52:28.462+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2026-11-07T10:52:28.462+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
+2026-11-07T10:52:28.462+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : catalog.........................none
+2026-11-07T10:52:28.462+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............none
+2026-11-07T10:52:28.463+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : connectionTestQuery.............none
+2026-11-07T10:52:28.463+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............30000
+2026-11-07T10:52:28.463+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : credentials.....................com.zaxxer.hikari.util.Credentials@7bc8e32f
+2026-11-07T10:52:28.463+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : credentialsProvider.............none
+2026-11-07T10:52:28.463+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : credentialsProviderClassName....none
+2026-11-07T10:52:28.463+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : dataSource......................none
+2026-11-07T10:52:28.463+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............none
+2026-11-07T10:52:28.464+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................none
+2026-11-07T10:52:28.464+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
+2026-11-07T10:52:28.464+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : driverClassName................."com.mysql.cj.jdbc.Driver"
+2026-11-07T10:52:28.464+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : exceptionOverride...............none
+2026-11-07T10:52:28.464+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName......none
+2026-11-07T10:52:28.464+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2026-11-07T10:52:28.464+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............none
+2026-11-07T10:52:28.464+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................600000
+2026-11-07T10:52:28.464+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout.......1
+2026-11-07T10:52:28.464+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2026-11-07T10:52:28.464+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : jdbcUrl.........................jdbc:mysql://localhost:13306/startup
+2026-11-07T10:52:28.465+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : keepaliveTime...................120000
+2026-11-07T10:52:28.465+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2026-11-07T10:52:28.465+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2026-11-07T10:52:28.465+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................10
+2026-11-07T10:52:28.465+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : metricRegistry..................none
+2026-11-07T10:52:28.465+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........com.zaxxer.hikari.metrics.micrometer.MicrometerMetricsTrackerFactory@6d49ffbf
+2026-11-07T10:52:28.465+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................10
+2026-11-07T10:52:28.465+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : password........................<masked>
+2026-11-07T10:52:28.465+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : poolName........................"HikariPool-1"
+2026-11-07T10:52:28.465+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2026-11-07T10:52:28.465+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2026-11-07T10:52:28.465+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : scheduledExecutor...............none
+2026-11-07T10:52:28.465+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : schema..........................none
+2026-11-07T10:52:28.465+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : threadFactory...................internal
+2026-11-07T10:52:28.465+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : transactionIsolation............default
+2026-11-07T10:52:28.465+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : username........................"startup"
+2026-11-07T10:52:28.466+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariConfig           : validationTimeout...............5000
+2026-11-07T10:52:28.466+09:00  INFO 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-07T10:52:28.473+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (4b62563a-2751-46d1-b6de-cdfa4030a2a6)
+2026-11-07T10:52:28.621+09:00 DEBUG 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (4b62563a-2751-46d1-b6de-cdfa4030a2a6)
+2026-11-07T10:52:28.622+09:00  INFO 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43f649aa
+2026-11-07T10:52:28.624+09:00  INFO 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[request] seq=2 uptime=3422ms path=/users/1 status=200 server=190298us
+[request] seq=3 uptime=3426ms path=/users/1 status=200 server=2466us
+[request] seq=4 uptime=3430ms path=/users/1 status=200 server=2340us
+[request] seq=5 uptime=3433ms path=/users/1 status=200 server=2333us
+[request] seq=6 uptime=3436ms path=/users/1 status=200 server=2271us
+[request] seq=7 uptime=3439ms path=/users/1 status=200 server=2126us
+[request] seq=8 uptime=3442ms path=/users/1 status=200 server=2078us
+[request] seq=9 uptime=3445ms path=/users/1 status=200 server=1954us
+[request] seq=10 uptime=3447ms path=/users/1 status=200 server=1666us
+[request] seq=11 uptime=3450ms path=/users/1 status=200 server=1658us
+[request] seq=12 uptime=3452ms path=/users/1 status=200 server=1851us
+[request] seq=13 uptime=3455ms path=/users/1 status=200 server=1692us
+[request] seq=14 uptime=3457ms path=/users/1 status=200 server=1725us
+[request] seq=15 uptime=3460ms path=/users/1 status=200 server=2064us
+[request] seq=16 uptime=3463ms path=/users/1 status=200 server=1706us
+[request] seq=17 uptime=3465ms path=/users/1 status=200 server=1784us
+[request] seq=18 uptime=3468ms path=/users/1 status=200 server=1683us
+[request] seq=19 uptime=3470ms path=/users/1 status=200 server=1566us
+[request] seq=20 uptime=3472ms path=/users/1 status=200 server=1660us
+[request] seq=21 uptime=3475ms path=/users/1 status=200 server=1751us
+2026-11-07T10:52:28.727+09:00 DEBUG 86289 --- [spring-boot-startup] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=1/10, idle=1/10, active=0, waiting=0)
+2026-11-07T10:52:28.728+09:00 DEBUG 86289 --- [spring-boot-startup] [onnection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (467f20b9-1e42-4400-927b-85e62921e11e)
+2026-11-07T10:52:28.741+09:00 DEBUG 86289 --- [spring-boot-startup] [onnection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (467f20b9-1e42-4400-927b-85e62921e11e)
+2026-11-07T10:52:28.742+09:00 DEBUG 86289 --- [spring-boot-startup] [onnection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5723fd34
+2026-11-07T10:52:28.774+09:00 DEBUG 86289 --- [spring-boot-startup] [onnection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=2/10, idle=2/10, active=0, waiting=0)
+2026-11-07T10:52:28.774+09:00 DEBUG 86289 --- [spring-boot-startup] [onnection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (c45a0da1-be57-4e84-bb91-317a2703609b)
+2026-11-07T10:52:28.786+09:00 DEBUG 86289 --- [spring-boot-startup] [onnection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (c45a0da1-be57-4e84-bb91-317a2703609b)
+2026-11-07T10:52:28.786+09:00 DEBUG 86289 --- [spring-boot-startup] [onnection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@161ef70f

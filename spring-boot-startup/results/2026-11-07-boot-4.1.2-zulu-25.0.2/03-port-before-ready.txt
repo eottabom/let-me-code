@@ -1,0 +1,41 @@
+JDK: OpenJDK Runtime Environment Zulu25.32+17-CA (build 25.0.2+10-LTS)
+
+[10:39:07] 버리는 실행 1번
+
+[10:39:09] 실행 1/10 (Runner 5초)
+  경과  hello  liveness  readiness
+    75ms    000       000        000
+  2021ms    200       200        503
+  7208ms    200       200        200
+
+[10:39:18] 첫 실행: 같은 시간대의 앱 로그
+2026-11-07T10:39:11.942+09:00  INFO 36416 --- [spring-boot-startup] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-11-07T10:39:11.948+09:00  INFO 36416 --- [spring-boot-startup] [           main] c.e.l.e.startup.StartupApplication       : Started StartupApplication in 1.674 seconds (process running for 1.998)
+[timeline] +  2038ms main                     AvailabilityChangeEvent LivenessState=CORRECT
+2026-11-07T10:39:11.990+09:00  INFO 36416 --- [spring-boot-startup] [           main] c.e.l.example.startup.SlowRunner         : Runner 지연 5초
+2026-11-07T10:39:16.991+09:00  INFO 36416 --- [spring-boot-startup] [           main] c.e.l.example.startup.SlowRunner         : Runner 지연 끝
+[timeline] +  7042ms main                     AvailabilityChangeEvent ReadinessState=ACCEPTING_TRAFFIC
+
+[10:39:18] 실행 2/10 (Runner 5초)
+
+[10:39:27] 실행 3/10 (Runner 5초)
+
+[10:39:36] 실행 4/10 (Runner 5초)
+
+[10:39:45] 실행 5/10 (Runner 5초)
+
+[10:39:54] 실행 6/10 (Runner 5초)
+
+[10:40:02] 실행 7/10 (Runner 5초)
+
+[10:40:11] 실행 8/10 (Runner 5초)
+
+[10:40:20] 실행 9/10 (Runner 5초)
+
+[10:40:29] 실행 10/10 (Runner 5초)
+
+[10:40:38] 실행 10 번 요약 (ms, 폴링 간격 100ms 에 curl 세 번이 더해져 오차가 있다)
+지표                         n       중앙값        최소        최대
+/hello 첫 200 (실행 기준)      10   2381.50   1992.00   2645.00
+readiness 첫 200 (실행 기준)   10   7253.50   7144.00   7596.00
+200 인데 Ready 아닌 구간        10   4993.50   4761.00   5209.00

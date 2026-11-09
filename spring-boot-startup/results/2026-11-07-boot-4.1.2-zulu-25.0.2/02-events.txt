@@ -1,0 +1,52 @@
+JDK: OpenJDK Runtime Environment Zulu25.32+17-CA (build 25.0.2+10-LTS)
+
+[10:38:15] 버리는 실행 1번
+
+[10:38:17] 실행 1/10 (Runner 2초)
+
+[10:38:22] 첫 실행: 이벤트 순서 (JVM 시작 기준 경과 시간, 스레드, 이벤트)
+[timeline] +   372ms main                     ApplicationStartingEvent
+[timeline] +   594ms main                     ApplicationEnvironmentPreparedEvent
+[timeline] +   644ms main                     ApplicationContextInitializedEvent
+[timeline] +   681ms main                     ApplicationPreparedEvent
+[log]      main  Tomcat started on port 8080 (http) with context path '/'
+[timeline] +  2035ms main                     ServletWebServerInitializedEvent
+[timeline] +  2039ms main                     ContextRefreshedEvent
+[log]      main  Started StartupApplication in 1.701 seconds (process running for 2.041)
+[timeline] +  2041ms main                     ApplicationStartedEvent
+[timeline] +  2080ms main                     AvailabilityChangeEvent LivenessState=CORRECT
+[log]      main  Runner 지연 2초
+[log]      main  Runner 지연 끝
+[timeline] +  4086ms main                     ApplicationReadyEvent
+[timeline] +  4087ms main                     AvailabilityChangeEvent ReadinessState=ACCEPTING_TRAFFIC
+
+[10:38:22] 실행 2/10 (Runner 2초)
+
+[10:38:27] 실행 3/10 (Runner 2초)
+
+[10:38:32] 실행 4/10 (Runner 2초)
+
+[10:38:37] 실행 5/10 (Runner 2초)
+
+[10:38:42] 실행 6/10 (Runner 2초)
+
+[10:38:47] 실행 7/10 (Runner 2초)
+
+[10:38:52] 실행 8/10 (Runner 2초)
+
+[10:38:57] 실행 9/10 (Runner 2초)
+
+[10:39:01] 실행 10/10 (Runner 2초)
+
+[10:39:07] 실행 10 번 요약 (JVM 시작 기준 경과 ms)
+지표                                                          n       중앙값        최소        최대
+ApplicationStartingEvent                                   10    349.00    335.00    396.00
+ApplicationEnvironmentPreparedEvent                        10    576.00    553.00    676.00
+ApplicationContextInitializedEvent                         10    626.00    600.00    742.00
+ApplicationPreparedEvent                                   10    662.50    636.00    795.00
+ServletWebServerInitializedEvent                           10   2023.50   1946.00   2264.00
+ContextRefreshedEvent                                      10   2028.00   1949.00   2267.00
+ApplicationStartedEvent                                    10   2030.00   1951.00   2270.00
+AvailabilityChangeEvent LivenessState=CORRECT              10   2072.00   1990.00   2314.00
+ApplicationReadyEvent                                      10   4078.50   3998.00   4320.00
+AvailabilityChangeEvent ReadinessState=ACCEPTING_TRAFFIC   10   4079.50   3998.00   4321.00

@@ -1,0 +1,37 @@
+[timeline] +   372ms main                     ApplicationStartingEvent
+[timeline] +   594ms main                     ApplicationEnvironmentPreparedEvent
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.2)
+
+[timeline] +   644ms main                     ApplicationContextInitializedEvent
+2026-11-07T10:38:18.423+09:00  INFO 33246 --- [spring-boot-startup] [           main] c.e.l.e.startup.StartupApplication       : Starting StartupApplication v0.0.1-SNAPSHOT using Java 25.0.2 with PID 33246 (~/workspace/let-me-code/spring-boot-startup/app/build/libs/app-0.0.1-SNAPSHOT.jar started by user in ~/workspace/let-me-code/spring-boot-startup)
+2026-11-07T10:38:18.425+09:00  INFO 33246 --- [spring-boot-startup] [           main] c.e.l.e.startup.StartupApplication       : No active profile set, falling back to 1 default profile: "default"
+[timeline] +   681ms main                     ApplicationPreparedEvent
+2026-11-07T10:38:19.249+09:00  INFO 33246 --- [spring-boot-startup] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-07T10:38:19.264+09:00  INFO 33246 --- [spring-boot-startup] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-07T10:38:19.264+09:00  INFO 33246 --- [spring-boot-startup] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-07T10:38:19.280+09:00  INFO 33246 --- [spring-boot-startup] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 823 ms
+2026-11-07T10:38:19.384+09:00 DEBUG 33246 --- [spring-boot-startup] [           main] com.zaxxer.hikari.util.UtilityElf        : Class com.mysql.cj.jdbc.Driver found in Thread context class loader org.springframework.boot.loader.launch.LaunchedClassLoader@5ca881b5
+2026-11-07T10:38:19.772+09:00  INFO 33246 --- [spring-boot-startup] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-11-07T10:38:19.810+09:00  INFO 33246 --- [spring-boot-startup] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+[timeline] +  2035ms main                     ServletWebServerInitializedEvent
+[timeline] +  2039ms main                     ContextRefreshedEvent
+2026-11-07T10:38:19.816+09:00  INFO 33246 --- [spring-boot-startup] [           main] c.e.l.e.startup.StartupApplication       : Started StartupApplication in 1.701 seconds (process running for 2.041)
+[timeline] +  2041ms main                     ApplicationStartedEvent
+[timeline] +  2080ms main                     AvailabilityChangeEvent LivenessState=CORRECT
+2026-11-07T10:38:19.856+09:00 DEBUG 33246 --- [spring-boot-startup] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2026-11-07T10:38:19.858+09:00  INFO 33246 --- [spring-boot-startup] [           main] c.e.l.example.startup.SlowRunner         : Runner 지연 2초
+2026-11-07T10:38:19.936+09:00  INFO 33246 --- [spring-boot-startup] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-07T10:38:19.936+09:00  INFO 33246 --- [spring-boot-startup] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-07T10:38:19.937+09:00  INFO 33246 --- [spring-boot-startup] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-11-07T10:38:21.860+09:00  INFO 33246 --- [spring-boot-startup] [           main] c.e.l.example.startup.SlowRunner         : Runner 지연 끝
+[timeline] +  4086ms main                     ApplicationReadyEvent
+[timeline] +  4087ms main                     AvailabilityChangeEvent ReadinessState=ACCEPTING_TRAFFIC
+2026-11-07T10:38:21.863+09:00 DEBUG 33246 --- [spring-boot-startup] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC

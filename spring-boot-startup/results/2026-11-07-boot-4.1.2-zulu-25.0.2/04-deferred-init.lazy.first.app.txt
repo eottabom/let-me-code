@@ -1,0 +1,55 @@
+[timeline] +   321ms main                     ApplicationStartingEvent
+[timeline] +   535ms main                     ApplicationEnvironmentPreparedEvent
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.2)
+
+[timeline] +   577ms main                     ApplicationContextInitializedEvent
+2026-11-07T10:41:55.030+09:00  INFO 53083 --- [spring-boot-startup] [           main] c.e.l.e.startup.StartupApplication       : Starting StartupApplication v0.0.1-SNAPSHOT using Java 25.0.2 with PID 53083 (~/workspace/let-me-code/spring-boot-startup/app/build/libs/app-0.0.1-SNAPSHOT.jar started by user in ~/workspace/let-me-code/spring-boot-startup)
+2026-11-07T10:41:55.032+09:00  INFO 53083 --- [spring-boot-startup] [           main] c.e.l.e.startup.StartupApplication       : The following 1 profile is active: "lazy"
+[timeline] +   616ms main                     ApplicationPreparedEvent
+2026-11-07T10:41:55.790+09:00  INFO 53083 --- [spring-boot-startup] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-07T10:41:55.800+09:00  INFO 53083 --- [spring-boot-startup] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-07T10:41:55.800+09:00  INFO 53083 --- [spring-boot-startup] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-07T10:41:55.818+09:00  INFO 53083 --- [spring-boot-startup] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 752 ms
+2026-11-07T10:41:55.931+09:00 DEBUG 53083 --- [spring-boot-startup] [           main] com.zaxxer.hikari.util.UtilityElf        : Class com.mysql.cj.jdbc.Driver found in Thread context class loader org.springframework.boot.loader.launch.LaunchedClassLoader@5ca881b5
+2026-11-07T10:41:56.066+09:00  INFO 53083 --- [spring-boot-startup] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+[timeline] +  1618ms main                     ServletWebServerInitializedEvent
+[timeline] +  1632ms main                     ContextRefreshedEvent
+2026-11-07T10:41:56.163+09:00  INFO 53083 --- [spring-boot-startup] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-07T10:41:56.163+09:00  INFO 53083 --- [spring-boot-startup] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-07T10:41:56.241+09:00  INFO 53083 --- [spring-boot-startup] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-11-07T10:41:56.262+09:00  INFO 53083 --- [spring-boot-startup] [           main] c.e.l.e.startup.StartupApplication       : Started StartupApplication in 1.522 seconds (process running for 1.813)
+[timeline] +  1815ms main                     ApplicationStartedEvent
+2026-11-07T10:41:56.322+09:00  INFO 53083 --- [spring-boot-startup] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 159 ms
+[timeline] +  1875ms main                     AvailabilityChangeEvent LivenessState=CORRECT
+2026-11-07T10:41:56.325+09:00 DEBUG 53083 --- [spring-boot-startup] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+[timeline] +  1880ms main                     ApplicationReadyEvent
+[timeline] +  1881ms main                     AvailabilityChangeEvent ReadinessState=ACCEPTING_TRAFFIC
+2026-11-07T10:41:56.331+09:00 DEBUG 53083 --- [spring-boot-startup] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+[request] seq=1 uptime=2660ms path=/hello status=200 server=109189us
+[request] seq=2 uptime=2662ms path=/hello status=200 server=1097us
+[request] seq=3 uptime=2663ms path=/hello status=200 server=720us
+[request] seq=4 uptime=2665ms path=/hello status=200 server=734us
+[request] seq=5 uptime=2667ms path=/hello status=200 server=730us
+[request] seq=6 uptime=2668ms path=/hello status=200 server=664us
+[request] seq=7 uptime=2669ms path=/hello status=200 server=604us
+[request] seq=8 uptime=2671ms path=/hello status=200 server=522us
+[request] seq=9 uptime=2672ms path=/hello status=200 server=629us
+[request] seq=10 uptime=2673ms path=/hello status=200 server=573us
+[request] seq=11 uptime=2675ms path=/hello status=200 server=539us
+[request] seq=12 uptime=2676ms path=/hello status=200 server=534us
+[request] seq=13 uptime=2677ms path=/hello status=200 server=344us
+[request] seq=14 uptime=2678ms path=/hello status=200 server=355us
+[request] seq=15 uptime=2679ms path=/hello status=200 server=506us
+[request] seq=16 uptime=2680ms path=/hello status=200 server=652us
+[request] seq=17 uptime=2681ms path=/hello status=200 server=521us
+[request] seq=18 uptime=2684ms path=/hello status=200 server=820us
+[request] seq=19 uptime=2686ms path=/hello status=200 server=508us
+[request] seq=20 uptime=2687ms path=/hello status=200 server=452us

@@ -20,6 +20,7 @@
 | `jvm-container-gc` | Kubernetes(kind), Spring Boot, OpenTelemetry, Prometheus, Grafana, k6 | Pod CPU, 메모리 limit에 따라 JVM 기본 GC, GC worker 수, Heap이 바뀌는 과정을 OTel 지표와 GC 로그로 확인하는 예제 |
 | `timeout-settings` | Spring Boot, Apache HttpClient 5, HikariCP, Testcontainers | HTTP timeout, keep-alive, connection TTL, MySQL wait_timeout 과 HikariCP max-lifetime 관계를 재현하는 예제 |
 | `cors` | Spring Boot, Spring Security, Playwright for Java | Preflight, CORS 요청/응답 헤더, Spring 의 CORS 거절 방식, Security 와의 관계를 서버 테스트와 실제 Chrome 으로 확인하는 예제 |
+| `spring-boot-startup` | Spring Boot, Actuator, HikariCP, JFR, k6 | Started, Ready 시점에 끝난 것과 Ready 뒤 첫 요청에 남는 DispatcherServlet, 커넥션 풀, 클래스 로딩, JIT 컴파일 비용을 측정하는 예제 |
 | `istio-ambient-demo:gateway` | Spring Cloud Gateway (WebFlux) | 기존 역방향 프록시(AS-IS)를 대체하는 Gateway. `simple`/`authz` 프로필로 단순 프록시와 session 검증+헤더 주입 흐름을 재현 |
 | `istio-ambient-demo:authz-server` | Spring Boot, Spring gRPC, Envoy ext_authz | Istio Ambient mode의 AuthorizationPolicy(CUSTOM)가 호출하는 ext_authz gRPC 인가 서버 (TO-BE) |
 

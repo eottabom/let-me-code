@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: spring-boot-startup
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:13306}/startup
+    username: startup
+    password: startup
+  autoconfigure:
+    # 기본 실행은 JDBC 만 쓴다. JPA 를 켰을 때와 비교하려면 jpa 프로파일로 실행한다.
+    exclude:
+      - org.springframework.boot.hibernate.autoconfigure.HibernateJpaAutoConfiguration
+      - org.springframework.boot.hibernate.autoconfigure.metrics.HibernateMetricsAutoConfiguration
+      - org.springframework.boot.data.jpa.autoconfigure.DataJpaRepositoriesAutoConfiguration
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,startup
+
+logging:
+  level:
+    # liveness, readiness 상태가 바뀔 때 남기는 로그는 DEBUG 라서 따로 켠다.
+    org.springframework.boot.availability: DEBUG
+    # Hikari 가 풀을 만들고 첫 커넥션을 맺는 시점을 보려는 것이다.
+    com.zaxxer.hikari: DEBUG
+
+startup:
+  # 0 보다 크면 ApplicationRunner 에서 이 시간만큼 붙잡아둔다 (포트는 열렸지만 Ready 전).
+  runner-delay-seconds: ${RUNNER_DELAY_SECONDS:0}
+  # /external 이 부를 로컬 스텁 서버. 인터넷을 거치지 않게 run/00-setup.sh 가 띄운다.
+  stub-url: ${STUB_URL:http://localhost:18090}
+  # 요청마다 [request] 로그를 남길지. 초당 수천 건을 보내는 CPU 측정(08)에서는 출력 비용이 섞이지 않게 끈다.
+  log-requests: ${LOG_REQUESTS:true}

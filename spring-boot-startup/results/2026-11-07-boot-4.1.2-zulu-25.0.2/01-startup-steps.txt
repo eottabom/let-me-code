@@ -1,0 +1,52 @@
+JDK: OpenJDK Runtime Environment Zulu25.32+17-CA (build 25.0.2+10-LTS)
+
+[10:37:44] 버리는 실행 1번
+
+[10:37:47] 실행 1/10
+
+[10:37:49] 첫 실행: 오래 걸린 단계 상위 15개 (ms, 단계 이름, 대상)
+1375	spring.context.refresh	
+607	spring.context.beans.post-process	
+494	spring.context.beandef-registry.post-process	org.springframework.context.annotation.ConfigurationClassPostProcessor
+487	spring.context.config-classes.parse	
+248	spring.boot.webserver.create	
+196	spring.beans.instantiate	sampleController
+172	spring.boot.application.environment-prepared	
+149	spring.beans.instantiate	restClientBuilder
+79	spring.beans.instantiate	tomcatServletWebServerFactory
+72	spring.beans.instantiate	restClientBuilderConfigurer
+56	spring.beans.instantiate	httpMessageConvertersRestClientCustomizer
+52	spring.beans.instantiate	jacksonJsonHttpMessageConvertersCustomizer
+51	spring.beans.instantiate	jacksonJsonMapper
+46	spring.beans.instantiate	jsonMapperBuilder
+40	spring.boot.application.started	
+
+[10:37:50] 실행 2/10
+
+[10:37:53] 실행 3/10
+
+[10:37:56] 실행 4/10
+
+[10:37:59] 실행 5/10
+
+[10:38:01] 실행 6/10
+
+[10:38:04] 실행 7/10
+
+[10:38:07] 실행 8/10
+
+[10:38:09] 실행 9/10
+
+[10:38:12] 실행 10/10
+
+[10:38:14] 실행 10 번 요약 (ms)
+지표                                              n       중앙값        최소        최대
+Started 로그 (애플리케이션)                            10   1684.00   1647.00   1914.00
+Started 로그 (JVM 포함)                            10   1996.50   1946.00   2760.00
+spring.boot.application.environment-prepared   10    172.50    166.00    231.00
+spring.context.config-classes.parse            10    479.00    451.00    655.00
+spring.context.beans.post-process              10    598.00    576.00    786.00
+spring.boot.webserver.create                   10    247.50    244.00    266.00
+spring.context.refresh                         10   1347.50   1315.00   1564.00
+spring.beans.instantiate (합계)                  10   1506.50   1409.00   1646.00
+spring.beans.instantiate (개수)                  10    354.00    354.00    354.00

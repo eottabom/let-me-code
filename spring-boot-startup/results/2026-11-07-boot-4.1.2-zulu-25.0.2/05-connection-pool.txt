@@ -1,0 +1,112 @@
+JDK: OpenJDK Runtime Environment Zulu25.32+17-CA (build 25.0.2+10-LTS)
+
+[10:51:03] 버리는 실행 1번
+
+[10:51:06] JDBC 실행 1/10
+
+[10:51:10] JDBC 첫 실행: 풀 시작, Started, 첫 /users 요청 로그 순서
+2026-11-07T10:51:08.956+09:00  INFO 81297 --- [spring-boot-startup] [           main] c.e.l.e.startup.StartupApplication       : Started StartupApplication in 2.13 seconds (process running for 2.436)
+2026-11-07T10:51:09.671+09:00  INFO 81297 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-07T10:51:09.831+09:00  INFO 81297 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[request] seq=2 uptime=3335ms path=/users/1 status=200 server=194109us
+
+[10:51:10] JDBC 실행 2/10
+
+[10:51:14] JDBC 실행 3/10
+
+[10:51:17] JDBC 실행 4/10
+
+[10:51:20] JDBC 실행 5/10
+
+[10:51:24] JDBC 실행 6/10
+
+[10:51:28] JDBC 실행 7/10
+
+[10:51:31] JDBC 실행 8/10
+
+[10:51:35] JDBC 실행 9/10
+
+[10:51:38] JDBC 실행 10/10
+
+[10:51:42] JPA 실행 1/10
+
+[10:51:46] JPA 첫 실행: 풀 시작, Started, 첫 /users 요청 로그 순서
+2026-11-07T10:51:43.888+09:00  INFO 83445 --- [spring-boot-startup] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-07T10:51:44.101+09:00  INFO 83445 --- [spring-boot-startup] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-07T10:51:45.077+09:00  INFO 83445 --- [spring-boot-startup] [           main] c.e.l.e.startup.StartupApplication       : Started StartupApplication in 2.511 seconds (process running for 2.837)
+[request] seq=2 uptime=3615ms path=/users/1 status=200 server=17105us
+
+[10:51:46] JPA 실행 2/10
+
+[10:51:50] JPA 실행 3/10
+
+[10:51:55] JPA 실행 4/10
+
+[10:51:59] JPA 실행 5/10
+
+[10:52:03] JPA 실행 6/10
+
+[10:52:08] JPA 실행 7/10
+
+[10:52:12] JPA 실행 8/10
+
+[10:52:16] JPA 실행 9/10
+
+[10:52:20] JPA 실행 10/10
+
+[10:52:25] JPA-ddl-auto-지정-메타데이터-조회-끔 실행 1/10
+
+[10:52:28] JPA-ddl-auto-지정-메타데이터-조회-끔 첫 실행: 풀 시작, Started, 첫 /users 요청 로그 순서
+2026-11-07T10:52:27.791+09:00  INFO 86289 --- [spring-boot-startup] [           main] c.e.l.e.startup.StartupApplication       : Started StartupApplication in 2.263 seconds (process running for 2.568)
+2026-11-07T10:52:28.466+09:00  INFO 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-07T10:52:28.624+09:00  INFO 86289 --- [spring-boot-startup] [nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[request] seq=2 uptime=3422ms path=/users/1 status=200 server=190298us
+
+[10:52:29] JPA-ddl-auto-지정-메타데이터-조회-끔 실행 2/10
+
+[10:52:33] JPA-ddl-auto-지정-메타데이터-조회-끔 실행 3/10
+
+[10:52:37] JPA-ddl-auto-지정-메타데이터-조회-끔 실행 4/10
+
+[10:52:41] JPA-ddl-auto-지정-메타데이터-조회-끔 실행 5/10
+
+[10:52:45] JPA-ddl-auto-지정-메타데이터-조회-끔 실행 6/10
+
+[10:52:50] JPA-ddl-auto-지정-메타데이터-조회-끔 실행 7/10
+
+[10:52:54] JPA-ddl-auto-지정-메타데이터-조회-끔 실행 8/10
+
+[10:52:58] JPA-ddl-auto-지정-메타데이터-조회-끔 실행 9/10
+
+[10:53:02] JPA-ddl-auto-지정-메타데이터-조회-끔 실행 10/10
+
+[10:53:07] 실행 10 번씩 요약 (ms)
+지표                                          n       중앙값        최소        최대
+JDBC Ready 때 풀 시작 여부 (1 이면 시작됨)            10      0.00      0.00      0.00
+JDBC /users 서버 1번째                         10    205.89    191.71    231.80
+JDBC /users 서버 2~10번째                      10      1.84      1.72      3.19
+JDBC /users 서버 11번째 이후                     10      1.74      1.48      2.06
+JDBC /users 클라이언트 1번째                      10    207.39    193.06    233.24
+JDBC /users 클라이언트 2~10번째                   10      2.56      2.43      3.90
+JDBC /users 클라이언트 11번째 이후                  10      2.44      2.16      2.99
+JDBC Started 로그 (애플리케이션)                   10   1679.00   1617.00   2130.00
+JDBC Started 로그 (JVM 포함)                   10   1981.00   1925.00   2436.00
+JPA Ready 때 풀 시작 여부 (1 이면 시작됨)             10      1.00      1.00      1.00
+JPA /users 서버 1번째                          10     16.84     15.17     22.28
+JPA /users 서버 2~10번째                       10      1.79      1.66      2.39
+JPA /users 서버 11번째 이후                      10      1.71      1.58      1.93
+JPA /users 클라이언트 1번째                       10     18.30     16.54     23.73
+JPA /users 클라이언트 2~10번째                    10      2.51      2.41      3.14
+JPA /users 클라이언트 11번째 이후                   10      2.45      2.25      2.63
+JPA Started 로그 (애플리케이션)                    10   2513.50   2467.00   2866.00
+JPA Started 로그 (JVM 포함)                    10   2829.00   2772.00   3184.00
+JPA 풀 시작이 Started 로그보다 앞선 시간               10    974.50    935.00    989.00
+JPA-ddl-auto-지정-메타데이터-조회-끔 Ready 때 풀 시작 여부 (1 이면 시작됨)   10      0.00      0.00      0.00
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 1번째                10    190.06    183.53    220.90
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 2~10번째             10      2.10      1.71      2.50
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 서버 11번째 이후            10      1.73      1.63      2.55
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 1번째             10    191.76    185.13    222.22
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 2~10번째          10      2.90      2.45      3.38
+JPA-ddl-auto-지정-메타데이터-조회-끔 /users 클라이언트 11번째 이후         10      2.46      2.29      3.89
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (애플리케이션)          10   2342.00   2223.00   2700.00
+JPA-ddl-auto-지정-메타데이터-조회-끔 Started 로그 (JVM 포함)          10   2646.50   2535.00   3014.00

@@ -1,0 +1,12 @@
+# 시작할 때 DB 에 연결하는 두 곳을 모두 끈 JPA 설정. 커넥션 풀이 첫 DB 요청 때 시작되는지 비교하려는 것이다.
+spring:
+  jpa:
+    hibernate:
+      # 지정하지 않으면 Spring Boot 가 기본값을 정하려고 DB 에 연결해 내장 DB 인지 확인한다.
+      ddl-auto: none
+    properties:
+      hibernate:
+        boot:
+          # 시작할 때 JDBC 메타데이터로 DB 기능을 파악하지 않는다. 대신 Dialect 를 직접 지정해야 한다.
+          allow_jdbc_metadata_access: false
+        dialect: org.hibernate.dialect.MySQLDialect

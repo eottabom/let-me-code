@@ -1,0 +1,6 @@
+spring:
+  autoconfigure:
+    # jpa 프로파일에서는 JPA 자동 설정을 켠다.
+    exclude: ""
+  jpa:
+    open-in-view: false
