@@ -1,0 +1,736 @@
+[0.008s][class,load] java.lang.Object source: shared objects file
+[0.009s][class,load] java.io.Serializable source: shared objects file
+[0.009s][class,load] java.lang.Comparable source: shared objects file
+[0.009s][class,load] java.lang.CharSequence source: shared objects file
+[0.009s][class,load] java.lang.constant.Constable source: shared objects file
+[0.009s][class,load] java.lang.constant.ConstantDesc source: shared objects file
+[0.009s][class,load] java.lang.String source: shared objects file
+[0.009s][class,load] java.lang.reflect.AnnotatedElement source: shared objects file
+[0.009s][class,load] java.lang.reflect.GenericDeclaration source: shared objects file
+[0.009s][class,load] java.lang.reflect.Type source: shared objects file
+[0.009s][class,load] java.lang.invoke.TypeDescriptor source: shared objects file
+[0.009s][class,load] java.lang.invoke.TypeDescriptor$OfField source: shared objects file
+[0.009s][class,load] java.lang.Class source: shared objects file
+[0.009s][class,load] java.lang.Cloneable source: shared objects file
+[0.009s][class,load] java.lang.ClassLoader source: shared objects file
+[0.009s][class,load] java.lang.System source: shared objects file
+[0.009s][class,load] java.lang.Throwable source: shared objects file
+[0.009s][class,load] java.lang.Error source: shared objects file
+[0.009s][class,load] java.lang.Exception source: shared objects file
+[0.009s][class,load] java.lang.RuntimeException source: shared objects file
+[0.009s][class,load] java.security.ProtectionDomain source: shared objects file
+[0.009s][class,load] java.security.SecureClassLoader source: shared objects file
+[0.009s][class,load] java.lang.ReflectiveOperationException source: shared objects file
+[0.009s][class,load] java.lang.ClassNotFoundException source: shared objects file
+[0.009s][class,load] java.lang.Record source: shared objects file
+[0.009s][class,load] java.lang.LinkageError source: shared objects file
+[0.009s][class,load] java.lang.NoClassDefFoundError source: shared objects file
+[0.009s][class,load] java.lang.ClassCastException source: shared objects file
+[0.009s][class,load] java.lang.ArrayStoreException source: shared objects file
+[0.009s][class,load] java.lang.VirtualMachineError source: shared objects file
+[0.009s][class,load] java.lang.InternalError source: shared objects file
+[0.009s][class,load] java.lang.OutOfMemoryError source: shared objects file
+[0.009s][class,load] java.lang.StackOverflowError source: shared objects file
+[0.009s][class,load] java.lang.IllegalMonitorStateException source: shared objects file
+[0.009s][class,load] java.lang.ref.Reference source: shared objects file
+[0.009s][class,load] java.lang.IllegalCallerException source: shared objects file
+[0.009s][class,load] java.lang.ref.SoftReference source: shared objects file
+[0.009s][class,load] java.lang.ref.WeakReference source: shared objects file
+[0.009s][class,load] java.lang.ref.FinalReference source: shared objects file
+[0.009s][class,load] java.lang.ref.PhantomReference source: shared objects file
+[0.009s][class,load] java.lang.ref.Finalizer source: shared objects file
+[0.009s][class,load] java.lang.Runnable source: shared objects file
+[0.009s][class,load] java.lang.Thread source: shared objects file
+[0.009s][class,load] java.lang.Thread$FieldHolder source: shared objects file
+[0.009s][class,load] java.lang.Thread$Constants source: shared objects file
+[0.009s][class,load] java.lang.Thread$UncaughtExceptionHandler source: shared objects file
+[0.009s][class,load] java.lang.ThreadGroup source: shared objects file
+[0.009s][class,load] java.lang.BaseVirtualThread source: shared objects file
+[0.009s][class,load] java.lang.VirtualThread source: shared objects file
+[0.009s][class,load] java.lang.ThreadBuilders$BoundVirtualThread source: shared objects file
+[0.009s][class,load] java.util.Dictionary source: shared objects file
+[0.009s][class,load] java.util.Map source: shared objects file
+[0.009s][class,load] java.util.Hashtable source: shared objects file
+[0.009s][class,load] java.util.Properties source: shared objects file
+[0.009s][class,load] java.lang.Module source: shared objects file
+[0.009s][class,load] java.lang.reflect.AccessibleObject source: shared objects file
+[0.009s][class,load] java.lang.reflect.Member source: shared objects file
+[0.009s][class,load] java.lang.reflect.Field source: shared objects file
+[0.009s][class,load] java.lang.reflect.Parameter source: shared objects file
+[0.009s][class,load] java.lang.reflect.Executable source: shared objects file
+[0.009s][class,load] java.lang.reflect.Method source: shared objects file
+[0.009s][class,load] java.lang.reflect.Constructor source: shared objects file
+[0.009s][class,load] jdk.internal.vm.ContinuationScope source: shared objects file
+[0.009s][class,load] jdk.internal.vm.Continuation source: shared objects file
+[0.009s][class,load] jdk.internal.vm.StackChunk source: shared objects file
+[0.009s][class,load] jdk.internal.reflect.MethodAccessor source: shared objects file
+[0.009s][class,load] jdk.internal.reflect.MethodAccessorImpl source: shared objects file
+[0.009s][class,load] jdk.internal.reflect.ConstantPool source: shared objects file
+[0.009s][class,load] java.lang.annotation.Annotation source: shared objects file
+[0.009s][class,load] jdk.internal.reflect.CallerSensitive source: shared objects file
+[0.009s][class,load] jdk.internal.reflect.ConstructorAccessor source: shared objects file
+[0.009s][class,load] jdk.internal.reflect.ConstructorAccessorImpl source: shared objects file
+[0.009s][class,load] jdk.internal.reflect.DirectConstructorHandleAccessor$NativeAccessor source: shared objects file
+[0.009s][class,load] java.lang.invoke.MethodHandle source: shared objects file
+[0.009s][class,load] java.lang.invoke.DirectMethodHandle source: shared objects file
+[0.009s][class,load] java.lang.invoke.VarHandle source: shared objects file
+[0.009s][class,load] java.lang.invoke.MemberName source: shared objects file
+[0.009s][class,load] java.lang.invoke.ResolvedMethodName source: shared objects file
+[0.009s][class,load] java.lang.invoke.MethodHandleImpl source: shared objects file
+[0.009s][class,load] java.lang.invoke.MethodHandleNatives source: shared objects file
+[0.009s][class,load] java.lang.invoke.LambdaForm source: shared objects file
+[0.009s][class,load] java.lang.invoke.TypeDescriptor$OfMethod source: shared objects file
+[0.009s][class,load] java.lang.invoke.MethodType source: shared objects file
+[0.009s][class,load] java.lang.BootstrapMethodError source: shared objects file
+[0.009s][class,load] java.lang.invoke.CallSite source: shared objects file
+[0.009s][class,load] jdk.internal.foreign.abi.NativeEntryPoint source: shared objects file
+[0.009s][class,load] jdk.internal.foreign.abi.ABIDescriptor source: shared objects file
+[0.009s][class,load] jdk.internal.foreign.abi.VMStorage source: shared objects file
+[0.009s][class,load] jdk.internal.foreign.abi.UpcallLinker$CallRegs source: shared objects file
+[0.009s][class,load] java.lang.invoke.ConstantCallSite source: shared objects file
+[0.009s][class,load] java.lang.invoke.MutableCallSite source: shared objects file
+[0.009s][class,load] java.lang.invoke.VolatileCallSite source: shared objects file
+[0.009s][class,load] java.lang.AssertionStatusDirectives source: shared objects file
+[0.009s][class,load] java.lang.Appendable source: shared objects file
+[0.009s][class,load] java.lang.AbstractStringBuilder source: shared objects file
+[0.009s][class,load] java.lang.StringBuffer source: shared objects file
+[0.009s][class,load] java.lang.StringBuilder source: shared objects file
+[0.009s][class,load] jdk.internal.misc.UnsafeConstants source: shared objects file
+[0.009s][class,load] jdk.internal.misc.Unsafe source: shared objects file
+[0.009s][class,load] jdk.internal.module.Modules source: shared objects file
+[0.009s][class,load] java.lang.AutoCloseable source: shared objects file
+[0.009s][class,load] java.io.Closeable source: shared objects file
+[0.009s][class,load] java.io.InputStream source: shared objects file
+[0.009s][class,load] java.io.ByteArrayInputStream source: shared objects file
+[0.009s][class,load] java.net.URL source: shared objects file
+[0.009s][class,load] java.lang.Enum source: shared objects file
+[0.009s][class,load] java.util.jar.Manifest source: shared objects file
+[0.009s][class,load] jdk.internal.loader.BuiltinClassLoader source: shared objects file
+[0.009s][class,load] jdk.internal.loader.ClassLoaders source: shared objects file
+[0.009s][class,load] jdk.internal.loader.ClassLoaders$AppClassLoader source: shared objects file
+[0.009s][class,load] jdk.internal.loader.ClassLoaders$PlatformClassLoader source: shared objects file
+[0.009s][class,load] java.security.CodeSource source: shared objects file
+[0.009s][class,load] java.util.AbstractMap source: shared objects file
+[0.009s][class,load] java.util.concurrent.ConcurrentMap source: shared objects file
+[0.009s][class,load] java.util.concurrent.ConcurrentHashMap source: shared objects file
+[0.009s][class,load] java.lang.Iterable source: shared objects file
+[0.009s][class,load] java.util.Collection source: shared objects file
+[0.009s][class,load] java.util.AbstractCollection source: shared objects file
+[0.009s][class,load] java.util.SequencedCollection source: shared objects file
+[0.009s][class,load] java.util.List source: shared objects file
+[0.009s][class,load] java.util.AbstractList source: shared objects file
+[0.009s][class,load] java.util.RandomAccess source: shared objects file
+[0.009s][class,load] java.util.ArrayList source: shared objects file
+[0.009s][class,load] java.lang.StackTraceElement source: shared objects file
+[0.009s][class,load] java.nio.Buffer source: shared objects file
+[0.009s][class,load] java.lang.StackWalker source: shared objects file
+[0.009s][class,load] java.lang.StackStreamFactory$AbstractStackWalker source: shared objects file
+[0.009s][class,load] java.lang.StackWalker$StackFrame source: shared objects file
+[0.009s][class,load] java.lang.ClassFrameInfo source: shared objects file
+[0.009s][class,load] java.lang.StackFrameInfo source: shared objects file
+[0.009s][class,load] java.lang.LiveStackFrame source: shared objects file
+[0.009s][class,load] java.lang.LiveStackFrameInfo source: shared objects file
+[0.009s][class,load] java.util.concurrent.locks.AbstractOwnableSynchronizer source: shared objects file
+[0.009s][class,load] java.lang.Boolean source: shared objects file
+[0.009s][class,load] java.lang.Character source: shared objects file
+[0.009s][class,load] java.lang.Number source: shared objects file
+[0.009s][class,load] java.lang.Float source: shared objects file
+[0.009s][class,load] java.lang.Double source: shared objects file
+[0.009s][class,load] java.lang.Byte source: shared objects file
+[0.009s][class,load] java.lang.Short source: shared objects file
+[0.009s][class,load] java.lang.Integer source: shared objects file
+[0.009s][class,load] java.lang.Long source: shared objects file
+[0.009s][class,load] java.lang.Void source: shared objects file
+[0.009s][class,load] java.util.Iterator source: shared objects file
+[0.009s][class,load] java.lang.reflect.RecordComponent source: shared objects file
+[0.009s][class,load] jdk.internal.vm.vector.VectorSupport source: shared objects file
+[0.009s][class,load] jdk.internal.vm.vector.VectorSupport$VectorPayload source: shared objects file
+[0.009s][class,load] jdk.internal.vm.vector.VectorSupport$Vector source: shared objects file
+[0.009s][class,load] jdk.internal.vm.vector.VectorSupport$VectorMask source: shared objects file
+[0.009s][class,load] jdk.internal.vm.vector.VectorSupport$VectorShuffle source: shared objects file
+[0.009s][class,load] jdk.internal.vm.FillerObject source: shared objects file
+[0.009s][class,load] java.lang.Integer$IntegerCache source: shared objects file
+[0.009s][class,load] java.lang.Long$LongCache source: shared objects file
+[0.009s][class,load] java.lang.Byte$ByteCache source: shared objects file
+[0.009s][class,load] java.lang.Short$ShortCache source: shared objects file
+[0.009s][class,load] java.lang.Character$CharacterCache source: shared objects file
+[0.009s][class,load] java.util.jar.Attributes$Name source: shared objects file
+[0.009s][class,load] java.util.ImmutableCollections$AbstractImmutableMap source: shared objects file
+[0.009s][class,load] java.util.ImmutableCollections$MapN source: shared objects file
+[0.009s][class,load] sun.util.locale.BaseLocale source: shared objects file
+[0.009s][class,load] jdk.internal.module.ArchivedModuleGraph source: shared objects file
+[0.009s][class,load] java.lang.module.ModuleFinder source: shared objects file
+[0.009s][class,load] jdk.internal.module.SystemModuleFinders$SystemModuleFinder source: shared objects file
+[0.009s][class,load] java.util.ImmutableCollections$AbstractImmutableCollection source: shared objects file
+[0.009s][class,load] java.util.Set source: shared objects file
+[0.009s][class,load] java.util.ImmutableCollections$AbstractImmutableSet source: shared objects file
+[0.009s][class,load] java.util.ImmutableCollections$SetN source: shared objects file
+[0.009s][class,load] java.lang.module.ModuleReference source: shared objects file
+[0.009s][class,load] jdk.internal.module.ModuleReferenceImpl source: shared objects file
+[0.009s][class,load] java.lang.module.ModuleDescriptor source: shared objects file
+[0.009s][class,load] java.lang.module.ModuleDescriptor$Version source: shared objects file
+[0.009s][class,load] java.util.ImmutableCollections$Set12 source: shared objects file
+[0.009s][class,load] java.lang.module.ModuleDescriptor$Requires source: shared objects file
+[0.009s][class,load] java.lang.module.ModuleDescriptor$Requires$Modifier source: shared objects file
+[0.009s][class,load] java.lang.module.ModuleDescriptor$Exports source: shared objects file
+[0.009s][class,load] java.net.URI source: shared objects file
+[0.009s][class,load] java.util.function.Supplier source: shared objects file
+[0.009s][class,load] jdk.internal.module.SystemModuleFinders$1 source: shared objects file
+[0.009s][class,load] jdk.internal.module.ModuleHashes$HashSupplier source: shared objects file
+[0.009s][class,load] jdk.internal.module.SystemModuleFinders$2 source: shared objects file
+[0.009s][class,load] java.lang.module.ModuleDescriptor$Provides source: shared objects file
+[0.009s][class,load] java.util.ImmutableCollections$AbstractImmutableList source: shared objects file
+[0.009s][class,load] java.util.ImmutableCollections$List12 source: shared objects file
+[0.009s][class,load] java.util.ImmutableCollections$ListN source: shared objects file
+[0.009s][class,load] java.lang.module.ModuleDescriptor$Opens source: shared objects file
+[0.009s][class,load] jdk.internal.module.ModuleTarget source: shared objects file
+[0.009s][class,load] jdk.internal.module.ModuleHashes source: shared objects file
+[0.009s][class,load] java.util.Collections$UnmodifiableMap source: shared objects file
+[0.009s][class,load] java.util.HashMap source: shared objects file
+[0.009s][class,load] java.util.Map$Entry source: shared objects file
+[0.009s][class,load] java.util.HashMap$Node source: shared objects file
+[0.009s][class,load] java.lang.module.Configuration source: shared objects file
+[0.009s][class,load] java.lang.module.ResolvedModule source: shared objects file
+[0.009s][class,load] java.util.function.Function source: shared objects file
+[0.009s][class,load] jdk.internal.module.ModuleLoaderMap$Mapper source: shared objects file
+[0.009s][class,load] java.util.ImmutableCollections source: shared objects file
+[0.009s][class,load] java.lang.ModuleLayer source: shared objects file
+[0.009s][class,load] jdk.internal.math.FDBigInteger source: shared objects file
+[0.009s][class,load] jdk.internal.loader.ArchivedClassLoaders source: shared objects file
+[0.009s][class,load] jdk.internal.loader.ClassLoaders$BootClassLoader source: shared objects file
+[0.009s][class,load] java.security.Principal source: shared objects file
+[0.009s][class,load] jdk.internal.loader.NativeLibraries source: shared objects file
+[0.009s][class,load] java.util.concurrent.ConcurrentHashMap$Node source: shared objects file
+[0.009s][class,load] jdk.internal.module.ServicesCatalog source: shared objects file
+[0.010s][class,load] java.util.concurrent.CopyOnWriteArrayList source: shared objects file
+[0.010s][class,load] jdk.internal.module.ServicesCatalog$ServiceProvider source: shared objects file
+[0.010s][class,load] java.util.AbstractSet source: shared objects file
+[0.010s][class,load] java.util.HashSet source: shared objects file
+[0.010s][class,load] jdk.internal.loader.BuiltinClassLoader$LoadedModule source: shared objects file
+[0.010s][class,load] jdk.internal.module.ArchivedBootLayer source: shared objects file
+[0.010s][class,load] java.lang.Module$ArchivedData source: shared objects file
+[0.011s][class,init] 0 Initializing 'java/lang/Object'(no method) (0x00007f8000176100) by thread "Unknown thread"
+[0.011s][class,init] 1 Initializing 'java/lang/CharSequence'(no method) (0x00007f800017b1d0) by thread "Unknown thread"
+[0.011s][class,init] 2 Initializing 'java/lang/String' (0x00007f800017a950) by thread "Unknown thread"
+[0.011s][class,load] java.io.ObjectStreamField source: shared objects file
+[0.011s][class,load] java.util.Comparator source: shared objects file
+[0.011s][class,load] java.lang.String$CaseInsensitiveComparator source: shared objects file
+[0.011s][class,init] 3 Initializing 'java/util/Comparator'(no method) (0x00007f800023c638) by thread "Unknown thread"
+[0.011s][class,init] 4 Initializing 'java/lang/String$CaseInsensitiveComparator'(no method) (0x00007f8000253eb0) by thread "Unknown thread"
+[0.011s][class,init] 5 Initializing 'java/lang/System' (0x00007f8000177e38) by thread "Unknown thread"
+[0.011s][class,init] 6 Initializing 'java/lang/reflect/AnnotatedElement'(no method) (0x00007f8000189130) by thread "Unknown thread"
+[0.011s][class,init] 7 Initializing 'java/lang/reflect/Type'(no method) (0x00007f8000189960) by thread "Unknown thread"
+[0.011s][class,init] 8 Initializing 'java/lang/Class' (0x00007f8000188e18) by thread "Unknown thread"
+[0.011s][class,init] 9 Initializing 'java/lang/ThreadGroup' (0x00007f8000197fc0) by thread "Unknown thread"
+[0.011s][class,load] jdk.internal.misc.VM source: shared objects file
+[0.011s][class,init] 10 Initializing 'jdk/internal/misc/VM' (0x00007f800017efc8) by thread "Unknown thread"
+[0.011s][class,init] 11 Initializing 'java/lang/Thread' (0x00007f8000183988) by thread "Unknown thread"
+[0.011s][class,init] 12 Initializing 'java/lang/Thread$FieldHolder'(no method) (0x00007f8000197980) by thread "<un-named>"
+[0.011s][class,init] 13 Initializing 'java/lang/Boolean' (0x00007f800019dfa0) by thread "main"
+[0.011s][class,init] 14 Initializing 'java/lang/Character' (0x00007f800019eab0) by thread "main"
+[0.011s][class,init] 15 Initializing 'java/lang/Number'(no method) (0x00007f80001a2500) by thread "main"
+[0.011s][class,init] 16 Initializing 'java/lang/Float' (0x00007f80001a2268) by thread "main"
+[0.011s][class,init] 17 Initializing 'java/lang/Double' (0x00007f80001a3ca0) by thread "main"
+[0.011s][class,init] 18 Initializing 'java/lang/Byte' (0x00007f80001a4e70) by thread "main"
+[0.011s][class,init] 19 Initializing 'java/lang/Short' (0x00007f80001a6210) by thread "main"
+[0.011s][class,init] 20 Initializing 'java/lang/Integer' (0x00007f80001a7620) by thread "main"
+[0.011s][class,init] 21 Initializing 'java/lang/Long' (0x00007f80001a9b08) by thread "main"
+[0.011s][class,init] 22 Initializing 'java/lang/Void' (0x00007f80001abdd0) by thread "main"
+[0.011s][class,init] 23 Initializing 'java/lang/Module' (0x00007f800018fd18) by thread "main"
+[0.011s][class,init] 24 Initializing 'java/lang/Module$ArchivedData' (0x00007f800029bbf8) by thread "main"
+[0.011s][class,load] jdk.internal.misc.CDS source: shared objects file
+[0.011s][class,init] 25 Initializing 'jdk/internal/misc/CDS' (0x00007f80001a1f78) by thread "main"
+[0.011s][class,init] 26 Initializing 'java/lang/Iterable'(no method) (0x00007f800022ed60) by thread "main"
+[0.011s][class,init] 27 Initializing 'java/util/Collection'(no method) (0x00007f80001d2150) by thread "main"
+[0.011s][class,init] 28 Initializing 'java/util/AbstractCollection'(no method) (0x00007f80002308a0) by thread "main"
+[0.011s][class,init] 29 Initializing 'java/util/ImmutableCollections$AbstractImmutableCollection'(no method) (0x00007f8000289c88) by thread "main"
+[0.011s][class,init] 30 Initializing 'java/util/Set'(no method) (0x00007f800017f1e8) by thread "main"
+[0.011s][class,init] 31 Initializing 'java/util/ImmutableCollections$AbstractImmutableSet'(no method) (0x00007f800028c120) by thread "main"
+[0.011s][class,init] 32 Initializing 'java/util/ImmutableCollections$Set12'(no method) (0x00007f80002dfeb8) by thread "main"
+[0.011s][class,init] 33 Initializing 'jdk/internal/misc/UnsafeConstants' (0x00007f80001eb0b8) by thread "main"
+[0.011s][class,init] 34 Initializing 'java/lang/reflect/AccessibleObject' (0x00007f80001b1cc0) by thread "main"
+[0.011s][class,load] jdk.internal.access.JavaLangReflectAccess source: shared objects file
+[0.011s][class,load] java.lang.reflect.ReflectAccess source: shared objects file
+[0.011s][class,init] 35 Initializing 'java/lang/reflect/ReflectAccess'(no method) (0x00007f800029cac8) by thread "main"
+[0.011s][class,load] jdk.internal.access.SharedSecrets source: shared objects file
+[0.011s][class,init] 36 Initializing 'jdk/internal/access/SharedSecrets'(no method) (0x00007f8000178238) by thread "main"
+[0.011s][class,load] jdk.internal.reflect.ReflectionFactory source: shared objects file
+[0.011s][class,init] 37 Initializing 'jdk/internal/reflect/ReflectionFactory' (0x00007f800025a720) by thread "main"
+[0.011s][class,load] java.io.ObjectStreamClass source: shared objects file
+[0.011s][class,init] 38 Initializing 'java/util/ImmutableCollections$SetN'(no method) (0x00007f800028bcf8) by thread "main"
+[0.011s][class,load] java.lang.Math source: shared objects file
+[0.011s][class,init] 39 Initializing 'java/lang/Math' (0x00007f8000192460) by thread "main"
+[0.011s][class,load] jdk.internal.reflect.ReflectionFactory$Config source: shared objects file
+[0.011s][class,init] 40 Initializing 'java/lang/Record'(no method) (0x00007f80001cc5e0) by thread "main"
+[0.011s][class,init] 41 Initializing 'jdk/internal/reflect/ReflectionFactory$Config'(no method) (0x00007f80002edd18) by thread "main"
+[0.011s][class,init] 42 Initializing 'java/lang/reflect/Member'(no method) (0x00007f80001b32a0) by thread "main"
+[0.011s][class,init] 43 Initializing 'java/lang/reflect/Executable'(no method) (0x00007f80001b3908) by thread "main"
+[0.011s][class,init] 44 Initializing 'java/lang/reflect/Method'(no method) (0x00007f80001b2e28) by thread "main"
+[0.011s][class,init] 45 Initializing 'java/lang/ref/Reference' (0x00007f80001ae680) by thread "main"
+[0.011s][class,load] jdk.internal.access.JavaLangRefAccess source: shared objects file
+[0.011s][class,load] java.lang.ref.Reference$1 source: shared objects file
+[0.011s][class,init] 46 Initializing 'java/lang/ref/Reference$1'(no method) (0x00007f80002723d8) by thread "main"
+[0.011s][class,init] 47 Initializing 'java/lang/ref/FinalReference'(no method) (0x00007f80001b0170) by thread "main"
+[0.011s][class,init] 48 Initializing 'java/lang/ref/Finalizer' (0x00007f80001b0d20) by thread "main"
+[0.011s][class,load] java.lang.ref.ReferenceQueue source: shared objects file
+[0.011s][class,init] 49 Initializing 'java/lang/ref/ReferenceQueue' (0x00007f80001b1430) by thread "main"
+[0.011s][class,load] java.lang.ref.ReferenceQueue$Null source: shared objects file
+[0.011s][class,init] 50 Initializing 'java/lang/ref/ReferenceQueue$Null'(no method) (0x00007f80002ee508) by thread "main"
+[0.011s][class,load] java.lang.ref.ReferenceQueue$Lock source: shared objects file
+[0.011s][class,init] 51 Initializing 'java/lang/ref/ReferenceQueue$Lock'(no method) (0x00007f80002ee220) by thread "main"
+[0.011s][class,load] jdk.internal.access.JavaLangAccess source: shared objects file
+[0.011s][class,load] java.lang.System$1 source: shared objects file
+[0.011s][class,init] 52 Initializing 'java/lang/System$1'(no method) (0x00007f8000184ef0) by thread "main"
+[0.011s][class,load] jdk.internal.util.SystemProps source: shared objects file
+[0.011s][class,init] 53 Initializing 'jdk/internal/util/SystemProps' (0x00007f8000178458) by thread "main"
+[0.011s][class,load] jdk.internal.util.SystemProps$Raw source: shared objects file
+[0.011s][class,init] 54 Initializing 'jdk/internal/util/SystemProps$Raw'(no method) (0x00007f80002ef170) by thread "main"
+[0.015s][class,load] java.nio.charset.Charset source: shared objects file
+[0.015s][class,init] 55 Initializing 'java/nio/charset/Charset' (0x00007f800017e428) by thread "main"
+[0.015s][class,load] java.nio.charset.spi.CharsetProvider source: shared objects file
+[0.015s][class,load] sun.nio.cs.StandardCharsets source: shared objects file
+[0.015s][class,init] 56 Initializing 'java/nio/charset/spi/CharsetProvider'(no method) (0x00007f80002ef640) by thread "main"
+[0.015s][class,init] 57 Initializing 'sun/nio/cs/StandardCharsets' (0x00007f80002f4d78) by thread "main"
+[0.015s][class,load] java.lang.StringLatin1 source: shared objects file
+[0.015s][class,init] 58 Initializing 'java/lang/StringLatin1' (0x00007f8000192130) by thread "main"
+[0.015s][class,load] sun.nio.cs.HistoricallyNamedCharset source: shared objects file
+[0.015s][class,load] sun.nio.cs.Unicode source: shared objects file
+[0.015s][class,load] sun.nio.cs.UTF_8 source: shared objects file
+[0.015s][class,init] 59 Initializing 'sun/nio/cs/Unicode'(no method) (0x00007f800017e6a0) by thread "main"
+[0.015s][class,init] 60 Initializing 'sun/nio/cs/UTF_8' (0x00007f800017e190) by thread "main"
+[0.016s][class,init] 61 Initializing 'java/util/Map'(no method) (0x00007f800017a738) by thread "main"
+[0.016s][class,init] 62 Initializing 'java/util/AbstractMap'(no method) (0x00007f80001d00b0) by thread "main"
+[0.016s][class,init] 63 Initializing 'java/util/HashMap'(no method) (0x00007f800020d2a8) by thread "main"
+[0.016s][class,load] java.lang.StrictMath source: shared objects file
+[0.016s][class,init] 64 Initializing 'java/lang/StrictMath' (0x00007f80001e1008) by thread "main"
+[0.016s][class,load] jdk.internal.util.ArraysSupport source: shared objects file
+[0.016s][class,init] 65 Initializing 'jdk/internal/util/ArraysSupport' (0x00007f8000192680) by thread "main"
+[0.016s][class,init] 66 Initializing 'jdk/internal/misc/Unsafe' (0x00007f80001eb400) by thread "main"
+[0.016s][class,init] 67 Initializing 'java/util/HashMap$Node'(no method) (0x00007f80002f8f28) by thread "main"
+[0.016s][class,load] java.util.LinkedHashMap$Entry source: shared objects file
+[0.016s][class,load] java.util.HashMap$TreeNode source: shared objects file
+[0.016s][class,load] java.lang.StringConcatHelper source: shared objects file
+[0.016s][class,init] 68 Initializing 'java/lang/StringConcatHelper' (0x00007f8000193a00) by thread "main"
+[0.016s][class,load] java.lang.VersionProps source: shared objects file
+[0.016s][class,init] 69 Initializing 'java/lang/VersionProps' (0x00007f8000178678) by thread "main"
+[0.016s][class,load] java.lang.Runtime source: shared objects file
+[0.016s][class,init] 70 Initializing 'java/lang/Runtime' (0x00007f800026d750) by thread "main"
+[0.016s][class,init] 71 Initializing 'java/util/Dictionary'(no method) (0x00007f8000178d10) by thread "main"
+[0.016s][class,init] 72 Initializing 'java/util/Hashtable'(no method) (0x00007f8000178f68) by thread "main"
+[0.016s][class,init] 73 Initializing 'java/util/Properties' (0x00007f8000178898) by thread "main"
+[0.016s][class,init] 74 Initializing 'java/util/concurrent/ConcurrentMap'(no method) (0x00007f80001d1f38) by thread "main"
+[0.016s][class,init] 75 Initializing 'java/util/concurrent/ConcurrentHashMap' (0x00007f80001cfaf8) by thread "main"
+[0.016s][class,init] 76 Initializing 'java/io/ObjectStreamField'(no method) (0x00007f80002532c0) by thread "main"
+[0.016s][class,load] java.util.concurrent.locks.Lock source: shared objects file
+[0.016s][class,load] java.util.concurrent.locks.ReentrantLock source: shared objects file
+[0.016s][class,load] java.util.concurrent.ConcurrentHashMap$Segment source: shared objects file
+[0.016s][class,load] java.util.concurrent.ConcurrentHashMap$CounterCell source: shared objects file
+[0.016s][class,load] java.util.concurrent.locks.LockSupport source: shared objects file
+[0.016s][class,load] java.util.concurrent.ConcurrentHashMap$ReservationNode source: shared objects file
+[0.016s][class,load] java.util.HashMap$EntrySet source: shared objects file
+[0.016s][class,init] 77 Initializing 'java/util/AbstractSet'(no method) (0x00007f80002494f8) by thread "main"
+[0.016s][class,init] 78 Initializing 'java/util/HashMap$EntrySet'(no method) (0x00007f80002fb178) by thread "main"
+[0.016s][class,load] java.util.Objects source: shared objects file
+[0.016s][class,init] 79 Initializing 'java/util/Objects'(no method) (0x00007f8000233ee0) by thread "main"
+[0.016s][class,load] java.util.HashMap$HashIterator source: shared objects file
+[0.016s][class,load] java.util.HashMap$EntryIterator source: shared objects file
+[0.016s][class,init] 80 Initializing 'java/util/HashMap$HashIterator'(no method) (0x00007f80002fca18) by thread "main"
+[0.016s][class,init] 81 Initializing 'java/util/Iterator'(no method) (0x00007f800017f6d8) by thread "main"
+[0.016s][class,init] 82 Initializing 'java/util/HashMap$EntryIterator'(no method) (0x00007f80002fc7b8) by thread "main"
+[0.016s][class,init] 83 Initializing 'java/util/concurrent/ConcurrentHashMap$Node'(no method) (0x00007f80002cb568) by thread "main"
+[0.016s][class,load] jdk.internal.util.StaticProperty source: shared objects file
+[0.016s][class,init] 84 Initializing 'jdk/internal/util/StaticProperty' (0x00007f800017fde0) by thread "main"
+[0.016s][class,load] java.io.FileInputStream source: shared objects file
+[0.016s][class,load] java.lang.System$In source: shared objects file
+[0.016s][class,init] 85 Initializing 'java/io/InputStream'(no method) (0x00007f80001802d0) by thread "main"
+[0.016s][class,init] 86 Initializing 'java/io/FileInputStream' (0x00007f8000180590) by thread "main"
+[0.016s][class,init] 87 Initializing 'java/lang/System$In'(no method) (0x00007f8000180000) by thread "main"
+[0.016s][class,load] java.io.FileDescriptor source: shared objects file
+[0.016s][class,init] 88 Initializing 'java/io/FileDescriptor' (0x00007f8000180e78) by thread "main"
+[0.016s][class,load] jdk.internal.access.JavaIOFileDescriptorAccess source: shared objects file
+[0.016s][class,load] java.io.FileDescriptor$1 source: shared objects file
+[0.016s][class,init] 89 Initializing 'java/io/FileDescriptor$1'(no method) (0x00007f80003062d8) by thread "main"
+[0.016s][class,load] java.io.Flushable source: shared objects file
+[0.016s][class,load] java.io.OutputStream source: shared objects file
+[0.016s][class,load] java.io.FileOutputStream source: shared objects file
+[0.016s][class,load] java.lang.System$Out source: shared objects file
+[0.016s][class,init] 90 Initializing 'java/io/OutputStream'(no method) (0x00007f800017bf90) by thread "main"
+[0.016s][class,init] 91 Initializing 'java/io/FileOutputStream' (0x00007f8000181340) by thread "main"
+[0.016s][class,init] 92 Initializing 'java/lang/System$Out'(no method) (0x00007f80001810a0) by thread "main"
+[0.016s][class,load] java.io.FilterInputStream source: shared objects file
+[0.016s][class,load] java.io.BufferedInputStream source: shared objects file
+[0.016s][class,init] 93 Initializing 'java/io/FilterInputStream'(no method) (0x00007f8000181b18) by thread "main"
+[0.016s][class,init] 94 Initializing 'java/io/BufferedInputStream' (0x00007f8000181850) by thread "main"
+[0.016s][class,load] java.io.FilterOutputStream source: shared objects file
+[0.016s][class,load] java.io.PrintStream source: shared objects file
+[0.016s][class,init] 95 Initializing 'java/io/FilterOutputStream'(no method) (0x00007f800017c220) by thread "main"
+[0.016s][class,init] 96 Initializing 'java/io/PrintStream'(no method) (0x00007f800017bbc0) by thread "main"
+[0.016s][class,load] java.io.BufferedOutputStream source: shared objects file
+[0.016s][class,init] 97 Initializing 'java/io/BufferedOutputStream'(no method) (0x00007f800017dcf0) by thread "main"
+[0.016s][class,load] java.io.Writer source: shared objects file
+[0.016s][class,load] java.io.OutputStreamWriter source: shared objects file
+[0.016s][class,init] 98 Initializing 'java/io/Writer'(no method) (0x00007f8000281d78) by thread "main"
+[0.016s][class,init] 99 Initializing 'java/io/OutputStreamWriter'(no method) (0x00007f8000282d58) by thread "main"
+[0.016s][class,load] sun.nio.cs.StreamEncoder source: shared objects file
+[0.016s][class,init] 100 Initializing 'sun/nio/cs/StreamEncoder' (0x00007f8000306f40) by thread "main"
+[0.016s][class,load] java.nio.charset.CharsetEncoder source: shared objects file
+[0.016s][class,load] sun.nio.cs.UTF_8$Encoder source: shared objects file
+[0.016s][class,init] 101 Initializing 'java/nio/charset/CharsetEncoder' (0x00007f80002358e8) by thread "main"
+[0.016s][class,init] 102 Initializing 'sun/nio/cs/UTF_8$Encoder'(no method) (0x00007f80002f6908) by thread "main"
+[0.016s][class,load] java.nio.charset.CodingErrorAction source: shared objects file
+[0.016s][class,init] 103 Initializing 'java/nio/charset/CodingErrorAction' (0x00007f8000235530) by thread "main"
+[0.016s][class,load] java.util.Arrays source: shared objects file
+[0.016s][class,init] 104 Initializing 'java/util/Arrays' (0x00007f8000193c20) by thread "main"
+[0.016s][class,load] java.nio.ByteBuffer source: shared objects file
+[0.016s][class,init] 105 Initializing 'java/nio/Buffer' (0x00007f80001c8aa8) by thread "main"
+[0.016s][class,load] jdk.internal.misc.ScopedMemoryAccess source: shared objects file
+[0.016s][class,init] 106 Initializing 'jdk/internal/misc/ScopedMemoryAccess' (0x00007f80001f5af0) by thread "main"
+[0.016s][class,load] java.nio.Buffer$1 source: shared objects file
+[0.016s][class,init] 107 Initializing 'java/util/function/Function'(no method) (0x00007f80001cb3a0) by thread "main"
+[0.016s][class,init] 108 Initializing 'java/nio/Buffer$1'(no method) (0x00007f80002d82b8) by thread "main"
+[0.016s][class,load] jdk.internal.util.Preconditions source: shared objects file
+[0.017s][class,init] 109 Initializing 'jdk/internal/util/Preconditions' (0x00007f80001ca710) by thread "main"
+[0.017s][class,load] jdk.internal.util.Preconditions$1 source: shared objects file
+[0.017s][class,init] 110 Initializing 'jdk/internal/util/Preconditions$1'(no method) (0x00007f80001caf98) by thread "main"
+[0.017s][class,load] java.util.function.BiFunction source: shared objects file
+[0.017s][class,load] jdk.internal.util.Preconditions$4 source: shared objects file
+[0.017s][class,init] 111 Initializing 'java/util/function/BiFunction'(no method) (0x00007f80001cad80) by thread "main"
+[0.017s][class,init] 112 Initializing 'jdk/internal/util/Preconditions$4'(no method) (0x00007f80001ca9e8) by thread "main"
+[0.017s][class,load] jdk.internal.util.Preconditions$2 source: shared objects file
+[0.017s][class,init] 113 Initializing 'jdk/internal/util/Preconditions$2'(no method) (0x00007f80001cb5b8) by thread "main"
+[0.017s][class,load] jdk.internal.util.Preconditions$3 source: shared objects file
+[0.017s][class,init] 114 Initializing 'jdk/internal/util/Preconditions$3'(no method) (0x00007f80001cb8f0) by thread "main"
+[0.017s][class,load] jdk.internal.access.JavaNioAccess source: shared objects file
+[0.017s][class,load] java.nio.Buffer$2 source: shared objects file
+[0.017s][class,init] 115 Initializing 'java/nio/Buffer$2'(no method) (0x00007f80002d86d0) by thread "main"
+[0.017s][class,init] 116 Initializing 'java/nio/ByteBuffer' (0x00007f8000236768) by thread "main"
+[0.017s][class,load] java.nio.HeapByteBuffer source: shared objects file
+[0.017s][class,init] 117 Initializing 'java/nio/HeapByteBuffer' (0x00007f800030e528) by thread "main"
+[0.017s][class,load] java.nio.ByteOrder source: shared objects file
+[0.017s][class,init] 118 Initializing 'java/nio/ByteOrder' (0x00007f800030a6a8) by thread "main"
+[0.017s][class,load] java.io.BufferedWriter source: shared objects file
+[0.017s][class,init] 119 Initializing 'java/io/BufferedWriter'(no method) (0x00007f8000281a68) by thread "main"
+[0.017s][class,load] java.lang.Terminator source: shared objects file
+[0.017s][class,init] 120 Initializing 'java/lang/Terminator' (0x00007f80001822c0) by thread "main"
+[0.017s][class,load] jdk.internal.misc.Signal$Handler source: shared objects file
+[0.017s][class,load] java.lang.Terminator$1 source: shared objects file
+[0.017s][class,init] 121 Initializing 'java/lang/Terminator$1'(no method) (0x00007f8000310b70) by thread "main"
+[0.017s][class,load] jdk.internal.misc.Signal source: shared objects file
+[0.017s][class,init] 122 Initializing 'jdk/internal/misc/Signal' (0x00007f80001c9ec0) by thread "main"
+[0.017s][class,load] java.util.Hashtable$Entry source: shared objects file
+[0.017s][class,load] jdk.internal.misc.Signal$NativeHandler source: shared objects file
+[0.017s][class,init] 123 Initializing 'java/lang/Integer$IntegerCache' (0x00007f80001a9778) by thread "main"
+[0.017s][class,init] 124 Initializing 'java/util/Hashtable$Entry'(no method) (0x00007f80002880f8) by thread "main"
+[0.017s][class,init] 125 Initializing 'jdk/internal/misc/Signal$Handler' (0x00007f8000310db0) by thread "main"
+[0.017s][class,init] 126 Initializing 'jdk/internal/misc/Signal$NativeHandler'(no method) (0x00007f8000311248) by thread "main"
+[0.017s][class,load] jdk.internal.misc.OSEnvironment source: shared objects file
+[0.017s][class,init] 127 Initializing 'jdk/internal/misc/OSEnvironment'(no method) (0x00007f80002df790) by thread "main"
+[0.017s][class,load] java.lang.Thread$State source: shared objects file
+[0.017s][class,init] 128 Initializing 'java/lang/Enum'(no method) (0x00007f8000205498) by thread "main"
+[0.017s][class,init] 129 Initializing 'java/lang/Thread$State' (0x00007f8000276bd8) by thread "main"
+[0.017s][class,load] java.lang.ref.Reference$ReferenceHandler source: shared objects file
+[0.017s][class,init] 130 Initializing 'java/lang/ref/Reference$ReferenceHandler'(no method) (0x00007f8000271f30) by thread "main"
+[0.017s][class,load] java.lang.Thread$ThreadIdentifiers source: shared objects file
+[0.017s][class,init] 131 Initializing 'java/lang/Thread$ThreadIdentifiers' (0x00007f8000274500) by thread "main"
+[0.017s][class,load] java.lang.ref.Finalizer$FinalizerThread source: shared objects file
+[0.017s][class,init] 132 Initializing 'java/lang/ref/Finalizer$FinalizerThread'(no method) (0x00007f80001b1060) by thread "main"
+[0.017s][class,load] jdk.internal.ref.Cleaner source: shared objects file
+[0.017s][class,init] 133 Initializing 'java/lang/ref/PhantomReference'(no method) (0x00007f80001b05b8) by thread "Reference Handler"
+[0.017s][class,init] 134 Initializing 'jdk/internal/ref/Cleaner' (0x00007f80002719f8) by thread "Reference Handler"
+[0.017s][class,init] 135 Initializing 'java/lang/Throwable' (0x00007f800019c5e8) by thread "main"
+[0.017s][class,load] java.util.Collections source: shared objects file
+[0.017s][class,init] 136 Initializing 'java/util/Collections' (0x00007f8000261f08) by thread "main"
+[0.017s][class,load] java.util.Collections$EmptySet source: shared objects file
+[0.017s][class,init] 137 Initializing 'java/util/Collections$EmptySet'(no method) (0x00007f800031b710) by thread "main"
+[0.017s][class,load] java.util.Collections$EmptyList source: shared objects file
+[0.017s][class,init] 138 Initializing 'java/util/SequencedCollection'(no method) (0x00007f800022eb48) by thread "main"
+[0.017s][class,init] 139 Initializing 'java/util/List'(no method) (0x00007f800022e930) by thread "main"
+[0.017s][class,init] 140 Initializing 'java/util/AbstractList'(no method) (0x00007f8000231318) by thread "main"
+[0.017s][class,init] 141 Initializing 'java/util/Collections$EmptyList'(no method) (0x00007f800031c168) by thread "main"
+[0.017s][class,load] java.util.Collections$EmptyMap source: shared objects file
+[0.017s][class,init] 142 Initializing 'java/util/Collections$EmptyMap'(no method) (0x00007f800031cfe0) by thread "main"
+[0.017s][class,init] 143 Initializing 'java/lang/Error'(no method) (0x00007f80001dc0f0) by thread "main"
+[0.017s][class,init] 144 Initializing 'java/lang/VirtualMachineError'(no method) (0x00007f80001de578) by thread "main"
+[0.017s][class,init] 145 Initializing 'java/lang/OutOfMemoryError'(no method) (0x00007f80001df4e0) by thread "main"
+[0.017s][class,load] java.lang.NullPointerException source: shared objects file
+[0.017s][class,init] 146 Initializing 'java/lang/Exception'(no method) (0x00007f80001d8740) by thread "main"
+[0.017s][class,init] 147 Initializing 'java/lang/RuntimeException'(no method) (0x00007f80001d8c18) by thread "main"
+[0.017s][class,init] 148 Initializing 'java/lang/NullPointerException'(no method) (0x00007f80001dd158) by thread "main"
+[0.017s][class,init] 149 Initializing 'java/lang/ClassCastException'(no method) (0x00007f80001d9db8) by thread "main"
+[0.017s][class,init] 150 Initializing 'java/lang/ArrayStoreException'(no method) (0x00007f80001d9a30) by thread "main"
+[0.017s][class,load] java.lang.ArithmeticException source: shared objects file
+[0.017s][class,init] 151 Initializing 'java/lang/ArithmeticException'(no method) (0x00007f80001d84c8) by thread "main"
+[0.017s][class,load] java.lang.IndexOutOfBoundsException source: shared objects file
+[0.017s][class,load] java.lang.ArrayIndexOutOfBoundsException source: shared objects file
+[0.017s][class,init] 152 Initializing 'java/lang/IndexOutOfBoundsException'(no method) (0x00007f80001d9460) by thread "main"
+[0.017s][class,init] 153 Initializing 'java/lang/ArrayIndexOutOfBoundsException'(no method) (0x00007f80001d91e8) by thread "main"
+[0.017s][class,init] 154 Initializing 'java/lang/StackOverflowError'(no method) (0x00007f80001dfa70) by thread "main"
+[0.017s][class,init] 155 Initializing 'java/lang/IllegalMonitorStateException'(no method) (0x00007f80001db768) by thread "main"
+[0.017s][class,load] java.lang.IllegalArgumentException source: shared objects file
+[0.017s][class,init] 156 Initializing 'java/lang/IllegalArgumentException'(no method) (0x00007f80001daeb8) by thread "main"
+[0.017s][class,init] 157 Initializing 'java/lang/InternalError'(no method) (0x00007f80001de300) by thread "main"
+[0.017s][class,init] 158 Initializing 'java/lang/invoke/MethodHandle' (0x00007f8000203068) by thread "main"
+[0.017s][class,load] java.lang.invoke.MethodHandleStatics source: shared objects file
+[0.017s][class,init] 159 Initializing 'java/lang/invoke/MethodHandleStatics' (0x00007f8000202e48) by thread "main"
+[0.017s][class,load] java.lang.reflect.ClassFileFormatVersion source: shared objects file
+[0.017s][class,init] 160 Initializing 'java/lang/reflect/ClassFileFormatVersion' (0x00007f800025c548) by thread "main"
+[0.017s][class,load] java.lang.CharacterData source: shared objects file
+[0.017s][class,init] 161 Initializing 'java/lang/CharacterData'(no method) (0x00007f8000192ba0) by thread "main"
+[0.017s][class,load] java.lang.CharacterDataLatin1 source: shared objects file
+[0.017s][class,init] 162 Initializing 'java/lang/CharacterDataLatin1' (0x00007f80001928a0) by thread "main"
+[0.017s][class,load] jdk.internal.util.ClassFileDumper source: shared objects file
+[0.017s][class,init] 163 Initializing 'jdk/internal/util/ClassFileDumper' (0x00007f800031e2a0) by thread "main"
+[0.017s][class,load] java.util.HexFormat source: shared objects file
+[0.017s][class,init] 164 Initializing 'java/util/HexFormat' (0x00007f80002804f8) by thread "main"
+[0.017s][class,init] 165 Initializing 'java/lang/Character$CharacterCache' (0x00007f80001a1cd8) by thread "main"
+[0.017s][class,load] java.util.concurrent.atomic.AtomicInteger source: shared objects file
+[0.017s][class,init] 166 Initializing 'java/util/concurrent/atomic/AtomicInteger' (0x00007f800031e5d0) by thread "main"
+[0.017s][class,init] 167 Initializing 'java/lang/invoke/ResolvedMethodName'(no method) (0x00007f8000218380) by thread "main"
+[0.017s][class,init] 168 Initializing 'java/lang/invoke/MemberName' (0x00007f8000215da8) by thread "main"
+[0.017s][class,init] 169 Initializing 'java/lang/invoke/MethodHandleNatives' (0x00007f80002186b8) by thread "main"
+[0.017s][class,load] jdk.internal.module.ModuleBootstrap source: shared objects file
+[0.017s][class,init] 170 Initializing 'jdk/internal/module/ModuleBootstrap' (0x00007f80001826f8) by thread "main"
+[0.017s][class,load] java.lang.invoke.MethodHandles source: shared objects file
+[0.017s][class,init] 171 Initializing 'java/lang/invoke/MethodHandles' (0x00007f8000219280) by thread "main"
+[0.017s][class,load] java.lang.invoke.MemberName$Factory source: shared objects file
+[0.017s][class,init] 172 Initializing 'java/lang/invoke/MemberName$Factory' (0x00007f80002a0e98) by thread "main"
+[0.017s][class,load] jdk.internal.reflect.Reflection source: shared objects file
+[0.017s][class,init] 173 Initializing 'jdk/internal/reflect/Reflection' (0x00007f800020cf58) by thread "main"
+[0.018s][class,init] 174 Initializing 'java/util/ImmutableCollections' (0x00007f80002892a0) by thread "main"
+[0.018s][class,init] 175 Initializing 'java/util/ImmutableCollections$AbstractImmutableList'(no method) (0x00007f800028a018) by thread "main"
+[0.018s][class,init] 176 Initializing 'java/util/ImmutableCollections$ListN'(no method) (0x00007f800028b400) by thread "main"
+[0.018s][class,init] 177 Initializing 'java/util/ImmutableCollections$AbstractImmutableMap'(no method) (0x00007f800028cc38) by thread "main"
+[0.018s][class,init] 178 Initializing 'java/util/ImmutableCollections$MapN'(no method) (0x00007f800028c880) by thread "main"
+[0.018s][class,load] java.lang.invoke.MethodHandles$Lookup source: shared objects file
+[0.018s][class,init] 179 Initializing 'java/lang/invoke/MethodHandles$Lookup' (0x00007f8000218ff0) by thread "main"
+[0.018s][class,load] java.util.ImmutableCollections$MapN$1 source: shared objects file
+[0.018s][class,init] 180 Initializing 'java/util/ImmutableCollections$MapN$1'(no method) (0x00007f80002e12b8) by thread "main"
+[0.018s][class,load] java.util.ImmutableCollections$MapN$MapNIterator source: shared objects file
+[0.018s][class,init] 181 Initializing 'java/util/ImmutableCollections$MapN$MapNIterator'(no method) (0x00007f80002e0d98) by thread "main"
+[0.018s][class,load] java.util.KeyValueHolder source: shared objects file
+[0.018s][class,init] 182 Initializing 'java/util/KeyValueHolder'(no method) (0x00007f800028e490) by thread "main"
+[0.018s][class,load] sun.invoke.util.VerifyAccess source: shared objects file
+[0.018s][class,init] 183 Initializing 'sun/invoke/util/VerifyAccess' (0x00007f80002a44f0) by thread "main"
+[0.018s][class,load] java.lang.reflect.Modifier source: shared objects file
+[0.018s][class,init] 184 Initializing 'java/lang/reflect/Modifier'(no method) (0x00007f8000258b78) by thread "main"
+[0.018s][class,init] 185 Initializing 'java/lang/module/ModuleDescriptor' (0x00007f800025e378) by thread "main"
+[0.018s][class,load] jdk.internal.access.JavaLangModuleAccess source: shared objects file
+[0.018s][class,load] java.lang.module.ModuleDescriptor$1 source: shared objects file
+[0.018s][class,init] 186 Initializing 'java/lang/module/ModuleDescriptor$1'(no method) (0x00007f800032a4a8) by thread "main"
+[0.018s][class,load] java.io.File source: shared objects file
+[0.018s][class,init] 187 Initializing 'java/io/File' (0x00007f80001d2940) by thread "main"
+[0.018s][class,load] java.io.DefaultFileSystem source: shared objects file
+[0.018s][class,init] 188 Initializing 'java/io/DefaultFileSystem'(no method) (0x00007f80003345e8) by thread "main"
+[0.018s][class,load] java.io.FileSystem source: shared objects file
+[0.018s][class,load] java.io.UnixFileSystem source: shared objects file
+[0.018s][class,init] 189 Initializing 'java/io/FileSystem'(no method) (0x00007f8000331dd8) by thread "main"
+[0.018s][class,init] 190 Initializing 'java/io/UnixFileSystem' (0x00007f8000334868) by thread "main"
+[0.018s][class,init] 191 Initializing 'java/lang/AbstractStringBuilder' (0x00007f80001bc5b8) by thread "main"
+[0.018s][class,init] 192 Initializing 'java/lang/StringBuilder'(no method) (0x00007f80001c1828) by thread "main"
+[0.018s][class,load] jdk.internal.util.DecimalDigits source: shared objects file
+[0.018s][class,init] 193 Initializing 'jdk/internal/util/DecimalDigits' (0x00007f80002bc528) by thread "main"
+[0.018s][class,load] jdk.internal.module.ModulePatcher source: shared objects file
+[0.018s][class,init] 194 Initializing 'jdk/internal/module/ModulePatcher' (0x00007f80002ca788) by thread "main"
+[0.018s][class,load] jdk.internal.module.ModuleBootstrap$IllegalNativeAccess source: shared objects file
+[0.018s][class,init] 195 Initializing 'jdk/internal/module/ModuleBootstrap$IllegalNativeAccess' (0x00007f8000290480) by thread "main"
+[0.018s][class,init] 196 Initializing 'java/util/HashSet' (0x00007f80002490d0) by thread "main"
+[0.018s][class,load] jdk.internal.module.ModuleLoaderMap source: shared objects file
+[0.018s][class,init] 197 Initializing 'jdk/internal/module/ModuleLoaderMap'(no method) (0x00007f8000292468) by thread "main"
+[0.018s][class,load] jdk.internal.module.ModuleLoaderMap$Modules source: shared objects file
+[0.018s][class,init] 198 Initializing 'jdk/internal/module/ModuleLoaderMap$Modules' (0x00007f80002926f0) by thread "main"
+[0.018s][class,load] jdk.internal.module.ModuleBootstrap$Counters source: shared objects file
+[0.018s][class,init] 199 Initializing 'jdk/internal/module/ModuleBootstrap$Counters' (0x00007f8000322b50) by thread "main"
+[0.018s][class,init] 200 Initializing 'jdk/internal/module/ArchivedBootLayer' (0x00007f8000323030) by thread "main"
+[0.018s][class,init] 201 Initializing 'java/lang/ModuleLayer' (0x00007f800028f1a0) by thread "main"
+[0.018s][class,init] 202 Initializing 'java/lang/module/Configuration' (0x00007f80002910d8) by thread "main"
+[0.018s][class,load] jdk.internal.loader.AbstractClassLoaderValue source: shared objects file
+[0.018s][class,load] jdk.internal.loader.ClassLoaderValue source: shared objects file
+[0.018s][class,init] 203 Initializing 'jdk/internal/loader/AbstractClassLoaderValue' (0x00007f800034a3f8) by thread "main"
+[0.018s][class,init] 204 Initializing 'jdk/internal/loader/ClassLoaderValue'(no method) (0x00007f800034a198) by thread "main"
+[0.018s][class,init] 205 Initializing 'java/util/ImmutableCollections$List12'(no method) (0x00007f8000289668) by thread "main"
+[0.018s][class,init] 206 Initializing 'java/lang/module/ResolvedModule'(no method) (0x00007f8000291c08) by thread "main"
+[0.018s][class,init] 207 Initializing 'java/lang/module/ModuleReference'(no method) (0x00007f8000292e48) by thread "main"
+[0.018s][class,init] 208 Initializing 'jdk/internal/module/ModuleReferenceImpl'(no method) (0x00007f8000324f90) by thread "main"
+[0.018s][class,init] 209 Initializing 'java/lang/module/ModuleDescriptor$Version'(no method) (0x00007f800028ea48) by thread "main"
+[0.018s][class,init] 210 Initializing 'java/util/ArrayList' (0x00007f800022e2c0) by thread "main"
+[0.018s][class,init] 211 Initializing 'java/lang/module/ModuleDescriptor$Requires' (0x00007f800032b628) by thread "main"
+[0.018s][class,init] 212 Initializing 'java/lang/module/ModuleDescriptor$Exports'(no method) (0x00007f8000295728) by thread "main"
+[0.018s][class,init] 213 Initializing 'java/lang/module/ModuleDescriptor$Provides'(no method) (0x00007f800032ada8) by thread "main"
+[0.018s][class,init] 214 Initializing 'java/net/URI' (0x00007f8000293498) by thread "main"
+[0.018s][class,load] jdk.internal.access.JavaNetUriAccess source: shared objects file
+[0.018s][class,load] java.net.URI$1 source: shared objects file
+[0.018s][class,init] 215 Initializing 'java/net/URI$1'(no method) (0x00007f800033b0a0) by thread "main"
+[0.018s][class,init] 216 Initializing 'jdk/internal/module/SystemModuleFinders$1'(no method) (0x00007f8000324c70) by thread "main"
+[0.018s][class,init] 217 Initializing 'jdk/internal/module/SystemModuleFinders$2'(no method) (0x00007f8000325600) by thread "main"
+[0.018s][class,init] 218 Initializing 'java/lang/module/ModuleDescriptor$Opens'(no method) (0x00007f8000296100) by thread "main"
+[0.018s][class,init] 219 Initializing 'jdk/internal/module/ModuleTarget'(no method) (0x00007f8000337758) by thread "main"
+[0.018s][class,init] 220 Initializing 'jdk/internal/module/ModuleHashes'(no method) (0x00007f8000324708) by thread "main"
+[0.018s][class,init] 221 Initializing 'java/util/Collections$UnmodifiableMap'(no method) (0x00007f8000315c18) by thread "main"
+[0.018s][class,init] 222 Initializing 'java/lang/ClassLoader' (0x00007f8000182918) by thread "main"
+[0.018s][class,load] java.security.cert.Certificate source: shared objects file
+[0.018s][class,init] 223 Initializing 'java/security/SecureClassLoader' (0x00007f80001c5508) by thread "main"
+[0.018s][class,load] java.lang.ClassLoader$ParallelLoaders source: shared objects file
+[0.018s][class,init] 224 Initializing 'java/lang/ClassLoader$ParallelLoaders' (0x00007f8000269b98) by thread "main"
+[0.018s][class,load] java.util.WeakHashMap source: shared objects file
+[0.018s][class,init] 225 Initializing 'java/util/WeakHashMap' (0x00007f8000269e40) by thread "main"
+[0.018s][class,load] java.util.WeakHashMap$Entry source: shared objects file
+[0.018s][class,load] java.util.Collections$SetFromMap source: shared objects file
+[0.018s][class,init] 226 Initializing 'java/util/Collections$SetFromMap'(no method) (0x00007f800031a8e8) by thread "main"
+[0.018s][class,load] java.util.WeakHashMap$KeySet source: shared objects file
+[0.018s][class,init] 227 Initializing 'java/util/WeakHashMap$KeySet'(no method) (0x00007f800033e7a8) by thread "main"
+[0.018s][class,init] 228 Initializing 'java/lang/ref/WeakReference'(no method) (0x00007f80001afbd8) by thread "main"
+[0.018s][class,init] 229 Initializing 'java/util/WeakHashMap$Entry'(no method) (0x00007f800033df80) by thread "main"
+[0.018s][class,init] 230 Initializing 'jdk/internal/loader/BuiltinClassLoader' (0x00007f80001d67b0) by thread "main"
+[0.018s][class,init] 231 Initializing 'jdk/internal/loader/ArchivedClassLoaders' (0x00007f800022c648) by thread "main"
+[0.018s][class,init] 232 Initializing 'jdk/internal/loader/ClassLoaders$BootClassLoader'(no method) (0x00007f800022dc30) by thread "main"
+[0.018s][class,init] 233 Initializing 'java/security/ProtectionDomain'(no method) (0x00007f80001c4e88) by thread "main"
+[0.018s][class,init] 234 Initializing 'java/security/CodeSource'(no method) (0x00007f80001c4500) by thread "main"
+[0.018s][class,init] 235 Initializing 'java/security/Principal'(no method) (0x00007f8000270b38) by thread "main"
+[0.018s][class,init] 236 Initializing 'jdk/internal/loader/NativeLibraries' (0x00007f80001cf768) by thread "main"
+[0.018s][class,load] jdk.internal.loader.ClassLoaderHelper source: shared objects file
+[0.018s][class,init] 237 Initializing 'jdk/internal/loader/ClassLoaderHelper' (0x00007f80001d4b18) by thread "main"
+[0.018s][class,load] jdk.internal.util.OSVersion source: shared objects file
+[0.018s][class,init] 238 Initializing 'jdk/internal/util/OSVersion' (0x00007f800033d680) by thread "main"
+[0.018s][class,load] java.util.concurrent.ConcurrentHashMap$CollectionView source: shared objects file
+[0.018s][class,load] java.util.concurrent.ConcurrentHashMap$KeySetView source: shared objects file
+[0.018s][class,init] 239 Initializing 'java/util/concurrent/ConcurrentHashMap$CollectionView'(no method) (0x00007f8000287100) by thread "main"
+[0.018s][class,init] 240 Initializing 'java/util/concurrent/ConcurrentHashMap$KeySetView'(no method) (0x00007f8000286d08) by thread "main"
+[0.018s][class,init] 241 Initializing 'jdk/internal/loader/ClassLoaders$AppClassLoader' (0x00007f80001d7ac8) by thread "main"
+[0.018s][class,init] 242 Initializing 'jdk/internal/module/ServicesCatalog' (0x00007f80002599d0) by thread "main"
+[0.018s][class,init] 243 Initializing 'java/util/concurrent/CopyOnWriteArrayList' (0x00007f8000347680) by thread "main"
+[0.018s][class,init] 244 Initializing 'jdk/internal/module/ServicesCatalog$ServiceProvider'(no method) (0x00007f8000349af8) by thread "main"
+[0.018s][class,init] 245 Initializing 'jdk/internal/loader/BuiltinClassLoader$LoadedModule'(no method) (0x00007f80002c8260) by thread "main"
+[0.018s][class,init] 246 Initializing 'jdk/internal/loader/ClassLoaders$PlatformClassLoader' (0x00007f80001d8030) by thread "main"
+[0.018s][class,load] jdk.internal.loader.BootLoader source: shared objects file
+[0.018s][class,init] 247 Initializing 'jdk/internal/loader/BootLoader' (0x00007f80002596c8) by thread "main"
+[0.018s][class,load] java.lang.Module$EnableNativeAccess source: shared objects file
+[0.018s][class,init] 248 Initializing 'java/lang/Module$EnableNativeAccess' (0x00007f8000290058) by thread "main"
+[0.018s][class,init] 249 Initializing 'jdk/internal/loader/ClassLoaders' (0x00007f800022c348) by thread "main"
+[0.018s][class,load] jdk.internal.loader.URLClassPath source: shared objects file
+[0.018s][class,init] 250 Initializing 'jdk/internal/loader/URLClassPath' (0x00007f800022d688) by thread "main"
+[0.018s][class,init] 251 Initializing 'java/net/URL' (0x00007f80001c5c48) by thread "main"
+[0.018s][class,load] java.net.URLStreamHandlerFactory source: shared objects file
+[0.018s][class,load] java.net.URL$DefaultFactory source: shared objects file
+[0.018s][class,init] 252 Initializing 'java/net/URL$DefaultFactory'(no method) (0x00007f80002c5320) by thread "main"
+[0.018s][class,load] jdk.internal.access.JavaNetURLAccess source: shared objects file
+[0.019s][class,load] java.net.URL$1 source: shared objects file
+[0.019s][class,init] 253 Initializing 'java/net/URL$1'(no method) (0x00007f80002c56e0) by thread "main"
+[0.019s][class,load] java.io.File$PathStatus source: shared objects file
+[0.019s][class,init] 254 Initializing 'java/io/File$PathStatus' (0x00007f8000332de0) by thread "main"
+[0.019s][class,load] sun.net.www.ParseUtil source: shared objects file
+[0.019s][class,init] 255 Initializing 'sun/net/www/ParseUtil' (0x00007f8000342130) by thread "main"
+[0.019s][class,load] java.net.URLStreamHandler source: shared objects file
+[0.019s][class,load] sun.net.www.protocol.file.Handler source: shared objects file
+[0.019s][class,init] 256 Initializing 'java/net/URLStreamHandler'(no method) (0x00007f80002c14b8) by thread "main"
+[0.019s][class,init] 257 Initializing 'sun/net/www/protocol/file/Handler'(no method) (0x00007f8000344390) by thread "main"
+[0.019s][class,load] sun.net.util.IPAddressUtil source: shared objects file
+[0.019s][class,init] 258 Initializing 'sun/net/util/IPAddressUtil' (0x00007f80002bfda8) by thread "main"
+[0.019s][class,load] sun.net.util.IPAddressUtil$MASKS source: shared objects file
+[0.019s][class,init] 259 Initializing 'sun/net/util/IPAddressUtil$MASKS' (0x00007f80002c0108) by thread "main"
+[0.019s][class,load] java.util.Queue source: shared objects file
+[0.019s][class,load] java.util.Deque source: shared objects file
+[0.019s][class,load] java.util.ArrayDeque source: shared objects file
+[0.019s][class,init] 260 Initializing 'java/util/Deque'(no method) (0x00007f80001d42f8) by thread "main"
+[0.019s][class,init] 261 Initializing 'java/util/ArrayDeque'(no method) (0x00007f800033ef20) by thread "main"
+[0.019s][class,load] sun.net.www.protocol.jar.Handler source: shared objects file
+[0.019s][class,init] 262 Initializing 'sun/net/www/protocol/jar/Handler'(no method) (0x00007f80002c1230) by thread "main"
+[0.019s][class,init] 263 Initializing 'jdk/internal/vm/Continuation' (0x00007f80001e99b8) by thread "main"
+[0.019s][class,load] jdk.internal.vm.ContinuationSupport source: shared objects file
+[0.019s][class,init] 264 Initializing 'jdk/internal/vm/ContinuationSupport' (0x00007f800029f9f0) by thread "main"
+[0.019s][class,init] 265 Initializing 'jdk/internal/vm/StackChunk'(no method) (0x00007f800019db98) by thread "main"
+[0.019s][class,load] jdk.internal.vm.Continuation$Pinned source: shared objects file
+[0.019s][class,init] 266 Initializing 'jdk/internal/vm/Continuation$Pinned' (0x00007f800029e270) by thread "main"
+[0.019s][class,load] sun.launcher.LauncherHelper source: shared objects file
+[0.019s][class,init] 267 Initializing 'sun/launcher/LauncherHelper' (0x00007f80004767b0) by thread "main"
+[0.019s][class,load] java.lang.StringCoding source: shared objects file
+[0.019s][class,init] 268 Initializing 'java/lang/StringCoding'(no method) (0x00007f80001e3fb0) by thread "main"
+[0.019s][class,load] sun.net.util.URLUtil source: shared objects file
+[0.019s][class,init] 269 Initializing 'sun/net/util/URLUtil'(no method) (0x00007f80002cb238) by thread "main"
+[0.019s][class,load] jdk.internal.loader.URLClassPath$Loader source: shared objects file
+[0.019s][class,load] jdk.internal.loader.URLClassPath$FileLoader source: jrt:/java.base
+[0.019s][class,init] 270 Initializing 'jdk/internal/loader/URLClassPath$Loader'(no method) (0x00007f8000341c08) by thread "main"
+[0.019s][class,init] 271 Initializing 'jdk/internal/loader/URLClassPath$FileLoader'(no method) (0x00007f8001000618) by thread "main"
+[0.020s][class,load] jdk.internal.loader.Resource source: shared objects file
+[0.020s][class,load] jdk.internal.loader.URLClassPath$FileLoader$1 source: jrt:/java.base
+[0.020s][class,init] 272 Initializing 'jdk/internal/loader/Resource'(no method) (0x00007f80002c9140) by thread "main"
+[0.020s][class,init] 273 Initializing 'jdk/internal/loader/URLClassPath$FileLoader$1'(no method) (0x00007f8001000898) by thread "main"
+[0.020s][class,load] java.lang.NamedPackage source: shared objects file
+[0.020s][class,load] java.lang.Package source: shared objects file
+[0.020s][class,init] 274 Initializing 'java/lang/NamedPackage'(no method) (0x00007f8000267b58) by thread "main"
+[0.020s][class,init] 275 Initializing 'java/lang/Package'(no method) (0x00007f80002678d0) by thread "main"
+[0.020s][class,load] java.lang.Package$VersionInfo source: shared objects file
+[0.020s][class,init] 276 Initializing 'java/lang/Package$VersionInfo' (0x00007f80003a9e90) by thread "main"
+[0.020s][class,load] java.lang.ref.Cleaner$Cleanable source: shared objects file
+[0.020s][class,load] jdk.internal.ref.PhantomCleanable source: shared objects file
+[0.020s][class,load] java.io.FileCleanable source: shared objects file
+[0.020s][class,init] 277 Initializing 'jdk/internal/ref/PhantomCleanable' (0x00007f80002ba498) by thread "main"
+[0.020s][class,init] 278 Initializing 'java/io/FileCleanable' (0x00007f8000300dc8) by thread "main"
+[0.020s][class,load] jdk.internal.ref.CleanerFactory source: shared objects file
+[0.020s][class,init] 279 Initializing 'jdk/internal/ref/CleanerFactory' (0x00007f80002bb100) by thread "main"
+[0.020s][class,load] java.util.concurrent.ThreadFactory source: shared objects file
+[0.020s][class,load] jdk.internal.ref.CleanerFactory$1 source: shared objects file
+[0.020s][class,init] 280 Initializing 'jdk/internal/ref/CleanerFactory$1'(no method) (0x00007f80002bb388) by thread "main"
+[0.020s][class,load] java.lang.ref.Cleaner source: shared objects file
+[0.020s][class,init] 281 Initializing 'java/lang/ref/Cleaner' (0x00007f80002b9ca0) by thread "main"
+[0.020s][class,load] java.lang.ref.Cleaner$1 source: shared objects file
+[0.020s][class,init] 282 Initializing 'java/lang/ref/Cleaner$1'(no method) (0x00007f80002babc0) by thread "main"
+[0.020s][class,load] jdk.internal.ref.CleanerImpl source: shared objects file
+[0.020s][class,init] 283 Initializing 'jdk/internal/ref/CleanerImpl' (0x00007f80002b9f48) by thread "main"
+[0.020s][class,load] jdk.internal.ref.CleanerImpl$CleanableList source: shared objects file
+[0.020s][class,init] 284 Initializing 'jdk/internal/ref/CleanerImpl$CleanableList' (0x00007f80003a80c8) by thread "main"
+[0.020s][class,load] jdk.internal.ref.CleanerImpl$CleanableList$Node source: shared objects file
+[0.020s][class,init] 285 Initializing 'jdk/internal/ref/CleanerImpl$CleanableList$Node'(no method) (0x00007f80003a8370) by thread "main"
+[0.020s][class,load] jdk.internal.ref.CleanerImpl$CleanerCleanable source: shared objects file
+[0.020s][class,init] 286 Initializing 'jdk/internal/ref/CleanerImpl$CleanerCleanable'(no method) (0x00007f80004754f8) by thread "main"
+[0.020s][class,load] jdk.internal.misc.InnocuousThread source: shared objects file
+[0.020s][class,init] 287 Initializing 'jdk/internal/misc/InnocuousThread' (0x00007f800027f468) by thread "main"
+[0.020s][class,load] sun.nio.ByteBuffered source: shared objects file
+[0.020s][class,load] java.io.FileInputStream$1 source: shared objects file
+[0.020s][class,init] 288 Initializing 'java/io/FileInputStream$1'(no method) (0x00007f8000303fe0) by thread "main"
+[0.020s][class,load] java.security.SecureClassLoader$CodeSourceKey source: shared objects file
+[0.020s][class,init] 289 Initializing 'java/security/SecureClassLoader$CodeSourceKey'(no method) (0x00007f80002711a0) by thread "main"
+[0.020s][class,load] java.security.SecureClassLoader$1 source: shared objects file
+[0.020s][class,init] 290 Initializing 'java/security/SecureClassLoader$1'(no method) (0x00007f8000271610) by thread "main"
+[0.020s][class,init] 291 Initializing 'java/util/concurrent/ConcurrentHashMap$ReservationNode'(no method) (0x00007f80002cc258) by thread "main"
+[0.020s][class,load] java.security.PermissionCollection source: shared objects file
+[0.020s][class,load] java.security.Permissions source: shared objects file
+[0.020s][class,init] 292 Initializing 'java/security/PermissionCollection'(no method) (0x00007f800026fec0) by thread "main"
+[0.020s][class,init] 293 Initializing 'java/security/Permissions' (0x00007f8000270490) by thread "main"
+[0.020s][class,load] com.eottabom.letmecode.example.classloading.target.LoadVsInit source: file:~/workspace/let-me-code/jvm-classloading/build/classes/java/main/
+[0.020s][class,load] jdk.internal.misc.MethodFinder source: shared objects file
+[0.020s][class,init] 294 Initializing 'jdk/internal/misc/MethodFinder' (0x00007f8000472b68) by thread "main"
+[0.020s][class,load] java.lang.Class$ReflectionData source: shared objects file
+[0.020s][class,init] 295 Initializing 'java/lang/Class$ReflectionData' (0x00007f800025bab8) by thread "main"
+[0.020s][class,init] 296 Initializing 'java/lang/ref/SoftReference'(no method) (0x00007f80001af5d0) by thread "main"
+[0.020s][class,load] java.lang.Class$Atomic source: shared objects file
+[0.020s][class,init] 297 Initializing 'java/lang/Class$Atomic' (0x00007f800025f8c0) by thread "main"
+[0.020s][class,init] Start class verification for: com.eottabom.letmecode.example.classloading.target.LoadVsInit
+[0.020s][class,init] End class verification for: com.eottabom.letmecode.example.classloading.target.LoadVsInit
+[0.020s][class,load] java.lang.PublicMethods$MethodList source: shared objects file
+[0.020s][class,init] 298 Initializing 'java/lang/PublicMethods$MethodList'(no method) (0x00007f800025d618) by thread "main"
+[0.020s][class,load] java.lang.PublicMethods$Key source: shared objects file
+[0.020s][class,init] 299 Initializing 'java/lang/PublicMethods$Key' (0x00007f800025d8d8) by thread "main"
+[0.020s][class,init] 300 Initializing 'com/eottabom/letmecode/example/classloading/target/LoadVsInit'(no method) (0x00007f8001040000) by thread "main"
+[0.020s][class,load] com.eottabom.letmecode.example.classloading.target.Marker source: file:~/workspace/let-me-code/jvm-classloading/build/classes/java/main/
+[0.020s][class,init] Start class verification for: com.eottabom.letmecode.example.classloading.target.Marker
+[0.020s][class,init] End class verification for: com.eottabom.letmecode.example.classloading.target.Marker
+[0.020s][class,init] 301 Initializing 'com/eottabom/letmecode/example/classloading/target/Marker'(no method) (0x00007f8001040218) by thread "main"
+[0.020s][class,load] java.lang.StringUTF16 source: shared objects file
+[0.020s][class,init] 302 Initializing 'java/lang/StringUTF16' (0x00007f80001953c8) by thread "main"
+[0.020s][class,load] java.lang.Readable source: shared objects file
+[0.020s][class,load] java.nio.CharBuffer source: shared objects file
+[0.020s][class,init] 303 Initializing 'java/nio/CharBuffer' (0x00007f8000239378) by thread "main"
+[0.021s][class,load] java.nio.HeapCharBuffer source: shared objects file
+[0.021s][class,init] 304 Initializing 'java/nio/HeapCharBuffer' (0x00007f80003c3660) by thread "main"
+[0.021s][class,load] java.nio.charset.CoderResult source: shared objects file
+[0.021s][class,init] 305 Initializing 'java/nio/charset/CoderResult' (0x00007f800023be28) by thread "main"
+[0.021s][class,load] jdk.internal.misc.Blocker source: shared objects file
+[0.021s][class,init] 306 Initializing 'jdk/internal/misc/Blocker' (0x00007f80003008f8) by thread "main"
+[mark] 실행 전
+[0.021s][class,load] com.eottabom.letmecode.example.classloading.target.LoadVsInit$Element source: file:~/workspace/let-me-code/jvm-classloading/build/classes/java/main/
+1
+[mark] 실행 후
+[0.021s][class,load] java.lang.Shutdown source: shared objects file
+[0.021s][class,init] 307 Initializing 'java/lang/Shutdown' (0x00007f80001adff0) by thread "DestroyJavaVM"
+[0.021s][class,load] java.lang.Shutdown$Lock source: shared objects file
+[0.021s][class,init] 308 Initializing 'java/lang/Shutdown$Lock'(no method) (0x00007f80003aa230) by thread "DestroyJavaVM"

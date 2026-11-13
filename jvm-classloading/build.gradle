@@ -1,0 +1,20 @@
+plugins {
+	id 'application'
+}
+
+dependencies {
+	implementation libs.slf4j.api
+	runtimeOnly libs.logback.classic
+}
+
+application {
+	mainClass = 'com.eottabom.letmecode.example.classloading.experiment.Experiments'
+}
+
+tasks.named('run') {
+	workingDir = projectDir
+	// 실험 대상 프로그램을 띄울 JDK. 지정하지 않으면 JAVA_HOME 을 쓴다. 블로그 측정은 Azul Zulu 25.0.2 로 했다.
+	systemProperty 'jvm.javaHome', System.getenv('JVM_JAVA_HOME') ?: (System.getenv('JAVA_HOME') ?: '')
+	systemProperty 'experiment.repeat', findProperty('repeat') ?: '10'
+	systemProperty 'experiment.outputDir', file('results/latest').absolutePath
+}

@@ -1,0 +1,11 @@
+<configuration>
+	<!-- 실험 러너의 진행 로그와 요약 표를 그대로 읽을 수 있게 메시지만 찍는다. -->
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%msg%n</pattern>
+		</encoder>
+	</appender>
+	<root level="INFO">
+		<appender-ref ref="CONSOLE"/>
+	</root>
+</configuration>

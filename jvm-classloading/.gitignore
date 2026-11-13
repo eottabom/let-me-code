@@ -1,0 +1,3 @@
+results/latest/
+# 블로그에 실은 실행의 원본 출력은 함께 올린다 (루트 .gitignore 의 *.log 예외)
+!results/*/*.log

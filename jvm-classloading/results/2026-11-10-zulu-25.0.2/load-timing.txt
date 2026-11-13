@@ -1,0 +1,30 @@
+JDK: OpenJDK Runtime Environment Zulu25.32+17-CA (build 25.0.2+10-LTS), aarch64, CPU 10개
+
+== 분기 실행 안 함
+[mark] main 시작
+[mark] Holder.touch 호출 전
+[0.027s][class,load] com.eottabom.letmecode.example.classloading.target.LoadTiming$Holder source: 클래스 폴더
+[0.027s][class,init] Start class verification for: com.eottabom.letmecode.example.classloading.target.LoadTiming$Holder
+[0.027s][class,load] com.eottabom.letmecode.example.classloading.target.LoadTiming$Base source: 클래스 폴더
+[0.028s][class,load] com.eottabom.letmecode.example.classloading.target.LoadTiming$Derived source: 클래스 폴더
+[0.028s][class,init] End class verification for: com.eottabom.letmecode.example.classloading.target.LoadTiming$Holder
+[0.028s][class,init] 307 Initializing 'com/eottabom/letmecode/example/classloading/target/LoadTiming$Holder'(no method) (0x00003ff001040430) by thread "main"
+[mark] main 끝
+로딩된 중첩 클래스: Holder, Base, Derived
+
+== 분기 실행
+[mark] main 시작
+[mark] 분기 진입
+[0.023s][class,load] com.eottabom.letmecode.example.classloading.target.LoadTiming$Branch source: 클래스 폴더
+[0.023s][class,init] Start class verification for: com.eottabom.letmecode.example.classloading.target.LoadTiming$Branch
+[0.023s][class,init] End class verification for: com.eottabom.letmecode.example.classloading.target.LoadTiming$Branch
+[0.023s][class,init] 307 Initializing 'com/eottabom/letmecode/example/classloading/target/LoadTiming$Branch'(no method) (0x00000ffc01040430) by thread "main"
+[mark] Holder.touch 호출 전
+[0.023s][class,load] com.eottabom.letmecode.example.classloading.target.LoadTiming$Holder source: 클래스 폴더
+[0.023s][class,init] Start class verification for: com.eottabom.letmecode.example.classloading.target.LoadTiming$Holder
+[0.023s][class,load] com.eottabom.letmecode.example.classloading.target.LoadTiming$Base source: 클래스 폴더
+[0.024s][class,load] com.eottabom.letmecode.example.classloading.target.LoadTiming$Derived source: 클래스 폴더
+[0.024s][class,init] End class verification for: com.eottabom.letmecode.example.classloading.target.LoadTiming$Holder
+[0.024s][class,init] 308 Initializing 'com/eottabom/letmecode/example/classloading/target/LoadTiming$Holder'(no method) (0x00000ffc01040648) by thread "main"
+[mark] main 끝
+로딩된 중첩 클래스: Branch, Holder, Base, Derived

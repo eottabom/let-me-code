@@ -1,0 +1,13 @@
+JDK: OpenJDK Runtime Environment Zulu25.32+17-CA (build 25.0.2+10-LTS), aarch64, CPU 10개
+
+== 같은 클래스에 두 번 접근
+[1번째 접근] java.lang.ExceptionInInitializerError
+  cause: java.lang.IllegalStateException: 설정 파일을 찾을 수 없다
+[2번째 접근] java.lang.NoClassDefFoundError: Could not initialize class com.eottabom.letmecode.example.classloading.target.InitFailure$Config
+  cause: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalStateException: 설정 파일을 찾을 수 없다 [in thread "main"]
+
+== 초기화 로그
+[0.020s][class,load] com.eottabom.letmecode.example.classloading.target.InitFailure$Config source: 클래스 폴더
+[0.020s][class,init] Start class verification for: com.eottabom.letmecode.example.classloading.target.InitFailure$Config
+[0.020s][class,init] End class verification for: com.eottabom.letmecode.example.classloading.target.InitFailure$Config
+[0.020s][class,init] 301 Initializing 'com/eottabom/letmecode/example/classloading/target/InitFailure$Config' (0x000007fe01040218) by thread "main"

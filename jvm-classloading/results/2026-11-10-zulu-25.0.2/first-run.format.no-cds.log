@@ -1,0 +1,1522 @@
+[0.006s][class,load] java.lang.Object source: jrt:/java.base
+[0.006s][class,load] java.io.Serializable source: jrt:/java.base
+[0.006s][class,load] java.lang.Comparable source: jrt:/java.base
+[0.006s][class,load] java.lang.CharSequence source: jrt:/java.base
+[0.006s][class,load] java.lang.constant.Constable source: jrt:/java.base
+[0.006s][class,load] java.lang.constant.ConstantDesc source: jrt:/java.base
+[0.006s][class,load] java.lang.String source: jrt:/java.base
+[0.006s][class,load] java.lang.reflect.AnnotatedElement source: jrt:/java.base
+[0.006s][class,load] java.lang.reflect.GenericDeclaration source: jrt:/java.base
+[0.006s][class,load] java.lang.reflect.Type source: jrt:/java.base
+[0.006s][class,load] java.lang.invoke.TypeDescriptor source: jrt:/java.base
+[0.006s][class,load] java.lang.invoke.TypeDescriptor$OfField source: jrt:/java.base
+[0.006s][class,load] java.lang.Class source: jrt:/java.base
+[0.006s][class,load] java.lang.Cloneable source: jrt:/java.base
+[0.006s][class,load] java.lang.ClassLoader source: jrt:/java.base
+[0.006s][class,load] java.lang.System source: jrt:/java.base
+[0.006s][class,load] java.lang.Throwable source: jrt:/java.base
+[0.006s][class,load] java.lang.Error source: jrt:/java.base
+[0.006s][class,load] java.lang.Exception source: jrt:/java.base
+[0.006s][class,load] java.lang.RuntimeException source: jrt:/java.base
+[0.006s][class,load] java.security.ProtectionDomain source: jrt:/java.base
+[0.007s][class,load] java.security.SecureClassLoader source: jrt:/java.base
+[0.007s][class,load] java.lang.ReflectiveOperationException source: jrt:/java.base
+[0.007s][class,load] java.lang.ClassNotFoundException source: jrt:/java.base
+[0.007s][class,load] java.lang.Record source: jrt:/java.base
+[0.007s][class,load] java.lang.LinkageError source: jrt:/java.base
+[0.007s][class,load] java.lang.NoClassDefFoundError source: jrt:/java.base
+[0.007s][class,load] java.lang.ClassCastException source: jrt:/java.base
+[0.007s][class,load] java.lang.ArrayStoreException source: jrt:/java.base
+[0.007s][class,load] java.lang.VirtualMachineError source: jrt:/java.base
+[0.007s][class,load] java.lang.InternalError source: jrt:/java.base
+[0.007s][class,load] java.lang.OutOfMemoryError source: jrt:/java.base
+[0.007s][class,load] java.lang.StackOverflowError source: jrt:/java.base
+[0.007s][class,load] java.lang.IllegalMonitorStateException source: jrt:/java.base
+[0.007s][class,load] java.lang.ref.Reference source: jrt:/java.base
+[0.007s][class,load] java.lang.IllegalCallerException source: jrt:/java.base
+[0.007s][class,load] java.lang.ref.SoftReference source: jrt:/java.base
+[0.007s][class,load] java.lang.ref.WeakReference source: jrt:/java.base
+[0.007s][class,load] java.lang.ref.FinalReference source: jrt:/java.base
+[0.007s][class,load] java.lang.ref.PhantomReference source: jrt:/java.base
+[0.007s][class,load] java.lang.ref.Finalizer source: jrt:/java.base
+[0.007s][class,load] java.lang.Runnable source: jrt:/java.base
+[0.007s][class,load] java.lang.Thread source: jrt:/java.base
+[0.007s][class,load] java.lang.Thread$FieldHolder source: jrt:/java.base
+[0.007s][class,load] java.lang.Thread$Constants source: jrt:/java.base
+[0.007s][class,load] java.lang.Thread$UncaughtExceptionHandler source: jrt:/java.base
+[0.007s][class,load] java.lang.ThreadGroup source: jrt:/java.base
+[0.007s][class,load] java.lang.BaseVirtualThread source: jrt:/java.base
+[0.007s][class,load] java.lang.VirtualThread source: jrt:/java.base
+[0.007s][class,load] java.lang.ThreadBuilders$BoundVirtualThread source: jrt:/java.base
+[0.007s][class,load] java.util.Map source: jrt:/java.base
+[0.007s][class,load] java.util.Dictionary source: jrt:/java.base
+[0.007s][class,load] java.util.Hashtable source: jrt:/java.base
+[0.007s][class,load] java.util.Properties source: jrt:/java.base
+[0.007s][class,load] java.lang.Module source: jrt:/java.base
+[0.007s][class,load] java.lang.reflect.AccessibleObject source: jrt:/java.base
+[0.007s][class,load] java.lang.reflect.Member source: jrt:/java.base
+[0.007s][class,load] java.lang.reflect.Field source: jrt:/java.base
+[0.007s][class,load] java.lang.reflect.Parameter source: jrt:/java.base
+[0.008s][class,load] java.lang.reflect.Executable source: jrt:/java.base
+[0.008s][class,load] java.lang.reflect.Method source: jrt:/java.base
+[0.008s][class,load] java.lang.reflect.Constructor source: jrt:/java.base
+[0.008s][class,load] jdk.internal.vm.ContinuationScope source: jrt:/java.base
+[0.008s][class,load] jdk.internal.vm.Continuation source: jrt:/java.base
+[0.008s][class,load] jdk.internal.vm.StackChunk source: jrt:/java.base
+[0.008s][class,load] jdk.internal.reflect.MethodAccessor source: jrt:/java.base
+[0.008s][class,load] jdk.internal.reflect.MethodAccessorImpl source: jrt:/java.base
+[0.008s][class,load] jdk.internal.reflect.ConstantPool source: jrt:/java.base
+[0.008s][class,load] java.lang.annotation.Annotation source: jrt:/java.base
+[0.008s][class,load] jdk.internal.reflect.CallerSensitive source: jrt:/java.base
+[0.008s][class,load] jdk.internal.reflect.ConstructorAccessor source: jrt:/java.base
+[0.008s][class,load] jdk.internal.reflect.ConstructorAccessorImpl source: jrt:/java.base
+[0.008s][class,load] jdk.internal.reflect.DirectConstructorHandleAccessor$NativeAccessor source: jrt:/java.base
+[0.008s][class,load] java.lang.invoke.MethodHandle source: jrt:/java.base
+[0.008s][class,load] java.lang.invoke.DirectMethodHandle source: jrt:/java.base
+[0.008s][class,load] java.lang.invoke.VarHandle source: jrt:/java.base
+[0.008s][class,load] java.lang.invoke.MemberName source: jrt:/java.base
+[0.008s][class,load] java.lang.invoke.ResolvedMethodName source: jrt:/java.base
+[0.008s][class,load] java.lang.invoke.MethodHandleImpl source: jrt:/java.base
+[0.008s][class,load] java.lang.invoke.MethodHandleNatives source: jrt:/java.base
+[0.008s][class,load] java.lang.invoke.LambdaForm source: jrt:/java.base
+[0.008s][class,load] java.lang.invoke.TypeDescriptor$OfMethod source: jrt:/java.base
+[0.009s][class,load] java.lang.invoke.MethodType source: jrt:/java.base
+[0.009s][class,load] java.lang.BootstrapMethodError source: jrt:/java.base
+[0.009s][class,load] java.lang.invoke.CallSite source: jrt:/java.base
+[0.009s][class,load] jdk.internal.foreign.abi.NativeEntryPoint source: jrt:/java.base
+[0.009s][class,load] jdk.internal.foreign.abi.ABIDescriptor source: jrt:/java.base
+[0.009s][class,load] jdk.internal.foreign.abi.VMStorage source: jrt:/java.base
+[0.009s][class,load] jdk.internal.foreign.abi.UpcallLinker$CallRegs source: jrt:/java.base
+[0.009s][class,load] java.lang.invoke.ConstantCallSite source: jrt:/java.base
+[0.009s][class,load] java.lang.invoke.MutableCallSite source: jrt:/java.base
+[0.009s][class,load] java.lang.invoke.VolatileCallSite source: jrt:/java.base
+[0.009s][class,load] java.lang.AssertionStatusDirectives source: jrt:/java.base
+[0.009s][class,load] java.lang.Appendable source: jrt:/java.base
+[0.009s][class,load] java.lang.AbstractStringBuilder source: jrt:/java.base
+[0.009s][class,load] java.lang.StringBuffer source: jrt:/java.base
+[0.009s][class,load] java.lang.StringBuilder source: jrt:/java.base
+[0.009s][class,load] jdk.internal.misc.UnsafeConstants source: jrt:/java.base
+[0.009s][class,load] jdk.internal.misc.Unsafe source: jrt:/java.base
+[0.009s][class,load] jdk.internal.module.Modules source: jrt:/java.base
+[0.009s][class,load] java.lang.AutoCloseable source: jrt:/java.base
+[0.009s][class,load] java.io.Closeable source: jrt:/java.base
+[0.009s][class,load] java.io.InputStream source: jrt:/java.base
+[0.009s][class,load] java.io.ByteArrayInputStream source: jrt:/java.base
+[0.009s][class,load] java.net.URL source: jrt:/java.base
+[0.009s][class,load] java.lang.Enum source: jrt:/java.base
+[0.009s][class,load] java.util.jar.Manifest source: jrt:/java.base
+[0.009s][class,load] jdk.internal.loader.BuiltinClassLoader source: jrt:/java.base
+[0.009s][class,load] jdk.internal.loader.ClassLoaders source: jrt:/java.base
+[0.009s][class,load] jdk.internal.loader.ClassLoaders$AppClassLoader source: jrt:/java.base
+[0.009s][class,load] jdk.internal.loader.ClassLoaders$PlatformClassLoader source: jrt:/java.base
+[0.009s][class,load] java.security.CodeSource source: jrt:/java.base
+[0.010s][class,load] java.util.concurrent.ConcurrentMap source: jrt:/java.base
+[0.010s][class,load] java.util.AbstractMap source: jrt:/java.base
+[0.010s][class,load] java.util.concurrent.ConcurrentHashMap source: jrt:/java.base
+[0.010s][class,load] java.lang.Iterable source: jrt:/java.base
+[0.010s][class,load] java.util.Collection source: jrt:/java.base
+[0.010s][class,load] java.util.SequencedCollection source: jrt:/java.base
+[0.010s][class,load] java.util.List source: jrt:/java.base
+[0.010s][class,load] java.util.RandomAccess source: jrt:/java.base
+[0.010s][class,load] java.util.AbstractCollection source: jrt:/java.base
+[0.010s][class,load] java.util.AbstractList source: jrt:/java.base
+[0.010s][class,load] java.util.ArrayList source: jrt:/java.base
+[0.010s][class,load] java.lang.StackTraceElement source: jrt:/java.base
+[0.010s][class,load] java.nio.Buffer source: jrt:/java.base
+[0.010s][class,load] java.lang.StackWalker source: jrt:/java.base
+[0.010s][class,load] java.lang.StackStreamFactory$AbstractStackWalker source: jrt:/java.base
+[0.010s][class,load] java.lang.StackWalker$StackFrame source: jrt:/java.base
+[0.010s][class,load] java.lang.ClassFrameInfo source: jrt:/java.base
+[0.010s][class,load] java.lang.StackFrameInfo source: jrt:/java.base
+[0.010s][class,load] java.lang.LiveStackFrame source: jrt:/java.base
+[0.010s][class,load] java.lang.LiveStackFrameInfo source: jrt:/java.base
+[0.010s][class,load] java.util.concurrent.locks.AbstractOwnableSynchronizer source: jrt:/java.base
+[0.010s][class,load] java.lang.Boolean source: jrt:/java.base
+[0.010s][class,load] java.lang.Character source: jrt:/java.base
+[0.010s][class,load] java.lang.Number source: jrt:/java.base
+[0.010s][class,load] java.lang.Float source: jrt:/java.base
+[0.010s][class,load] java.lang.Double source: jrt:/java.base
+[0.010s][class,load] java.lang.Byte source: jrt:/java.base
+[0.010s][class,load] java.lang.Short source: jrt:/java.base
+[0.010s][class,load] java.lang.Integer source: jrt:/java.base
+[0.011s][class,load] java.lang.Long source: jrt:/java.base
+[0.011s][class,load] java.lang.Void source: jrt:/java.base
+[0.011s][class,load] java.util.Iterator source: jrt:/java.base
+[0.011s][class,load] java.lang.reflect.RecordComponent source: jrt:/java.base
+[0.011s][class,load] jdk.internal.vm.vector.VectorSupport source: jrt:/java.base
+[0.011s][class,load] jdk.internal.vm.vector.VectorSupport$VectorPayload source: jrt:/java.base
+[0.011s][class,load] jdk.internal.vm.vector.VectorSupport$Vector source: jrt:/java.base
+[0.011s][class,load] jdk.internal.vm.vector.VectorSupport$VectorMask source: jrt:/java.base
+[0.011s][class,load] jdk.internal.vm.vector.VectorSupport$VectorShuffle source: jrt:/java.base
+[0.011s][class,load] jdk.internal.vm.FillerObject source: jrt:/java.base
+[0.011s][class,load] java.lang.NullPointerException source: jrt:/java.base
+[0.011s][class,load] java.lang.ArithmeticException source: jrt:/java.base
+[0.011s][class,load] java.lang.IndexOutOfBoundsException source: jrt:/java.base
+[0.011s][class,load] java.lang.ArrayIndexOutOfBoundsException source: jrt:/java.base
+[0.012s][class,init] 0 Initializing 'java/lang/Object'(no method) (0x00007fe000041248) by thread "Unknown thread"
+[0.012s][class,init] 1 Initializing 'java/lang/CharSequence'(no method) (0x00007fe000041880) by thread "Unknown thread"
+[0.012s][class,init] 2 Initializing 'java/lang/String' (0x00007fe000041eb0) by thread "Unknown thread"
+[0.012s][class,load] java.io.ObjectStreamField source: jrt:/java.base
+[0.012s][class,load] java.util.Comparator source: jrt:/java.base
+[0.012s][class,load] java.lang.String$CaseInsensitiveComparator source: jrt:/java.base
+[0.012s][class,init] 3 Initializing 'java/util/Comparator'(no method) (0x00007fe00005c280) by thread "Unknown thread"
+[0.012s][class,init] 4 Initializing 'java/lang/String$CaseInsensitiveComparator'(no method) (0x00007fe00005c490) by thread "Unknown thread"
+[0.012s][class,init] 5 Initializing 'java/lang/System' (0x00007fe0000433d8) by thread "Unknown thread"
+[0.012s][class,init] 6 Initializing 'java/lang/reflect/AnnotatedElement'(no method) (0x00007fe000042168) by thread "Unknown thread"
+[0.012s][class,init] 7 Initializing 'java/lang/reflect/Type'(no method) (0x00007fe000042588) by thread "Unknown thread"
+[0.012s][class,init] 8 Initializing 'java/lang/Class' (0x00007fe000042bb8) by thread "Unknown thread"
+[0.012s][class,init] 9 Initializing 'java/lang/ThreadGroup' (0x00007fe000047e50) by thread "Unknown thread"
+[0.012s][class,load] jdk.internal.misc.VM source: jrt:/java.base
+[0.012s][class,init] 10 Initializing 'jdk/internal/misc/VM' (0x00007fe00005c748) by thread "Unknown thread"
+[0.012s][class,init] 11 Initializing 'java/lang/Thread' (0x00007fe0000474a8) by thread "Unknown thread"
+[0.012s][class,init] 12 Initializing 'java/lang/Thread$FieldHolder'(no method) (0x00007fe000047808) by thread "<un-named>"
+[0.013s][class,init] 13 Initializing 'java/lang/Module' (0x00007fe0000497e8) by thread "main"
+[0.013s][class,load] java.lang.Module$ArchivedData source: jrt:/java.base
+[0.013s][class,init] 14 Initializing 'java/lang/Module$ArchivedData' (0x00007fe00005cf78) by thread "main"
+[0.013s][class,load] jdk.internal.misc.CDS source: jrt:/java.base
+[0.013s][class,init] 15 Initializing 'jdk/internal/misc/CDS' (0x00007fe00005d198) by thread "main"
+[0.013s][class,load] java.util.Set source: jrt:/java.base
+[0.013s][class,init] 16 Initializing 'java/util/Set'(no method) (0x00007fe00005d9c8) by thread "main"
+[0.013s][class,load] java.util.ImmutableCollections$AbstractImmutableCollection source: jrt:/java.base
+[0.013s][class,load] java.util.ImmutableCollections$AbstractImmutableSet source: jrt:/java.base
+[0.013s][class,load] java.util.ImmutableCollections$Set12 source: jrt:/java.base
+[0.013s][class,init] 17 Initializing 'java/lang/Iterable'(no method) (0x00007fe000053b28) by thread "main"
+[0.013s][class,init] 18 Initializing 'java/util/Collection'(no method) (0x00007fe000053d38) by thread "main"
+[0.013s][class,init] 19 Initializing 'java/util/AbstractCollection'(no method) (0x00007fe000054578) by thread "main"
+[0.013s][class,init] 20 Initializing 'java/util/ImmutableCollections$AbstractImmutableCollection'(no method) (0x00007fe00005dbd8) by thread "main"
+[0.013s][class,init] 21 Initializing 'java/util/ImmutableCollections$AbstractImmutableSet'(no method) (0x00007fe00005df60) by thread "main"
+[0.013s][class,init] 22 Initializing 'java/util/ImmutableCollections$Set12'(no method) (0x00007fe00005e378) by thread "main"
+[0.013s][class,load] java.util.Objects source: jrt:/java.base
+[0.013s][class,init] 23 Initializing 'java/util/Objects'(no method) (0x00007fe00005e798) by thread "main"
+[0.013s][class,load] java.util.ImmutableCollections source: jrt:/java.base
+[0.013s][class,init] 24 Initializing 'java/util/ImmutableCollections' (0x00007fe00005e9b0) by thread "main"
+[0.013s][class,load] java.util.ImmutableCollections$AbstractImmutableList source: jrt:/java.base
+[0.013s][class,load] java.util.ImmutableCollections$ListN source: jrt:/java.base
+[0.013s][class,init] 25 Initializing 'java/util/SequencedCollection'(no method) (0x00007fe000053f48) by thread "main"
+[0.013s][class,init] 26 Initializing 'java/util/List'(no method) (0x00007fe000054158) by thread "main"
+[0.013s][class,init] 27 Initializing 'java/util/ImmutableCollections$AbstractImmutableList'(no method) (0x00007fe00005ebc8) by thread "main"
+[0.013s][class,init] 28 Initializing 'java/util/ImmutableCollections$ListN'(no method) (0x00007fe00005f1d8) by thread "main"
+[0.013s][class,load] java.util.ImmutableCollections$SetN source: jrt:/java.base
+[0.013s][class,init] 29 Initializing 'java/util/ImmutableCollections$SetN'(no method) (0x00007fe00005f7f0) by thread "main"
+[0.013s][class,load] java.util.ImmutableCollections$AbstractImmutableMap source: jrt:/java.base
+[0.013s][class,load] java.util.ImmutableCollections$MapN source: jrt:/java.base
+[0.013s][class,init] 30 Initializing 'java/util/Map'(no method) (0x00007fe000048b38) by thread "main"
+[0.013s][class,init] 31 Initializing 'java/util/AbstractMap'(no method) (0x00007fe0000531c8) by thread "main"
+[0.013s][class,init] 32 Initializing 'java/util/ImmutableCollections$AbstractImmutableMap'(no method) (0x00007fe00005fc10) by thread "main"
+[0.013s][class,init] 33 Initializing 'java/util/ImmutableCollections$MapN'(no method) (0x00007fe00005ffc0) by thread "main"
+[0.013s][class,init] 34 Initializing 'jdk/internal/misc/UnsafeConstants' (0x00007fe000050ad8) by thread "main"
+[0.013s][class,init] 35 Initializing 'java/lang/reflect/AccessibleObject' (0x00007fe000049a70) by thread "main"
+[0.013s][class,load] jdk.internal.access.JavaLangReflectAccess source: jrt:/java.base
+[0.013s][class,load] java.lang.reflect.ReflectAccess source: jrt:/java.base
+[0.013s][class,init] 36 Initializing 'java/lang/reflect/ReflectAccess'(no method) (0x00007fe000060580) by thread "main"
+[0.013s][class,load] jdk.internal.access.SharedSecrets source: jrt:/java.base
+[0.013s][class,init] 37 Initializing 'jdk/internal/access/SharedSecrets'(no method) (0x00007fe0000607f8) by thread "main"
+[0.013s][class,load] jdk.internal.reflect.ReflectionFactory source: jrt:/java.base
+[0.013s][class,init] 38 Initializing 'jdk/internal/reflect/ReflectionFactory' (0x00007fe000060a10) by thread "main"
+[0.014s][class,load] java.io.ObjectStreamClass source: jrt:/java.base
+[0.014s][class,load] java.lang.Math source: jrt:/java.base
+[0.014s][class,init] 39 Initializing 'java/lang/Math' (0x00007fe000060ea0) by thread "main"
+[0.014s][class,init] 40 Initializing 'java/lang/Number'(no method) (0x00007fe0000572e0) by thread "main"
+[0.014s][class,init] 41 Initializing 'java/lang/Float' (0x00007fe000057528) by thread "main"
+[0.014s][class,init] 42 Initializing 'java/lang/Double' (0x00007fe0000577b8) by thread "main"
+[0.014s][class,load] jdk.internal.reflect.ReflectionFactory$Config source: jrt:/java.base
+[0.014s][class,init] 43 Initializing 'java/lang/Record'(no method) (0x00007fe0000449c8) by thread "main"
+[0.014s][class,init] 44 Initializing 'jdk/internal/reflect/ReflectionFactory$Config'(no method) (0x00007fe0000610b8) by thread "main"
+[0.014s][class,init] 45 Initializing 'java/lang/reflect/Member'(no method) (0x00007fe000049d40) by thread "main"
+[0.014s][class,init] 46 Initializing 'java/lang/reflect/Executable'(no method) (0x00007fe00004a4c8) by thread "main"
+[0.014s][class,init] 47 Initializing 'java/lang/reflect/Method'(no method) (0x00007fe00004a938) by thread "main"
+[0.014s][class,init] 48 Initializing 'java/lang/ref/Reference' (0x00007fe0000461d0) by thread "main"
+[0.014s][class,load] jdk.internal.access.JavaLangRefAccess source: jrt:/java.base
+[0.014s][class,load] java.lang.ref.Reference$1 source: jrt:/java.base
+[0.014s][class,init] 49 Initializing 'java/lang/ref/Reference$1'(no method) (0x00007fe0000614e0) by thread "main"
+[0.014s][class,init] 50 Initializing 'java/lang/ref/FinalReference'(no method) (0x00007fe000046b60) by thread "main"
+[0.014s][class,init] 51 Initializing 'java/lang/ref/Finalizer' (0x00007fe000047030) by thread "main"
+[0.014s][class,load] java.lang.ref.ReferenceQueue source: jrt:/java.base
+[0.014s][class,init] 52 Initializing 'java/lang/ref/ReferenceQueue' (0x00007fe000061738) by thread "main"
+[0.014s][class,load] java.lang.ref.ReferenceQueue$Null source: jrt:/java.base
+[0.014s][class,init] 53 Initializing 'java/lang/ref/ReferenceQueue$Null'(no method) (0x00007fe000061988) by thread "main"
+[0.014s][class,load] java.lang.ref.ReferenceQueue$Lock source: jrt:/java.base
+[0.014s][class,init] 54 Initializing 'java/lang/ref/ReferenceQueue$Lock'(no method) (0x00007fe000061be0) by thread "main"
+[0.014s][class,load] jdk.internal.access.JavaLangAccess source: jrt:/java.base
+[0.014s][class,load] java.lang.System$1 source: jrt:/java.base
+[0.014s][class,init] 55 Initializing 'java/lang/System$1'(no method) (0x00007fe000062008) by thread "main"
+[0.014s][class,load] jdk.internal.util.SystemProps source: jrt:/java.base
+[0.014s][class,init] 56 Initializing 'jdk/internal/util/SystemProps' (0x00007fe0000627b0) by thread "main"
+[0.014s][class,load] jdk.internal.util.SystemProps$Raw source: jrt:/java.base
+[0.014s][class,init] 57 Initializing 'jdk/internal/util/SystemProps$Raw'(no method) (0x00007fe0000629c8) by thread "main"
+[0.018s][class,load] java.nio.charset.Charset source: jrt:/java.base
+[0.018s][class,init] 58 Initializing 'java/nio/charset/Charset' (0x00007fe000062bf0) by thread "main"
+[0.018s][class,load] java.nio.charset.spi.CharsetProvider source: jrt:/java.base
+[0.018s][class,load] sun.nio.cs.StandardCharsets source: jrt:/java.base
+[0.018s][class,init] 59 Initializing 'java/nio/charset/spi/CharsetProvider'(no method) (0x00007fe000062e60) by thread "main"
+[0.018s][class,init] 60 Initializing 'sun/nio/cs/StandardCharsets' (0x00007fe000063088) by thread "main"
+[0.019s][class,load] java.lang.StringLatin1 source: jrt:/java.base
+[0.019s][class,init] 61 Initializing 'java/lang/StringLatin1' (0x00007fe0000632b8) by thread "main"
+[0.019s][class,load] sun.nio.cs.HistoricallyNamedCharset source: jrt:/java.base
+[0.019s][class,load] sun.nio.cs.Unicode source: jrt:/java.base
+[0.019s][class,load] sun.nio.cs.UTF_8 source: jrt:/java.base
+[0.019s][class,init] 62 Initializing 'sun/nio/cs/Unicode'(no method) (0x00007fe0000636e0) by thread "main"
+[0.019s][class,init] 63 Initializing 'sun/nio/cs/UTF_8' (0x00007fe000063970) by thread "main"
+[0.019s][class,load] java.util.HashMap source: jrt:/java.base
+[0.019s][class,init] 64 Initializing 'java/util/HashMap'(no method) (0x00007fe000063c00) by thread "main"
+[0.019s][class,load] java.lang.StrictMath source: jrt:/java.base
+[0.019s][class,init] 65 Initializing 'java/lang/StrictMath' (0x00007fe000064008) by thread "main"
+[0.019s][class,init] 66 Initializing 'java/lang/Integer' (0x00007fe000057f38) by thread "main"
+[0.019s][class,load] jdk.internal.util.ArraysSupport source: jrt:/java.base
+[0.019s][class,init] 67 Initializing 'jdk/internal/util/ArraysSupport' (0x00007fe000064220) by thread "main"
+[0.019s][class,init] 68 Initializing 'jdk/internal/misc/Unsafe' (0x00007fe000050cf0) by thread "main"
+[0.019s][class,init] 69 Initializing 'java/lang/Byte' (0x00007fe000057a48) by thread "main"
+[0.019s][class,load] java.util.Map$Entry source: jrt:/java.base
+[0.019s][class,load] java.util.HashMap$Node source: jrt:/java.base
+[0.019s][class,init] 70 Initializing 'java/util/HashMap$Node'(no method) (0x00007fe000064648) by thread "main"
+[0.019s][class,load] java.util.LinkedHashMap$Entry source: jrt:/java.base
+[0.019s][class,load] java.util.HashMap$TreeNode source: jrt:/java.base
+[0.019s][class,load] java.lang.StringConcatHelper source: jrt:/java.base
+[0.019s][class,init] 71 Initializing 'java/lang/StringConcatHelper' (0x00007fe000065160) by thread "main"
+[0.019s][class,load] java.lang.VersionProps source: jrt:/java.base
+[0.019s][class,init] 72 Initializing 'java/lang/VersionProps' (0x00007fe000065378) by thread "main"
+[0.020s][class,init] 73 Initializing 'java/lang/Boolean' (0x00007fe000056e50) by thread "main"
+[0.020s][class,load] java.lang.Runtime source: jrt:/java.base
+[0.020s][class,init] 74 Initializing 'java/lang/Runtime' (0x00007fe000065590) by thread "main"
+[0.020s][class,init] 75 Initializing 'java/util/Dictionary'(no method) (0x00007fe000048d48) by thread "main"
+[0.020s][class,init] 76 Initializing 'java/util/Hashtable'(no method) (0x00007fe000048f98) by thread "main"
+[0.020s][class,init] 77 Initializing 'java/util/Properties' (0x00007fe000049378) by thread "main"
+[0.020s][class,init] 78 Initializing 'java/util/concurrent/ConcurrentMap'(no method) (0x00007fe000052fb8) by thread "main"
+[0.020s][class,init] 79 Initializing 'java/util/concurrent/ConcurrentHashMap' (0x00007fe000053578) by thread "main"
+[0.020s][class,init] 80 Initializing 'java/io/ObjectStreamField'(no method) (0x00007fe00005bbe0) by thread "main"
+[0.020s][class,load] java.util.concurrent.locks.Lock source: jrt:/java.base
+[0.020s][class,load] java.util.concurrent.locks.ReentrantLock source: jrt:/java.base
+[0.020s][class,load] java.util.concurrent.ConcurrentHashMap$Segment source: jrt:/java.base
+[0.020s][class,load] java.util.concurrent.ConcurrentHashMap$CounterCell source: jrt:/java.base
+[0.020s][class,load] java.util.concurrent.ConcurrentHashMap$Node source: jrt:/java.base
+[0.020s][class,load] java.util.concurrent.locks.LockSupport source: jrt:/java.base
+[0.020s][class,load] java.util.concurrent.ConcurrentHashMap$ReservationNode source: jrt:/java.base
+[0.020s][class,load] java.util.AbstractSet source: jrt:/java.base
+[0.020s][class,load] java.util.HashMap$EntrySet source: jrt:/java.base
+[0.020s][class,init] 81 Initializing 'java/util/AbstractSet'(no method) (0x00007fe000067068) by thread "main"
+[0.020s][class,init] 82 Initializing 'java/util/HashMap$EntrySet'(no method) (0x00007fe000067480) by thread "main"
+[0.020s][class,load] java.util.HashMap$HashIterator source: jrt:/java.base
+[0.020s][class,load] java.util.HashMap$EntryIterator source: jrt:/java.base
+[0.020s][class,init] 83 Initializing 'java/util/HashMap$HashIterator'(no method) (0x00007fe0000678a0) by thread "main"
+[0.020s][class,init] 84 Initializing 'java/util/Iterator'(no method) (0x00007fe000058670) by thread "main"
+[0.020s][class,init] 85 Initializing 'java/util/HashMap$EntryIterator'(no method) (0x00007fe000067ac0) by thread "main"
+[0.020s][class,init] 86 Initializing 'java/util/concurrent/ConcurrentHashMap$Node'(no method) (0x00007fe000066788) by thread "main"
+[0.020s][class,load] jdk.internal.util.StaticProperty source: jrt:/java.base
+[0.020s][class,init] 87 Initializing 'jdk/internal/util/StaticProperty' (0x00007fe000067d18) by thread "main"
+[0.020s][class,load] java.io.FileInputStream source: jrt:/java.base
+[0.020s][class,load] java.lang.System$In source: jrt:/java.base
+[0.020s][class,init] 88 Initializing 'java/io/InputStream'(no method) (0x00007fe000051540) by thread "main"
+[0.020s][class,init] 89 Initializing 'java/io/FileInputStream' (0x00007fe000067f30) by thread "main"
+[0.020s][class,init] 90 Initializing 'java/lang/System$In'(no method) (0x00007fe0000681f8) by thread "main"
+[0.020s][class,load] java.io.FileDescriptor source: jrt:/java.base
+[0.020s][class,init] 91 Initializing 'java/io/FileDescriptor' (0x00007fe0000684c0) by thread "main"
+[0.020s][class,load] jdk.internal.access.JavaIOFileDescriptorAccess source: jrt:/java.base
+[0.020s][class,load] java.io.FileDescriptor$1 source: jrt:/java.base
+[0.020s][class,init] 92 Initializing 'java/io/FileDescriptor$1'(no method) (0x00007fe0000688f0) by thread "main"
+[0.020s][class,load] java.io.Flushable source: jrt:/java.base
+[0.020s][class,load] java.io.OutputStream source: jrt:/java.base
+[0.020s][class,load] java.io.FileOutputStream source: jrt:/java.base
+[0.020s][class,load] java.lang.System$Out source: jrt:/java.base
+[0.020s][class,init] 93 Initializing 'java/io/OutputStream'(no method) (0x00007fe000068dc8) by thread "main"
+[0.020s][class,init] 94 Initializing 'java/io/FileOutputStream' (0x00007fe000069050) by thread "main"
+[0.020s][class,init] 95 Initializing 'java/lang/System$Out'(no method) (0x00007fe0000692e8) by thread "main"
+[0.020s][class,load] java.io.FilterInputStream source: jrt:/java.base
+[0.021s][class,load] java.io.BufferedInputStream source: jrt:/java.base
+[0.021s][class,init] 96 Initializing 'java/io/FilterInputStream'(no method) (0x00007fe000069580) by thread "main"
+[0.021s][class,init] 97 Initializing 'java/io/BufferedInputStream' (0x00007fe000069840) by thread "main"
+[0.021s][class,load] java.io.FilterOutputStream source: jrt:/java.base
+[0.021s][class,load] java.io.PrintStream source: jrt:/java.base
+[0.021s][class,init] 98 Initializing 'java/io/FilterOutputStream'(no method) (0x00007fe000069b00) by thread "main"
+[0.021s][class,init] 99 Initializing 'java/io/PrintStream'(no method) (0x00007fe000069d90) by thread "main"
+[0.021s][class,load] java.io.BufferedOutputStream source: jrt:/java.base
+[0.021s][class,init] 100 Initializing 'java/io/BufferedOutputStream'(no method) (0x00007fe00006a158) by thread "main"
+[0.021s][class,load] java.io.Writer source: jrt:/java.base
+[0.021s][class,load] java.io.OutputStreamWriter source: jrt:/java.base
+[0.021s][class,init] 101 Initializing 'java/io/Writer'(no method) (0x00007fe00006a3e8) by thread "main"
+[0.021s][class,init] 102 Initializing 'java/io/OutputStreamWriter'(no method) (0x00007fe00006a6e0) by thread "main"
+[0.021s][class,load] sun.nio.cs.StreamEncoder source: jrt:/java.base
+[0.021s][class,init] 103 Initializing 'sun/nio/cs/StreamEncoder' (0x00007fe00006a9e8) by thread "main"
+[0.021s][class,load] java.nio.charset.CharsetEncoder source: jrt:/java.base
+[0.021s][class,load] sun.nio.cs.UTF_8$Encoder source: jrt:/java.base
+[0.021s][class,init] 104 Initializing 'java/nio/charset/CharsetEncoder' (0x00007fe00006ace0) by thread "main"
+[0.021s][class,init] 105 Initializing 'sun/nio/cs/UTF_8$Encoder'(no method) (0x00007fe00006af58) by thread "main"
+[0.021s][class,load] java.nio.charset.CodingErrorAction source: jrt:/java.base
+[0.021s][class,init] 106 Initializing 'java/nio/charset/CodingErrorAction' (0x00007fe00006b1d0) by thread "main"
+[0.021s][class,load] java.util.Arrays source: jrt:/java.base
+[0.021s][class,init] 107 Initializing 'java/util/Arrays' (0x00007fe00006b3f0) by thread "main"
+[0.022s][class,load] java.nio.ByteBuffer source: jrt:/java.base
+[0.022s][class,init] 108 Initializing 'java/nio/Buffer' (0x00007fe000055798) by thread "main"
+[0.022s][class,load] jdk.internal.misc.ScopedMemoryAccess source: jrt:/java.base
+[0.022s][class,init] 109 Initializing 'jdk/internal/misc/ScopedMemoryAccess' (0x00007fe00006bab8) by thread "main"
+[0.022s][class,load] java.util.function.Function source: jrt:/java.base
+[0.022s][class,load] java.nio.Buffer$1 source: jrt:/java.base
+[0.022s][class,init] 110 Initializing 'java/util/function/Function'(no method) (0x00007fe00006bcd0) by thread "main"
+[0.022s][class,init] 111 Initializing 'java/nio/Buffer$1'(no method) (0x00007fe00006bee0) by thread "main"
+[0.022s][class,load] jdk.internal.util.Preconditions source: jrt:/java.base
+[0.022s][class,init] 112 Initializing 'jdk/internal/util/Preconditions' (0x00007fe00006c140) by thread "main"
+[0.022s][class,load] jdk.internal.util.Preconditions$1 source: jrt:/java.base
+[0.022s][class,init] 113 Initializing 'jdk/internal/util/Preconditions$1'(no method) (0x00007fe00006c358) by thread "main"
+[0.022s][class,load] java.util.function.BiFunction source: jrt:/java.base
+[0.022s][class,load] jdk.internal.util.Preconditions$4 source: jrt:/java.base
+[0.022s][class,init] 114 Initializing 'java/util/function/BiFunction'(no method) (0x00007fe00006c5b8) by thread "main"
+[0.022s][class,init] 115 Initializing 'jdk/internal/util/Preconditions$4'(no method) (0x00007fe00006c7c8) by thread "main"
+[0.022s][class,load] jdk.internal.util.Preconditions$2 source: jrt:/java.base
+[0.022s][class,init] 116 Initializing 'jdk/internal/util/Preconditions$2'(no method) (0x00007fe00006ca20) by thread "main"
+[0.022s][class,load] jdk.internal.util.Preconditions$3 source: jrt:/java.base
+[0.022s][class,init] 117 Initializing 'jdk/internal/util/Preconditions$3'(no method) (0x00007fe00006cc80) by thread "main"
+[0.022s][class,load] jdk.internal.access.JavaNioAccess source: jrt:/java.base
+[0.022s][class,load] java.nio.Buffer$2 source: jrt:/java.base
+[0.022s][class,init] 118 Initializing 'java/nio/Buffer$2'(no method) (0x00007fe00006d0f0) by thread "main"
+[0.022s][class,init] 119 Initializing 'java/nio/ByteBuffer' (0x00007fe00006b608) by thread "main"
+[0.022s][class,load] java.nio.HeapByteBuffer source: jrt:/java.base
+[0.022s][class,init] 120 Initializing 'java/nio/HeapByteBuffer' (0x00007fe00006d448) by thread "main"
+[0.022s][class,load] java.nio.ByteOrder source: jrt:/java.base
+[0.022s][class,init] 121 Initializing 'java/nio/ByteOrder' (0x00007fe00006d920) by thread "main"
+[0.022s][class,load] java.io.BufferedWriter source: jrt:/java.base
+[0.022s][class,init] 122 Initializing 'java/io/BufferedWriter'(no method) (0x00007fe00006db40) by thread "main"
+[0.023s][class,load] java.lang.Terminator source: jrt:/java.base
+[0.023s][class,init] 123 Initializing 'java/lang/Terminator' (0x00007fe00006de48) by thread "main"
+[0.023s][class,load] jdk.internal.misc.Signal$Handler source: jrt:/java.base
+[0.023s][class,load] java.lang.Terminator$1 source: jrt:/java.base
+[0.023s][class,init] 124 Initializing 'java/lang/Terminator$1'(no method) (0x00007fe00006e270) by thread "main"
+[0.023s][class,load] jdk.internal.misc.Signal source: jrt:/java.base
+[0.023s][class,init] 125 Initializing 'jdk/internal/misc/Signal' (0x00007fe00006e4a8) by thread "main"
+[0.023s][class,load] java.util.Hashtable$Entry source: jrt:/java.base
+[0.023s][class,load] jdk.internal.misc.Signal$NativeHandler source: jrt:/java.base
+[0.023s][class,load] java.lang.Integer$IntegerCache source: jrt:/java.base
+[0.023s][class,init] 126 Initializing 'java/lang/Integer$IntegerCache' (0x00007fe00006ed70) by thread "main"
+[0.023s][class,init] 127 Initializing 'java/util/Hashtable$Entry'(no method) (0x00007fe00006e6c8) by thread "main"
+[0.023s][class,init] 128 Initializing 'jdk/internal/misc/Signal$Handler' (0x00007fe00006e060) by thread "main"
+[0.023s][class,init] 129 Initializing 'jdk/internal/misc/Signal$NativeHandler'(no method) (0x00007fe00006eb40) by thread "main"
+[0.023s][class,load] jdk.internal.misc.OSEnvironment source: jrt:/java.base
+[0.023s][class,init] 130 Initializing 'jdk/internal/misc/OSEnvironment'(no method) (0x00007fe00006f398) by thread "main"
+[0.023s][class,load] java.lang.Thread$State source: jrt:/java.base
+[0.023s][class,init] 131 Initializing 'java/lang/Enum'(no method) (0x00007fe000051cd8) by thread "main"
+[0.023s][class,init] 132 Initializing 'java/lang/Thread$State' (0x00007fe00006f5b0) by thread "main"
+[0.023s][class,load] java.lang.ref.Reference$ReferenceHandler source: jrt:/java.base
+[0.023s][class,init] 133 Initializing 'java/lang/ref/Reference$ReferenceHandler'(no method) (0x00007fe00006fc18) by thread "main"
+[0.023s][class,load] java.lang.Thread$ThreadIdentifiers source: jrt:/java.base
+[0.023s][class,init] 134 Initializing 'java/lang/Thread$ThreadIdentifiers' (0x00007fe00006ff78) by thread "main"
+[0.023s][class,load] java.lang.ref.Finalizer$FinalizerThread source: jrt:/java.base
+[0.023s][class,init] 135 Initializing 'java/lang/ref/Finalizer$FinalizerThread'(no method) (0x00007fe000070190) by thread "main"
+[0.023s][class,load] jdk.internal.ref.Cleaner source: jrt:/java.base
+[0.023s][class,init] 136 Initializing 'java/lang/ref/PhantomReference'(no method) (0x00007fe000046dc0) by thread "Reference Handler"
+[0.023s][class,init] 137 Initializing 'jdk/internal/ref/Cleaner' (0x00007fe0000704f0) by thread "Reference Handler"
+[0.023s][class,init] 138 Initializing 'java/lang/Throwable' (0x00007fe0000435f0) by thread "main"
+[0.023s][class,load] java.util.Collections source: jrt:/java.base
+[0.023s][class,init] 139 Initializing 'java/util/Collections' (0x00007fe000070770) by thread "main"
+[0.023s][class,load] java.util.Collections$EmptySet source: jrt:/java.base
+[0.023s][class,init] 140 Initializing 'java/util/Collections$EmptySet'(no method) (0x00007fe000070988) by thread "main"
+[0.023s][class,load] java.util.Collections$EmptyList source: jrt:/java.base
+[0.023s][class,init] 141 Initializing 'java/util/AbstractList'(no method) (0x00007fe000054900) by thread "main"
+[0.023s][class,init] 142 Initializing 'java/util/Collections$EmptyList'(no method) (0x00007fe000070da0) by thread "main"
+[0.023s][class,load] java.util.Collections$EmptyMap source: jrt:/java.base
+[0.023s][class,init] 143 Initializing 'java/util/Collections$EmptyMap'(no method) (0x00007fe0000713b0) by thread "main"
+[0.023s][class,init] 144 Initializing 'java/lang/Error'(no method) (0x00007fe000043860) by thread "main"
+[0.023s][class,init] 145 Initializing 'java/lang/VirtualMachineError'(no method) (0x00007fe0000455a0) by thread "main"
+[0.023s][class,init] 146 Initializing 'java/lang/OutOfMemoryError'(no method) (0x00007fe000045a80) by thread "main"
+[0.023s][class,init] 147 Initializing 'java/lang/Exception'(no method) (0x00007fe000043ad0) by thread "main"
+[0.023s][class,init] 148 Initializing 'java/lang/RuntimeException'(no method) (0x00007fe000043d40) by thread "main"
+[0.023s][class,init] 149 Initializing 'java/lang/NullPointerException'(no method) (0x00007fe00005b220) by thread "main"
+[0.023s][class,init] 150 Initializing 'java/lang/ClassCastException'(no method) (0x00007fe0000450c0) by thread "main"
+[0.023s][class,init] 151 Initializing 'java/lang/ArrayStoreException'(no method) (0x00007fe000045330) by thread "main"
+[0.023s][class,init] 152 Initializing 'java/lang/ArithmeticException'(no method) (0x00007fe00005b490) by thread "main"
+[0.023s][class,init] 153 Initializing 'java/lang/IndexOutOfBoundsException'(no method) (0x00007fe00005b700) by thread "main"
+[0.023s][class,init] 154 Initializing 'java/lang/ArrayIndexOutOfBoundsException'(no method) (0x00007fe00005b970) by thread "main"
+[0.023s][class,init] 155 Initializing 'java/lang/StackOverflowError'(no method) (0x00007fe000045cf0) by thread "main"
+[0.023s][class,init] 156 Initializing 'java/lang/IllegalMonitorStateException'(no method) (0x00007fe000045f60) by thread "main"
+[0.024s][class,load] java.lang.IllegalArgumentException source: jrt:/java.base
+[0.024s][class,init] 157 Initializing 'java/lang/IllegalArgumentException'(no method) (0x00007fe000071760) by thread "main"
+[0.024s][class,init] 158 Initializing 'java/lang/InternalError'(no method) (0x00007fe000045810) by thread "main"
+[0.024s][class,init] 159 Initializing 'java/lang/invoke/MethodHandle' (0x00007fe00004ca80) by thread "main"
+[0.024s][class,load] java.lang.invoke.MethodHandleStatics source: jrt:/java.base
+[0.024s][class,init] 160 Initializing 'java/lang/invoke/MethodHandleStatics' (0x00007fe0000719d0) by thread "main"
+[0.024s][class,load] java.lang.reflect.ClassFileFormatVersion source: jrt:/java.base
+[0.024s][class,init] 161 Initializing 'java/lang/reflect/ClassFileFormatVersion' (0x00007fe000071be8) by thread "main"
+[0.024s][class,init] 162 Initializing 'java/lang/Character' (0x00007fe000057098) by thread "main"
+[0.024s][class,load] java.lang.CharacterData source: jrt:/java.base
+[0.024s][class,init] 163 Initializing 'java/lang/CharacterData'(no method) (0x00007fe000072048) by thread "main"
+[0.024s][class,load] java.lang.CharacterDataLatin1 source: jrt:/java.base
+[0.024s][class,init] 164 Initializing 'java/lang/CharacterDataLatin1' (0x00007fe000072340) by thread "main"
+[0.024s][class,load] jdk.internal.util.ClassFileDumper source: jrt:/java.base
+[0.024s][class,init] 165 Initializing 'jdk/internal/util/ClassFileDumper' (0x00007fe000072638) by thread "main"
+[0.024s][class,load] java.util.HexFormat source: jrt:/java.base
+[0.024s][class,init] 166 Initializing 'java/util/HexFormat' (0x00007fe000072858) by thread "main"
+[0.024s][class,load] java.lang.Character$CharacterCache source: jrt:/java.base
+[0.024s][class,init] 167 Initializing 'java/lang/Character$CharacterCache' (0x00007fe000072a78) by thread "main"
+[0.024s][class,load] java.util.concurrent.atomic.AtomicInteger source: jrt:/java.base
+[0.024s][class,init] 168 Initializing 'java/util/concurrent/atomic/AtomicInteger' (0x00007fe000072e98) by thread "main"
+[0.024s][class,init] 169 Initializing 'java/lang/invoke/ResolvedMethodName'(no method) (0x00007fe00004d698) by thread "main"
+[0.025s][class,init] 170 Initializing 'java/lang/invoke/MemberName' (0x00007fe00004d438) by thread "main"
+[0.025s][class,init] 171 Initializing 'java/lang/invoke/MethodHandleNatives' (0x00007fe00004dad0) by thread "main"
+[0.025s][class,load] jdk.internal.module.ModuleBootstrap source: jrt:/java.base
+[0.025s][class,init] 172 Initializing 'jdk/internal/module/ModuleBootstrap' (0x00007fe0000730e0) by thread "main"
+[0.025s][class,load] java.lang.module.ModuleDescriptor source: jrt:/java.base
+[0.025s][class,load] java.lang.invoke.MethodHandles source: jrt:/java.base
+[0.025s][class,init] 173 Initializing 'java/lang/invoke/MethodHandles' (0x00007fe000073530) by thread "main"
+[0.025s][class,load] java.lang.invoke.MemberName$Factory source: jrt:/java.base
+[0.025s][class,init] 174 Initializing 'java/lang/invoke/MemberName$Factory' (0x00007fe000073748) by thread "main"
+[0.025s][class,load] jdk.internal.reflect.Reflection source: jrt:/java.base
+[0.025s][class,init] 175 Initializing 'jdk/internal/reflect/Reflection' (0x00007fe000073b78) by thread "main"
+[0.025s][class,load] java.lang.invoke.MethodHandles$Lookup source: jrt:/java.base
+[0.025s][class,init] 176 Initializing 'java/lang/invoke/MethodHandles$Lookup' (0x00007fe000073d90) by thread "main"
+[0.025s][class,load] java.util.ImmutableCollections$MapN$1 source: jrt:/java.base
+[0.025s][class,init] 177 Initializing 'java/util/ImmutableCollections$MapN$1'(no method) (0x00007fe000073fb0) by thread "main"
+[0.025s][class,load] java.util.ImmutableCollections$MapN$MapNIterator source: jrt:/java.base
+[0.025s][class,init] 178 Initializing 'java/util/ImmutableCollections$MapN$MapNIterator'(no method) (0x00007fe0000743d0) by thread "main"
+[0.026s][class,load] java.util.KeyValueHolder source: jrt:/java.base
+[0.026s][class,init] 179 Initializing 'java/util/KeyValueHolder'(no method) (0x00007fe000074648) by thread "main"
+[0.026s][class,load] sun.invoke.util.VerifyAccess source: jrt:/java.base
+[0.026s][class,init] 180 Initializing 'sun/invoke/util/VerifyAccess' (0x00007fe0000748a0) by thread "main"
+[0.026s][class,load] java.lang.reflect.Modifier source: jrt:/java.base
+[0.026s][class,init] 181 Initializing 'java/lang/reflect/Modifier'(no method) (0x00007fe000074ab8) by thread "main"
+[0.026s][class,init] 182 Initializing 'java/lang/module/ModuleDescriptor' (0x00007fe0000732f8) by thread "main"
+[0.026s][class,load] jdk.internal.access.JavaLangModuleAccess source: jrt:/java.base
+[0.026s][class,load] java.lang.module.ModuleDescriptor$1 source: jrt:/java.base
+[0.026s][class,init] 183 Initializing 'java/lang/module/ModuleDescriptor$1'(no method) (0x00007fe000074ee0) by thread "main"
+[0.026s][class,load] java.io.File source: jrt:/java.base
+[0.026s][class,init] 184 Initializing 'java/io/File' (0x00007fe0000751c8) by thread "main"
+[0.026s][class,load] java.io.DefaultFileSystem source: jrt:/java.base
+[0.026s][class,init] 185 Initializing 'java/io/DefaultFileSystem'(no method) (0x00007fe000075570) by thread "main"
+[0.026s][class,load] java.io.FileSystem source: jrt:/java.base
+[0.026s][class,load] java.io.UnixFileSystem source: jrt:/java.base
+[0.026s][class,init] 186 Initializing 'java/io/FileSystem'(no method) (0x00007fe000075788) by thread "main"
+[0.026s][class,init] 187 Initializing 'java/io/UnixFileSystem' (0x00007fe000075a88) by thread "main"
+[0.026s][class,init] 188 Initializing 'java/lang/AbstractStringBuilder' (0x00007fe00004fcf8) by thread "main"
+[0.026s][class,init] 189 Initializing 'java/lang/StringBuilder'(no method) (0x00007fe000050630) by thread "main"
+[0.026s][class,load] jdk.internal.util.DecimalDigits source: jrt:/java.base
+[0.026s][class,init] 190 Initializing 'jdk/internal/util/DecimalDigits' (0x00007fe000075d90) by thread "main"
+[0.026s][class,load] jdk.internal.module.ModulePatcher source: jrt:/java.base
+[0.026s][class,init] 191 Initializing 'jdk/internal/module/ModulePatcher' (0x00007fe000075fa8) by thread "main"
+[0.026s][class,load] jdk.internal.module.ModuleBootstrap$IllegalNativeAccess source: jrt:/java.base
+[0.026s][class,init] 192 Initializing 'jdk/internal/module/ModuleBootstrap$IllegalNativeAccess' (0x00007fe0000761c8) by thread "main"
+[0.026s][class,load] java.util.HashSet source: jrt:/java.base
+[0.026s][class,init] 193 Initializing 'java/util/HashSet' (0x00007fe000076628) by thread "main"
+[0.026s][class,load] jdk.internal.module.ModuleLoaderMap source: jrt:/java.base
+[0.026s][class,init] 194 Initializing 'jdk/internal/module/ModuleLoaderMap'(no method) (0x00007fe000076a48) by thread "main"
+[0.026s][class,load] jdk.internal.module.ModuleLoaderMap$Modules source: jrt:/java.base
+[0.026s][class,init] 195 Initializing 'jdk/internal/module/ModuleLoaderMap$Modules' (0x00007fe000076c60) by thread "main"
+[0.027s][class,load] jdk.internal.module.ModuleBootstrap$Counters source: jrt:/java.base
+[0.027s][class,init] 196 Initializing 'jdk/internal/module/ModuleBootstrap$Counters' (0x00007fe000076e78) by thread "main"
+[0.027s][class,load] jdk.internal.module.ArchivedBootLayer source: jrt:/java.base
+[0.027s][class,init] 197 Initializing 'jdk/internal/module/ArchivedBootLayer' (0x00007fe000077090) by thread "main"
+[0.027s][class,load] jdk.internal.module.ArchivedModuleGraph source: jrt:/java.base
+[0.027s][class,init] 198 Initializing 'jdk/internal/module/ArchivedModuleGraph' (0x00007fe0000772b8) by thread "main"
+[0.027s][class,load] jdk.internal.module.SystemModuleFinders source: jrt:/java.base
+[0.027s][class,init] 199 Initializing 'jdk/internal/module/SystemModuleFinders' (0x00007fe000077500) by thread "main"
+[0.027s][class,load] java.net.URI source: jrt:/java.base
+[0.027s][class,init] 200 Initializing 'java/net/URI' (0x00007fe000077718) by thread "main"
+[0.027s][class,load] jdk.internal.access.JavaNetUriAccess source: jrt:/java.base
+[0.027s][class,load] java.net.URI$1 source: jrt:/java.base
+[0.027s][class,init] 201 Initializing 'java/net/URI$1'(no method) (0x00007fe000077b60) by thread "main"
+[0.027s][class,load] jdk.internal.module.SystemModulesMap source: jrt:/java.base
+[0.027s][class,init] 202 Initializing 'jdk/internal/module/SystemModulesMap'(no method) (0x00007fe000077d98) by thread "main"
+[0.027s][class,load] jdk.internal.module.SystemModules source: jrt:/java.base
+[0.027s][class,load] jdk.internal.module.SystemModules$default source: jrt:/java.base
+[0.027s][class,init] 203 Initializing 'jdk/internal/module/SystemModules$default' (0x00007fe0000781c0) by thread "main"
+[0.027s][class,load] java.lang.module.ModuleDescriptor$Requires$Modifier source: jrt:/java.base
+[0.027s][class,init] 204 Initializing 'java/lang/module/ModuleDescriptor$Requires$Modifier' (0x00007fe000078a38) by thread "main"
+[0.027s][class,load] java.lang.reflect.AccessFlag source: jrt:/java.base
+[0.027s][class,init] 205 Initializing 'java/lang/reflect/AccessFlag' (0x00007fe000078c90) by thread "main"
+[0.027s][class,load] java.lang.reflect.AccessFlag$Location source: jrt:/java.base
+[0.027s][class,init] 206 Initializing 'java/lang/reflect/AccessFlag$Location' (0x00007fe000078ee8) by thread "main"
+[0.027s][class,load] java.util.ImmutableCollections$List12 source: jrt:/java.base
+[0.027s][class,init] 207 Initializing 'java/util/ImmutableCollections$List12'(no method) (0x00007fe000079140) by thread "main"
+[0.027s][class,load] java.util.ListIterator source: jrt:/java.base
+[0.027s][class,load] java.util.ImmutableCollections$ListItr source: jrt:/java.base
+[0.027s][class,init] 208 Initializing 'java/util/ImmutableCollections$ListItr'(no method) (0x00007fe000079968) by thread "main"
+[0.028s][class,load] jdk.internal.module.Builder source: jrt:/java.base
+[0.028s][class,init] 209 Initializing 'jdk/internal/module/Builder' (0x00007fe00007a438) by thread "main"
+[0.028s][class,load] java.lang.module.ModuleDescriptor$Requires source: jrt:/java.base
+[0.028s][class,load] java.lang.module.ModuleDescriptor$Exports source: jrt:/java.base
+[0.028s][class,init] 210 Initializing 'java/lang/module/ModuleDescriptor$Exports'(no method) (0x00007fe00007aa98) by thread "main"
+[0.028s][class,load] java.util.ImmutableCollections$SetN$SetNIterator source: jrt:/java.base
+[0.028s][class,init] 211 Initializing 'java/util/ImmutableCollections$SetN$SetNIterator'(no method) (0x00007fe00007aed8) by thread "main"
+[0.028s][class,load] java.lang.module.ModuleDescriptor$Opens source: jrt:/java.base
+[0.028s][class,init] 212 Initializing 'java/lang/module/ModuleDescriptor$Opens'(no method) (0x00007fe00007b138) by thread "main"
+[0.028s][class,load] java.lang.module.ModuleDescriptor$Provides source: jrt:/java.base
+[0.028s][class,init] 213 Initializing 'java/lang/module/ModuleDescriptor$Provides'(no method) (0x00007fe00007b578) by thread "main"
+[0.028s][class,load] java.lang.module.ModuleDescriptor$Version source: jrt:/java.base
+[0.028s][class,init] 214 Initializing 'java/lang/module/ModuleDescriptor$Version'(no method) (0x00007fe00007b9b8) by thread "main"
+[0.028s][class,init] 215 Initializing 'java/util/ArrayList' (0x00007fe000054f10) by thread "main"
+[0.028s][class,load] java.lang.module.ModuleDescriptor$Modifier source: jrt:/java.base
+[0.028s][class,init] 216 Initializing 'java/lang/module/ModuleDescriptor$Modifier' (0x00007fe00007bbf0) by thread "main"
+[0.028s][class,init] 217 Initializing 'java/lang/module/ModuleDescriptor$Requires' (0x00007fe00007a658) by thread "main"
+[0.028s][class,load] java.util.ImmutableCollections$Set12$1 source: jrt:/java.base
+[0.028s][class,init] 218 Initializing 'java/util/ImmutableCollections$Set12$1'(no method) (0x00007fe00007c050) by thread "main"
+[0.029s][class,load] jdk.internal.module.ModuleTarget source: jrt:/java.base
+[0.029s][class,init] 219 Initializing 'jdk/internal/module/ModuleTarget'(no method) (0x00007fe00007c2c0) by thread "main"
+[0.029s][class,load] jdk.internal.module.ModuleHashes source: jrt:/java.base
+[0.029s][class,load] jdk.internal.module.ModuleHashes$Builder source: jrt:/java.base
+[0.030s][class,init] 220 Initializing 'jdk/internal/module/ModuleHashes$Builder'(no method) (0x00007fe00007cb10) by thread "main"
+[0.030s][class,init] 221 Initializing 'jdk/internal/module/ModuleHashes'(no method) (0x00007fe00007c6e8) by thread "main"
+[0.030s][class,load] java.util.Collections$UnmodifiableMap source: jrt:/java.base
+[0.030s][class,init] 222 Initializing 'java/util/Collections$UnmodifiableMap'(no method) (0x00007fe00007cd40) by thread "main"
+[0.030s][class,load] jdk.internal.module.ModuleResolution source: jrt:/java.base
+[0.030s][class,load] java.lang.module.ModuleReference source: jrt:/java.base
+[0.030s][class,load] java.util.function.Supplier source: jrt:/java.base
+[0.030s][class,load] jdk.internal.module.SystemModuleFinders$1 source: jrt:/java.base
+[0.030s][class,init] 223 Initializing 'jdk/internal/module/SystemModuleFinders$1'(no method) (0x00007fe00007db50) by thread "main"
+[0.030s][class,load] jdk.internal.module.ModuleReferenceImpl source: jrt:/java.base
+[0.030s][class,init] 224 Initializing 'java/lang/module/ModuleReference'(no method) (0x00007fe00007d510) by thread "main"
+[0.030s][class,init] 225 Initializing 'jdk/internal/module/ModuleReferenceImpl'(no method) (0x00007fe00007dd98) by thread "main"
+[0.030s][class,load] jdk.internal.module.ModuleHashes$HashSupplier source: jrt:/java.base
+[0.030s][class,load] jdk.internal.module.SystemModuleFinders$2 source: jrt:/java.base
+[0.030s][class,init] 226 Initializing 'jdk/internal/module/SystemModuleFinders$2'(no method) (0x00007fe00007e200) by thread "main"
+[0.030s][class,load] java.lang.module.ModuleFinder source: jrt:/java.base
+[0.030s][class,load] jdk.internal.module.SystemModuleFinders$SystemModuleFinder source: jrt:/java.base
+[0.030s][class,init] 227 Initializing 'jdk/internal/module/SystemModuleFinders$SystemModuleFinder'(no method) (0x00007fe00007e650) by thread "main"
+[0.030s][class,load] java.util.Optional source: jrt:/java.base
+[0.030s][class,init] 228 Initializing 'java/util/Optional' (0x00007fe00007e8a0) by thread "main"
+[0.030s][class,load] jdk.internal.loader.BootLoader source: jrt:/java.base
+[0.030s][class,init] 229 Initializing 'jdk/internal/loader/BootLoader' (0x00007fe00007eac0) by thread "main"
+[0.030s][class,load] java.lang.Module$EnableNativeAccess source: jrt:/java.base
+[0.030s][class,init] 230 Initializing 'java/lang/Module$EnableNativeAccess' (0x00007fe00007ecd8) by thread "main"
+[0.030s][class,load] jdk.internal.loader.NativeLibraries source: jrt:/java.base
+[0.030s][class,init] 231 Initializing 'jdk/internal/loader/NativeLibraries' (0x00007fe00007eef0) by thread "main"
+[0.030s][class,load] jdk.internal.loader.ClassLoaderHelper source: jrt:/java.base
+[0.030s][class,init] 232 Initializing 'jdk/internal/loader/ClassLoaderHelper' (0x00007fe00007f110) by thread "main"
+[0.030s][class,load] jdk.internal.util.OSVersion source: jrt:/java.base
+[0.030s][class,init] 233 Initializing 'jdk/internal/util/OSVersion' (0x00007fe00007f328) by thread "main"
+[0.030s][class,load] java.util.concurrent.ConcurrentHashMap$CollectionView source: jrt:/java.base
+[0.031s][class,load] java.util.concurrent.ConcurrentHashMap$KeySetView source: jrt:/java.base
+[0.031s][class,init] 234 Initializing 'java/util/concurrent/ConcurrentHashMap$CollectionView'(no method) (0x00007fe00007f558) by thread "main"
+[0.031s][class,init] 235 Initializing 'java/util/concurrent/ConcurrentHashMap$KeySetView'(no method) (0x00007fe00007f8b8) by thread "main"
+[0.031s][class,init] 236 Initializing 'jdk/internal/loader/ClassLoaders' (0x00007fe0000524d0) by thread "main"
+[0.031s][class,load] jdk.internal.loader.ArchivedClassLoaders source: jrt:/java.base
+[0.031s][class,init] 237 Initializing 'jdk/internal/loader/ArchivedClassLoaders' (0x00007fe00007fca8) by thread "main"
+[0.031s][class,load] jdk.internal.loader.ClassLoaders$BootClassLoader source: jrt:/java.base
+[0.031s][class,init] 238 Initializing 'java/lang/ClassLoader' (0x00007fe0000430d8) by thread "main"
+[0.031s][class,load] java.security.cert.Certificate source: jrt:/java.base
+[0.031s][class,init] 239 Initializing 'java/security/SecureClassLoader' (0x00007fe0000441d8) by thread "main"
+[0.031s][class,load] java.lang.ClassLoader$ParallelLoaders source: jrt:/java.base
+[0.031s][class,init] 240 Initializing 'java/lang/ClassLoader$ParallelLoaders' (0x00007fe0000207a0) by thread "main"
+[0.031s][class,load] java.util.WeakHashMap source: jrt:/java.base
+[0.031s][class,init] 241 Initializing 'java/util/WeakHashMap' (0x00007fe0000209b8) by thread "main"
+[0.031s][class,load] java.util.WeakHashMap$Entry source: jrt:/java.base
+[0.031s][class,load] java.util.Collections$SetFromMap source: jrt:/java.base
+[0.031s][class,init] 242 Initializing 'java/util/Collections$SetFromMap'(no method) (0x00007fe000021650) by thread "main"
+[0.031s][class,load] java.util.WeakHashMap$KeySet source: jrt:/java.base
+[0.031s][class,init] 243 Initializing 'java/util/WeakHashMap$KeySet'(no method) (0x00007fe000021a70) by thread "main"
+[0.031s][class,init] 244 Initializing 'java/lang/ref/WeakReference'(no method) (0x00007fe000046900) by thread "main"
+[0.031s][class,init] 245 Initializing 'java/util/WeakHashMap$Entry'(no method) (0x00007fe000020d80) by thread "main"
+[0.031s][class,init] 246 Initializing 'jdk/internal/loader/BuiltinClassLoader' (0x00007fe000052188) by thread "main"
+[0.031s][class,init] 247 Initializing 'jdk/internal/loader/ClassLoaders$BootClassLoader'(no method) (0x00007fe000020000) by thread "main"
+[0.031s][class,init] 248 Initializing 'java/security/ProtectionDomain'(no method) (0x00007fe000043fb0) by thread "main"
+[0.031s][class,init] 249 Initializing 'java/security/CodeSource'(no method) (0x00007fe000052d80) by thread "main"
+[0.031s][class,load] java.security.Principal source: jrt:/java.base
+[0.031s][class,init] 250 Initializing 'jdk/internal/loader/ClassLoaders$PlatformClassLoader' (0x00007fe000052a38) by thread "main"
+[0.031s][class,load] jdk.internal.loader.URLClassPath source: jrt:/java.base
+[0.031s][class,init] 251 Initializing 'jdk/internal/loader/URLClassPath' (0x00007fe0000222a8) by thread "main"
+[0.031s][class,init] 252 Initializing 'java/net/URL' (0x00007fe000051ab8) by thread "main"
+[0.031s][class,load] java.net.URLStreamHandlerFactory source: jrt:/java.base
+[0.031s][class,load] java.net.URL$DefaultFactory source: jrt:/java.base
+[0.031s][class,init] 253 Initializing 'java/net/URL$DefaultFactory'(no method) (0x00007fe000022718) by thread "main"
+[0.031s][class,load] jdk.internal.access.JavaNetURLAccess source: jrt:/java.base
+[0.031s][class,load] java.net.URL$1 source: jrt:/java.base
+[0.031s][class,init] 254 Initializing 'java/net/URL$1'(no method) (0x00007fe000022b60) by thread "main"
+[0.031s][class,load] java.io.File$PathStatus source: jrt:/java.base
+[0.031s][class,init] 255 Initializing 'java/io/File$PathStatus' (0x00007fe000022d98) by thread "main"
+[0.031s][class,load] sun.net.www.ParseUtil source: jrt:/java.base
+[0.031s][class,init] 256 Initializing 'sun/net/www/ParseUtil' (0x00007fe0000231f8) by thread "main"
+[0.032s][class,load] java.net.URLStreamHandler source: jrt:/java.base
+[0.032s][class,load] sun.net.www.protocol.file.Handler source: jrt:/java.base
+[0.032s][class,init] 257 Initializing 'java/net/URLStreamHandler'(no method) (0x00007fe000023410) by thread "main"
+[0.032s][class,init] 258 Initializing 'sun/net/www/protocol/file/Handler'(no method) (0x00007fe000023688) by thread "main"
+[0.032s][class,load] sun.net.util.IPAddressUtil source: jrt:/java.base
+[0.032s][class,init] 259 Initializing 'sun/net/util/IPAddressUtil' (0x00007fe000023908) by thread "main"
+[0.032s][class,load] sun.net.util.IPAddressUtil$MASKS source: jrt:/java.base
+[0.032s][class,init] 260 Initializing 'sun/net/util/IPAddressUtil$MASKS' (0x00007fe000023b20) by thread "main"
+[0.032s][class,load] java.util.Queue source: jrt:/java.base
+[0.032s][class,load] java.util.Deque source: jrt:/java.base
+[0.032s][class,load] java.util.ArrayDeque source: jrt:/java.base
+[0.032s][class,init] 261 Initializing 'java/util/Deque'(no method) (0x00007fe000023f48) by thread "main"
+[0.032s][class,init] 262 Initializing 'java/util/ArrayDeque'(no method) (0x00007fe000024158) by thread "main"
+[0.032s][class,load] sun.net.www.protocol.jar.Handler source: jrt:/java.base
+[0.032s][class,init] 263 Initializing 'sun/net/www/protocol/jar/Handler'(no method) (0x00007fe000024848) by thread "main"
+[0.032s][class,init] 264 Initializing 'jdk/internal/loader/ClassLoaders$AppClassLoader' (0x00007fe0000526e8) by thread "main"
+[0.032s][class,load] jdk.internal.module.ServicesCatalog source: jrt:/java.base
+[0.032s][class,init] 265 Initializing 'jdk/internal/module/ServicesCatalog' (0x00007fe000024ac8) by thread "main"
+[0.032s][class,load] jdk.internal.loader.AbstractClassLoaderValue source: jrt:/java.base
+[0.032s][class,load] jdk.internal.loader.ClassLoaderValue source: jrt:/java.base
+[0.032s][class,init] 266 Initializing 'jdk/internal/loader/AbstractClassLoaderValue' (0x00007fe000024ef0) by thread "main"
+[0.032s][class,init] 267 Initializing 'jdk/internal/loader/ClassLoaderValue'(no method) (0x00007fe000025148) by thread "main"
+[0.032s][class,load] jdk.internal.loader.BuiltinClassLoader$LoadedModule source: jrt:/java.base
+[0.032s][class,init] 268 Initializing 'jdk/internal/loader/BuiltinClassLoader$LoadedModule'(no method) (0x00007fe0000253a0) by thread "main"
+[0.032s][class,init] 269 Initializing 'jdk/internal/module/Modules' (0x00007fe000050f08) by thread "main"
+[0.033s][class,load] java.lang.module.Configuration source: jrt:/java.base
+[0.033s][class,init] 270 Initializing 'java/lang/module/Configuration' (0x00007fe0000255e0) by thread "main"
+[0.033s][class,load] java.lang.module.ResolvedModule source: jrt:/java.base
+[0.033s][class,load] java.util.AbstractMap$1 source: jrt:/java.base
+[0.033s][class,init] 271 Initializing 'java/util/AbstractMap$1'(no method) (0x00007fe000025c28) by thread "main"
+[0.033s][class,load] java.util.AbstractMap$KeyIterator source: jrt:/java.base
+[0.033s][class,init] 272 Initializing 'java/util/AbstractMap$KeyIterator'(no method) (0x00007fe000026048) by thread "main"
+[0.033s][class,init] 273 Initializing 'java/lang/module/ResolvedModule'(no method) (0x00007fe000025800) by thread "main"
+[0.033s][class,load] jdk.internal.module.ModuleLoaderMap$Mapper source: jrt:/java.base
+[0.033s][class,init] 274 Initializing 'jdk/internal/module/ModuleLoaderMap$Mapper' (0x00007fe0000262a0) by thread "main"
+[0.034s][class,load] java.lang.ModuleLayer source: jrt:/java.base
+[0.034s][class,init] 275 Initializing 'java/lang/ModuleLayer' (0x00007fe0000264f8) by thread "main"
+[0.035s][class,load] jdk.internal.loader.AbstractClassLoaderValue$Memoizer source: jrt:/java.base
+[0.035s][class,load] jdk.internal.module.ServicesCatalog$ServiceProvider source: jrt:/java.base
+[0.035s][class,init] 276 Initializing 'jdk/internal/module/ServicesCatalog$ServiceProvider'(no method) (0x00007fe000026f68) by thread "main"
+[0.036s][class,load] java.util.concurrent.CopyOnWriteArrayList source: jrt:/java.base
+[0.036s][class,init] 277 Initializing 'java/util/concurrent/CopyOnWriteArrayList' (0x00007fe000027390) by thread "main"
+[0.036s][class,load] java.util.HashMap$KeySet source: jrt:/java.base
+[0.036s][class,init] 278 Initializing 'java/util/HashMap$KeySet'(no method) (0x00007fe0000279e0) by thread "main"
+[0.036s][class,load] java.util.HashMap$KeyIterator source: jrt:/java.base
+[0.036s][class,init] 279 Initializing 'java/util/HashMap$KeyIterator'(no method) (0x00007fe000027e00) by thread "main"
+[0.036s][class,load] java.lang.ModuleLayer$Controller source: jrt:/java.base
+[0.036s][class,init] 280 Initializing 'java/lang/ModuleLayer$Controller'(no method) (0x00007fe000028058) by thread "main"
+[0.036s][class,init] 281 Initializing 'jdk/internal/vm/Continuation' (0x00007fe00004b438) by thread "main"
+[0.036s][class,load] jdk.internal.vm.ContinuationSupport source: jrt:/java.base
+[0.036s][class,init] 282 Initializing 'jdk/internal/vm/ContinuationSupport' (0x00007fe000028278) by thread "main"
+[0.036s][class,init] 283 Initializing 'jdk/internal/vm/StackChunk'(no method) (0x00007fe00004b6b0) by thread "main"
+[0.036s][class,load] jdk.internal.vm.Continuation$Pinned source: jrt:/java.base
+[0.036s][class,init] 284 Initializing 'jdk/internal/vm/Continuation$Pinned' (0x00007fe000028490) by thread "main"
+[0.037s][class,load] sun.launcher.LauncherHelper source: jrt:/java.base
+[0.037s][class,init] 285 Initializing 'sun/launcher/LauncherHelper' (0x00007fe0000288f0) by thread "main"
+[0.037s][class,load] java.lang.StringCoding source: jrt:/java.base
+[0.037s][class,init] 286 Initializing 'java/lang/StringCoding'(no method) (0x00007fe000028b08) by thread "main"
+[0.037s][class,load] sun.net.util.URLUtil source: jrt:/java.base
+[0.037s][class,init] 287 Initializing 'sun/net/util/URLUtil'(no method) (0x00007fe000028d20) by thread "main"
+[0.037s][class,load] jdk.internal.loader.URLClassPath$Loader source: jrt:/java.base
+[0.037s][class,load] jdk.internal.loader.URLClassPath$FileLoader source: jrt:/java.base
+[0.037s][class,init] 288 Initializing 'jdk/internal/loader/URLClassPath$Loader'(no method) (0x00007fe000028f38) by thread "main"
+[0.037s][class,init] 289 Initializing 'jdk/internal/loader/URLClassPath$FileLoader'(no method) (0x00007fe0000291a8) by thread "main"
+[0.037s][class,load] jdk.internal.loader.Resource source: jrt:/java.base
+[0.037s][class,load] jdk.internal.loader.URLClassPath$FileLoader$1 source: jrt:/java.base
+[0.037s][class,init] 290 Initializing 'jdk/internal/loader/Resource'(no method) (0x00007fe000029428) by thread "main"
+[0.037s][class,init] 291 Initializing 'jdk/internal/loader/URLClassPath$FileLoader$1'(no method) (0x00007fe0000296a0) by thread "main"
+[0.037s][class,load] java.lang.NamedPackage source: jrt:/java.base
+[0.037s][class,load] java.lang.Package source: jrt:/java.base
+[0.037s][class,init] 292 Initializing 'java/lang/NamedPackage'(no method) (0x00007fe000029918) by thread "main"
+[0.037s][class,init] 293 Initializing 'java/lang/Package'(no method) (0x00007fe000029b50) by thread "main"
+[0.037s][class,load] java.lang.Package$VersionInfo source: jrt:/java.base
+[0.037s][class,init] 294 Initializing 'java/lang/Package$VersionInfo' (0x00007fe000029dd0) by thread "main"
+[0.037s][class,load] java.lang.ref.Cleaner$Cleanable source: jrt:/java.base
+[0.037s][class,load] jdk.internal.ref.PhantomCleanable source: jrt:/java.base
+[0.037s][class,load] java.io.FileCleanable source: jrt:/java.base
+[0.037s][class,init] 295 Initializing 'jdk/internal/ref/PhantomCleanable' (0x00007fe00002a200) by thread "main"
+[0.037s][class,init] 296 Initializing 'java/io/FileCleanable' (0x00007fe00002a498) by thread "main"
+[0.037s][class,load] jdk.internal.ref.CleanerFactory source: jrt:/java.base
+[0.037s][class,init] 297 Initializing 'jdk/internal/ref/CleanerFactory' (0x00007fe00002a730) by thread "main"
+[0.037s][class,load] java.util.concurrent.ThreadFactory source: jrt:/java.base
+[0.037s][class,load] jdk.internal.ref.CleanerFactory$1 source: jrt:/java.base
+[0.037s][class,init] 298 Initializing 'jdk/internal/ref/CleanerFactory$1'(no method) (0x00007fe00002ab58) by thread "main"
+[0.037s][class,load] java.lang.ref.Cleaner source: jrt:/java.base
+[0.037s][class,init] 299 Initializing 'java/lang/ref/Cleaner' (0x00007fe00002ad90) by thread "main"
+[0.038s][class,load] java.lang.ref.Cleaner$1 source: jrt:/java.base
+[0.038s][class,init] 300 Initializing 'java/lang/ref/Cleaner$1'(no method) (0x00007fe00002afb0) by thread "main"
+[0.038s][class,load] jdk.internal.ref.CleanerImpl source: jrt:/java.base
+[0.038s][class,init] 301 Initializing 'jdk/internal/ref/CleanerImpl' (0x00007fe00002b210) by thread "main"
+[0.038s][class,load] jdk.internal.ref.CleanerImpl$CleanableList source: jrt:/java.base
+[0.038s][class,init] 302 Initializing 'jdk/internal/ref/CleanerImpl$CleanableList' (0x00007fe00002b448) by thread "main"
+[0.038s][class,load] jdk.internal.ref.CleanerImpl$CleanableList$Node source: jrt:/java.base
+[0.038s][class,init] 303 Initializing 'jdk/internal/ref/CleanerImpl$CleanableList$Node'(no method) (0x00007fe00002b668) by thread "main"
+[0.038s][class,load] jdk.internal.ref.CleanerImpl$CleanerCleanable source: jrt:/java.base
+[0.038s][class,init] 304 Initializing 'jdk/internal/ref/CleanerImpl$CleanerCleanable'(no method) (0x00007fe00002bea0) by thread "main"
+[0.038s][class,load] jdk.internal.misc.InnocuousThread source: jrt:/java.base
+[0.038s][class,init] 305 Initializing 'jdk/internal/misc/InnocuousThread' (0x00007fe00002c138) by thread "main"
+[0.038s][class,load] sun.nio.ByteBuffered source: jrt:/java.base
+[0.038s][class,load] java.io.FileInputStream$1 source: jrt:/java.base
+[0.038s][class,init] 306 Initializing 'java/io/FileInputStream$1'(no method) (0x00007fe00002c6a8) by thread "main"
+[0.038s][class,load] java.security.SecureClassLoader$CodeSourceKey source: jrt:/java.base
+[0.038s][class,init] 307 Initializing 'java/security/SecureClassLoader$CodeSourceKey'(no method) (0x00007fe00002c900) by thread "main"
+[0.038s][class,load] java.security.SecureClassLoader$1 source: jrt:/java.base
+[0.038s][class,init] 308 Initializing 'java/security/SecureClassLoader$1'(no method) (0x00007fe00002cb20) by thread "main"
+[0.038s][class,init] 309 Initializing 'java/util/concurrent/ConcurrentHashMap$ReservationNode'(no method) (0x00007fe000066e08) by thread "main"
+[0.038s][class,load] java.security.PermissionCollection source: jrt:/java.base
+[0.038s][class,load] java.security.Permissions source: jrt:/java.base
+[0.038s][class,init] 310 Initializing 'java/security/PermissionCollection'(no method) (0x00007fe00002cd88) by thread "main"
+[0.038s][class,init] 311 Initializing 'java/security/Permissions' (0x00007fe00002cfd0) by thread "main"
+[0.039s][class,load] com.eottabom.letmecode.example.classloading.target.FirstRun source: file:~/workspace/let-me-code/jvm-classloading/build/classes/java/main/
+[0.039s][class,load] jdk.internal.misc.MethodFinder source: jrt:/java.base
+[0.039s][class,init] 312 Initializing 'jdk/internal/misc/MethodFinder' (0x00007fe00002d220) by thread "main"
+[0.039s][class,load] java.lang.Class$ReflectionData source: jrt:/java.base
+[0.039s][class,init] 313 Initializing 'java/lang/Class$ReflectionData' (0x00007fe00002d438) by thread "main"
+[0.039s][class,init] 314 Initializing 'java/lang/ref/SoftReference'(no method) (0x00007fe0000466a0) by thread "main"
+[0.039s][class,load] java.lang.Class$Atomic source: jrt:/java.base
+[0.039s][class,init] 315 Initializing 'java/lang/Class$Atomic' (0x00007fe00002d658) by thread "main"
+[0.039s][class,init] Start class verification for: com.eottabom.letmecode.example.classloading.target.FirstRun
+[0.039s][class,load] java.time.temporal.TemporalAccessor source: jrt:/java.base
+[0.039s][class,init] End class verification for: com.eottabom.letmecode.example.classloading.target.FirstRun
+[0.039s][class,load] java.security.GeneralSecurityException source: jrt:/java.base
+[0.039s][class,load] java.security.NoSuchAlgorithmException source: jrt:/java.base
+[0.039s][class,load] java.lang.PublicMethods$MethodList source: jrt:/java.base
+[0.039s][class,init] 316 Initializing 'java/lang/PublicMethods$MethodList'(no method) (0x00007fe00002e780) by thread "main"
+[0.039s][class,load] java.lang.PublicMethods$Key source: jrt:/java.base
+[0.039s][class,init] 317 Initializing 'java/lang/PublicMethods$Key' (0x00007fe00002e9a0) by thread "main"
+[0.039s][class,init] 318 Initializing 'java/lang/Void' (0x00007fe000058458) by thread "main"
+[0.039s][class,init] 319 Initializing 'com/eottabom/letmecode/example/classloading/target/FirstRun' (0x00007fe000010000) by thread "main"
+[0.039s][class,load] java.nio.charset.StandardCharsets source: jrt:/java.base
+[0.039s][class,init] 320 Initializing 'java/nio/charset/StandardCharsets' (0x00007fe00002ebc0) by thread "main"
+[0.039s][class,load] sun.nio.cs.US_ASCII source: jrt:/java.base
+[0.039s][class,init] 321 Initializing 'sun/nio/cs/US_ASCII' (0x00007fe00002edd8) by thread "main"
+[0.039s][class,load] sun.nio.cs.ISO_8859_1 source: jrt:/java.base
+[0.039s][class,init] 322 Initializing 'sun/nio/cs/ISO_8859_1' (0x00007fe00002f068) by thread "main"
+[0.039s][class,load] sun.nio.cs.UTF_16BE source: jrt:/java.base
+[0.039s][class,init] 323 Initializing 'sun/nio/cs/UTF_16BE'(no method) (0x00007fe00002f2f8) by thread "main"
+[0.039s][class,load] sun.nio.cs.UTF_16LE source: jrt:/java.base
+[0.039s][class,init] 324 Initializing 'sun/nio/cs/UTF_16LE'(no method) (0x00007fe00002f588) by thread "main"
+[0.039s][class,load] sun.nio.cs.UTF_16 source: jrt:/java.base
+[0.039s][class,init] 325 Initializing 'sun/nio/cs/UTF_16'(no method) (0x00007fe00002f818) by thread "main"
+[0.039s][class,load] sun.nio.cs.UTF_32BE source: jrt:/java.base
+[0.039s][class,init] 326 Initializing 'sun/nio/cs/UTF_32BE'(no method) (0x00007fe00002faa8) by thread "main"
+[0.039s][class,load] sun.nio.cs.UTF_32LE source: jrt:/java.base
+[0.039s][class,init] 327 Initializing 'sun/nio/cs/UTF_32LE'(no method) (0x00007fe00002fd38) by thread "main"
+[0.039s][class,load] sun.nio.cs.UTF_32 source: jrt:/java.base
+[0.039s][class,init] 328 Initializing 'sun/nio/cs/UTF_32'(no method) (0x00007fe00002ffc8) by thread "main"
+[0.039s][class,load] java.util.concurrent.ConcurrentHashMap$ForwardingNode source: jrt:/java.base
+[0.039s][class,init] 329 Initializing 'java/util/concurrent/ConcurrentHashMap$ForwardingNode'(no method) (0x00007fe000030258) by thread "main"
+[0.040s][class,load] com.eottabom.letmecode.example.classloading.target.Marker source: file:~/workspace/let-me-code/jvm-classloading/build/classes/java/main/
+[0.040s][class,init] Start class verification for: com.eottabom.letmecode.example.classloading.target.Marker
+[0.040s][class,init] End class verification for: com.eottabom.letmecode.example.classloading.target.Marker
+[0.040s][class,init] 330 Initializing 'com/eottabom/letmecode/example/classloading/target/Marker'(no method) (0x00007fe000010218) by thread "main"
+[0.040s][class,load] java.lang.StringUTF16 source: jrt:/java.base
+[0.040s][class,init] 331 Initializing 'java/lang/StringUTF16' (0x00007fe0000304b8) by thread "main"
+[0.040s][class,load] java.lang.Readable source: jrt:/java.base
+[0.040s][class,load] java.nio.CharBuffer source: jrt:/java.base
+[0.040s][class,init] 332 Initializing 'java/nio/CharBuffer' (0x00007fe0000308e0) by thread "main"
+[0.040s][class,load] java.nio.HeapCharBuffer source: jrt:/java.base
+[0.040s][class,init] 333 Initializing 'java/nio/HeapCharBuffer' (0x00007fe000030d98) by thread "main"
+[0.040s][class,load] java.nio.charset.CoderResult source: jrt:/java.base
+[0.040s][class,init] 334 Initializing 'java/nio/charset/CoderResult' (0x00007fe000031270) by thread "main"
+[0.040s][class,load] jdk.internal.misc.Blocker source: jrt:/java.base
+[0.040s][class,init] 335 Initializing 'jdk/internal/misc/Blocker' (0x00007fe000031690) by thread "main"
+[mark] 1번째 실행 전
+[0.040s][class,load] java.util.Formatter source: jrt:/java.base
+[0.040s][class,init] 336 Initializing 'java/util/Formatter' (0x00007fe0000318a8) by thread "main"
+[0.040s][class,load] java.util.Locale$Category source: jrt:/java.base
+[0.040s][class,init] 337 Initializing 'java/util/Locale$Category' (0x00007fe000031b10) by thread "main"
+[0.040s][class,load] java.util.Locale source: jrt:/java.base
+[0.041s][class,init] 338 Initializing 'java/util/Locale' (0x00007fe000031f70) by thread "main"
+[0.041s][class,load] sun.util.locale.BaseLocale source: jrt:/java.base
+[0.041s][class,init] 339 Initializing 'sun/util/locale/BaseLocale' (0x00007fe000032190) by thread "main"
+[0.041s][class,load] sun.util.locale.LocaleUtils source: jrt:/java.base
+[0.041s][class,init] 340 Initializing 'sun/util/locale/LocaleUtils'(no method) (0x00007fe0000325b8) by thread "main"
+[0.041s][class,load] java.util.Formatter$Conversion source: jrt:/java.base
+[0.041s][class,init] 341 Initializing 'java/util/Formatter$Conversion'(no method) (0x00007fe0000327d0) by thread "main"
+[0.041s][class,load] java.util.Formatter$FormatString source: jrt:/java.base
+[0.041s][class,load] java.util.Formatter$FormatSpecifier source: jrt:/java.base
+[0.041s][class,init] 342 Initializing 'java/util/Formatter$FormatSpecifier' (0x00007fe000032bf8) by thread "main"
+[0.041s][class,load] java.util.Formatter$FixedString source: jrt:/java.base
+[0.041s][class,init] 343 Initializing 'java/util/Formatter$FixedString'(no method) (0x00007fe000032e48) by thread "main"
+[0.041s][class,load] java.util.ArrayList$Itr source: jrt:/java.base
+[0.041s][class,init] 344 Initializing 'java/util/ArrayList$Itr'(no method) (0x00007fe000033090) by thread "main"
+[0.041s][class,load] java.util.Formattable source: jrt:/java.base
+[0.041s][class,load] java.util.Formatter$Flags source: jrt:/java.base
+[0.041s][class,init] 345 Initializing 'java/util/Formatter$Flags'(no method) (0x00007fe000033510) by thread "main"
+[0.041s][class,init] 346 Initializing 'java/lang/Long' (0x00007fe0000581c8) by thread "main"
+[0.041s][class,load] java.text.DecimalFormatSymbols source: jrt:/java.base
+[0.041s][class,init] 347 Initializing 'java/text/DecimalFormatSymbols'(no method) (0x00007fe000033728) by thread "main"
+[0.041s][class,load] java.util.spi.LocaleServiceProvider source: jrt:/java.base
+[0.041s][class,load] java.text.spi.DecimalFormatSymbolsProvider source: jrt:/java.base
+[0.041s][class,load] sun.util.locale.provider.LocaleProviderAdapter source: jrt:/java.base
+[0.041s][class,init] 348 Initializing 'sun/util/locale/provider/LocaleProviderAdapter' (0x00007fe000033ee8) by thread "main"
+[0.041s][class,load] sun.util.locale.provider.LocaleProviderAdapter$Type source: jrt:/java.base
+[0.041s][class,init] 349 Initializing 'sun/util/locale/provider/LocaleProviderAdapter$Type' (0x00007fe000034190) by thread "main"
+[0.041s][class,load] java.util.Collections$UnmodifiableCollection source: jrt:/java.base
+[0.041s][class,load] java.util.Collections$UnmodifiableList source: jrt:/java.base
+[0.041s][class,load] java.util.Collections$UnmodifiableRandomAccessList source: jrt:/java.base
+[0.041s][class,init] 350 Initializing 'java/util/Collections$UnmodifiableCollection'(no method) (0x00007fe0000345f0) by thread "main"
+[0.041s][class,init] 351 Initializing 'java/util/Collections$UnmodifiableList'(no method) (0x00007fe000034980) by thread "main"
+[0.041s][class,init] 352 Initializing 'java/util/Collections$UnmodifiableRandomAccessList'(no method) (0x00007fe000034f90) by thread "main"
+[0.041s][class,load] java.util.Collections$UnmodifiableCollection$1 source: jrt:/java.base
+[0.041s][class,init] 353 Initializing 'java/util/Collections$UnmodifiableCollection$1'(no method) (0x00007fe0000355a0) by thread "main"
+[0.042s][class,load] sun.util.locale.provider.ResourceBundleBasedAdapter source: jrt:/java.base
+[0.042s][class,load] sun.util.locale.provider.JRELocaleProviderAdapter source: jrt:/java.base
+[0.042s][class,load] sun.util.cldr.CLDRLocaleProviderAdapter source: jrt:/java.base
+[0.042s][class,init] 354 Initializing 'sun/util/locale/provider/JRELocaleProviderAdapter'(no method) (0x00007fe000035a20) by thread "main"
+[0.042s][class,init] 355 Initializing 'sun/util/cldr/CLDRLocaleProviderAdapter' (0x00007fe000035d10) by thread "main"
+[0.042s][class,load] sun.util.locale.provider.LocaleDataMetaInfo source: jrt:/java.base
+[0.042s][class,load] sun.util.cldr.CLDRBaseLocaleDataMetaInfo source: jrt:/java.base
+[0.042s][class,init] 356 Initializing 'sun/util/locale/provider/LocaleDataMetaInfo'(no method) (0x00007fe000036008) by thread "main"
+[0.042s][class,init] 357 Initializing 'sun/util/cldr/CLDRBaseLocaleDataMetaInfo' (0x00007fe000036218) by thread "main"
+[0.042s][class,load] java.text.ParsePosition source: jrt:/java.base
+[0.042s][class,init] 358 Initializing 'java/text/ParsePosition'(no method) (0x00007fe000036490) by thread "main"
+[0.042s][class,load] sun.util.locale.LanguageTag source: jrt:/java.base
+[0.042s][class,init] 359 Initializing 'sun/util/locale/LanguageTag' (0x00007fe0000366c8) by thread "main"
+[0.042s][class,load] sun.util.locale.StringTokenIterator source: jrt:/java.base
+[0.042s][class,init] 360 Initializing 'sun/util/locale/StringTokenIterator'(no method) (0x00007fe000037928) by thread "main"
+[0.042s][class,load] sun.util.locale.InternalLocaleBuilder source: jrt:/java.base
+[0.042s][class,init] 361 Initializing 'sun/util/locale/InternalLocaleBuilder' (0x00007fe000037b88) by thread "main"
+[0.042s][class,load] sun.util.locale.InternalLocaleBuilder$CaseInsensitiveChar source: jrt:/java.base
+[0.042s][class,init] 362 Initializing 'sun/util/locale/InternalLocaleBuilder$CaseInsensitiveChar'(no method) (0x00007fe000037da8) by thread "main"
+[0.042s][class,load] sun.util.locale.BaseLocale$1InterningCache source: jrt:/java.base
+[0.042s][class,init] 363 Initializing 'sun/util/locale/BaseLocale$1InterningCache' (0x00007fe000037fc0) by thread "main"
+[0.042s][class,load] jdk.internal.util.ReferencedKeySet source: jrt:/java.base
+[0.042s][class,init] 364 Initializing 'jdk/internal/util/ReferencedKeySet'(no method) (0x00007fe0000381d8) by thread "main"
+[0.042s][class,load] jdk.internal.util.ReferencedKeyMap source: jrt:/java.base
+[0.042s][class,init] 365 Initializing 'jdk/internal/util/ReferencedKeyMap' (0x00007fe0000385f8) by thread "main"
+[0.042s][class,load] jdk.internal.util.ReferencedKeyMap$1 source: jrt:/java.base
+[0.042s][class,init] 366 Initializing 'jdk/internal/util/ReferencedKeyMap$1'(no method) (0x00007fe000038928) by thread "main"
+[0.042s][class,load] jdk.internal.util.ReferenceKey source: jrt:/java.base
+[0.042s][class,load] jdk.internal.util.StrongReferenceKey source: jrt:/java.base
+[0.042s][class,init] 367 Initializing 'jdk/internal/util/StrongReferenceKey'(no method) (0x00007fe000038d78) by thread "main"
+[0.042s][class,load] jdk.internal.util.SoftReferenceKey source: jrt:/java.base
+[0.042s][class,init] 368 Initializing 'jdk/internal/util/SoftReferenceKey'(no method) (0x00007fe000038fb8) by thread "main"
+[0.043s][class,load] java.util.Locale$LocaleCache source: jrt:/java.base
+[0.043s][class,init] 369 Initializing 'java/util/Locale$LocaleCache' (0x00007fe000039238) by thread "main"
+[0.043s][class,init] 370 Initializing 'java/lang/reflect/Constructor'(no method) (0x00007fe00004ada8) by thread "main"
+[0.043s][class,load] jdk.internal.reflect.MethodHandleAccessorFactory source: jrt:/java.base
+[0.043s][class,init] 371 Initializing 'jdk/internal/reflect/MethodHandleAccessorFactory' (0x00007fe000039690) by thread "main"
+[0.043s][class,load] jdk.internal.reflect.MethodHandleAccessorFactory$LazyStaticHolder source: jrt:/java.base
+[0.043s][class,init] 372 Initializing 'jdk/internal/reflect/MethodHandleAccessorFactory$LazyStaticHolder' (0x00007fe0000398a8) by thread "main"
+[0.043s][class,init] 373 Initializing 'java/lang/invoke/MethodHandleImpl' (0x00007fe00004d8b8) by thread "main"
+[0.043s][class,load] java.lang.invoke.LambdaForm$NamedFunction source: jrt:/java.base
+[0.043s][class,load] jdk.internal.access.JavaLangInvokeAccess source: jrt:/java.base
+[0.043s][class,load] java.lang.invoke.MethodHandleImpl$1 source: jrt:/java.base
+[0.043s][class,init] 374 Initializing 'java/lang/invoke/MethodHandleImpl$1'(no method) (0x00007fe00003a160) by thread "main"
+[0.043s][class,init] 375 Initializing 'java/lang/invoke/DirectMethodHandle' (0x00007fe00004cde8) by thread "main"
+[0.044s][class,load] sun.invoke.util.Wrapper source: jrt:/java.base
+[0.044s][class,init] 376 Initializing 'sun/invoke/util/Wrapper' (0x00007fe00003a4c8) by thread "main"
+[0.044s][class,load] sun.invoke.util.Wrapper$Format source: jrt:/java.base
+[0.044s][class,init] 377 Initializing 'sun/invoke/util/Wrapper$Format' (0x00007fe00003a720) by thread "main"
+[0.044s][class,load] java.lang.constant.ConstantDescs source: jrt:/java.base
+[0.044s][class,init] 378 Initializing 'java/lang/constant/ConstantDescs' (0x00007fe00003a938) by thread "main"
+[0.044s][class,load] java.lang.constant.ClassDesc source: jrt:/java.base
+[0.044s][class,load] jdk.internal.constant.ClassOrInterfaceDescImpl source: jrt:/java.base
+[0.044s][class,init] 379 Initializing 'java/lang/constant/ClassDesc'(no method) (0x00007fe00003ab50) by thread "main"
+[0.044s][class,init] 380 Initializing 'jdk/internal/constant/ClassOrInterfaceDescImpl' (0x00007fe00003ad60) by thread "main"
+[0.044s][class,load] jdk.internal.constant.ArrayClassDescImpl source: jrt:/java.base
+[0.044s][class,init] 381 Initializing 'jdk/internal/constant/ArrayClassDescImpl' (0x00007fe00003b090) by thread "main"
+[0.044s][class,load] jdk.internal.constant.ConstantUtils source: jrt:/java.base
+[0.044s][class,init] 382 Initializing 'jdk/internal/constant/ConstantUtils' (0x00007fe00003b3c8) by thread "main"
+[0.044s][class,load] java.lang.constant.DirectMethodHandleDesc$Kind source: jrt:/java.base
+[0.044s][class,init] 383 Initializing 'java/lang/constant/DirectMethodHandleDesc$Kind' (0x00007fe00003b7e8) by thread "main"
+[0.044s][class,load] java.lang.constant.MethodTypeDesc source: jrt:/java.base
+[0.044s][class,load] jdk.internal.constant.MethodTypeDescImpl source: jrt:/java.base
+[0.044s][class,init] 384 Initializing 'java/lang/constant/MethodTypeDesc'(no method) (0x00007fe00003bc48) by thread "main"
+[0.044s][class,init] 385 Initializing 'jdk/internal/constant/MethodTypeDescImpl'(no method) (0x00007fe00003be58) by thread "main"
+[0.044s][class,load] java.lang.constant.MethodHandleDesc source: jrt:/java.base
+[0.044s][class,init] 386 Initializing 'java/lang/constant/MethodHandleDesc'(no method) (0x00007fe00003c1c0) by thread "main"
+[0.044s][class,load] java.lang.constant.MethodHandleDesc$1 source: jrt:/java.base
+[0.044s][class,init] 387 Initializing 'java/lang/constant/MethodHandleDesc$1' (0x00007fe00003c3d0) by thread "main"
+[0.044s][class,load] java.lang.constant.DirectMethodHandleDesc source: jrt:/java.base
+[0.044s][class,load] jdk.internal.constant.DirectMethodHandleDescImpl source: jrt:/java.base
+[0.044s][class,init] 388 Initializing 'jdk/internal/constant/DirectMethodHandleDescImpl'(no method) (0x00007fe00003c7f8) by thread "main"
+[0.044s][class,load] jdk.internal.constant.DirectMethodHandleDescImpl$1 source: jrt:/java.base
+[0.044s][class,init] 389 Initializing 'jdk/internal/constant/DirectMethodHandleDescImpl$1' (0x00007fe00003cac0) by thread "main"
+[0.045s][class,load] java.lang.constant.DynamicConstantDesc source: jrt:/java.base
+[0.045s][class,load] jdk.internal.constant.PrimitiveClassDescImpl source: jrt:/java.base
+[0.045s][class,init] 390 Initializing 'java/lang/constant/DynamicConstantDesc'(no method) (0x00007fe00003ccd8) by thread "main"
+[0.045s][class,init] 391 Initializing 'jdk/internal/constant/PrimitiveClassDescImpl' (0x00007fe00003cf40) by thread "main"
+[0.045s][class,load] java.lang.constant.DynamicConstantDesc$AnonymousDynamicConstantDesc source: jrt:/java.base
+[0.045s][class,init] 392 Initializing 'java/lang/constant/DynamicConstantDesc$AnonymousDynamicConstantDesc'(no method) (0x00007fe00003d2b8) by thread "main"
+[0.045s][class,init] 393 Initializing 'java/lang/Short' (0x00007fe000057cc0) by thread "main"
+[0.045s][class,init] 394 Initializing 'java/lang/invoke/MethodType' (0x00007fe00004e1f0) by thread "main"
+[0.045s][class,load] java.lang.invoke.MethodType$1 source: jrt:/java.base
+[0.045s][class,init] 395 Initializing 'java/lang/invoke/MethodType$1'(no method) (0x00007fe00003d930) by thread "main"
+[0.045s][class,load] java.lang.invoke.MethodTypeForm source: jrt:/java.base
+[0.045s][class,init] 396 Initializing 'java/lang/invoke/MethodTypeForm' (0x00007fe00003df80) by thread "main"
+[0.045s][class,load] jdk.internal.util.WeakReferenceKey source: jrt:/java.base
+[0.045s][class,init] 397 Initializing 'jdk/internal/util/WeakReferenceKey'(no method) (0x00007fe00003e3a8) by thread "main"
+[0.045s][class,load] java.lang.invoke.DirectMethodHandle$Holder source: jrt:/java.base
+[0.045s][class,init] 398 Initializing 'java/lang/invoke/DirectMethodHandle$Holder'(no method) (0x00007fe00003e628) by thread "main"
+[0.045s][class,load] java.lang.invoke.LambdaForm$Kind source: jrt:/java.base
+[0.045s][class,init] 399 Initializing 'java/lang/invoke/LambdaForm$Kind' (0x00007fe00003e840) by thread "main"
+[0.045s][class,load] java.lang.NoSuchMethodException source: jrt:/java.base
+[0.046s][class,init] 400 Initializing 'java/lang/invoke/LambdaForm' (0x00007fe00004dce8) by thread "main"
+[0.046s][class,load] java.lang.invoke.LambdaForm$BasicType source: jrt:/java.base
+[0.046s][class,init] 401 Initializing 'java/lang/invoke/LambdaForm$BasicType' (0x00007fe00003ef10) by thread "main"
+[0.046s][class,load] java.lang.classfile.TypeKind source: jrt:/java.base
+[0.046s][class,init] 402 Initializing 'java/lang/classfile/TypeKind' (0x00007fe00003f168) by thread "main"
+[0.046s][class,load] java.lang.reflect.Array source: jrt:/java.base
+[0.046s][class,init] 403 Initializing 'java/lang/reflect/Array'(no method) (0x00007fe00003f7d0) by thread "main"
+[0.046s][class,load] java.lang.invoke.LambdaForm$Name source: jrt:/java.base
+[0.046s][class,init] 404 Initializing 'java/lang/invoke/LambdaForm$Name' (0x00007fe00003f9e8) by thread "main"
+[0.046s][class,load] java.lang.invoke.LambdaForm$Holder source: jrt:/java.base
+[0.046s][class,init] 405 Initializing 'java/lang/invoke/LambdaForm$Holder'(no method) (0x00007fe000018208) by thread "main"
+[0.046s][class,init] 406 Initializing 'java/lang/invoke/LambdaForm$NamedFunction' (0x00007fe000039ac0) by thread "main"
+[0.047s][class,load] java.lang.invoke.InvokerBytecodeGenerator source: jrt:/java.base
+[0.047s][class,init] 407 Initializing 'java/lang/invoke/InvokerBytecodeGenerator' (0x00007fe000018420) by thread "main"
+[0.047s][class,load] java.lang.classfile.AnnotationElement source: jrt:/java.base
+[0.047s][class,load] java.lang.classfile.Annotation source: jrt:/java.base
+[0.047s][class,init] 408 Initializing 'java/lang/classfile/Annotation'(no method) (0x00007fe000018aa0) by thread "main"
+[0.047s][class,load] java.lang.classfile.constantpool.ConstantPool source: jrt:/java.base
+[0.047s][class,load] java.lang.classfile.constantpool.ConstantPoolBuilder source: jrt:/java.base
+[0.047s][class,load] jdk.internal.classfile.impl.TemporaryConstantPool source: jrt:/java.base
+[0.047s][class,init] 409 Initializing 'java/lang/classfile/constantpool/ConstantPool'(no method) (0x00007fe000018cb0) by thread "main"
+[0.047s][class,init] 410 Initializing 'java/lang/classfile/constantpool/ConstantPoolBuilder'(no method) (0x00007fe000018ec0) by thread "main"
+[0.047s][class,init] 411 Initializing 'jdk/internal/classfile/impl/TemporaryConstantPool' (0x00007fe0000190d0) by thread "main"
+[0.047s][class,load] java.lang.classfile.constantpool.PoolEntry source: jrt:/java.base
+[0.047s][class,load] java.lang.classfile.constantpool.AnnotationConstantValueEntry source: jrt:/java.base
+[0.047s][class,load] java.lang.classfile.constantpool.Utf8Entry source: jrt:/java.base
+[0.047s][class,load] jdk.internal.classfile.impl.AbstractPoolEntry source: jrt:/java.base
+[0.047s][class,load] jdk.internal.classfile.impl.AbstractPoolEntry$Utf8EntryImpl source: jrt:/java.base
+[0.047s][class,init] 412 Initializing 'jdk/internal/classfile/impl/AbstractPoolEntry'(no method) (0x00007fe000019b80) by thread "main"
+[0.047s][class,init] 413 Initializing 'jdk/internal/classfile/impl/AbstractPoolEntry$Utf8EntryImpl' (0x00007fe000019dd0) by thread "main"
+[0.047s][class,load] jdk.internal.classfile.impl.AbstractPoolEntry$Utf8EntryImpl$State source: jrt:/java.base
+[0.047s][class,init] 414 Initializing 'jdk/internal/classfile/impl/AbstractPoolEntry$Utf8EntryImpl$State' (0x00007fe00001a148) by thread "main"
+[0.048s][class,load] jdk.internal.classfile.impl.AnnotationImpl source: jrt:/java.base
+[0.048s][class,init] 415 Initializing 'jdk/internal/classfile/impl/AnnotationImpl'(no method) (0x00007fe00001a5a8) by thread "main"
+[0.048s][class,load] java.lang.classfile.ClassFileElement source: jrt:/java.base
+[0.048s][class,load] java.lang.classfile.Attribute source: jrt:/java.base
+[0.048s][class,load] java.lang.classfile.ClassElement source: jrt:/java.base
+[0.048s][class,load] java.lang.classfile.MethodElement source: jrt:/java.base
+[0.048s][class,load] java.lang.classfile.FieldElement source: jrt:/java.base
+[0.048s][class,load] java.lang.classfile.attribute.RuntimeVisibleAnnotationsAttribute source: jrt:/java.base
+[0.048s][class,init] 416 Initializing 'java/lang/classfile/attribute/RuntimeVisibleAnnotationsAttribute'(no method) (0x00007fe00001b450) by thread "main"
+[0.048s][class,load] jdk.internal.classfile.impl.Util$Writable source: jrt:/java.base
+[0.048s][class,load] jdk.internal.classfile.impl.AbstractElement source: jrt:/java.base
+[0.048s][class,load] jdk.internal.classfile.impl.UnboundAttribute source: jrt:/java.base
+[0.048s][class,load] jdk.internal.classfile.impl.UnboundAttribute$UnboundRuntimeVisibleAnnotationsAttribute source: jrt:/java.base
+[0.048s][class,init] 417 Initializing 'jdk/internal/classfile/impl/AbstractElement'(no method) (0x00007fe00001b870) by thread "main"
+[0.048s][class,init] 418 Initializing 'jdk/internal/classfile/impl/UnboundAttribute'(no method) (0x00007fe00001baa8) by thread "main"
+[0.048s][class,init] 419 Initializing 'jdk/internal/classfile/impl/UnboundAttribute$UnboundRuntimeVisibleAnnotationsAttribute' (0x00007fe00001bd38) by thread "main"
+[0.049s][class,load] java.lang.classfile.Attributes source: jrt:/java.base
+[0.049s][class,init] 420 Initializing 'java/lang/classfile/Attributes'(no method) (0x00007fe00001c010) by thread "main"
+[0.049s][class,load] java.lang.classfile.AttributeMapper source: jrt:/java.base
+[0.049s][class,load] jdk.internal.classfile.impl.AbstractAttributeMapper source: jrt:/java.base
+[0.049s][class,load] jdk.internal.classfile.impl.AbstractAttributeMapper$RuntimeVisibleAnnotationsMapper source: jrt:/java.base
+[0.049s][class,init] 421 Initializing 'java/lang/classfile/AttributeMapper'(no method) (0x00007fe00001c228) by thread "main"
+[0.049s][class,init] 422 Initializing 'jdk/internal/classfile/impl/AbstractAttributeMapper'(no method) (0x00007fe00001c438) by thread "main"
+[0.049s][class,init] 423 Initializing 'jdk/internal/classfile/impl/AbstractAttributeMapper$RuntimeVisibleAnnotationsMapper' (0x00007fe00001c6b0) by thread "main"
+[0.049s][class,load] java.lang.classfile.AttributeMapper$AttributeStability source: jrt:/java.base
+[0.049s][class,init] 424 Initializing 'java/lang/classfile/AttributeMapper$AttributeStability' (0x00007fe00001c928) by thread "main"
+[0.049s][class,load] java.lang.invoke.InvokerBytecodeGenerator$8 source: jrt:/java.base
+[0.049s][class,init] 425 Initializing 'java/lang/invoke/InvokerBytecodeGenerator$8' (0x00007fe00001cd88) by thread "main"
+[0.049s][class,load] java.lang.invoke.MethodHandleImpl$Intrinsic source: jrt:/java.base
+[0.049s][class,init] 426 Initializing 'java/lang/invoke/MethodHandleImpl$Intrinsic' (0x00007fe00001cfa0) by thread "main"
+[0.049s][class,load] java.lang.invoke.DirectMethodHandle$Constructor source: jrt:/java.base
+[0.049s][class,init] 427 Initializing 'java/lang/invoke/DirectMethodHandle$Constructor' (0x00007fe00001d400) by thread "main"
+[0.049s][class,load] sun.invoke.util.VerifyType source: jrt:/java.base
+[0.049s][class,init] 428 Initializing 'sun/invoke/util/VerifyType'(no method) (0x00007fe00001d7b0) by thread "main"
+[0.049s][class,load] sun.invoke.empty.Empty source: jrt:/java.base
+[0.049s][class,load] jdk.internal.reflect.DirectConstructorHandleAccessor source: jrt:/java.base
+[0.049s][class,init] 429 Initializing 'jdk/internal/reflect/ConstructorAccessorImpl'(no method) (0x00007fe00004c608) by thread "main"
+[0.049s][class,init] 430 Initializing 'jdk/internal/reflect/DirectConstructorHandleAccessor'(no method) (0x00007fe00001dbe0) by thread "main"
+[0.050s][class,load] java.lang.invoke.Invokers source: jrt:/java.base
+[0.050s][class,init] 431 Initializing 'java/lang/invoke/Invokers' (0x00007fe00001de28) by thread "main"
+[0.050s][class,load] java.lang.invoke.VarHandle$AccessMode source: jrt:/java.base
+[0.050s][class,init] 432 Initializing 'java/lang/invoke/VarHandle$AccessMode' (0x00007fe00001e078) by thread "main"
+[0.050s][class,load] java.lang.invoke.VarHandle$AccessType source: jrt:/java.base
+[0.050s][class,init] 433 Initializing 'java/lang/invoke/VarHandle$AccessType' (0x00007fe00001e2d0) by thread "main"
+[0.050s][class,load] java.lang.invoke.Invokers$Holder source: jrt:/java.base
+[0.050s][class,init] 434 Initializing 'java/lang/invoke/Invokers$Holder'(no method) (0x00007fe00001e938) by thread "main"
+[0.050s][class,load] java.util.ServiceLoader source: jrt:/java.base
+[0.050s][class,init] 435 Initializing 'java/util/ServiceLoader' (0x00007fe00001eb50) by thread "main"
+[0.050s][class,load] java.util.ServiceLoader$ModuleServicesLookupIterator source: jrt:/java.base
+[0.050s][class,init] 436 Initializing 'java/util/ServiceLoader$ModuleServicesLookupIterator' (0x00007fe00001eda8) by thread "main"
+[0.050s][class,load] java.util.concurrent.CopyOnWriteArrayList$COWIterator source: jrt:/java.base
+[0.050s][class,init] 437 Initializing 'java/util/concurrent/CopyOnWriteArrayList$COWIterator'(no method) (0x00007fe00001f008) by thread "main"
+[0.051s][class,load] java.util.ServiceLoader$LazyClassPathLookupIterator source: jrt:/java.base
+[0.051s][class,init] 438 Initializing 'java/util/ServiceLoader$LazyClassPathLookupIterator' (0x00007fe00001f2b0) by thread "main"
+[0.051s][class,load] java.util.ServiceLoader$1 source: jrt:/java.base
+[0.051s][class,init] 439 Initializing 'java/util/ServiceLoader$1'(no method) (0x00007fe00001f510) by thread "main"
+[0.051s][class,load] java.util.ServiceLoader$2 source: jrt:/java.base
+[0.051s][class,init] 440 Initializing 'java/util/ServiceLoader$2'(no method) (0x00007fe00001f788) by thread "main"
+[0.051s][class,load] jdk.internal.loader.BuiltinClassLoader$2 source: jrt:/java.base
+[0.051s][class,init] 441 Initializing 'jdk/internal/loader/BuiltinClassLoader$2'(no method) (0x00007fe00001f9f8) by thread "main"
+[0.051s][class,load] java.lang.module.ModuleReader source: jrt:/java.base
+[0.051s][class,load] jdk.internal.module.SystemModuleFinders$SystemModuleReader source: jrt:/java.base
+[0.051s][class,init] 442 Initializing 'java/lang/module/ModuleReader'(no method) (0x00007fe00001fc60) by thread "main"
+[0.051s][class,init] 443 Initializing 'jdk/internal/module/SystemModuleFinders$SystemModuleReader'(no method) (0x00007fe000014000) by thread "main"
+[0.051s][class,load] jdk.internal.module.ModulePatcher$PatchedModuleReader source: jrt:/java.base
+[0.051s][class,load] jdk.internal.module.SystemModuleFinders$SystemImage source: jrt:/java.base
+[0.051s][class,init] 444 Initializing 'jdk/internal/module/SystemModuleFinders$SystemImage' (0x00007fe000014588) by thread "main"
+[0.051s][class,load] jdk.internal.jimage.ImageReaderFactory source: jrt:/java.base
+[0.051s][class,init] 445 Initializing 'jdk/internal/jimage/ImageReaderFactory' (0x00007fe0000147a0) by thread "main"
+[0.051s][class,load] sun.nio.fs.DefaultFileSystemProvider source: jrt:/java.base
+[0.051s][class,init] 446 Initializing 'sun/nio/fs/DefaultFileSystemProvider' (0x00007fe0000149b8) by thread "main"
+[0.052s][class,load] java.nio.file.spi.FileSystemProvider source: jrt:/java.base
+[0.052s][class,load] sun.nio.fs.AbstractFileSystemProvider source: jrt:/java.base
+[0.052s][class,load] sun.nio.fs.UnixFileSystemProvider source: jrt:/java.base
+[0.052s][class,load] sun.nio.fs.BsdFileSystemProvider source: jrt:/java.base
+[0.052s][class,load] sun.nio.fs.MacOSXFileSystemProvider source: jrt:/java.base
+[0.052s][class,init] 447 Initializing 'java/nio/file/spi/FileSystemProvider' (0x00007fe000014bd0) by thread "main"
+[0.052s][class,load] java.nio.file.OpenOption source: jrt:/java.base
+[0.052s][class,load] java.nio.file.StandardOpenOption source: jrt:/java.base
+[0.052s][class,init] 448 Initializing 'java/nio/file/StandardOpenOption' (0x00007fe000015e90) by thread "main"
+[0.052s][class,init] 449 Initializing 'sun/nio/fs/AbstractFileSystemProvider'(no method) (0x00007fe000014ed0) by thread "main"
+[0.052s][class,init] 450 Initializing 'sun/nio/fs/UnixFileSystemProvider' (0x00007fe000015200) by thread "main"
+[0.052s][class,init] 451 Initializing 'sun/nio/fs/BsdFileSystemProvider'(no method) (0x00007fe000015560) by thread "main"
+[0.052s][class,init] 452 Initializing 'sun/nio/fs/MacOSXFileSystemProvider'(no method) (0x00007fe0000158e0) by thread "main"
+[0.053s][class,load] java.nio.file.FileSystem source: jrt:/java.base
+[0.053s][class,load] sun.nio.fs.UnixFileSystem source: jrt:/java.base
+[0.053s][class,load] sun.nio.fs.BsdFileSystem source: jrt:/java.base
+[0.053s][class,load] sun.nio.fs.MacOSXFileSystem source: jrt:/java.base
+[0.053s][class,init] 453 Initializing 'java/nio/file/FileSystem'(no method) (0x00007fe0000164f8) by thread "main"
+[0.053s][class,init] 454 Initializing 'sun/nio/fs/UnixFileSystem' (0x00007fe0000167a0) by thread "main"
+[0.053s][class,init] 455 Initializing 'sun/nio/fs/BsdFileSystem'(no method) (0x00007fe000016ac8) by thread "main"
+[0.053s][class,init] 456 Initializing 'sun/nio/fs/MacOSXFileSystem' (0x00007fe000016e08) by thread "main"
+[0.053s][class,load] java.nio.file.Watchable source: jrt:/java.base
+[0.053s][class,load] java.nio.file.Path source: jrt:/java.base
+[0.053s][class,load] sun.nio.fs.UnixPath source: jrt:/java.base
+[0.053s][class,init] 457 Initializing 'java/nio/file/Path'(no method) (0x00007fe000017378) by thread "main"
+[0.053s][class,init] 458 Initializing 'sun/nio/fs/UnixPath' (0x00007fe000017588) by thread "main"
+[0.053s][class,load] sun.nio.fs.Util source: jrt:/java.base
+[0.053s][class,init] 459 Initializing 'sun/nio/fs/Util' (0x00007fe000017aa0) by thread "main"
+[0.053s][class,load] sun.nio.fs.UnixNativeDispatcher source: jrt:/java.base
+[0.053s][class,init] 460 Initializing 'sun/nio/fs/UnixNativeDispatcher' (0x00007fe000017cb8) by thread "main"
+[0.053s][class,load] jdk.internal.loader.NativeLibraries$LibraryPaths source: jrt:/java.base
+[0.053s][class,init] 461 Initializing 'jdk/internal/loader/NativeLibraries$LibraryPaths' (0x00007fe000012000) by thread "main"
+[0.054s][class,load] jdk.internal.loader.NativeLibraries$1 source: jrt:/java.base
+[0.054s][class,init] 462 Initializing 'jdk/internal/loader/NativeLibraries$1'(no method) (0x00007fe000012218) by thread "main"
+[0.054s][class,load] jdk.internal.loader.NativeLibraries$CountedLock source: jrt:/java.base
+[0.054s][class,init] 463 Initializing 'java/util/concurrent/locks/ReentrantLock'(no method) (0x00007fe0000659b8) by thread "main"
+[0.054s][class,init] 464 Initializing 'jdk/internal/loader/NativeLibraries$CountedLock'(no method) (0x00007fe000012468) by thread "main"
+[0.054s][class,load] java.util.concurrent.locks.AbstractQueuedSynchronizer source: jrt:/java.base
+[0.054s][class,load] java.util.concurrent.locks.ReentrantLock$Sync source: jrt:/java.base
+[0.054s][class,load] java.util.concurrent.locks.ReentrantLock$NonfairSync source: jrt:/java.base
+[0.054s][class,init] 465 Initializing 'java/util/concurrent/locks/AbstractOwnableSynchronizer'(no method) (0x00007fe000056c30) by thread "main"
+[0.054s][class,init] 466 Initializing 'java/util/concurrent/locks/AbstractQueuedSynchronizer' (0x00007fe000012738) by thread "main"
+[0.054s][class,init] 467 Initializing 'java/util/concurrent/locks/ReentrantLock$Sync'(no method) (0x00007fe000012980) by thread "main"
+[0.054s][class,init] 468 Initializing 'java/util/concurrent/locks/ReentrantLock$NonfairSync'(no method) (0x00007fe000012bd0) by thread "main"
+[0.054s][class,load] jdk.internal.loader.NativeLibraries$NativeLibraryContext source: jrt:/java.base
+[0.054s][class,init] 469 Initializing 'jdk/internal/loader/NativeLibraries$NativeLibraryContext' (0x00007fe000012e20) by thread "main"
+[0.054s][class,load] jdk.internal.loader.NativeLibraries$NativeLibraryContext$1 source: jrt:/java.base
+[0.054s][class,init] 470 Initializing 'jdk/internal/loader/NativeLibraries$NativeLibraryContext$1'(no method) (0x00007fe000013038) by thread "main"
+[0.054s][class,load] java.util.ArrayDeque$DeqIterator source: jrt:/java.base
+[0.054s][class,init] 471 Initializing 'java/util/ArrayDeque$DeqIterator'(no method) (0x00007fe000013298) by thread "main"
+[0.054s][class,load] jdk.internal.loader.NativeLibrary source: jrt:/java.base
+[0.054s][class,load] jdk.internal.loader.NativeLibraries$NativeLibraryImpl source: jrt:/java.base
+[0.054s][class,init] 472 Initializing 'jdk/internal/loader/NativeLibrary'(no method) (0x00007fe000013500) by thread "main"
+[0.054s][class,init] 473 Initializing 'jdk/internal/loader/NativeLibraries$NativeLibraryImpl'(no method) (0x00007fe000013728) by thread "main"
+[0.055s][class,load] jdk.internal.loader.NativeLibraries$2 source: jrt:/java.base
+[0.055s][class,init] 474 Initializing 'jdk/internal/loader/NativeLibraries$2'(no method) (0x00007fe000013968) by thread "main"
+[0.055s][class,load] java.util.concurrent.ConcurrentHashMap$ValuesView source: jrt:/java.base
+[0.056s][class,init] 475 Initializing 'java/util/concurrent/ConcurrentHashMap$ValuesView'(no method) (0x00007fe000013bb8) by thread "main"
+[0.056s][class,load] java.util.Enumeration source: jrt:/java.base
+[0.056s][class,load] java.util.concurrent.ConcurrentHashMap$Traverser source: jrt:/java.base
+[0.056s][class,load] java.util.concurrent.ConcurrentHashMap$BaseIterator source: jrt:/java.base
+[0.056s][class,load] java.util.concurrent.ConcurrentHashMap$ValueIterator source: jrt:/java.base
+[0.056s][class,init] 476 Initializing 'java/util/concurrent/ConcurrentHashMap$Traverser'(no method) (0x00007fe000011210) by thread "main"
+[0.056s][class,init] 477 Initializing 'java/util/concurrent/ConcurrentHashMap$BaseIterator'(no method) (0x00007fe000011430) by thread "main"
+[0.056s][class,init] 478 Initializing 'java/util/Enumeration'(no method) (0x00007fe000011000) by thread "main"
+[0.056s][class,init] 479 Initializing 'java/util/concurrent/ConcurrentHashMap$ValueIterator'(no method) (0x00007fe000011650) by thread "main"
+[0.056s][class,load] java.nio.file.attribute.BasicFileAttributes source: jrt:/java.base
+[0.056s][class,load] java.nio.file.attribute.PosixFileAttributes source: jrt:/java.base
+[0.056s][class,load] sun.nio.fs.UnixFileAttributes source: jrt:/java.base
+[0.056s][class,init] 480 Initializing 'sun/nio/fs/UnixFileAttributes'(no method) (0x00007fe000010800) by thread "main"
+[0.056s][class,load] sun.nio.fs.UnixFileStoreAttributes source: jrt:/java.base
+[0.056s][class,init] 481 Initializing 'sun/nio/fs/UnixFileStoreAttributes'(no method) (0x00007fe000010b60) by thread "main"
+[0.056s][class,load] sun.nio.fs.UnixMountEntry source: jrt:/java.base
+[0.056s][class,init] 482 Initializing 'sun/nio/fs/UnixMountEntry'(no method) (0x00007fe000010d98) by thread "main"
+[0.056s][class,init] 483 Initializing 'jdk/internal/reflect/ConstantPool' (0x00007fe00004bd28) by thread "main"
+[0.056s][class,load] sun.reflect.annotation.AnnotationParser source: jrt:/java.base
+[0.056s][class,init] 484 Initializing 'sun/reflect/annotation/AnnotationParser' (0x00007fe000080000) by thread "main"
+[0.056s][class,load] sun.invoke.util.ValueConversions source: jrt:/java.base
+[0.057s][class,load] java.lang.invoke.BoundMethodHandle source: jrt:/java.base
+[0.057s][class,init] 485 Initializing 'java/lang/invoke/BoundMethodHandle' (0x00007fe000080638) by thread "main"
+[0.057s][class,load] java.lang.invoke.ClassSpecializer source: jrt:/java.base
+[0.057s][class,load] java.lang.invoke.BoundMethodHandle$Specializer source: jrt:/java.base
+[0.057s][class,init] 486 Initializing 'java/lang/invoke/ClassSpecializer' (0x00007fe000080a28) by thread "main"
+[0.057s][class,load] jdk.internal.vm.annotation.Stable source: jrt:/java.base
+[0.057s][class,load] java.lang.invoke.ClassSpecializer$1 source: jrt:/java.base
+[0.057s][class,init] 487 Initializing 'java/lang/invoke/ClassSpecializer$1'(no method) (0x00007fe0000810b8) by thread "main"
+[0.057s][class,init] 488 Initializing 'java/lang/invoke/BoundMethodHandle$Specializer' (0x00007fe000080c68) by thread "main"
+[0.057s][class,load] java.lang.invoke.ClassSpecializer$SpeciesData source: jrt:/java.base
+[0.057s][class,load] java.lang.invoke.BoundMethodHandle$SpeciesData source: jrt:/java.base
+[0.057s][class,load] java.lang.invoke.ClassSpecializer$Factory source: jrt:/java.base
+[0.057s][class,load] java.lang.invoke.BoundMethodHandle$Specializer$Factory source: jrt:/java.base
+[0.057s][class,init] 489 Initializing 'java/lang/invoke/ClassSpecializer$Factory' (0x00007fe000081820) by thread "main"
+[0.057s][class,init] 490 Initializing 'java/lang/invoke/BoundMethodHandle$Specializer$Factory'(no method) (0x00007fe000081a88) by thread "main"
+[0.057s][class,init] 491 Initializing 'java/lang/invoke/ClassSpecializer$SpeciesData' (0x00007fe000081310) by thread "main"
+[0.057s][class,init] 492 Initializing 'java/lang/invoke/BoundMethodHandle$SpeciesData' (0x00007fe000081598) by thread "main"
+[0.057s][class,load] java.lang.invoke.SimpleMethodHandle source: jrt:/java.base
+[0.057s][class,init] 493 Initializing 'java/lang/invoke/SimpleMethodHandle'(no method) (0x00007fe000082100) by thread "main"
+[0.057s][class,load] java.lang.NoSuchFieldException source: jrt:/java.base
+[0.057s][class,load] java.lang.invoke.BoundMethodHandle$Species_L source: jrt:/java.base
+[0.057s][class,init] 494 Initializing 'java/lang/invoke/BoundMethodHandle$Species_L'(no method) (0x00007fe000082760) by thread "main"
+[0.057s][class,load] java.lang.invoke.DirectMethodHandle$2 source: jrt:/java.base
+[0.057s][class,init] 495 Initializing 'java/lang/invoke/DirectMethodHandle$2' (0x00007fe000082b50) by thread "main"
+[0.057s][class,load] java.lang.invoke.DirectMethodHandle$Accessor source: jrt:/java.base
+[0.058s][class,init] 496 Initializing 'java/lang/invoke/DirectMethodHandle$Accessor' (0x00007fe000082d68) by thread "main"
+[0.058s][class,load] java.lang.invoke.DelegatingMethodHandle source: jrt:/java.base
+[0.058s][class,init] 497 Initializing 'java/lang/invoke/DelegatingMethodHandle' (0x00007fe000083118) by thread "main"
+[0.058s][class,load] java.lang.invoke.DelegatingMethodHandle$Holder source: jrt:/java.base
+[0.058s][class,init] 498 Initializing 'java/lang/invoke/DelegatingMethodHandle$Holder'(no method) (0x00007fe0000834d8) by thread "main"
+[0.058s][class,load] java.lang.invoke.LambdaFormEditor source: jrt:/java.base
+[0.058s][class,init] 499 Initializing 'java/lang/invoke/LambdaFormEditor' (0x00007fe0000836f0) by thread "main"
+[0.058s][class,load] java.lang.invoke.LambdaFormEditor$TransformKey source: jrt:/java.base
+[0.058s][class,init] 500 Initializing 'java/lang/invoke/LambdaFormEditor$TransformKey' (0x00007fe0000839a8) by thread "main"
+[0.058s][class,load] java.lang.invoke.LambdaFormBuffer source: jrt:/java.base
+[0.058s][class,init] 501 Initializing 'java/lang/invoke/LambdaFormBuffer' (0x00007fe000083bc8) by thread "main"
+[0.058s][class,load] java.lang.invoke.LambdaFormEditor$Transform source: jrt:/java.base
+[0.058s][class,init] 502 Initializing 'java/lang/invoke/LambdaFormEditor$Transform' (0x00007fe000083de8) by thread "main"
+[0.058s][class,load] jdk.internal.classfile.impl.SplitConstantPool source: jrt:/java.base
+[0.058s][class,init] 503 Initializing 'jdk/internal/classfile/impl/SplitConstantPool'(no method) (0x00007fe000084050) by thread "main"
+[0.058s][class,load] java.lang.classfile.BootstrapMethodEntry source: jrt:/java.base
+[0.058s][class,load] jdk.internal.classfile.impl.BootstrapMethodEntryImpl source: jrt:/java.base
+[0.059s][class,load] jdk.internal.classfile.impl.EntryMap source: jrt:/java.base
+[0.059s][class,init] 504 Initializing 'jdk/internal/classfile/impl/EntryMap'(no method) (0x00007fe000084f38) by thread "main"
+[0.059s][class,load] jdk.internal.classfile.impl.Util source: jrt:/java.base
+[0.059s][class,init] 505 Initializing 'jdk/internal/classfile/impl/Util' (0x00007fe000085158) by thread "main"
+[0.059s][class,load] java.lang.classfile.constantpool.LoadableConstantEntry source: jrt:/java.base
+[0.059s][class,load] java.lang.classfile.constantpool.ClassEntry source: jrt:/java.base
+[0.059s][class,load] jdk.internal.classfile.impl.AbstractPoolEntry$AbstractRefEntry source: jrt:/java.base
+[0.059s][class,load] jdk.internal.classfile.impl.AbstractPoolEntry$AbstractNamedEntry source: jrt:/java.base
+[0.059s][class,load] jdk.internal.classfile.impl.AbstractPoolEntry$ClassEntryImpl source: jrt:/java.base
+[0.059s][class,init] 506 Initializing 'jdk/internal/classfile/impl/AbstractPoolEntry$AbstractRefEntry'(no method) (0x00007fe000085790) by thread "main"
+[0.059s][class,init] 507 Initializing 'jdk/internal/classfile/impl/AbstractPoolEntry$AbstractNamedEntry'(no method) (0x00007fe0000859f0) by thread "main"
+[0.059s][class,init] 508 Initializing 'java/lang/classfile/constantpool/LoadableConstantEntry'(no method) (0x00007fe000085370) by thread "main"
+[0.059s][class,init] 509 Initializing 'java/lang/classfile/constantpool/ClassEntry'(no method) (0x00007fe000085580) by thread "main"
+[0.059s][class,init] 510 Initializing 'jdk/internal/classfile/impl/AbstractPoolEntry$ClassEntryImpl'(no method) (0x00007fe000085c60) by thread "main"
+[0.059s][class,load] java.util.function.Consumer source: jrt:/java.base
+[0.059s][class,load] java.lang.invoke.InvokerBytecodeGenerator$3 source: jrt:/java.base
+[0.059s][class,init] 511 Initializing 'java/util/function/Consumer'(no method) (0x00007fe000085fa8) by thread "main"
+[0.059s][class,init] 512 Initializing 'java/lang/invoke/InvokerBytecodeGenerator$3'(no method) (0x00007fe0000861b8) by thread "main"
+[0.059s][class,load] java.lang.classfile.ClassFile source: jrt:/java.base
+[0.059s][class,init] 513 Initializing 'java/lang/classfile/ClassFile'(no method) (0x00007fe000086410) by thread "main"
+[0.059s][class,load] jdk.internal.classfile.impl.ClassFileImpl source: jrt:/java.base
+[0.059s][class,init] 514 Initializing 'jdk/internal/classfile/impl/ClassFileImpl' (0x00007fe000086620) by thread "main"
+[0.059s][class,load] java.lang.invoke.InvokerBytecodeGenerator$1 source: jrt:/java.base
+[0.059s][class,init] 515 Initializing 'java/lang/invoke/InvokerBytecodeGenerator$1'(no method) (0x00007fe000086930) by thread "main"
+[0.059s][class,load] java.lang.classfile.ClassFileBuilder source: jrt:/java.base
+[0.059s][class,load] java.lang.classfile.ClassBuilder source: jrt:/java.base
+[0.059s][class,load] jdk.internal.classfile.impl.AbstractDirectBuilder source: jrt:/java.base
+[0.059s][class,load] jdk.internal.classfile.impl.DirectClassBuilder source: jrt:/java.base
+[0.059s][class,init] 516 Initializing 'jdk/internal/classfile/impl/AbstractDirectBuilder'(no method) (0x00007fe000086fa8) by thread "main"
+[0.059s][class,init] 517 Initializing 'java/lang/classfile/ClassFileBuilder'(no method) (0x00007fe000086b88) by thread "main"
+[0.059s][class,init] 518 Initializing 'java/lang/classfile/ClassBuilder'(no method) (0x00007fe000086d98) by thread "main"
+[0.059s][class,init] 519 Initializing 'jdk/internal/classfile/impl/DirectClassBuilder' (0x00007fe0000871e8) by thread "main"
+[0.059s][class,load] jdk.internal.classfile.impl.AttributeHolder source: jrt:/java.base
+[0.059s][class,init] 520 Initializing 'jdk/internal/classfile/impl/AttributeHolder' (0x00007fe000087bd8) by thread "main"
+[0.059s][class,load] java.lang.classfile.Superclass source: jrt:/java.base
+[0.059s][class,init] 521 Initializing 'java/lang/classfile/Superclass'(no method) (0x00007fe000088230) by thread "main"
+[0.059s][class,load] jdk.internal.classfile.impl.SuperclassImpl source: jrt:/java.base
+[0.059s][class,init] 522 Initializing 'jdk/internal/classfile/impl/SuperclassImpl'(no method) (0x00007fe000088440) by thread "main"
+[0.059s][class,load] java.lang.classfile.attribute.SourceFileAttribute source: jrt:/java.base
+[0.059s][class,init] 523 Initializing 'java/lang/classfile/attribute/SourceFileAttribute'(no method) (0x00007fe0000886a8) by thread "main"
+[0.059s][class,load] jdk.internal.classfile.impl.UnboundAttribute$UnboundSourceFileAttribute source: jrt:/java.base
+[0.059s][class,init] 524 Initializing 'jdk/internal/classfile/impl/UnboundAttribute$UnboundSourceFileAttribute' (0x00007fe0000888b8) by thread "main"
+[0.059s][class,load] jdk.internal.classfile.impl.AbstractAttributeMapper$SourceFileMapper source: jrt:/java.base
+[0.059s][class,init] 525 Initializing 'jdk/internal/classfile/impl/AbstractAttributeMapper$SourceFileMapper' (0x00007fe000088b70) by thread "main"
+[0.059s][class,load] jdk.internal.classfile.impl.BoundAttribute source: jrt:/java.base
+[0.060s][class,load] java.lang.invoke.InvokerBytecodeGenerator$4 source: jrt:/java.base
+[0.060s][class,init] 526 Initializing 'java/lang/invoke/InvokerBytecodeGenerator$4'(no method) (0x00007fe000089098) by thread "main"
+[0.060s][class,load] java.lang.classfile.MethodBuilder source: jrt:/java.base
+[0.060s][class,load] jdk.internal.classfile.impl.MethodInfo source: jrt:/java.base
+[0.060s][class,load] jdk.internal.classfile.impl.TerminalMethodBuilder source: jrt:/java.base
+[0.060s][class,load] jdk.internal.classfile.impl.DirectMethodBuilder source: jrt:/java.base
+[0.060s][class,init] 527 Initializing 'java/lang/classfile/MethodBuilder'(no method) (0x00007fe0000892f0) by thread "main"
+[0.060s][class,init] 528 Initializing 'jdk/internal/classfile/impl/MethodInfo'(no method) (0x00007fe000089500) by thread "main"
+[0.060s][class,init] 529 Initializing 'jdk/internal/classfile/impl/DirectMethodBuilder'(no method) (0x00007fe000089920) by thread "main"
+[0.060s][class,load] java.lang.classfile.constantpool.NameAndTypeEntry source: jrt:/java.base
+[0.060s][class,load] jdk.internal.classfile.impl.AbstractPoolEntry$AbstractRefsEntry source: jrt:/java.base
+[0.060s][class,load] jdk.internal.classfile.impl.AbstractPoolEntry$NameAndTypeEntryImpl source: jrt:/java.base
+[0.060s][class,init] 530 Initializing 'jdk/internal/classfile/impl/AbstractPoolEntry$AbstractRefsEntry'(no method) (0x00007fe000089ef0) by thread "main"
+[0.060s][class,init] 531 Initializing 'jdk/internal/classfile/impl/AbstractPoolEntry$NameAndTypeEntryImpl'(no method) (0x00007fe00008a158) by thread "main"
+[0.060s][class,load] java.lang.classfile.constantpool.MemberRefEntry source: jrt:/java.base
+[0.060s][class,load] java.lang.classfile.constantpool.FieldRefEntry source: jrt:/java.base
+[0.060s][class,load] jdk.internal.classfile.impl.AbstractPoolEntry$AbstractMemberRefEntry source: jrt:/java.base
+[0.060s][class,load] jdk.internal.classfile.impl.AbstractPoolEntry$FieldRefEntryImpl source: jrt:/java.base
+[0.060s][class,init] 532 Initializing 'java/lang/classfile/constantpool/MemberRefEntry'(no method) (0x00007fe00008a410) by thread "main"
+[0.060s][class,init] 533 Initializing 'jdk/internal/classfile/impl/AbstractPoolEntry$AbstractMemberRefEntry'(no method) (0x00007fe00008a830) by thread "main"
+[0.060s][class,init] 534 Initializing 'java/lang/classfile/constantpool/FieldRefEntry'(no method) (0x00007fe00008a620) by thread "main"
+[0.060s][class,init] 535 Initializing 'jdk/internal/classfile/impl/AbstractPoolEntry$FieldRefEntryImpl'(no method) (0x00007fe00008ab48) by thread "main"
+[0.060s][class,load] java.lang.invoke.InvokerBytecodeGenerator$ClassData source: jrt:/java.base
+[0.060s][class,init] 536 Initializing 'java/lang/invoke/InvokerBytecodeGenerator$ClassData'(no method) (0x00007fe00008aeb0) by thread "main"
+[0.060s][class,load] java.lang.invoke.InvokerBytecodeGenerator$4$1 source: jrt:/java.base
+[0.060s][class,init] 537 Initializing 'java/lang/invoke/InvokerBytecodeGenerator$4$1' (0x00007fe00008b0d0) by thread "main"
+[0.060s][class,load] java.lang.classfile.CodeBuilder source: jrt:/java.base
+[0.060s][class,load] jdk.internal.classfile.impl.LabelContext source: jrt:/java.base
+[0.060s][class,load] jdk.internal.classfile.impl.TerminalCodeBuilder source: jrt:/java.base
+[0.061s][class,load] jdk.internal.classfile.impl.DirectCodeBuilder source: jrt:/java.base
+[0.061s][class,init] 538 Initializing 'java/lang/classfile/CodeBuilder'(no method) (0x00007fe00008b328) by thread "main"
+[0.061s][class,init] 539 Initializing 'jdk/internal/classfile/impl/LabelContext'(no method) (0x00007fe00008b538) by thread "main"
+[0.061s][class,init] 540 Initializing 'jdk/internal/classfile/impl/DirectCodeBuilder' (0x00007fe00008b958) by thread "main"
+[0.061s][class,load] java.lang.classfile.CodeElement source: jrt:/java.base
+[0.061s][class,load] java.lang.classfile.PseudoInstruction source: jrt:/java.base
+[0.061s][class,load] java.lang.classfile.instruction.CharacterRange source: jrt:/java.base
+[0.061s][class,load] java.lang.classfile.instruction.LocalVariable source: jrt:/java.base
+[0.061s][class,load] java.lang.classfile.instruction.LocalVariableType source: jrt:/java.base
+[0.061s][class,load] jdk.internal.classfile.impl.DirectCodeBuilder$DeferredLabel source: jrt:/java.base
+[0.061s][class,load] java.lang.classfile.BufWriter source: jrt:/java.base
+[0.061s][class,load] jdk.internal.classfile.impl.BufWriterImpl source: jrt:/java.base
+[0.061s][class,init] 541 Initializing 'jdk/internal/classfile/impl/BufWriterImpl' (0x00007fe00008e240) by thread "main"
+[0.061s][class,load] java.lang.classfile.Label source: jrt:/java.base
+[0.061s][class,load] java.lang.classfile.instruction.LabelTarget source: jrt:/java.base
+[0.061s][class,load] jdk.internal.classfile.impl.LabelImpl source: jrt:/java.base
+[0.061s][class,init] 542 Initializing 'jdk/internal/classfile/impl/LabelImpl'(no method) (0x00007fe00008e910) by thread "main"
+[0.061s][class,init] 543 Initializing 'jdk/internal/classfile/impl/TerminalCodeBuilder'(no method) (0x00007fe00008b748) by thread "main"
+[0.061s][class,load] jdk.internal.classfile.impl.DirectCodeBuilder$8 source: jrt:/java.base
+[0.061s][class,init] 544 Initializing 'jdk/internal/classfile/impl/DirectCodeBuilder$8' (0x00007fe00008eb88) by thread "main"
+[0.061s][class,load] java.lang.classfile.Opcode source: jrt:/java.base
+[0.061s][class,init] 545 Initializing 'java/lang/classfile/Opcode' (0x00007fe00008eda0) by thread "main"
+[0.061s][class,load] java.lang.classfile.Opcode$Kind source: jrt:/java.base
+[0.061s][class,init] 546 Initializing 'java/lang/classfile/Opcode$Kind' (0x00007fe00008eff8) by thread "main"
+[0.062s][class,load] java.lang.classfile.constantpool.MethodRefEntry source: jrt:/java.base
+[0.062s][class,load] jdk.internal.classfile.impl.AbstractPoolEntry$MethodRefEntryImpl source: jrt:/java.base
+[0.062s][class,init] 547 Initializing 'java/lang/classfile/constantpool/MethodRefEntry'(no method) (0x00007fe00008f660) by thread "main"
+[0.062s][class,init] 548 Initializing 'jdk/internal/classfile/impl/AbstractPoolEntry$MethodRefEntryImpl'(no method) (0x00007fe00008f870) by thread "main"
+[0.062s][class,load] jdk.internal.classfile.impl.BytecodeHelpers source: jrt:/java.base
+[0.062s][class,init] 549 Initializing 'jdk/internal/classfile/impl/BytecodeHelpers'(no method) (0x00007fe00008fbd8) by thread "main"
+[0.062s][class,load] jdk.internal.classfile.impl.UnboundAttribute$AdHocAttribute source: jrt:/java.base
+[0.062s][class,load] jdk.internal.classfile.impl.DirectCodeBuilder$4 source: jrt:/java.base
+[0.062s][class,init] 550 Initializing 'jdk/internal/classfile/impl/UnboundAttribute$AdHocAttribute'(no method) (0x00007fe00008fdf0) by thread "main"
+[0.062s][class,init] 551 Initializing 'jdk/internal/classfile/impl/DirectCodeBuilder$4'(no method) (0x00007fe000090088) by thread "main"
+[0.062s][class,load] jdk.internal.classfile.impl.AbstractAttributeMapper$CodeMapper source: jrt:/java.base
+[0.062s][class,init] 552 Initializing 'jdk/internal/classfile/impl/AbstractAttributeMapper$CodeMapper' (0x00007fe000090320) by thread "main"
+[0.062s][class,load] java.lang.invoke.InvokerBytecodeGenerator$2 source: jrt:/java.base
+[0.062s][class,init] 553 Initializing 'java/lang/invoke/InvokerBytecodeGenerator$2'(no method) (0x00007fe000090598) by thread "main"
+[0.062s][class,load] jdk.internal.classfile.impl.Util$1WithCodeMethodHandler source: jrt:/java.base
+[0.062s][class,init] 554 Initializing 'jdk/internal/classfile/impl/Util$1WithCodeMethodHandler'(no method) (0x00007fe0000907f0) by thread "main"
+[0.062s][class,load] java.lang.classfile.FieldBuilder source: jrt:/java.base
+[0.062s][class,load] jdk.internal.classfile.impl.TerminalFieldBuilder source: jrt:/java.base
+[0.062s][class,load] jdk.internal.classfile.impl.DirectFieldBuilder source: jrt:/java.base
+[0.062s][class,init] 555 Initializing 'java/lang/classfile/FieldBuilder'(no method) (0x00007fe000090a38) by thread "main"
+[0.062s][class,init] 556 Initializing 'jdk/internal/classfile/impl/DirectFieldBuilder'(no method) (0x00007fe000090e58) by thread "main"
+[0.062s][class,load] java.lang.classfile.CustomAttribute source: jrt:/java.base
+[0.062s][class,load] jdk.internal.classfile.impl.AnnotationReader source: jrt:/java.base
+[0.062s][class,init] 557 Initializing 'jdk/internal/classfile/impl/AnnotationReader'(no method) (0x00007fe000091408) by thread "main"
+[0.062s][class,load] jdk.internal.classfile.impl.StackMapGenerator source: jrt:/java.base
+[0.062s][class,init] 558 Initializing 'jdk/internal/classfile/impl/StackMapGenerator' (0x00007fe000091620) by thread "main"
+[0.062s][class,load] jdk.internal.classfile.impl.StackMapGenerator$Frame source: jrt:/java.base
+[0.062s][class,load] jdk.internal.classfile.impl.StackMapGenerator$Type source: jrt:/java.base
+[0.062s][class,init] 559 Initializing 'jdk/internal/classfile/impl/StackMapGenerator$Type' (0x00007fe000091c68) by thread "main"
+[0.063s][class,load] jdk.internal.classfile.impl.RawBytecodeHelper source: jrt:/java.base
+[0.063s][class,init] 560 Initializing 'jdk/internal/classfile/impl/RawBytecodeHelper' (0x00007fe000092090) by thread "main"
+[0.063s][class,load] jdk.internal.classfile.impl.RawBytecodeHelper$1 source: jrt:/java.base
+[0.063s][class,init] 561 Initializing 'jdk/internal/classfile/impl/RawBytecodeHelper$1'(no method) (0x00007fe0000922b0) by thread "main"
+[0.063s][class,load] jdk.internal.classfile.impl.RawBytecodeHelper$CodeRange source: jrt:/java.base
+[0.063s][class,init] 562 Initializing 'jdk/internal/classfile/impl/RawBytecodeHelper$CodeRange'(no method) (0x00007fe000092510) by thread "main"
+[0.063s][class,load] jdk.internal.classfile.impl.ClassHierarchyImpl source: jrt:/java.base
+[0.063s][class,init] 563 Initializing 'jdk/internal/classfile/impl/ClassHierarchyImpl' (0x00007fe000092730) by thread "main"
+[0.063s][class,load] java.lang.classfile.ClassHierarchyResolver source: jrt:/java.base
+[0.063s][class,load] jdk.internal.classfile.impl.ClassHierarchyImpl$ClassLoadingClassHierarchyResolver source: jrt:/java.base
+[0.063s][class,init] 564 Initializing 'java/lang/classfile/ClassHierarchyResolver'(no method) (0x00007fe000092950) by thread "main"
+[0.063s][class,init] 565 Initializing 'jdk/internal/classfile/impl/ClassHierarchyImpl$ClassLoadingClassHierarchyResolver' (0x00007fe000092b60) by thread "main"
+[0.063s][class,load] jdk.internal.classfile.impl.ClassHierarchyImpl$ClassLoadingClassHierarchyResolver$1 source: jrt:/java.base
+[0.063s][class,init] 566 Initializing 'jdk/internal/classfile/impl/ClassHierarchyImpl$ClassLoadingClassHierarchyResolver$1'(no method) (0x00007fe000092dc8) by thread "main"
+[0.063s][class,load] jdk.internal.classfile.impl.ClassHierarchyImpl$CachedClassHierarchyResolver source: jrt:/java.base
+[0.063s][class,load] java.lang.classfile.ClassHierarchyResolver$1Factory source: jrt:/java.base
+[0.063s][class,init] 567 Initializing 'java/lang/classfile/ClassHierarchyResolver$1Factory' (0x00007fe000093290) by thread "main"
+[0.063s][class,init] 568 Initializing 'jdk/internal/classfile/impl/ClassHierarchyImpl$CachedClassHierarchyResolver' (0x00007fe000093028) by thread "main"
+[0.063s][class,load] java.lang.classfile.ClassHierarchyResolver$ClassHierarchyInfo source: jrt:/java.base
+[0.063s][class,load] jdk.internal.classfile.impl.ClassHierarchyImpl$ClassHierarchyInfoImpl source: jrt:/java.base
+[0.063s][class,init] 569 Initializing 'jdk/internal/classfile/impl/ClassHierarchyImpl$ClassHierarchyInfoImpl' (0x00007fe0000936d0) by thread "main"
+[0.063s][class,load] jdk.internal.classfile.impl.ClassHierarchyImpl$CachedClassHierarchyResolver$1 source: jrt:/java.base
+[0.063s][class,init] 570 Initializing 'jdk/internal/classfile/impl/ClassHierarchyImpl$CachedClassHierarchyResolver$1'(no method) (0x00007fe0000938f0) by thread "main"
+[0.063s][class,init] 571 Initializing 'jdk/internal/classfile/impl/StackMapGenerator$Frame'(no method) (0x00007fe000091840) by thread "main"
+[0.063s][class,load] java.lang.classfile.ClassReader source: jrt:/java.base
+[0.063s][class,load] jdk.internal.classfile.impl.ClassReaderImpl source: jrt:/java.base
+[0.063s][class,init] 572 Initializing 'jdk/internal/classfile/impl/ClassReaderImpl'(no method) (0x00007fe000093d68) by thread "main"
+[0.063s][class,load] jdk.internal.util.ModifiedUtf source: jrt:/java.base
+[0.063s][class,init] 573 Initializing 'jdk/internal/util/ModifiedUtf'(no method) (0x00007fe0000940d8) by thread "main"
+[0.063s][class,load] java.lang.invoke.MethodHandles$Lookup$ClassDefiner source: jrt:/java.base
+[0.063s][class,init] 574 Initializing 'java/lang/invoke/MethodHandles$Lookup$ClassDefiner' (0x00007fe0000942f0) by thread "main"
+[0.064s][class,load] java.lang.invoke.LambdaForm$MH/0x00007fe0000c0000 source: __JVM_LookupDefineClass__
+[0.064s][class,init] 575 Initializing 'java/lang/invoke/LambdaForm$MH+0x00007fe0000c0000' (0x00007fe0000c0000) by thread "main"
+[0.064s][class,load] jdk.internal.reflect.DirectMethodHandleAccessor source: jrt:/java.base
+[0.064s][class,init] 576 Initializing 'jdk/internal/reflect/MethodAccessorImpl'(no method) (0x00007fe00004bae0) by thread "main"
+[0.064s][class,init] 577 Initializing 'jdk/internal/reflect/DirectMethodHandleAccessor' (0x00007fe000094510) by thread "main"
+[0.064s][class,load] jdk.internal.jimage.ImageReaderFactory$1 source: jrt:/java.base
+[0.064s][class,init] 578 Initializing 'jdk/internal/jimage/ImageReaderFactory$1'(no method) (0x00007fe000094760) by thread "main"
+[0.064s][class,load] jdk.internal.jimage.ImageReader source: jrt:/java.base
+[0.064s][class,init] 579 Initializing 'jdk/internal/jimage/ImageReader'(no method) (0x00007fe0000949c0) by thread "main"
+[0.064s][class,load] jdk.internal.jimage.BasicImageReader source: jrt:/java.base
+[0.064s][class,load] jdk.internal.jimage.ImageReader$SharedImageReader source: jrt:/java.base
+[0.064s][class,init] 580 Initializing 'jdk/internal/jimage/BasicImageReader' (0x00007fe000094bf8) by thread "main"
+[0.064s][class,load] java.security.PrivilegedAction source: jrt:/java.base
+[0.064s][class,load] jdk.internal.jimage.BasicImageReader$1 source: jrt:/java.base
+[0.064s][class,init] 581 Initializing 'jdk/internal/jimage/BasicImageReader$1'(no method) (0x00007fe0000953b8) by thread "main"
+[0.064s][class,load] java.security.AccessController source: jrt:/java.base
+[0.064s][class,init] 582 Initializing 'java/security/AccessController' (0x00007fe000095600) by thread "main"
+[0.064s][class,load] java.security.AccessControlContext source: jrt:/java.base
+[0.064s][class,init] 583 Initializing 'java/security/AccessControlContext'(no method) (0x00007fe000095818) by thread "main"
+[0.064s][class,init] 584 Initializing 'jdk/internal/jimage/ImageReader$SharedImageReader' (0x00007fe000094ed0) by thread "main"
+[0.064s][class,load] jdk.internal.jimage.NativeImageBuffer source: jrt:/java.base
+[0.064s][class,init] 585 Initializing 'jdk/internal/jimage/NativeImageBuffer' (0x00007fe000095c40) by thread "main"
+[0.064s][class,load] jdk.internal.jimage.NativeImageBuffer$1 source: jrt:/java.base
+[0.064s][class,init] 586 Initializing 'jdk/internal/jimage/NativeImageBuffer$1'(no method) (0x00007fe000095e58) by thread "main"
+[0.064s][class,load] jdk.internal.reflect.Reflection$1Holder source: jrt:/java.base
+[0.064s][class,init] 587 Initializing 'jdk/internal/reflect/Reflection$1Holder' (0x00007fe000096098) by thread "main"
+[0.065s][class,load] sun.nio.ch.DirectBuffer source: jrt:/java.base
+[0.065s][class,init] 588 Initializing 'sun/nio/ch/DirectBuffer'(no method) (0x00007fe0000962b0) by thread "main"
+[0.065s][class,load] java.nio.MappedByteBuffer source: jrt:/java.base
+[0.065s][class,load] java.nio.DirectByteBuffer source: jrt:/java.base
+[0.065s][class,init] 589 Initializing 'java/nio/MappedByteBuffer' (0x00007fe0000964c0) by thread "main"
+[0.065s][class,init] 590 Initializing 'java/nio/DirectByteBuffer' (0x00007fe0000969a0) by thread "main"
+[0.065s][class,load] java.nio.Bits source: jrt:/java.base
+[0.065s][class,init] 591 Initializing 'java/nio/Bits' (0x00007fe000096ed8) by thread "main"
+[0.065s][class,load] java.util.concurrent.atomic.AtomicLong source: jrt:/java.base
+[0.065s][class,init] 592 Initializing 'java/util/concurrent/atomic/AtomicLong' (0x00007fe0000970f0) by thread "main"
+[0.065s][class,load] jdk.internal.misc.VM$BufferPool source: jrt:/java.base
+[0.065s][class,load] java.nio.Bits$1 source: jrt:/java.base
+[0.065s][class,init] 593 Initializing 'java/nio/Bits$1'(no method) (0x00007fe000097548) by thread "main"
+[0.065s][class,load] jdk.internal.jimage.ImageHeader source: jrt:/java.base
+[0.065s][class,init] 594 Initializing 'jdk/internal/jimage/ImageHeader'(no method) (0x00007fe0000977b0) by thread "main"
+[0.065s][class,load] java.nio.IntBuffer source: jrt:/java.base
+[0.065s][class,load] java.nio.DirectIntBufferU source: jrt:/java.base
+[0.065s][class,init] 595 Initializing 'java/nio/IntBuffer' (0x00007fe0000979c8) by thread "main"
+[0.065s][class,init] 596 Initializing 'java/nio/DirectIntBufferU' (0x00007fe000097d68) by thread "main"
+[0.066s][class,load] java.nio.DirectByteBufferR source: jrt:/java.base
+[0.066s][class,init] 597 Initializing 'java/nio/DirectByteBufferR' (0x00007fe000098158) by thread "main"
+[0.066s][class,load] java.nio.DirectIntBufferRU source: jrt:/java.base
+[0.066s][class,init] 598 Initializing 'java/nio/DirectIntBufferRU' (0x00007fe000098690) by thread "main"
+[0.066s][class,load] jdk.internal.jimage.ImageStrings source: jrt:/java.base
+[0.066s][class,load] jdk.internal.jimage.ImageStringsReader source: jrt:/java.base
+[0.066s][class,init] 599 Initializing 'jdk/internal/jimage/ImageStrings'(no method) (0x00007fe000098a80) by thread "main"
+[0.066s][class,init] 600 Initializing 'jdk/internal/jimage/ImageStringsReader'(no method) (0x00007fe000098c90) by thread "main"
+[0.066s][class,load] jdk.internal.jimage.decompressor.Decompressor source: jrt:/java.base
+[0.066s][class,init] 601 Initializing 'jdk/internal/jimage/decompressor/Decompressor'(no method) (0x00007fe000098ef0) by thread "main"
+[0.066s][class,load] jdk.internal.jimage.ImageLocation source: jrt:/java.base
+[0.066s][class,init] 602 Initializing 'jdk/internal/jimage/ImageLocation'(no method) (0x00007fe000099110) by thread "main"
+[0.066s][class,load] sun.net.www.protocol.jrt.Handler source: jrt:/java.base
+[0.066s][class,init] 603 Initializing 'sun/net/www/protocol/jrt/Handler'(no method) (0x00007fe0000993c0) by thread "main"
+[0.066s][class,load] sun.util.resources.cldr.provider.CLDRLocaleDataMetaInfo source: jrt:/jdk.localedata
+[0.066s][class,init] Start class verification for: sun.util.resources.cldr.provider.CLDRLocaleDataMetaInfo
+[0.066s][class,init] End class verification for: sun.util.resources.cldr.provider.CLDRLocaleDataMetaInfo
+[0.066s][class,load] java.util.ServiceLoader$Provider source: jrt:/java.base
+[0.066s][class,load] java.util.ServiceLoader$ProviderImpl source: jrt:/java.base
+[0.066s][class,init] 604 Initializing 'java/util/ServiceLoader$ProviderImpl'(no method) (0x00007fe000099848) by thread "main"
+[0.066s][class,init] 605 Initializing 'sun/util/resources/cldr/provider/CLDRLocaleDataMetaInfo'(no method) (0x00007fe0000c0800) by thread "main"
+[0.066s][class,load] sun.util.locale.provider.AvailableLanguageTags source: jrt:/java.base
+[0.066s][class,load] sun.util.locale.provider.DecimalFormatSymbolsProviderImpl source: jrt:/java.base
+[0.066s][class,init] 606 Initializing 'java/util/spi/LocaleServiceProvider'(no method) (0x00007fe000033a90) by thread "main"
+[0.066s][class,init] 607 Initializing 'java/text/spi/DecimalFormatSymbolsProvider'(no method) (0x00007fe000033cb8) by thread "main"
+[0.066s][class,init] 608 Initializing 'sun/util/locale/provider/DecimalFormatSymbolsProviderImpl'(no method) (0x00007fe000099cc0) by thread "main"
+[0.067s][class,load] java.util.regex.Pattern source: jrt:/java.base
+[0.067s][class,init] 609 Initializing 'java/util/regex/Pattern' (0x00007fe000099f18) by thread "main"
+[0.067s][class,load] java.util.regex.Pattern$Node source: jrt:/java.base
+[0.067s][class,init] 610 Initializing 'java/util/regex/Pattern$Node'(no method) (0x00007fe00009a138) by thread "main"
+[0.067s][class,load] java.util.regex.Pattern$LastNode source: jrt:/java.base
+[0.067s][class,init] 611 Initializing 'java/util/regex/Pattern$LastNode'(no method) (0x00007fe00009a368) by thread "main"
+[0.067s][class,load] java.util.regex.Pattern$GroupHead source: jrt:/java.base
+[0.067s][class,load] java.lang.invoke.LambdaMetafactory source: jrt:/java.base
+[0.067s][class,init] 612 Initializing 'java/lang/invoke/LambdaMetafactory' (0x00007fe00009abe0) by thread "main"
+[0.067s][class,load] java.util.regex.Pattern$CharPredicate source: jrt:/java.base
+[0.067s][class,load] java.util.regex.Pattern$BmpCharPredicate source: jrt:/java.base
+[0.067s][class,init] 613 Initializing 'java/lang/invoke/CallSite' (0x00007fe00004e708) by thread "main"
+[0.067s][class,load] java.lang.invoke.BootstrapMethodInvoker source: jrt:/java.base
+[0.067s][class,init] 614 Initializing 'java/lang/invoke/BootstrapMethodInvoker' (0x00007fe00009b218) by thread "main"
+[0.067s][class,load] java.lang.invoke.AbstractValidatingLambdaMetafactory source: jrt:/java.base
+[0.067s][class,load] java.lang.invoke.InnerClassLambdaMetafactory source: jrt:/java.base
+[0.068s][class,init] 615 Initializing 'java/lang/invoke/AbstractValidatingLambdaMetafactory'(no method) (0x00007fe00009b430) by thread "main"
+[0.068s][class,init] 616 Initializing 'java/lang/invoke/InnerClassLambdaMetafactory' (0x00007fe00009b660) by thread "main"
+[0.068s][class,load] java.lang.invoke.MethodHandleInfo source: jrt:/java.base
+[0.068s][class,load] java.lang.invoke.InfoFromMemberName source: jrt:/java.base
+[0.068s][class,init] 617 Initializing 'java/lang/invoke/MethodHandleInfo'(no method) (0x00007fe00009b890) by thread "main"
+[0.068s][class,init] 618 Initializing 'java/lang/invoke/InfoFromMemberName' (0x00007fe00009baa0) by thread "main"
+[0.068s][class,load] java.lang.invoke.InnerClassLambdaMetafactory$1 source: jrt:/java.base
+[0.068s][class,init] 619 Initializing 'java/lang/invoke/InnerClassLambdaMetafactory$1'(no method) (0x00007fe00009bd10) by thread "main"
+[0.068s][class,load] java.util.ImmutableCollections$Access source: jrt:/java.base
+[0.068s][class,init] 620 Initializing 'java/util/ImmutableCollections$Access' (0x00007fe00009bf68) by thread "main"
+[0.068s][class,load] jdk.internal.access.JavaUtilCollectionAccess source: jrt:/java.base
+[0.068s][class,load] java.util.ImmutableCollections$Access$1 source: jrt:/java.base
+[0.068s][class,init] 621 Initializing 'java/util/ImmutableCollections$Access$1'(no method) (0x00007fe00009c390) by thread "main"
+[0.068s][class,load] java.lang.classfile.Interfaces source: jrt:/java.base
+[0.068s][class,init] 622 Initializing 'java/lang/classfile/Interfaces'(no method) (0x00007fe00009c5f8) by thread "main"
+[0.068s][class,load] jdk.internal.classfile.impl.InterfacesImpl source: jrt:/java.base
+[0.068s][class,init] 623 Initializing 'jdk/internal/classfile/impl/InterfacesImpl'(no method) (0x00007fe00009c808) by thread "main"
+[0.068s][class,load] java.lang.invoke.InnerClassLambdaMetafactory$3 source: jrt:/java.base
+[0.068s][class,init] 624 Initializing 'java/lang/invoke/InnerClassLambdaMetafactory$3'(no method) (0x00007fe00009ca70) by thread "main"
+[0.068s][class,load] java.lang.invoke.InnerClassLambdaMetafactory$6 source: jrt:/java.base
+[0.068s][class,init] 625 Initializing 'java/lang/invoke/InnerClassLambdaMetafactory$6'(no method) (0x00007fe00009ccc8) by thread "main"
+[0.068s][class,load] java.lang.invoke.TypeConvertingMethodAdapter source: jrt:/java.base
+[0.068s][class,init] 626 Initializing 'java/lang/invoke/TypeConvertingMethodAdapter'(no method) (0x00007fe00009cf20) by thread "main"
+[0.068s][class,load] java.util.regex.Pattern$$Lambda/0x00007fe00009d138 source: java.util.regex.Pattern
+[0.068s][class,init] 627 Initializing 'java/util/regex/Pattern$CharPredicate'(no method) (0x00007fe00009adf8) by thread "main"
+[0.068s][class,init] 628 Initializing 'java/util/regex/Pattern$BmpCharPredicate'(no method) (0x00007fe00009b008) by thread "main"
+[0.068s][class,init] 629 Initializing 'java/util/regex/Pattern$$Lambda+0x00007fe00009d138'(no method) (0x00007fe00009d138) by thread "main"
+[0.068s][class,init] 630 Initializing 'java/lang/invoke/ConstantCallSite' (0x00007fe00004f1f0) by thread "main"
+[0.068s][class,load] java.util.regex.Pattern$CharProperty source: jrt:/java.base
+[0.068s][class,load] java.util.regex.Pattern$BmpCharProperty source: jrt:/java.base
+[0.069s][class,init] 631 Initializing 'java/util/regex/Pattern$CharProperty'(no method) (0x00007fe00009d3d8) by thread "main"
+[0.069s][class,init] 632 Initializing 'java/util/regex/Pattern$BmpCharProperty'(no method) (0x00007fe00009d618) by thread "main"
+[0.069s][class,load] java.util.regex.Pattern$Qtype source: jrt:/java.base
+[0.069s][class,init] 633 Initializing 'java/util/regex/Pattern$Qtype' (0x00007fe00009d860) by thread "main"
+[0.069s][class,load] java.util.regex.Pattern$CharPropertyGreedy source: jrt:/java.base
+[0.069s][class,load] java.util.regex.Pattern$BmpCharPropertyGreedy source: jrt:/java.base
+[0.069s][class,init] 634 Initializing 'java/util/regex/Pattern$CharPropertyGreedy'(no method) (0x00007fe00009dcc0) by thread "main"
+[0.069s][class,init] 635 Initializing 'java/util/regex/Pattern$BmpCharPropertyGreedy'(no method) (0x00007fe00009df00) by thread "main"
+[0.069s][class,load] java.util.regex.Pattern$SliceNode source: jrt:/java.base
+[0.069s][class,load] java.util.regex.Pattern$Slice source: jrt:/java.base
+[0.069s][class,load] java.util.regex.Pattern$Begin source: jrt:/java.base
+[0.069s][class,load] java.util.regex.Pattern$First source: jrt:/java.base
+[0.069s][class,load] java.util.regex.Pattern$Start source: jrt:/java.base
+[0.069s][class,init] 636 Initializing 'java/util/regex/Pattern$Start'(no method) (0x00007fe00009ea18) by thread "main"
+[0.069s][class,load] java.util.regex.Pattern$TreeInfo source: jrt:/java.base
+[0.069s][class,init] 637 Initializing 'java/util/regex/Pattern$TreeInfo'(no method) (0x00007fe00009ec58) by thread "main"
+[0.069s][class,load] java.util.regex.MatchResult source: jrt:/java.base
+[0.069s][class,load] java.util.regex.Matcher source: jrt:/java.base
+[0.069s][class,init] 638 Initializing 'java/util/regex/MatchResult'(no method) (0x00007fe00009ee70) by thread "main"
+[0.069s][class,init] 639 Initializing 'java/util/regex/Matcher'(no method) (0x00007fe00009f080) by thread "main"
+[0.069s][class,load] java.util.regex.IntHashSet source: jrt:/java.base
+[0.070s][class,load] java.util.ArrayList$SubList source: jrt:/java.base
+[0.070s][class,init] 640 Initializing 'java/util/ArrayList$SubList'(no method) (0x00007fe00009f750) by thread "main"
+[0.071s][class,load] java.util.Collections$EmptyIterator source: jrt:/java.base
+[0.071s][class,init] 641 Initializing 'java/util/Collections$EmptyIterator' (0x00007fe00009fd68) by thread "main"
+[0.071s][class,load] sun.util.locale.provider.CalendarDataUtility source: jrt:/java.base
+[0.071s][class,init] 642 Initializing 'sun/util/locale/provider/CalendarDataUtility' (0x00007fe00009ffd0) by thread "main"
+[0.071s][class,load] java.util.Locale$Builder source: jrt:/java.base
+[0.071s][class,init] 643 Initializing 'java/util/Locale$Builder'(no method) (0x00007fe0000a01e8) by thread "main"
+[0.071s][class,load] sun.util.locale.provider.LocaleResources source: jrt:/java.base
+[0.071s][class,init] 644 Initializing 'sun/util/locale/provider/LocaleResources' (0x00007fe0000a0408) by thread "main"
+[0.071s][class,load] java.util.regex.ASCII source: jrt:/java.base
+[0.071s][class,init] 645 Initializing 'java/util/regex/ASCII' (0x00007fe0000a06c8) by thread "main"
+[0.071s][class,init] 646 Initializing 'java/util/regex/Pattern$GroupHead'(no method) (0x00007fe00009a5a0) by thread "main"
+[0.071s][class,load] java.util.regex.Pattern$GroupTail source: jrt:/java.base
+[0.071s][class,init] 647 Initializing 'java/util/regex/Pattern$GroupTail'(no method) (0x00007fe0000a08e0) by thread "main"
+[0.071s][class,load] java.util.regex.Pattern$Curly source: jrt:/java.base
+[0.071s][class,init] 648 Initializing 'java/util/regex/Pattern$Curly'(no method) (0x00007fe0000a0b10) by thread "main"
+[0.071s][class,load] java.util.regex.Pattern$BitClass source: jrt:/java.base
+[0.071s][class,init] 649 Initializing 'java/util/regex/Pattern$BitClass' (0x00007fe0000a0d40) by thread "main"
+[0.071s][class,load] sun.util.resources.LocaleData source: jrt:/java.base
+[0.071s][class,init] 650 Initializing 'sun/util/resources/LocaleData' (0x00007fe0000a0fe8) by thread "main"
+[0.072s][class,load] java.util.ResourceBundle$Control source: jrt:/java.base
+[0.072s][class,init] 651 Initializing 'java/util/ResourceBundle$Control' (0x00007fe0000a1258) by thread "main"
+[0.072s][class,load] java.util.ResourceBundle source: jrt:/java.base
+[0.072s][class,load] java.util.ResourceBundle$Control$$Lambda/0x00007fe0000a1708 source: java.util.ResourceBundle
+[0.072s][class,init] 652 Initializing 'java/util/ResourceBundle$Control$$Lambda+0x00007fe0000a1708'(no method) (0x00007fe0000a1708) by thread "main"
+[0.072s][class,load] sun.util.resources.Bundles$Strategy source: jrt:/java.base
+[0.072s][class,load] sun.util.resources.LocaleData$LocaleDataStrategy source: jrt:/java.base
+[0.072s][class,init] 653 Initializing 'sun/util/resources/LocaleData$LocaleDataStrategy' (0x00007fe0000a1b48) by thread "main"
+[0.072s][class,load] sun.util.resources.Bundles source: jrt:/java.base
+[0.072s][class,init] 654 Initializing 'sun/util/resources/Bundles' (0x00007fe0000a1da8) by thread "main"
+[0.072s][class,load] sun.util.resources.Bundles$1 source: jrt:/java.base
+[0.072s][class,init] 655 Initializing 'java/util/ResourceBundle' (0x00007fe0000a14a8) by thread "main"
+[0.072s][class,load] jdk.internal.access.JavaUtilResourceBundleAccess source: jrt:/java.base
+[0.072s][class,load] java.util.ResourceBundle$1 source: jrt:/java.base
+[0.072s][class,init] 656 Initializing 'java/util/ResourceBundle$1'(no method) (0x00007fe0000a2430) by thread "main"
+[0.072s][class,load] java.util.ResourceBundle$2 source: jrt:/java.base
+[0.073s][class,init] 657 Initializing 'java/util/ResourceBundle$2'(no method) (0x00007fe0000a26b8) by thread "main"
+[0.073s][class,init] 658 Initializing 'sun/util/resources/Bundles$1'(no method) (0x00007fe0000a1fc0) by thread "main"
+[0.073s][class,load] sun.util.resources.Bundles$CacheKey source: jrt:/java.base
+[0.073s][class,init] 659 Initializing 'sun/util/resources/Bundles$CacheKey'(no method) (0x00007fe0000a2918) by thread "main"
+[0.073s][class,load] java.util.spi.ResourceBundleProvider source: jrt:/java.base
+[0.073s][class,load] sun.util.resources.LocaleData$LocaleDataResourceBundleProvider source: jrt:/java.base
+[0.073s][class,load] sun.util.resources.LocaleData$CommonResourceBundleProvider source: jrt:/java.base
+[0.073s][class,load] sun.util.cldr.CLDRLocaleProviderAdapter$$Lambda/0x00007fe0000a3208 source: sun.util.cldr.CLDRLocaleProviderAdapter
+[0.073s][class,init] 660 Initializing 'sun/util/cldr/CLDRLocaleProviderAdapter$$Lambda+0x00007fe0000a3208'(no method) (0x00007fe0000a3208) by thread "main"
+[0.073s][class,load] java.util.ResourceBundle$SingleFormatControl source: jrt:/java.base
+[0.073s][class,load] java.util.ResourceBundle$NoFallbackControl source: jrt:/java.base
+[0.073s][class,init] 661 Initializing 'java/util/ResourceBundle$SingleFormatControl' (0x00007fe0000a3458) by thread "main"
+[0.073s][class,init] 662 Initializing 'java/util/ResourceBundle$NoFallbackControl' (0x00007fe0000a36b0) by thread "main"
+[0.073s][class,load] java.util.ResourceBundle$Control$$Lambda/0x00007fe0000a3908 source: java.util.ResourceBundle
+[0.073s][class,init] 663 Initializing 'java/util/ResourceBundle$Control$$Lambda+0x00007fe0000a3908'(no method) (0x00007fe0000a3908) by thread "main"
+[0.074s][class,load] java.util.ListResourceBundle source: jrt:/java.base
+[0.074s][class,load] sun.text.resources.cldr.FormatData source: jrt:/java.base
+[0.074s][class,load] java.util.ResourceBundle$ResourceBundleProviderHelper source: jrt:/java.base
+[0.074s][class,init] 664 Initializing 'java/util/ResourceBundle$ResourceBundleProviderHelper'(no method) (0x00007fe0000a4028) by thread "main"
+[0.074s][class,init] 665 Initializing 'java/util/ListResourceBundle'(no method) (0x00007fe0000a3b58) by thread "main"
+[0.074s][class,init] 666 Initializing 'sun/text/resources/cldr/FormatData'(no method) (0x00007fe0000a3dc0) by thread "main"
+[0.074s][class,load] sun.util.resources.Bundles$CacheKeyReference source: jrt:/java.base
+[0.074s][class,load] sun.util.resources.Bundles$BundleReference source: jrt:/java.base
+[0.074s][class,init] 667 Initializing 'sun/util/resources/Bundles$BundleReference'(no method) (0x00007fe0000a4450) by thread "main"
+[0.074s][class,load] sun.util.resources.provider.LocaleDataProvider source: jrt:/jdk.localedata
+[0.074s][class,init] Start class verification for: sun.util.resources.provider.LocaleDataProvider
+[0.074s][class,load] java.lang.InstantiationException source: jrt:/java.base
+[0.074s][class,load] java.lang.IllegalAccessException source: jrt:/java.base
+[0.074s][class,init] End class verification for: sun.util.resources.provider.LocaleDataProvider
+[0.074s][class,init] 668 Initializing 'sun/util/resources/LocaleData$LocaleDataResourceBundleProvider'(no method) (0x00007fe0000a2d78) by thread "main"
+[0.074s][class,init] 669 Initializing 'sun/util/resources/LocaleData$CommonResourceBundleProvider'(no method) (0x00007fe0000a2fc0) by thread "main"
+[0.074s][class,init] 670 Initializing 'sun/util/resources/provider/LocaleDataProvider'(no method) (0x00007fe0000c0a68) by thread "main"
+[0.075s][class,load] sun.text.resources.cldr.ext.FormatData_ko source: jrt:/jdk.localedata
+[0.075s][class,init] Start class verification for: sun.text.resources.cldr.ext.FormatData_ko
+[0.075s][class,init] End class verification for: sun.text.resources.cldr.ext.FormatData_ko
+[0.075s][class,init] 671 Initializing 'sun/text/resources/cldr/ext/FormatData_ko'(no method) (0x00007fe0000c0cb0) by thread "main"
+[0.075s][class,load] java.util.Collections$EmptyEnumeration source: jrt:/java.base
+[0.075s][class,init] 672 Initializing 'java/util/Collections$EmptyEnumeration' (0x00007fe0000a4bb8) by thread "main"
+[0.076s][class,load] sun.util.locale.provider.LocaleResources$ResourceReference source: jrt:/java.base
+[0.076s][class,init] 673 Initializing 'sun/util/locale/provider/LocaleResources$ResourceReference'(no method) (0x00007fe0000a4e10) by thread "main"
+[0.076s][class,load] java.lang.CharacterData00 source: jrt:/java.base
+[0.076s][class,init] 674 Initializing 'java/lang/CharacterData00' (0x00007fe0000a5080) by thread "main"
+[mark] 1번째 실행 후
+[mark] 2번째 실행 후
+[0.077s][class,load] java.lang.Shutdown source: jrt:/java.base
+[0.077s][class,init] 675 Initializing 'java/lang/Shutdown' (0x00007fe0000a5990) by thread "DestroyJavaVM"
+[0.077s][class,load] java.lang.Shutdown$Lock source: jrt:/java.base
+[0.077s][class,init] 676 Initializing 'java/lang/Shutdown$Lock'(no method) (0x00007fe0000a5db0) by thread "DestroyJavaVM"

@@ -1,0 +1,10 @@
+JDK: OpenJDK Runtime Environment Zulu25.32+17-CA (build 25.0.2+10-LTS), aarch64, CPU 10개
+
+== 경우별 로딩과 초기화 (실행 전 표시와 실행 후 표시 사이)
+경우                      로딩                              초기화
+forName-no-init         Lazy                            -
+constant-variable       -                               -
+static-final-boxed      Boxed                           Boxed
+array                   Element                         -
+subclass-static-field   Parent, Child                   Parent
+static-method           Util                            Util
